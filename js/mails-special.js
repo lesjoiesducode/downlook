@@ -125,14 +125,12 @@ window.DL_FOLDERS = {
       subject: 'Lettre de démission (v14)',
       body: `Madame, Monsieur,
 
-Après mûre réflexion, 394 "Répondre à tous" et un 45e "petit point rapide" cette semaine, j'ai l'honneur de vous informer que j'ai trouvé une offre bien plus adaptée à mes compétences sur Les Joies du Code : [lesjoiesducode.fr/jobs](https://lesjoiesducode.fr/jobs)
+Je vous informe par la présente de ma démission. J'ai trouvé une offre bien plus adaptée à mes compétences [sur Les Joies du Code](https://lesjoiesducode.fr/jobs).
 
-Je reste disponible pour un dernier petit point rapide.
+Mon préavis commencera dès que ce mail sera parti, donc après la panne.
 
 Cordialement,
-Vous
-
-PS : les versions 1 à 13 sont toujours dans mes brouillons.`,
+Vous`,
     },
   ],
   outbox: [
