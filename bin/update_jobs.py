@@ -32,7 +32,7 @@ def clean_title(t):
 
 def parse_offer(url, now):
     page = get(url)
-    m = re.search(r'<meta name="robots" content="([^"]*)"', page)
+    m = re.search(r'<meta name=["\']robots["\'] content=["\']([^"\']*)', page)
     if m and "noindex" in m.group(1):
         return None
     for s in re.finditer(r'<script[^>]*application/ld\+json[^>]*>(.*?)</script>', page, re.S):
@@ -96,6 +96,20 @@ def main():
         return 0
     entries = re.findall(r"<url>\s*<loc>([^<]+)</loc>(?:\s*<lastmod>([^<]+)</lastmod>)?", xml)
     entries = [(u, lm or "") for u, lm in entries if "/emploi/" in u]
+    # Les pages entreprises listent aussi des offres actives absentes du sitemap des offres.
+    seen = {u for u, _ in entries}
+    try:
+        companies = re.findall(r"<loc>([^<]+/entreprises/[^<]+)</loc>", get(SITEMAP.replace("job_offer-sitemap", "company-sitemap")))
+    except Exception as e:
+        companies = []
+        print(f"sitemap entreprises illisible : {e}")
+    for cu in companies:
+        try:
+            for u in sorted(set(re.findall(r'href="(https://lesjoiesducode\.fr/emploi/[^"#?]+)"', get(cu)))):
+                if u not in seen:
+                    seen.add(u); entries.append((u, ""))
+        except Exception as e:
+            print(f"page entreprise ignorée {cu} : {e}")
     if not entries:
         print("sitemap sans offre (format inattendu ?), aucun changement")
         return 0

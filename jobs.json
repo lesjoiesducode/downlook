@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T12:02:35Z",
+ "updated": "2026-11-13T12:09:51Z",
  "source": "https://lesjoiesducode.fr/job_offer-sitemap.xml",
  "jobs": [
   {
@@ -42,6 +42,38 @@
    "url": "https://lesjoiesducode.fr/emploi/developpeur-back-end-team-poker-winamax-paris-377",
    "validThrough": null,
    "tier": 1
+  },
+  {
+   "title": "Junior FullStack Developer",
+   "company": "Skello",
+   "city": "Paris",
+   "url": "https://lesjoiesducode.fr/emploi/junior-fullstack-developer-skello-paris-1277",
+   "validThrough": null,
+   "tier": 2
+  },
+  {
+   "title": "Senior Software Engineer (AI Project) - Full remote",
+   "company": "Skello",
+   "city": "Télétravail",
+   "url": "https://lesjoiesducode.fr/emploi/senior-software-engineer-ai-project-full-remote-skello-paris-1036",
+   "validThrough": null,
+   "tier": 2
+  },
+  {
+   "title": "Senior Software Engineer (AI Project)",
+   "company": "Skello",
+   "city": "Paris",
+   "url": "https://lesjoiesducode.fr/emploi/senior-software-engineer-ai-project-skello-paris-1035",
+   "validThrough": null,
+   "tier": 2
+  },
+  {
+   "title": "Senior Software Engineer",
+   "company": "Skello",
+   "city": "Paris",
+   "url": "https://lesjoiesducode.fr/emploi/senior-software-engineer-skello-paris-1034",
+   "validThrough": null,
+   "tier": 2
   },
   {
    "title": "Stage - Automatisation des tests de validation fonctionnels pour nos algorithmes C++",
@@ -138,46 +170,6 @@
    "url": "https://lesjoiesducode.fr/emploi/lead-developpeur-django-commissariat-au-numerique-de-defense-cnd-le-1073",
    "validThrough": null,
    "tier": 5
-  },
-  {
-   "title": "Senior Analytics Engineer",
-   "company": "Skello",
-   "city": "Paris",
-   "url": "https://lesjoiesducode.fr/emploi/senior-analytics-engineer-skello-paris-1299",
-   "validThrough": null,
-   "tier": 6
-  },
-  {
-   "title": "Junior FullStack Developer",
-   "company": "Skello",
-   "city": "Paris",
-   "url": "https://lesjoiesducode.fr/emploi/junior-fullstack-developer-skello-paris-1277",
-   "validThrough": null,
-   "tier": 6
-  },
-  {
-   "title": "Senior Software Engineer (AI Project) - Full remote",
-   "company": "Skello",
-   "city": "Télétravail",
-   "url": "https://lesjoiesducode.fr/emploi/senior-software-engineer-ai-project-full-remote-skello-paris-1036",
-   "validThrough": null,
-   "tier": 6
-  },
-  {
-   "title": "Senior Software Engineer (AI Project)",
-   "company": "Skello",
-   "city": "Paris",
-   "url": "https://lesjoiesducode.fr/emploi/senior-software-engineer-ai-project-skello-paris-1035",
-   "validThrough": null,
-   "tier": 6
-  },
-  {
-   "title": "Senior Software Engineer",
-   "company": "Skello",
-   "city": "Paris",
-   "url": "https://lesjoiesducode.fr/emploi/senior-software-engineer-skello-paris-1034",
-   "validThrough": null,
-   "tier": 6
   }
  ]
 }

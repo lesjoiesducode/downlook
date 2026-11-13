@@ -16,8 +16,7 @@ const CONTENT_FILES = ['content/lot-a-mails.json', 'content/lot-b-invitations-ra
 const RARE_CHANCE = 1 / 5;
 // Mails écartés du tirage : objets trop proches d'un vrai hameçonnage (mot de passe qui expire,
 // VPN, identifiant) sur une page qui ressemble à un webmail. Drôles, mais pas le risque.
-// b-reu-008 : son texte fixe un samedi, or aucune réunion ne tombe un week-end.
-const EXCLUDE = new Set(['a-rh-015', 'a-dsi-001', 'a-dsi-002', 'a-dsi-007', 'b-sys-010', 'b-reu-008']);                        // une visite sur 5 voit un rare, parmi ~19 : chacun ~1/95
+const EXCLUDE = new Set(['a-rh-015', 'a-dsi-001', 'a-dsi-002', 'a-dsi-007', 'b-sys-010']);                        // une visite sur 5 voit un rare, parmi ~19 : chacun ~1/95
 const TZ = 'Europe/Paris';
 const W = window;
 
@@ -286,7 +285,7 @@ function scheduleInvite(inv, r) {
   let k;
   if (wd) {
     let t = DOWS.indexOf(wd[1].toLowerCase());
-    if (t === 0 || t === 6) t = 1;
+    if (t === 0) t = 1;                    // jamais le dimanche ; seul l'escape game (texte "samedi") garde son samedi, voulu par Nicolas
     k = (t - T.dow + 7) % 7;
     if (k === 0 && !okToday(start)) k = 7;
     const dt = dayAt(k);
@@ -1206,7 +1205,7 @@ function start(deepLink) {
     showEnd();
   } else start(deep);
   if (Q.has('debug')) {
-    W.__dl = S; W.__dlmake = d => instantiate(d, newSeed(), Date.now()); W.__dlpick = pickJob; W.__dlbuild = () => { const o = buildSession(); clearTimeout(S.timer); renderList(); return o; };
+    W.__dl = S; W.__dlmake = d => instantiate(d, newSeed(), Date.now()); W.__dlpick = pickJob; W.__dlinst = (d, seed) => instantiate(d, seed, Date.now()); W.__dlbuild = () => { const o = buildSession(); clearTimeout(S.timer); renderList(); return o; };
     W.__dlcheck = () => { S.unknown = []; const bad = []; for (const d of S.byId.values()) { for (let k = 0; k < 6; k++) { const m = instantiate(d, 1000 + k * 7919, Date.now()); const txt = [m.from, m.subject, m.body, m.tag, m.att.join(' '), m.invite ? Object.values(m.invite).join(' ') : ''].join(' '); if (/[{}]/.test(txt)) bad.push(d.id); } } return { unknown: [...new Set(S.unknown)], braces: [...new Set(bad)], total: S.byId.size }; };
   }
 })();
