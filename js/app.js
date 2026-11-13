@@ -332,6 +332,9 @@ function elapsed() { return (outageEnd() || Date.now()) - S.status.start; }
 function updateOutage() {
   const ended = !!outageEnd();
   $('outage').classList.toggle('ended', ended);
+  const note = !ended && S.status.note ? S.status.note : '';
+  $('outageNote').textContent = note; $('outageNote').hidden = !note;
+  $('outage').classList.toggle('has-note', !!note);
   const d = dur(elapsed());
   $('outageText').innerHTML = ended ? `<span class="lg">Panne terminée après</span><span class="sm">Terminée après</span> ${d}` : `<span class="lg">Panne en cours depuis</span><span class="sm">Panne depuis</span> ${d}`;
   const em = elapsed() / 60000;
@@ -351,7 +354,8 @@ async function fetchStatus() {
     const j = await r.json();
     const start = Date.parse(j.start) || START_DEFAULT;
     const end = j.state === 'ended' && j.end ? Date.parse(j.end) : null;
-    S.status = { state: end ? 'ended' : 'ongoing', start, end };
+    const note = typeof j.note === 'string' ? j.note.trim().slice(0, 60) : '';
+    S.status = { state: end ? 'ended' : 'ongoing', start, end, note };
   } catch (e) { /* on garde l'état connu */ }
 }
 async function pollStatus() {
