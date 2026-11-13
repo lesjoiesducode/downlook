@@ -1,3 +1,4 @@
 .DS_Store
 content/*.done
 status-test.json
+__pycache__/
