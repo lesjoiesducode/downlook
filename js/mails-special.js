@@ -113,7 +113,7 @@ window.DL_ECHO_SENDERS = [
 
 // Contenu des autres dossiers.
 window.DL_FOLDERS = {
-  inbox: { empty: 'Votre boîte de réception est vide.', sub: 'Profitez-en, c\'est la première fois depuis 2009.' },
+  inbox: { empty: 'Votre boîte de réception est vide.', sub: 'Profitez-en, c\'est la première fois depuis votre embauche.' },
   sent: { empty: 'Rien n\'est parti depuis jeudi 17 h 17.', sub: 'Vous non plus, d\'ailleurs.' },
   archive: { empty: 'Le mail le plus récent de l\'archive date de jeudi 17 h 16.', sub: 'Il disait "on en reparle demain".' },
   drafts: [
