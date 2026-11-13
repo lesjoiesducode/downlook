@@ -125,8 +125,14 @@ window.DL_FOLDERS = {
       subject: 'Lettre de démission (v14)',
       body: `Madame, Monsieur,
 
-Après mûre réflexion, {nnn} "Répondre à tous" et un {nn}e "petit point rapide" cette semaine, j'ai l'honneur de vous informer que`,
-      tag: 'Enregistré automatiquement. Jamais envoyé. Comme les 13 versions précédentes.',
+Après mûre réflexion, 394 "Répondre à tous" et un 45e "petit point rapide" cette semaine, j'ai l'honneur de vous informer que j'ai trouvé une offre bien plus adaptée à mes compétences sur Les Joies du Code : [lesjoiesducode.fr/jobs](https://lesjoiesducode.fr/jobs)
+
+Je reste disponible pour un dernier petit point rapide.
+
+Cordialement,
+Vous
+
+PS : les versions 1 à 13 sont toujours dans mes brouillons.`,
     },
   ],
   outbox: [
