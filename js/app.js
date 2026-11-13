@@ -269,7 +269,7 @@ function updateOutage() {
   const ended = !!outageEnd();
   $('outage').classList.toggle('ended', ended);
   const d = dur(elapsed());
-  $('outageText').textContent = ended ? `Panne terminée après ${d}` : `Panne en cours depuis ${d}`;
+  $('outageText').innerHTML = ended ? `<span class="lg">Panne terminée après</span><span class="sm">Terminée après</span> ${d}` : `<span class="lg">Panne en cours depuis</span><span class="sm">Panne depuis</span> ${d}`;
   const em = elapsed() / 60000;
   const mails = Math.round(em * 0.31) + S.liveMails;
   const meet = Math.round(em * 0.012) + S.liveMeet;
@@ -377,7 +377,7 @@ function memeDef() { return S.memes.length ? takeFrom(S.defs.memeMails) : null; 
 function buildSession(deepLink) {
   S.session++;
   clearTimeout(S.timer);
-  Object.assign(S, { mails: [], used: new Set(), liveCount: 0, plan: new Map(), pendingSuites: [], liveMails: 0, liveMeet: 0, sel: null, uid: 0 });
+  Object.assign(S, { mails: [], used: new Set(), liveCount: 0, plan: new Map(), pendingSuites: [], liveMails: 0, liveMeet: 0, sel: null });
   const D = S.defs;
   const end = outageEnd() || Date.now();
   const start = S.status.start;
@@ -635,7 +635,7 @@ const STATUS_LINES = [
 function findMail(uid) { return S.mails.find(m => m.uid === uid) || Object.values(S.folders).flat().find(m => m.uid === uid); }
 function renderRead(m) {
   const box = $('read');
-  const mob = `<div class="r-mobilebar"><button class="back" id="rBack" aria-label="Retour">${icon('back')}</button><span class="sp"></span><button data-act="forward">${icon('forward')}Transférer</button><button data-act="capture">${icon('camera')}Capturer</button></div>`;
+  const mob = `<div class="r-mobilebar"><button class="back" id="rBack" aria-label="Retour">${icon('back')}</button><span class="sp"></span><button data-act="reply" aria-label="Répondre">${icon('reply')}</button><button data-act="forward">${icon('forward')}Transférer</button></div>`;
   if (!m || m.gone) {
     const fate = m && m.fate ? m.fate : 'Partie aux oubliettes';
     box.innerHTML = `${mob}<div class="r-inner"><div class="empty">${emptyArt()}<div class="big">Cette invitation s'est envolée.</div><div>Statut : ${esc(fate)}. Une réunion de moins.</div></div></div>`;
@@ -650,7 +650,7 @@ function renderRead(m) {
       ${m.role ? `<div class="to">${esc(m.role)}</div>` : ''}<div class="to">${esc(to)}</div><div class="date">${esc(date)}</div></div>
     <div class="r-acts"><button data-act="reply" aria-label="Répondre">${icon('reply')}</button><button data-act="replyall" aria-label="Répondre à tous">${icon('replyall')}</button><button data-act="forward" aria-label="Transférer">${icon('forward')}</button></div>
   </div>`;
-  if (m.rare) inner += `<div class="banner rare">${icon('sparkle')}<span>Mail rare : il n'apparaît qu'une visite sur 100 environ. Capturez-le avant qu'il ne reparte.</span></div>`;
+  if (m.rare) inner += `<div class="banner rare">${icon('sparkle')}<span>Mail rare : il n'apparaît qu'une visite sur 100 environ. Transférez-le avant qu'il ne reparte.</span></div>`;
   if (m.important) inner += `<div class="banner imp"><b>!</b><span>Ce message a été envoyé avec une importance haute.</span></div>`;
   if (m.invite) {
     const d = new Date(m.ts);
@@ -665,7 +665,7 @@ function renderRead(m) {
   if (m.meme) inner += `<figure class="meme"><a href="${esc(withUtm(m.meme.url))}" target="_blank" rel="noopener"><img src="${esc(m.meme.image)}" alt="${esc(m.meme.alt || m.meme.title)}" loading="lazy" referrerpolicy="no-referrer"></a><figcaption class="cap">"${esc(m.meme.title)}", vu sur <a href="${esc(withUtm(m.meme.url))}" target="_blank" rel="noopener">lesjoiesducode.fr</a></figcaption></figure>`;
   inner += `</div>`;
   if (m.tag) inner += `<div class="tag">${esc(m.tag)}</div>`;
-  inner += `<div class="r-foot"><button class="btn" data-act="reply">${icon('reply')}Répondre</button><button class="btn" data-act="forward">${icon('forward')}Transférer</button><button class="btn primary" data-act="capture">${icon('camera')}Capturer ce mail</button></div>`;
+  inner += `<div class="r-foot"><button class="btn" data-act="reply">${icon('reply')}Répondre</button><button class="btn" data-act="replyall">${icon('replyall')}Répondre à tous</button><button class="btn" data-act="forward">${icon('forward')}Transférer</button></div>`;
   if (!m.pinned) inner += `<div class="status-line">${esc(STATUS_LINES[m.uid % STATUS_LINES.length])}</div>`;
   box.innerHTML = `${mob}<div class="r-inner">${inner}</div>`;
   box.scrollTop = 0;
@@ -779,9 +779,8 @@ const ACTS = {
 };
 
 // ---------------------------------------------------------------- Transférer (lien direct vers un mail)
-async function forward(m) {
-  if (!m) { toast('Choisissez d\'abord un mail à transférer.'); return; }
-  if (m.def.src === 'echo' || m.pinned || m.defId === 'fin') { toast('Ce mail-là ne se transfère pas. Essayez un autre.'); return; }
+const linkable = m => !(m.def.src === 'echo' || m.pinned || m.defId === 'fin' || m.def.src === 'maison' && !S.byId.has(m.defId));
+async function copyLink(m) {
   const url = `${PAGE_URL}?m=${encodeURIComponent(m.defId)}~${m.seed}`;
   const text = `"${m.subject}" : tu ne l'as pas reçu non plus.`;
   if (navigator.share && matchMedia('(max-width: 860px)').matches) {
@@ -887,19 +886,30 @@ function drawMail(m, dry) {
   return c;
 }
 function roundRect(g, x, y, w, h, r) { g.beginPath(); g.moveTo(x + r, y); g.arcTo(x + w, y, x + w, y + h, r); g.arcTo(x + w, y + h, x, y + h, r); g.arcTo(x, y + h, x, y, r); g.arcTo(x, y, x + w, y, r); g.closePath(); }
-let capBlob = null;
-function capture(m) {
-  if (!m) { toast('Choisissez d\'abord un mail à capturer.'); return; }
+// Fenêtre "Transférer" : l'image du mail et des boutons de partage, aucun champ de saisie.
+function forward(m) {
+  if (!m) { toast('Choisissez d\'abord un mail à transférer.'); return; }
   const c = drawMail(m);
   const url = c.toDataURL('image/png');
+  $('fwdSubject').textContent = `TR: ${m.subject}`;
   $('capImg').src = url;
   const name = `downlook-${slug(m.subject).slice(0, 40)}.png`;
   $('capDl').href = url; $('capDl').download = name;
-  capBlob = null;
+  $('fwdLink').hidden = !linkable(m);
+  $('fwdLink').onclick = () => copyLink(m);
+  const shareUrl = linkable(m) ? `${PAGE_URL}?m=${encodeURIComponent(m.defId)}~${m.seed}` : PAGE_URL;
+  $('fwdLinkedin').href = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`;
+  $('fwdX').href = `https://x.com/intent/post?text=${encodeURIComponent(`"${m.subject}" : pas reçu grâce à la panne.`)}&url=${encodeURIComponent(shareUrl)}`;
+  $('capCopy').hidden = !(W.ClipboardItem && navigator.clipboard && navigator.clipboard.write);
+  $('capShare').hidden = true;
   c.toBlob(b => {
-    capBlob = b;
-    const file = b && new File([b], name, { type: 'image/png' });
-    $('capShare').hidden = !(file && navigator.canShare && navigator.canShare({ files: [file] }));
+    if (!b) return;
+    const file = new File([b], name, { type: 'image/png' });
+    $('capCopy').onclick = async () => {
+      try { await navigator.clipboard.write([new ClipboardItem({ 'image/png': b })]); toast('Image copiée. Collez-la où vous voulez, sauf dans un mail.'); }
+      catch (e) { toast('Copie impossible ici. Utilisez "Télécharger".'); }
+    };
+    $('capShare').hidden = !(navigator.canShare && navigator.canShare({ files: [file] }));
     $('capShare').onclick = async () => { try { await navigator.share({ files: [file], title: 'Downlook', text: `Pas reçu grâce à la panne. ${PAGE_URL}` }); } catch (e) { /* annulé */ } };
   }, 'image/png');
   $('capModal').classList.add('show');
@@ -922,8 +932,7 @@ function bind() {
     if (t.dataset.folder) { openFolder(t.dataset.folder); return; }
     if (t.classList.contains('item')) { select(Number(t.dataset.uid), true); return; }
     const a = t.dataset.act;
-    if (a === 'capture') capture(selected());
-    else if (a === 'forward') forward(selected());
+    if (a === 'forward') forward(selected());
     else if (ACTS[a]) toast(ACTS[a][ri(0, ACTS[a].length - 1)]);
   });
   document.addEventListener('keydown', e => {

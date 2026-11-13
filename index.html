@@ -24,7 +24,7 @@
 <meta name="twitter:title" content="Downlook : tous les mails que la panne vous a épargnés">
 <meta name="twitter:description" content="Le petit point rapide, la MEP du vendredi, le &quot;ça marche pas&quot;. Ils ne sont jamais arrivés. Ils continuent de ne pas arriver.">
 <meta name="twitter:image" content="https://lesjoiesducode.github.io/downlook/og.png">
-<link rel="stylesheet" href="css/style.css?v=1">
+<link rel="stylesheet" href="css/style.css?v=4">
 </head>
 <body>
 <header class="topbar">
@@ -71,8 +71,6 @@
         <span class="sep"></span>
         <button class="cmd" data-act="read"><i data-i="envopen"></i>Lu / Non lu</button>
         <button class="cmd" data-act="flag"><i data-i="flag"></i>Indicateur</button>
-        <span class="sep"></span>
-        <button class="cmd accent" data-act="capture"><i data-i="camera"></i>Capturer ce mail</button>
       </div>
     </div>
 
@@ -127,20 +125,25 @@
   </div>
 </div>
 
-<div class="modal" id="capModal" role="dialog" aria-modal="true" aria-label="Capture du mail">
+<div class="modal" id="capModal" role="dialog" aria-modal="true" aria-labelledby="fwdSubject">
   <div class="dialog cap">
-    <h2>Capture du mail</h2>
-    <img id="capImg" alt="Capture du mail">
+    <div class="fwd-head"><i data-i="forward"></i><h2 id="fwdSubject">TR:</h2><button class="x" id="capClose" aria-label="Fermer"><i data-i="decline"></i></button></div>
+    <div class="fwd-line"><span>De</span>Vous</div>
+    <div class="fwd-line"><span>À</span>Un collègue qui ne l'a pas reçu non plus</div>
+    <img id="capImg" alt="Aperçu du mail transféré">
     <div class="acts">
-      <button class="btn" id="capClose">Fermer</button>
+      <button class="btn" id="capCopy" hidden><i data-i="image"></i>Copier l'image</button>
+      <a class="btn" id="capDl" download="downlook.png" href="#"><i data-i="download"></i>Télécharger</a>
       <button class="btn" id="capShare" hidden><i data-i="share"></i>Partager</button>
-      <a class="btn primary" id="capDl" download="downlook.png" href="#"><i data-i="download"></i>Télécharger l'image</a>
+      <a class="btn" id="fwdLinkedin" href="#" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" id="fwdX" href="#" target="_blank" rel="noopener">X</a>
+      <button class="btn primary" id="fwdLink" hidden><i data-i="link"></i>Copier le lien</button>
     </div>
   </div>
 </div>
 
-<script src="js/mails-special.js?v=2"></script>
+<script src="js/mails-special.js?v=3"></script>
 <script src="js/mails-extra.js?v=1"></script>
-<script src="js/app.js?v=1"></script>
+<script src="js/app.js?v=4"></script>
 </body>
 </html>

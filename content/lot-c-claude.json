@@ -1218,20 +1218,16 @@
       "Notifications d'usage Claude"
     ],
     "objet": [
-      "Nous avons remarqué une activité inhabituelle",
-      "Activité inhabituelle : vous n'avez rien demandé depuis 3 h"
+      "Activité inhabituelle détectée sur votre compte",
+      "Alerte de sécurité : activité inhabituelle"
     ],
-    "corps": "Bonjour,\n\nVous n'avez envoyé aucune requête depuis {duree}.\n\nTout va bien ? Vous avez peut-être :\n- trouvé la solution tout seul ;\n- ouvert la documentation ;\n- {autre}.\n\nNous ne vous jugeons pas. Prenez le temps qu'il faut. Nous sommes là lundi à 9 h.",
+    "corps": "Bonjour,\n\nNous avons détecté une activité inhabituelle sur votre compte : vous avez écrit {lignes} lignes de code vous-même, sans aucune requête.\n\nSi c'était bien vous, aucune action n'est requise.\n\nSi ce n'était pas vous, prévenez votre équipe : quelqu'un code à la main sur votre poste.",
     "variables": {
-      "duree": [
-        "3 h",
-        "une demi-journée",
-        "47 minutes"
-      ],
-      "autre": [
-        "parlé à un collègue",
-        "pris une vraie pause déjeuner",
-        "débranché l'ordinateur pour le rebrancher"
+      "lignes": [
+        "42",
+        "87",
+        "136",
+        "211"
       ]
     }
   },

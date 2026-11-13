@@ -13,7 +13,7 @@ Depuis jeudi 12 novembre 17 h 17 (heure de Paris), la messagerie d'une bonne par
 
 Ce dossier rassemble tout ce qu'elle vous a épargné : le petit point rapide, la MEP du vendredi, le "ça marche pas", la réunion qui aurait pu être un mail.
 
-Les mails continuent d'arriver. Enfin, de ne pas arriver. Certains sont rares : si vous en croisez un, capturez-le.
+Les mails continuent d'arriver. Enfin, de ne pas arriver. Certains sont rares : si vous en croisez un, transférez-le.
 
 Bonne non-lecture.`,
   tag: 'Downlook est une parodie écrite par Les Joies du Code. Aucun vrai mail n\'a été lu, aucun n\'a été envoyé.',
@@ -114,7 +114,7 @@ window.DL_ECHO_SENDERS = [
 // Contenu des autres dossiers.
 window.DL_FOLDERS = {
   inbox: { empty: 'Votre boîte de réception est vide.', sub: 'Profitez-en, c\'est la première fois depuis votre embauche.' },
-  sent: { empty: 'Rien n\'est parti depuis jeudi 17 h 17.', sub: 'Vous non plus, d\'ailleurs.' },
+  sent: { empty: 'Rien n\'est parti depuis jeudi 17 h 17.', sub: 'Pour une fois, ce n\'est pas vous qui ne répondez pas.' },
   archive: { empty: 'Le mail le plus récent de l\'archive date de jeudi 17 h 16.', sub: 'Il disait "on en reparle demain".' },
   drafts: [
     {
