@@ -166,7 +166,7 @@ function norm(x, src) {
 function register(d) { S.byId.set(d.id, d); return d; }
 
 // ---------------------------------------------------------------- Rendu d'un mail
-const STOP = new Set(['de', 'du', 'des', 'la', 'le', 'les', 'l', 'd', 'et', 'à', 'au', 'aux', 'ton', 'ta', 'votre', 'vous', 'service', 'équipe']);
+const STOP = new Set(['de', 'du', 'des', 'la', 'le', 'les', 'l', 'd', 'et', 'à', 'au', 'aux', 'ton', 'ta', 'votre', 'vous', 'équipe']);
 const AV_COLORS = ['#a4373a', '#8764b8', '#038387', '#ca5010', '#498205', '#986f0b', '#0078a8', '#c239b3', '#4f6bed', '#5c2e91', '#8e562e', '#637cef', '#005b70', '#7a7574'];
 function initials(name) {
   const words = name.replace(/[()\[\],.:]/g, ' ').split(/[\s'’\-]+/).filter(w => w && !STOP.has(w.toLowerCase()));

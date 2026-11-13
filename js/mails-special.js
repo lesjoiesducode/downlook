@@ -4,19 +4,19 @@
 window.DL_WELCOME = {
   id: 'dl-bienvenue',
   fam: 'downlook',
-  from: ['Downlook'],
-  email: 'ne-pas-repondre',
-  subject: 'Bienvenue dans les mails que vous n\'avez pas reçus',
+  from: ['Service informatique'],
+  email: 'service-informatique',
+  subject: 'Incident en cours : messagerie indisponible',
   body: `Bonjour,
 
-Depuis jeudi 12 novembre 17 h 17 (heure de Paris), la messagerie d'une bonne partie des bureaux de la planète est en panne.
+Depuis jeudi 17 h 17, la messagerie est indisponible. Nos équipes sont pleinement mobilisées.
 
-Ce dossier rassemble tout ce qu'elle vous a épargné : le petit point rapide, la MEP du vendredi, le "ça marche pas", la réunion qui aurait pu être un mail.
+En attendant, vos mails continuent d'arriver ici. Rien ne vous oblige à les lire. Rien ne vous y obligeait avant non plus.
 
-Les mails continuent d'arriver. Enfin, de ne pas arriver. Certains sont rares : si vous en croisez un, transférez-le.
+Cordialement,
+Le service informatique
 
-Bonne non-lecture.`,
-  tag: 'Downlook est une parodie écrite par Les Joies du Code. Aucun vrai mail n\'a été lu, aucun n\'a été envoyé.',
+PS : ce message vous a été envoyé par mail.`,
   pinned: true,
 };
 
