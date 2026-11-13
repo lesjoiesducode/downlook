@@ -143,6 +143,21 @@ svg { display: block; flex: none; }
 .item .prev { grid-column: 2 / span 2; font-size: 13px; color: var(--muted); overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 .item .marks { display: inline-flex; gap: 4px; align-items: center; flex: none; }
 .item .marks .ico { width: 14px; height: 14px; color: var(--muted); }
+.hacts { position: absolute; right: 6px; top: 6px; display: none; gap: 1px; background: inherit; border-radius: 4px; }
+.item:hover .hacts { display: flex; }
+.hacts button { width: 26px; height: 26px; border-radius: 4px; display: grid; place-items: center; color: var(--muted); }
+.hacts button:hover { background: #e6e6e6; color: var(--brand); }
+.hacts button[data-hact="delete"]:hover { color: var(--red); }
+.hacts button.on { color: #c50f1f; }
+.hacts .ico { width: 15px; height: 15px; }
+.item.flagged { background: #fdf6f6; }
+.item.flagged.sel { background: var(--sel); }
+.item .marks .flagged { color: #c50f1f; fill: #f4b9bf; }
+.badge.pend { background: #fff4ce; color: #8a5a00; }
+.banner.flag { background: #fdf3f4; color: #8a1520; }
+.banner.pend { background: #fff4ce; color: #4d3800; }
+.r-acts button.on, .r-mobacts button.on { color: #c50f1f; }
+.r-mobacts { display: none; }
 .item .del { position: absolute; right: 8px; top: 7px; width: 28px; height: 28px; border-radius: 4px; display: none; place-items: center; color: var(--muted); background: inherit; }
 .item:hover .del { display: grid; }
 .item:hover .time { visibility: hidden; }
@@ -266,6 +281,24 @@ svg { display: block; flex: none; }
 .dialog.cap img { width: 100%; height: auto; border: 1px solid var(--line); border-radius: 4px; display: block; }
 .end-big { font-size: 34px; font-weight: 700; color: var(--brand); margin: 6px 0 12px; font-variant-numeric: tabular-nums; }
 
+.fab { display: none; }
+
+/* Fenêtre de rédaction */
+.compose {
+  position: fixed; right: 16px; bottom: 34px; width: 560px; max-width: calc(100vw - 32px); height: 470px; max-height: calc(100vh - 100px);
+  background: #fff; border-radius: 8px; box-shadow: 0 16px 40px rgba(0,0,0,.25), 0 0 2px rgba(0,0,0,.2); z-index: 48; display: none; flex-direction: column; overflow: hidden;
+}
+.compose.show { display: flex; }
+.cmp-head { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px 6px 16px; font-weight: 600; font-size: 15px; }
+.cmp-head span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.cmp-head button { width: 30px; height: 30px; border-radius: 4px; display: grid; place-items: center; color: var(--muted); flex: none; }
+.cmp-bar { display: flex; gap: 8px; padding: 4px 16px 8px; }
+.cmp-line { display: flex; align-items: center; gap: 10px; margin: 0 16px; border-bottom: 1px solid var(--line); min-height: 38px; }
+.cmp-line span { color: var(--muted); width: 44px; flex: none; font-size: 14px; }
+.cmp-field { flex: 1; outline: none; font-size: 14px; padding: 8px 0; white-space: nowrap; overflow: hidden; }
+.cmp-body { flex: 1; overflow: auto; outline: none; padding: 12px 16px; font-size: 15px; line-height: 1.5; }
+.cmp-body .quote { border-top: 1px solid var(--line); padding-top: 10px; color: var(--muted); font-size: 14px; }
+
 /* Tiroir mobile */
 .scrim { display: none; }
 
@@ -297,7 +330,14 @@ svg { display: block; flex: none; }
   .r-mobilebar {
     display: flex; position: sticky; top: 0; height: 48px; background: var(--brand); color: #fff; align-items: center; z-index: 3; padding-right: 4px;
   }
-  .item .del { display: none !important; }
+  .item .del, .hacts { display: none !important; }
+  .fab { display: flex; position: fixed; right: 16px; bottom: 20px; z-index: 15; align-items: center; gap: 8px; height: 48px; padding: 0 18px; border-radius: 24px; background: var(--brand); color: #fff; font-weight: 600; box-shadow: 0 6px 16px rgba(0,0,0,.25); }
+  .fab .ico { width: 18px; height: 18px; }
+  body.reading .fab, body.composing .fab, body.drawer .fab { display: none; }
+  .r-mobacts { display: flex; gap: 6px; flex-wrap: wrap; margin: 12px 0 0; }
+  .r-mobacts button { display: inline-flex; align-items: center; gap: 6px; height: 34px; padding: 0 12px; border: 1px solid #d1d1d1; border-radius: 17px; font-size: 14px; }
+  .r-mobacts .ico { width: 16px; height: 16px; color: var(--brand); }
+  .compose { inset: 0; width: auto; max-width: none; height: auto; max-height: none; border-radius: 0; right: 0; bottom: 0; }
   .r-mobilebar button { height: 48px; padding: 0 10px; display: flex; align-items: center; gap: 6px; font-size: 14px; }
   .r-mobilebar .back { padding: 0 6px 0 10px; }
   .r-mobilebar .sp { flex: 1; }

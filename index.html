@@ -26,7 +26,7 @@
 <meta name="twitter:description" content="Le petit point rapide, la MEP du vendredi, le &quot;ça marche pas&quot;. Ils ne sont jamais arrivés. Ils continuent de ne pas arriver.">
 <meta name="twitter:image" content="https://lesjoiesducode.github.io/downlook/og-image.jpg">
 <meta name="twitter:image:alt" content="Downlook, une parodie de webmail par Les Joies du Code">
-<link rel="stylesheet" href="css/style.css?v=6">
+<link rel="stylesheet" href="css/style.css?v=7">
 </head>
 <body>
 <header class="topbar">
@@ -112,6 +112,14 @@
 
 <footer class="footer">Downlook est une parodie par <a href="https://lesjoiesducode.fr/?utm_source=downlook&amp;utm_medium=parodie&amp;utm_campaign=panne-outlook" target="_blank" rel="noopener">Les Joies du Code</a>. Sans lien avec Microsoft. Aucun mail n'est lu, aucun n'est envoyé.</footer>
 
+<div class="compose" id="compose" role="dialog" aria-label="Rédaction d'un message">
+  <div class="cmp-head"><span id="cmpTitle">Nouveau message</span><button id="cmpClose" aria-label="Fermer"><i data-i="decline"></i></button></div>
+  <div class="cmp-bar"><button class="btn primary" id="cmpSend"><i data-i="send"></i>Envoyer</button><button class="btn" id="cmpDiscard"><i data-i="trash"></i>Ignorer</button></div>
+  <div class="cmp-line"><span>À</span><div class="cmp-field" id="cmpTo" contenteditable="plaintext-only" role="textbox" aria-label="À" spellcheck="false" autocapitalize="off"></div></div>
+  <div class="cmp-line"><span>Objet</span><div class="cmp-field" id="cmpSubject" contenteditable="plaintext-only" role="textbox" aria-label="Objet"></div></div>
+  <div class="cmp-body" id="cmpBody" contenteditable="true" role="textbox" aria-multiline="true" aria-label="Corps du message"></div>
+</div>
+<button class="fab" data-act="new" aria-label="Nouveau courrier"><i data-i="compose"></i>Nouveau courrier</button>
 <div class="scrim" id="scrim"></div>
 <div class="toasts" id="toasts" aria-live="polite"></div>
 
@@ -146,6 +154,6 @@
 
 <script src="js/mails-special.js?v=5"></script>
 <script src="js/mails-extra.js?v=2"></script>
-<script src="js/app.js?v=7"></script>
+<script src="js/app.js?v=8"></script>
 </body>
 </html>

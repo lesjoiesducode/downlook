@@ -200,7 +200,7 @@ function instantiate(def, seed, ts, extra = {}) {
   const memo = {};
   const ctx = Object.assign({}, extra);
   if (def.meta === 'job' && S.jobs.length) {
-    const j = S.jobs[seed % S.jobs.length];
+    const j = pickJob(seed);
     Object.assign(ctx, { job_titre: j.title, job_entreprise: j.company, job_ville: j.city || 'en télétravail', job_url: j.url });
   }
   if (def.meta === 'meme' || def.meta === 'boss' || def.meta === 'memethread') {
@@ -435,6 +435,29 @@ function takeFrom(list) {
   return d;
 }
 function make(def, ts, extra) { return instantiate(def, newSeed(), ts, extra); }
+// Offres : priorités fixées par le robot (bin/jobs-priorites.json -> tier, featured). Une graine multiple
+// de 1000 désigne l'offre mise en avant ; sinon tirage pondéré par niveau, reproductible depuis la graine.
+const JOB_WEIGHTS = { 1: 30, 2: 30, 3: 20, 4: 12, 5: 3, 6: 5 };
+function pickJob(seed) {
+  if (!S.jobs.length) return null;
+  if (seed % 1000 === 0) { const f = S.jobs.find(j => j.featured) || S.jobs.find(j => j.tier === 1); if (f) return f; }
+  const r = mulberry32(seed ^ 0x2545F491);
+  const tiers = [...new Set(S.jobs.map(j => j.tier || 6))];
+  const tot = tiers.reduce((a, t) => a + (JOB_WEIGHTS[t] || 5), 0);
+  let x = r() * tot, tier = tiers[tiers.length - 1];
+  for (const t of tiers) { x -= JOB_WEIGHTS[t] || 5; if (x <= 0) { tier = t; break; } }
+  const inTier = S.jobs.filter(j => (j.tier || 6) === tier);
+  const pool = inTier.filter(j => !j.featured).length ? inTier.filter(j => !j.featured) : inTier;
+  return pool[Math.floor(r() * pool.length)];
+}
+function makeJob(def, ts, featured) {
+  for (let k = 0; k < 15; k++) {
+    let seed = newSeed();
+    if (featured) seed = Math.max(1000, seed - (seed % 1000));
+    const j = pickJob(seed);
+    if (featured || !j || !S.usedJobs.has(j.url) || k === 14) { if (j) S.usedJobs.add(j.url); return instantiate(def, seed, ts); }
+  }
+}
 function anyOf(list) { return list.length ? list[Math.floor(rnd() * list.length)] : null; }
 function jobDef() { const hasJobs = S.jobs.length > 0; return (hasJobs && rnd() < 0.75 ? takeFrom(S.defs.jobMails) : null) || takeFrom(S.defs.siteMails) || (hasJobs ? takeFrom(S.defs.jobMails) : null) || anyOf(hasJobs ? S.defs.jobMails : S.defs.siteMails); }
 function memeDef() { return S.memes.length ? (takeFrom(S.defs.memeMails) || anyOf(S.defs.memeMails)) : null; }
@@ -443,7 +466,7 @@ function memeDef() { return S.memes.length ? (takeFrom(S.defs.memeMails) || anyO
 function buildSession(deepLink) {
   S.session++;
   clearTimeout(S.timer);
-  Object.assign(S, { mails: [], used: new Set(), liveCount: 0, plan: new Map(), pendingSuites: [], liveMails: 0, liveMeet: 0, sel: null });
+  Object.assign(S, { mails: [], used: new Set(), usedJobs: new Set(), liveCount: 0, plan: new Map(), pendingSuites: [], liveMails: 0, liveMeet: 0, sel: null });
   const D = S.defs;
   const end = outageEnd() || Date.now();
   const start = S.status.start;
@@ -461,7 +484,8 @@ function buildSession(deepLink) {
   times.sort((a, b) => a - b);
   const defs = [];
   if (D.ssStart) defs.push(D.ssStart);                                  // Secret Santa : l'annonce
-  const j = jobDef(); if (j) defs.push(j);                               // une offre ou le site
+  // L'offre mise en avant (Winamax) sort dans chaque boîte, parmi les mails les plus récents.
+  const j = S.jobs.length ? (takeFrom(D.jobMails) || anyOf(D.jobMails)) : jobDef(); if (j) defs.push(j);
   const mm = memeDef(); if (mm) defs.push(mm);                           // un meme
   const f = takeFrom(D.flee); if (f) defs.push(f);                       // l'invitation qui fuit
   const sh = takeFrom(D.shift); if (sh) defs.push(sh);                   // celle qui se décale
@@ -474,7 +498,9 @@ function buildSession(deepLink) {
   shuffle(defs);
   if (ss) defs.unshift(ss);
   defs.forEach((d, i) => {
-    const m = make(d, times[i] || (start + 30 * 60e3));
+    const m = d === j && d.meta === 'job'
+      ? makeJob(d, Math.max(start + 60e3, end - ri(10, 80) * 60e3), true)
+      : make(d, times[i] || (start + 30 * 60e3));
     m.unread = i >= defs.length * 0.45;
     S.mails.push(m);
     if (d.suite && (d === D.ssStart || rnd() < 0.5)) S.pendingSuites.push({ at: d === D.ssStart ? ri(1, 2) : ri(2, 10), id: d.suite });
@@ -521,7 +547,7 @@ function planLive() {
   if (forced) P2.set(0, () => single(forced));
   else if (rnd() < RARE_CHANCE) put(ri(2, 10), () => single(takeFrom(D.rares)));
 }
-function single(d) { if (!d) return null; S.used.add(d.id); return [make(d, Date.now())]; }
+function single(d) { if (!d) return null; S.used.add(d.id); return [d.meta === 'job' ? makeJob(d, Date.now()) : make(d, Date.now())]; }
 function burstOf(d, isMeme) {
   if (!d) return null;
   S.used.add(d.id);
@@ -629,7 +655,7 @@ function buildFolders() {
   const F = W.DL_FOLDERS;
   const mk = list => list.map((x, i) => { const m = instantiate(register(norm(x, 'maison')), 7 + i, S.status.start - (i + 1) * 3600e3 * 5); m.unread = false; return m; });
   S.folders = { drafts: mk(F.drafts), outbox: mk(F.outbox), junk: mk(F.junk), deleted: mk(F.deleted) };
-  S.folders.outbox.forEach(m => { m.ts = S.status.start + 2 * 60e3; });
+  S.folders.outbox.forEach(m => { m.ts = S.status.start + 2 * 60e3; m.pending = true; });
 }
 function folderCount(id) {
   if (id === 'panne') return { n: S.mails.filter(m => m.unread).length, blue: true };
@@ -654,16 +680,18 @@ function itemHTML(m) {
   const marks = [];
   if (m.att.length || m.meme) marks.push(icon('clip'));
   if (m.kind === 'invite') marks.push(icon('invite'));
+  if (m.flagged) marks.push(icon('flag', 'ico flagged'));
   const badges = [];
+  if (m.pending) badges.push('<span class="badge pend">En attente d\'envoi</span>');
   if (m.pinned) badges.push('<span class="badge pin">Épinglé</span>');
   if (m.shared) badges.push('<span class="badge inv">Transféré</span>');
   if (m.rare) badges.push('<span class="badge rare">Mail rare</span>');
-  return `<div class="item${m.unread ? ' unread' : ''}${S.sel === m.uid ? ' sel' : ''}${m.isNew ? ' arrive' : ''}" data-uid="${m.uid}" role="button" tabindex="0">
+  return `<div class="item${m.unread ? ' unread' : ''}${m.flagged ? ' flagged' : ''}${S.sel === m.uid ? ' sel' : ''}${m.isNew ? ' arrive' : ''}" data-uid="${m.uid}" role="button" tabindex="0">
     <div class="av" style="background:${m.color}">${esc(m.initials)}</div>
     <div class="from">${esc(m.from)}</div><div class="time">${m.pinned ? '' : esc(listTime(m.ts))}</div>
     <div class="subj">${m.important ? '<span class="imp">!</span>' : ''}${badges.join('')}<span class="s">${esc(m.subject)}</span><span class="marks">${marks.join('')}</span></div>
     <div class="prev">${esc(m.kind === 'invite' && m.invite ? `${m.invite.when}${m.invite.where ? ' · ' + m.invite.where : ''}` : m.preview)}</div>
-    <button class="del" data-del="${m.uid}" aria-label="Supprimer" title="Supprimer">${icon('trash')}</button>
+    <div class="hacts"><button data-hact="delete" data-uid="${m.uid}" aria-label="Supprimer" title="Supprimer">${icon('trash')}</button><button data-hact="archive" data-uid="${m.uid}" aria-label="Archiver" title="Archiver">${icon('archive')}</button><button data-hact="read" data-uid="${m.uid}" aria-label="${m.unread ? 'Marquer comme lu' : 'Marquer comme non lu'}" title="${m.unread ? 'Marquer comme lu' : 'Marquer comme non lu'}">${icon(m.unread ? 'envopen' : 'mail')}</button><button data-hact="flag" data-uid="${m.uid}" aria-label="Indicateur" title="${m.flagged ? 'Effacer l\'indicateur' : 'Indicateur'}" class="${m.flagged ? 'on' : ''}">${icon('flag')}</button></div>
     <div class="fate"></div>
   </div>`;
 }
@@ -709,14 +737,17 @@ function renderRead(m) {
     bindRead(null); return;
   }
   const date = fmtFull.format(m.ts);
-  const to = `À : Vous${m.cc ? ` ; Cc : ${m.cc} ${m.cc > 1 ? 'personnes' : 'personne'}` : ''}`;
+  const to = m.toLine ? `À : ${m.toLine}` : `À : Vous${m.cc ? ` ; Cc : ${m.cc} ${m.cc > 1 ? 'personnes' : 'personne'}` : ''}`;
   let inner = `<div class="r-subject">${m.rare ? '<span class="badge rare">Mail rare</span>' : ''}<span>${esc(m.subject)}</span></div>
   <div class="r-from">
     <div class="av lg" style="background:${m.color}">${esc(m.initials)}</div>
     <div class="who"><div class="name">${esc(m.from)} <span class="addr">&lt;${esc(m.email)}&gt;</span></div>
       ${m.role ? `<div class="to">${esc(m.role)}</div>` : ''}<div class="to">${esc(to)}</div><div class="date">${esc(date)}</div></div>
-    <div class="r-acts"><button data-act="reply" aria-label="Répondre">${icon('reply')}</button><button data-act="replyall" aria-label="Répondre à tous">${icon('replyall')}</button><button data-act="forward" aria-label="Transférer">${icon('forward')}</button></div>
+    <div class="r-acts"><button data-act="reply" aria-label="Répondre">${icon('reply')}</button><button data-act="replyall" aria-label="Répondre à tous">${icon('replyall')}</button><button data-act="forward" aria-label="Transférer">${icon('forward')}</button><button data-act="flag" class="${m.flagged ? 'on' : ''}" aria-label="Indicateur">${icon('flag')}</button></div>
   </div>`;
+  inner += `<div class="r-mobacts"><button data-act="archive">${icon('archive')}Archiver</button><button data-act="read">${icon(m.unread ? 'envopen' : 'mail')}${m.unread ? 'Lu' : 'Non lu'}</button><button data-act="flag" class="${m.flagged ? 'on' : ''}">${icon('flag')}${m.flagged ? 'Retirer' : 'Indicateur'}</button></div>`;
+  if (m.flagged) inner += `<div class="banner flag">${icon('flag')}<span>Suivi. Échéance : quand la messagerie reviendra.</span></div>`;
+  if (m.pending) inner += `<div class="banner pend">${icon('outbox')}<span>En attente d'envoi.</span></div>`;
   if (m.rare) inner += `<div class="banner rare">${icon('sparkle')}<span>Mail rare : il n'apparaît qu'une visite sur 100 environ. Transférez-le avant qu'il ne reparte.</span></div>`;
   if (m.important) inner += `<div class="banner imp"><b>!</b><span>Ce message a été envoyé avec une importance haute.</span></div>`;
   if (m.invite) {
@@ -733,7 +764,7 @@ function renderRead(m) {
   inner += `</div>`;
   if (m.tag) inner += `<div class="tag">${esc(m.tag)}</div>`;
   inner += `<div class="r-foot"><button class="btn" data-act="reply">${icon('reply')}Répondre</button><button class="btn" data-act="replyall">${icon('replyall')}Répondre à tous</button><button class="btn" data-act="forward">${icon('forward')}Transférer</button></div>`;
-  if (!m.pinned) inner += `<div class="status-line">${esc(STATUS_LINES[m.uid % STATUS_LINES.length])}</div>`;
+  if (!m.pinned && !m.pending) inner += `<div class="status-line">${esc(STATUS_LINES[m.uid % STATUS_LINES.length])}</div>`;
   box.innerHTML = `${mob}<div class="r-inner">${inner}</div>`;
   box.scrollTop = 0;
   bindRead(m);
@@ -796,7 +827,8 @@ function select(uid, fromClick) {
   const m = findMail(uid);
   if (!m) return;
   S.sel = uid;
-  if (m.unread) { m.unread = false; updateCounts(); }
+  if (m.unread && !m.keepUnread) { m.unread = false; updateCounts(); }
+  m.keepUnread = false;
   document.querySelectorAll('.item.sel').forEach(e => e.classList.remove('sel'));
   const el = document.querySelector(`.item[data-uid="${uid}"]`);
   if (el) { el.classList.add('sel'); el.classList.remove('unread'); }
@@ -805,67 +837,123 @@ function select(uid, fromClick) {
 }
 function selected() { const m = S.sel ? findMail(S.sel) : null; return m && !m.gone ? m : null; }
 
-// ---------------------------------------------------------------- Suppression (comme Outlook : suivant sélectionné, annulation possible)
+// ---------------------------------------------------------------- Supprimer, archiver (comme Outlook : suivant sélectionné, annulation possible)
 function folderOf(m) {
   if (S.mails.includes(m)) return 'panne';
   return Object.keys(S.folders).find(k => S.folders[k].includes(m)) || null;
 }
 function listOf(f) { return f === 'panne' ? S.mails : (S.folders[f] = S.folders[f] || []); }
 function planAt(i, fn) { while (S.plan.has(i)) i++; S.plan.set(i, fn); }
-function deleteMail(m) {
-  if (!m) { toast('Choisissez d\'abord un mail à supprimer.'); return; }
+function afterRemoval(m, vIdx) {
+  const wasSel = S.sel === m.uid;
+  updateCounts(); renderList();
+  if (!wasSel) return;
+  const nv = currentList();
+  const next = vIdx >= 0 ? (nv[vIdx] || nv[vIdx - 1]) : null;
+  if (next && !matchMedia('(max-width: 860px)').matches) select(next.uid);
+  else {
+    S.sel = null;
+    document.body.classList.remove('reading');
+    $('read').innerHTML = `<div class="r-inner"><div class="empty">${emptyArt()}<div class="big">Sélectionnez un élément à lire</div><div>Rien n'est sélectionné.</div></div></div>`;
+  }
+}
+function moveMail(m, to) {
   const from = folderOf(m);
   if (!from) return;
+  if (from === to) { toast(to === 'archive' ? 'Ce message est déjà dans Archive.' : 'Ce message est déjà ici.'); return; }
   const src = listOf(from);
   const idx = src.indexOf(m);
-  const view = currentList();
-  const vIdx = view.indexOf(m);
+  const vIdx = currentList().indexOf(m);
   src.splice(idx, 1);
-  if (from === 'deleted') {                         // dans Éléments supprimés : suppression définitive
+  if (to === null) {                                   // suppression définitive (depuis Éléments supprimés)
     m.gone = true;
   } else {
-    m.deleted = { from, idx };
-    listOf('deleted').unshift(m);
+    m.moved = { from, idx, to };
+    listOf(to).unshift(m);
     // Les mails offres et memes reviennent plus tard dans le flux.
     const meta = m.def && m.def.meta;
     if (from === 'panne' && (meta === 'job' || meta === 'site')) planAt(S.liveCount + ri(2, 4), () => single(jobDef()));
     if (from === 'panne' && (meta === 'meme' || meta === 'boss')) planAt(S.liveCount + ri(3, 6), () => single(memeDef()));
   }
-  // Sélection du suivant dans la liste affichée
-  const wasSel = S.sel === m.uid;
-  updateCounts(); renderList();
-  if (wasSel) {
-    const nv = currentList();
-    const next = vIdx >= 0 ? (nv[vIdx] || nv[vIdx - 1]) : null;
-    if (next && !matchMedia('(max-width: 860px)').matches) select(next.uid);
-    else {
-      S.sel = null;
-      document.body.classList.remove('reading');
-      $('read').innerHTML = `<div class="r-inner"><div class="empty">${emptyArt()}<div class="big">Sélectionnez un élément à lire</div><div>Rien n'est sélectionné.</div></div></div>`;
-    }
-  }
-  if (from !== 'deleted') undoToast(m);
+  afterRemoval(m, vIdx);
+  if (to) undoToast(m, to === 'archive' ? 'Message archivé.' : 'Message supprimé.');
+}
+function deleteMail(m) {
+  if (!m) { toast('Choisissez d\'abord un mail à supprimer.'); return; }
+  moveMail(m, folderOf(m) === 'deleted' ? null : 'deleted');
+}
+function archiveMail(m) {
+  if (!m) { toast('Choisissez d\'abord un mail à archiver.'); return; }
+  moveMail(m, 'archive');
 }
 function restoreMail(m) {
-  if (!m.deleted) return;
-  const d = listOf('deleted'); const i = d.indexOf(m);
+  if (!m.moved) return;
+  const { from, idx, to } = m.moved;
+  const d = listOf(to); const i = d.indexOf(m);
   if (i < 0) return;
   d.splice(i, 1);
-  const { from, idx } = m.deleted;
-  m.deleted = null;
+  m.moved = null;
   const src = listOf(from);
   src.splice(Math.min(idx, src.length), 0, m);
   updateCounts(); renderList();          // remis à sa place, avec son état lu / non lu
 }
-function undoToast(m) {
+function undoToast(m, label) {
   const box = $('toasts');
   const t = document.createElement('div');
   t.className = 'toast undo';
-  t.innerHTML = `<div class="t-body"><div class="t-text" style="color:#242424">Message supprimé.</div></div><button class="undo-btn">Annuler</button>`;
+  t.innerHTML = `<div class="t-body"><div class="t-text" style="color:#242424">${esc(label)}</div></div><button class="undo-btn">Annuler</button>`;
   t.querySelector('.undo-btn').onclick = () => { restoreMail(m); t.remove(); };
   box.prepend(t);
   while (box.children.length > 3) box.lastChild.remove();
   setTimeout(() => { t.classList.add('out'); setTimeout(() => t.remove(), 300); }, 5000);
+}
+
+// ---------------------------------------------------------------- Lu / non lu, indicateur
+function refreshMail(m) {
+  updateCounts(); renderList();
+  if (S.sel === m.uid) renderRead(m);
+}
+function toggleRead(m) {
+  if (!m) { toast('Choisissez d\'abord un mail.'); return; }
+  m.unread = !m.unread;
+  m.keepUnread = m.unread;                 // ne pas le repasser en lu tout de suite s'il est ouvert
+  refreshMail(m);
+}
+function toggleFlag(m) {
+  if (!m) { toast('Choisissez d\'abord un mail.'); return; }
+  m.flagged = !m.flagged;
+  refreshMail(m);
+}
+
+// ---------------------------------------------------------------- Rédaction (tout reste dans la page : rien n'est envoyé)
+let draftCtx = null;
+function openCompose(mode, m) {
+  if ((mode === 'reply' || mode === 'replyall') && !m) { toast('Choisissez d\'abord un mail auquel répondre.'); return; }
+  draftCtx = { mode, uid: m ? m.uid : null };
+  const to = mode === 'new' ? '' : `${m.from} <${m.email}>` + (mode === 'replyall' && m.cc ? ` ; ${m.cc} autres destinataires` : '');
+  const subj = mode === 'new' ? '' : (/^RE:/i.test(m.subject) ? m.subject : `RE: ${m.subject}`);
+  $('cmpTitle').textContent = mode === 'new' ? 'Nouveau message' : subj;
+  $('cmpTo').textContent = to;
+  $('cmpSubject').textContent = subj;
+  $('cmpBody').innerHTML = mode === 'new' ? '' : `<br><br><div class="quote"><b>De :</b> ${esc(m.from)}<br><b>Envoyé :</b> ${esc(fmtFull.format(m.ts))}<br><b>Objet :</b> ${esc(m.subject)}<br><br>${esc(plain(m.body)).replace(/\n/g, '<br>')}</div>`;
+  $('compose').classList.add('show');
+  document.body.classList.add('composing');
+  setTimeout(() => (mode === 'new' ? $('cmpTo') : $('cmpBody')).focus(), 30);
+}
+function closeCompose() { $('compose').classList.remove('show'); document.body.classList.remove('composing'); draftCtx = null; }
+function sendCompose() {
+  const to = $('cmpTo').innerText.trim();
+  const subject = $('cmpSubject').innerText.trim() || '(Sans objet)';
+  const clone = $('cmpBody').cloneNode(true);
+  clone.querySelectorAll('.quote').forEach(q => q.remove());
+  const body = clone.innerText.trim() || '(Message vide)';
+  if (!to) { toast('Ajoutez au moins un destinataire. Il ne le recevra pas, mais c\'est le principe.'); $('cmpTo').focus(); return; }
+  const m = instantiate(register(norm({ id: `envoi-${Date.now()}`, from: ['Vous'], email: 'vous', subject, body, tag: 'En attente d\'envoi. Ce message ne partira pas : la messagerie est en panne.' }, 'maison')), 1, Date.now());
+  m.unread = false; m.toLine = to; m.pending = true;
+  listOf('outbox').unshift(m);
+  closeCompose();
+  updateCounts(); if (S.folder === 'outbox') renderList();
+  toast('Votre message est dans la Boîte d\'envoi. Il y restera.');
 }
 
 // ---------------------------------------------------------------- Notifications
@@ -898,13 +986,7 @@ const TOASTS = {
   filter: 'Filtre appliqué : rien.',
 };
 const ACTS = {
-  new: ['Rédaction impossible : personne ne le recevrait. Profitez-en.', 'Nouveau courrier ? Personne ne le lira avant lundi.'],
-  archive: ['Archivé dans un datacenter qui ne répond pas.', 'Archivé. Vous le retrouverez en 2037.'],
   report: ['Signalé. Le signalement n\'est pas arrivé non plus.', 'Signalement envoyé à personne.'],
-  reply: ['Votre réponse a été placée dans la boîte d\'envoi. Elle y restera.', 'Réponse prête. Le serveur, lui, ne l\'est pas.'],
-  replyall: ['Non. Pas cette fois.', 'Répondre à tous : bloqué pour votre bien et celui de 214 personnes.'],
-  read: ['Marqué comme lu. Vous ne l\'avez pourtant pas reçu.', 'Marqué comme non lu. Comme tous les autres, en fait.'],
-  flag: ['Indicateur posé. Échéance : quand le serveur reviendra.', 'Suivi activé. Rien ne bougera.'],
 };
 
 // ---------------------------------------------------------------- Transférer (lien direct vers un mail)
@@ -1055,8 +1137,13 @@ function openFolder(id) {
 }
 function bind() {
   document.addEventListener('click', e => {
-    const del = e.target.closest('[data-del]');
-    if (del) { e.stopPropagation(); deleteMail(findMail(Number(del.dataset.del))); return; }
+    const h = e.target.closest('[data-hact]');
+    if (h) {
+      e.stopPropagation();
+      const hm = findMail(Number(h.dataset.uid));
+      ({ delete: deleteMail, archive: archiveMail, read: toggleRead, flag: toggleFlag })[h.dataset.hact](hm);
+      return;
+    }
     const t = e.target.closest('[data-toast],[data-act],[data-folder],.item');
     if (!t) return;
     if (t.dataset.toast) { toast(TOASTS[t.dataset.toast] || 'Indisponible pendant la panne.'); return; }
@@ -1065,15 +1152,26 @@ function bind() {
     const a = t.dataset.act;
     if (a === 'forward') forward(selected());
     else if (a === 'delete') deleteMail(selected());
+    else if (a === 'archive') archiveMail(selected());
+    else if (a === 'read') toggleRead(selected());
+    else if (a === 'flag') toggleFlag(selected());
+    else if (a === 'new') openCompose('new');
+    else if (a === 'reply' || a === 'replyall') openCompose(a, selected());
     else if (ACTS[a]) toast(ACTS[a][ri(0, ACTS[a].length - 1)]);
   });
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') { $('capModal').classList.remove('show'); document.body.classList.remove('drawer'); }
-    if ((e.key === 'Delete' || e.key === 'Backspace') && !document.querySelector('.modal.show') && !e.metaKey && !e.ctrlKey) {
+    if ((e.key === 'Delete' || e.key === 'Backspace') && !document.querySelector('.modal.show') && !document.body.classList.contains('composing') && !(e.target && e.target.isContentEditable) && !e.metaKey && !e.ctrlKey) {
       const m = selected(); if (m) { e.preventDefault(); deleteMail(m); }
     }
     if ((e.key === 'Enter' || e.key === ' ') && e.target.classList && e.target.classList.contains('item')) { e.preventDefault(); select(Number(e.target.dataset.uid), true); }
   });
+  $('cmpSend').onclick = sendCompose;
+  $('cmpDiscard').onclick = () => { closeCompose(); toast('Brouillon ignoré. Personne n\'en saura rien.'); };
+  $('cmpClose').onclick = closeCompose;
+  // Collage en texte brut uniquement
+  ['cmpTo', 'cmpSubject', 'cmpBody'].forEach(id => $(id).addEventListener('paste', e => { e.preventDefault(); document.execCommand('insertText', false, (e.clipboardData || W.clipboardData).getData('text/plain')); }));
+  ['cmpTo', 'cmpSubject'].forEach(id => $(id).addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); (id === 'cmpTo' ? $('cmpSubject') : $('cmpBody')).focus(); } }));
   $('menuBtn').onclick = () => document.body.classList.toggle('drawer');
   $('scrim').onclick = () => document.body.classList.remove('drawer');
   $('tabOther').onclick = () => toast('Les autres mails ne sont pas arrivés non plus.');
@@ -1108,7 +1206,7 @@ function start(deepLink) {
     showEnd();
   } else start(deep);
   if (Q.has('debug')) {
-    W.__dl = S; W.__dlmake = d => instantiate(d, newSeed(), Date.now());
+    W.__dl = S; W.__dlmake = d => instantiate(d, newSeed(), Date.now()); W.__dlpick = pickJob; W.__dlbuild = () => { const o = buildSession(); clearTimeout(S.timer); renderList(); return o; };
     W.__dlcheck = () => { S.unknown = []; const bad = []; for (const d of S.byId.values()) { for (let k = 0; k < 6; k++) { const m = instantiate(d, 1000 + k * 7919, Date.now()); const txt = [m.from, m.subject, m.body, m.tag, m.att.join(' '), m.invite ? Object.values(m.invite).join(' ') : ''].join(' '); if (/[{}]/.test(txt)) bad.push(d.id); } } return { unknown: [...new Set(S.unknown)], braces: [...new Set(bad)], total: S.byId.size }; };
   }
 })();

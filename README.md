@@ -2,7 +2,8 @@
 
 Parodie de webmail par Les Joies du Code : tous les mails que la panne de messagerie du
 12 novembre 2026 vous a épargnés. Page 100 % statique (GitHub Pages), rien ne quitte le
-navigateur : aucun formulaire, aucun champ de saisie, aucun serveur.
+navigateur : aucun formulaire, aucun serveur. La fenêtre de rédaction n'envoie rien : les messages restent
+bloqués dans la Boîte d'envoi, en mémoire de la page.
 
 En ligne : https://lesjoiesducode.github.io/downlook/
 
@@ -13,7 +14,7 @@ En ligne : https://lesjoiesducode.github.io/downlook/
 - `index.html`, `css/style.css`, `js/app.js` : l'interface et le moteur (tirage aléatoire, arrivées en direct, invitations, capture en PNG).
 - `content/*.json` : la banque de mails (lots A, B, C). `js/mails-special.js` : accueil, dossiers, rares maison. `js/mails-extra.js` : mails qui partagent une offre d'emploi, le site d'offres ou un meme.
 - `status.json` : état de la panne (`ongoing` / `ended` + heure de fin). Lu par la page au chargement puis toutes les 3 min.
-- `jobs.json` : offres d'emploi actives de lesjoiesducode.fr (sitemap public des offres + JSON-LD de chaque page, offres expirées exclues). Ignoré par la page s'il a plus de 48 h.
+- `jobs.json` : toutes les offres d'emploi actives de lesjoiesducode.fr (sitemap public des offres + JSON-LD de chaque page, offres expirées exclues), classées par `bin/jobs-priorites.json` (entreprises prioritaires, offre mise en avant repérée par son titre, postes non dev écartés). Aucune offre en dur. Ignoré par la page s'il a plus de 48 h.
 - `memes.json` : memes récents du site (API REST publique, catégorie Memes) ; `memes-secours.json` : liste figée de secours.
 - `.github/workflows/robot.yml` : toutes les 10 min, détection prudente de la fin de panne ; toutes les 30 min, offres et memes.
 

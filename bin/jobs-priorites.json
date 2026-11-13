@@ -1,0 +1,12 @@
+{
+ "_doc": "Règles de mise en avant des offres dans Downlook (aucune offre en dur : entreprise + motifs de titre). tier 1 = le plus prioritaire. featured = l'offre qui doit sortir dans chaque boîte, repérée par son titre. dev = motif des postes de développeur, exclude = motifs écartés.",
+ "dev": "d[ée]velopp|developer|engineer|ing[ée]nieur (logiciel|d[ée]veloppement|software|devops|data|backend|frontend|full)|tech lead|lead dev|sre\\b|devops|architect|full[- ]?stack|back[- ]?end|front[- ]?end|data engineer|machine learning|\\bml\\b|\\bai\\b",
+ "companies": [
+  {"name": "Winamax", "match": "winamax", "tier": 1, "featured": "engineering manager.*(infra|sre)|(infra|sre).*engineering manager"},
+  {"name": "Scalo", "match": "scalo", "tier": 2},
+  {"name": "Michelin", "match": "michelin", "tier": 3, "keep": "^(?!.*\\b(stage|stagiaire|alternan|apprenti)).*$|test|c\\+\\+|automatisation|microsoft 365|m365|logiciel|software|d[ée]velopp|data|devops", "exclude": "consultant|innovation digital|marketing|commercial|rh\\b"},
+  {"name": "OVHcloud", "match": "ovh", "tier": 4, "devOnly": true, "exclude": "cert|expert|sales|commercial|account|juriste|legal|finance|achat|recrut"},
+  {"name": "CND", "match": "commissariat au num[ée]rique|\\bcnd\\b", "tier": 5, "keep": "d[ée]veloppeur|developer|lead dev|tech lead|ing[ée]nieur logiciel", "exclude": "chef de projet|charg[ée]|technicien|administrati|assistant|gestionnaire|expert si"}
+ ],
+ "others": {"tier": 6, "devOnly": true, "exclude": "head of product|product manager|sales|commercial|marketing|recrut|rh\\b|comptab"}
+}

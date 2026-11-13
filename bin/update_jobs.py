@@ -7,13 +7,13 @@ validThrough). Double garde-fou : page en noindex ou validThrough passé = offre
 Sur toute erreur de lecture du sitemap, on ne touche à rien (le front ignore de toute
 façon un snapshot de plus de 48 h et retombe sur le mail qui partage le site entier).
 """
-import json, re, sys, urllib.request
+import html, json, re, sys, urllib.request, concurrent.futures as cf
 from datetime import datetime, timezone
 from pathlib import Path
 
 SITEMAP = "https://lesjoiesducode.fr/job_offer-sitemap.xml"
 OUT = Path(__file__).resolve().parent.parent / "jobs.json"
-MAX = 45
+RULES = Path(__file__).resolve().parent / "jobs-priorites.json"
 UA = "Mozilla/5.0 (compatible; downlook-snapshot/1.0)"
 
 
@@ -31,11 +31,11 @@ def clean_title(t):
 
 
 def parse_offer(url, now):
-    html = get(url)
-    m = re.search(r'<meta name="robots" content="([^"]*)"', html)
+    page = get(url)
+    m = re.search(r'<meta name="robots" content="([^"]*)"', page)
     if m and "noindex" in m.group(1):
         return None
-    for s in re.finditer(r'<script[^>]*application/ld\+json[^>]*>(.*?)</script>', html, re.S):
+    for s in re.finditer(r'<script[^>]*application/ld\+json[^>]*>(.*?)</script>', page, re.S):
         if "JobPosting" not in s.group(1):
             continue
         data = json.loads(s.group(1))
@@ -50,18 +50,41 @@ def parse_offer(url, now):
                     d = d.replace(tzinfo=timezone.utc)
                 if d < now:
                     return None
-            org = (it.get("hiringOrganization") or {}).get("name") or ""
+            org = html.unescape((it.get("hiringOrganization") or {}).get("name") or "")
             loc = it.get("jobLocation") or {}
             if isinstance(loc, list):
                 loc = loc[0] if loc else {}
-            city = ((loc.get("address") or {}).get("addressLocality") or "").strip()
+            city = html.unescape(((loc.get("address") or {}).get("addressLocality") or "").strip())
             if it.get("jobLocationType") == "TELECOMMUTE" and not city:
                 city = "Télétravail"
-            title = clean_title(it.get("title") or "")
+            title = clean_title(html.unescape(it.get("title") or ""))
             if not title or not org:
                 return None
             return {"title": title, "company": org.strip(), "city": city, "url": url, "validThrough": vt}
     return None
+
+
+def prioritize(found):
+    """Applique bin/jobs-priorites.json : tier, featured, et filtre des postes non dev."""
+    R = json.loads(RULES.read_text())
+    dev = re.compile(R["dev"], re.I)
+    out = []
+    for j in found:
+        comp, t = j["company"], j["title"]
+        rule = next((c for c in R["companies"] if re.search(c["match"], comp, re.I)), None)
+        r = rule or R["others"]
+        if r.get("exclude") and re.search(r["exclude"], t, re.I):
+            continue
+        if r.get("devOnly") and not dev.search(t):
+            continue
+        if r.get("keep") and not re.search(r["keep"], t, re.I):
+            continue
+        j = dict(j, tier=r["tier"])
+        if rule and rule.get("featured") and re.search(rule["featured"], t, re.I):
+            j["featured"] = True
+        out.append(j)
+    out.sort(key=lambda j: (j["tier"], not j.get("featured", False)))
+    return out
 
 
 def main():
@@ -76,16 +99,17 @@ def main():
     if not entries:
         print("sitemap sans offre (format inattendu ?), aucun changement")
         return 0
+    # Toutes les offres actives du sitemap (pas seulement les plus récentes), puis tri par priorité.
     entries.sort(key=lambda x: x[1], reverse=True)
-    jobs = []
-    for url, _ in entries[:MAX]:
+    def fetch(e):
         try:
-            j = parse_offer(url, now)
-        except Exception as e:
-            print(f"offre ignorée {url} : {e}")
-            continue
-        if j:
-            jobs.append(j)
+            return parse_offer(e[0], now)
+        except Exception as ex:
+            print(f"offre ignorée {e[0]} : {ex}")
+            return None
+    with cf.ThreadPoolExecutor(4) as ex:
+        found = [j for j in ex.map(fetch, entries) if j]
+    jobs = prioritize(found)
     out = {"updated": now.strftime("%Y-%m-%dT%H:%M:%SZ"), "source": SITEMAP, "jobs": jobs}
     old = None
     if OUT.exists():
