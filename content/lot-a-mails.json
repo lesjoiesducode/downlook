@@ -119,10 +119,10 @@
     "corps": "Salut,\n\n{client} voudrait ajouter un bouton sur la page d'accueil. Rien de compliqué, je leur ai dit que c'était l'affaire de {duree}.\n\nPetite précision : le bouton doit exporter toutes leurs données en PDF, en Excel et vers leur ERP, avec un aperçu avant envoi.\n\nMais visuellement, c'est juste un bouton.\n\nMerci,\nGestion de projet - {societe}",
     "variables": {
       "client": [
-        "Groupe Vortan",
-        "Nexalis",
-        "Transports Delmont",
-        "Maison Brunelle"
+        "Groupe Trémouzac",
+        "Vergalisse",
+        "Transports Larcheval",
+        "Maison Corbinelle"
       ],
       "duree": [
         "dix minutes",
@@ -130,9 +130,9 @@
         "une petite heure"
       ],
       "societe": [
-        "Kolibri Digital",
-        "Agence Altiplano",
-        "Webrise Conseil"
+        "Glatigneux Digital",
+        "Agence Pradelune",
+        "Dorsillon Conseil"
       ]
     }
   },
@@ -431,10 +431,10 @@
     "corps": "Hello,\n\nPas de pression, mais {client} aimerait un statut sur {projet} pour {heure}.\n\nPas de pression vraiment. Le client a juste mis son directeur général en copie. Et le nôtre.\n\nPas de pression.\n\nVotre cheffe de projet",
     "variables": {
       "client": [
-        "Groupe Vortan",
-        "Nexalis",
-        "Transports Delmont",
-        "Mutuelle Arvelle"
+        "Groupe Trémouzac",
+        "Vergalisse",
+        "Transports Larcheval",
+        "Mutuelle Bouvrelle"
       ],
       "projet": [
         "Phoenix",
@@ -533,10 +533,10 @@
     "corps": "Hello la tech,\n\nSuper rendez-vous ce matin chez {client}. Ils signent si on leur livre {feature} pour demain.\n\nJe leur ai dit que c'était déjà dans le produit. Il suffit donc de le développer d'ici là.\n\nJe passe vous voir vers 18 h pour la démo.\n\nDirection commerciale - {societe}",
     "variables": {
       "client": [
-        "Groupe Vortan",
-        "Nexalis",
-        "Transports Delmont",
-        "Maison Brunelle"
+        "Groupe Trémouzac",
+        "Vergalisse",
+        "Transports Larcheval",
+        "Maison Corbinelle"
       ],
       "feature": [
         "la synchro temps réel avec leur ERP",
@@ -545,9 +545,9 @@
         "le mode multi-entrepôts"
       ],
       "societe": [
-        "Kolibri Digital",
-        "Softalys",
-        "Webrise Conseil"
+        "Glatigneux Digital",
+        "Persivolle",
+        "Dorsillon Conseil"
       ]
     },
     "importance": "haute"
@@ -571,10 +571,10 @@
     "corps": "Je suis chez {client}, la démo démarre dans {minutes} minutes.\n\nJe vais la faire directement sur la prod, c'est plus parlant.\n\nEst-ce que vous pouvez éviter de déployer pendant ce temps ? Et de faire planter quoi que ce soit ? Répondez-moi par SMS, Teams ne marche pas.\n\nMerci d'avance !\n\nEnvoyé de mon iPhone",
     "variables": {
       "client": [
-        "Groupe Vortan",
-        "Nexalis",
-        "Assurances Ferval",
-        "Maison Brunelle"
+        "Groupe Trémouzac",
+        "Vergalisse",
+        "Assurances Bastoniel",
+        "Maison Corbinelle"
       ],
       "minutes": [
         "20",
@@ -608,10 +608,10 @@
     "corps": "Pour info, la démo s'est très bien passée jusqu'à l'écran de connexion.\n\nLe client a trouvé l'écran de connexion très réussi.\n\nIls aimeraient voir la suite la semaine prochaine.\n\nEnvoyé de mon iPhone",
     "variables": {
       "client": [
-        "Groupe Vortan",
-        "Nexalis",
-        "Assurances Ferval",
-        "Maison Brunelle"
+        "Groupe Trémouzac",
+        "Vergalisse",
+        "Assurances Bastoniel",
+        "Maison Corbinelle"
       ]
     },
     "cc": [
@@ -639,10 +639,10 @@
     "corps": "Le client m'a demandé si on pouvait {demande}.\n\nJ'ai dit oui.\n\nEst-ce qu'on peut ?\n\nService commercial",
     "variables": {
       "client": [
-        "Groupe Vortan",
-        "Nexalis",
-        "Transports Delmont",
-        "Laboratoires Orvane"
+        "Groupe Trémouzac",
+        "Vergalisse",
+        "Transports Larcheval",
+        "Laboratoires Quarnelle"
       ],
       "demande": [
         "héberger toutes les données chez eux, sur leur NAS",
@@ -671,10 +671,10 @@
     "corps": "Grande nouvelle, {client} vient de signer le devis pour la refonte complète de leur plateforme. Montant : {montant}. Délai : {delai}.\n\nJ'ai un peu négocié le délai pour décrocher la signature, mais rien d'impossible pour une équipe comme la nôtre.\n\nLe cahier des charges arrive dès qu'ils l'ont écrit.\n\nChampagne !\nDirection commerciale",
     "variables": {
       "client": [
-        "Groupe Vortan",
-        "Nexalis",
-        "Transports Delmont",
-        "Mutuelle Arvelle"
+        "Groupe Trémouzac",
+        "Vergalisse",
+        "Transports Larcheval",
+        "Mutuelle Bouvrelle"
       ],
       "montant": [
         "48 000 euros HT",
@@ -714,10 +714,10 @@
     "corps": "Salut,\n\nPetite question de {client} : est-ce que notre solution est compatible avec leur SI ?\n\nIls sont sous Windows XP, avec {navigateur} et un serveur qu'il ne faut surtout pas redémarrer.\n\nJe leur ai répondu qu'on était \"cloud native\", ils ont eu l'air rassurés. On est bons ?\n\nMerci,\nService commercial",
     "variables": {
       "client": [
-        "Groupe Vortan",
-        "Transports Delmont",
-        "Coopérative Agrinord",
-        "Laboratoires Orvane"
+        "Groupe Trémouzac",
+        "Transports Larcheval",
+        "Coopérative Fleurimagne",
+        "Laboratoires Quarnelle"
       ],
       "navigateur": [
         "Internet Explorer 6",
@@ -745,10 +745,10 @@
     "corps": "Hello,\n\n{client} veut \"de l'IA\" dans le produit. Ils ne savent pas encore pour quoi faire, mais ils veulent que ça se voie sur la page d'accueil.\n\nIls aimeraient la présenter à leur comité de direction de {mois}.\n\nTu peux me préparer une slide qui explique ce que fait l'IA ? Idéalement, elle ferait aussi quelque chose.\n\nBusiness Development - {societe}",
     "variables": {
       "client": [
-        "Groupe Vortan",
-        "Nexalis",
-        "Maison Brunelle",
-        "Assurances Ferval"
+        "Groupe Trémouzac",
+        "Vergalisse",
+        "Maison Corbinelle",
+        "Assurances Bastoniel"
       ],
       "mois": [
         "décembre",
@@ -756,9 +756,9 @@
         "la semaine prochaine"
       ],
       "societe": [
-        "Kolibri Digital",
-        "Softalys",
-        "Webrise Conseil"
+        "Glatigneux Digital",
+        "Persivolle",
+        "Dorsillon Conseil"
       ]
     }
   },
@@ -781,9 +781,9 @@
     "corps": "Bonjour l'équipe,\n\nPour le salon {salon} la semaine prochaine, on fait la démo de l'appli sur le stand.\n\nPoint d'attention : il n'y a pas de wifi sur le stand, ni de 4G dans le hall.\n\nEst-ce que vous pouvez faire en sorte que l'appli marche quand même ? Je sais qu'elle est 100 % en ligne, mais là, c'est un salon.\n\nCordialement,\nÉquipe commerciale",
     "variables": {
       "salon": [
-        "SaaS Expo Lyon",
-        "Digital Days Nantes",
-        "Salon Solutions Métiers",
+        "Expo Fontrevelle Lyon",
+        "Rencontres Dardanou Nantes",
+        "Salon Roncevaille des Métiers",
         "Forum Logistique Est"
       ]
     },
@@ -811,10 +811,10 @@
     "corps": "Hello,\n\n{client} n'a pas reçu notre proposition à cause de la panne Outlook.\n\nBonne nouvelle : ils n'ont pas reçu non plus celle du concurrent.\n\nJe propose qu'on attende un peu avant de leur dire que c'est revenu.\n\nGestion des comptes clés",
     "variables": {
       "client": [
-        "Groupe Vortan",
-        "Nexalis",
-        "Transports Delmont",
-        "Mutuelle Arvelle"
+        "Groupe Trémouzac",
+        "Vergalisse",
+        "Transports Larcheval",
+        "Mutuelle Bouvrelle"
       ]
     }
   },
@@ -837,10 +837,10 @@
     "corps": "Bonjour à tous,\n\nJ'ai présenté la roadmap à {client} ce matin : ils ont adoré la version {version}, ils veulent signer dessus.\n\nPetite question : on en est où de la version 2 ?\n\nBien à vous,\nDirection commerciale\n\nCe message et ses pièces jointes sont confidentiels et destinés exclusivement à leurs destinataires.",
     "variables": {
       "client": [
-        "Groupe Vortan",
-        "Nexalis",
-        "Laboratoires Orvane",
-        "Assurances Ferval"
+        "Groupe Trémouzac",
+        "Vergalisse",
+        "Laboratoires Quarnelle",
+        "Assurances Bastoniel"
       ],
       "version": [
         "4",
@@ -868,10 +868,10 @@
     "corps": "Salut,\n\nDemain, tu m'accompagnes chez {client} pour la partie technique. Rendez-vous à {heure} devant leurs bureaux.\n\nTrois règles : une chemise, pas de mot en anglais que je ne comprends pas, et si on te demande un délai, tu me regardes d'abord.\n\nÇa va bien se passer.\n\nEnvoyé de mon iPhone",
     "variables": {
       "client": [
-        "Groupe Vortan",
-        "Nexalis",
-        "Coopérative Agrinord",
-        "Maison Brunelle"
+        "Groupe Trémouzac",
+        "Vergalisse",
+        "Coopérative Fleurimagne",
+        "Maison Corbinelle"
       ],
       "heure": [
         "8 h 30",
@@ -899,10 +899,10 @@
     "corps": "Hello,\n\nJe te transfère l'échange avec {client}, ils ont une petite question technique. Elle est quelque part dans les {nb} messages en dessous.\n\nCertains sont en double, ils les ont renvoyés à cause de la panne.\n\nTu peux leur répondre avant midi ? Ils sont pressés.\n\nMerci !\nService clients grands comptes",
     "variables": {
       "client": [
-        "Groupe Vortan",
-        "Nexalis",
-        "Transports Delmont",
-        "Laboratoires Orvane"
+        "Groupe Trémouzac",
+        "Vergalisse",
+        "Transports Larcheval",
+        "Laboratoires Quarnelle"
       ],
       "nb": [
         "47",
@@ -958,10 +958,10 @@
     "corps": "Petite précision sur {client} : en relisant le devis, j'ai vu que j'avais aussi promis \"la maintenance à vie, incluse\".\n\nC'était pour faire signer, je ne pensais pas qu'ils liraient jusqu'à la page {page}.\n\nDirection commerciale",
     "variables": {
       "client": [
-        "Groupe Vortan",
-        "Nexalis",
-        "Transports Delmont",
-        "Mutuelle Arvelle"
+        "Groupe Trémouzac",
+        "Vergalisse",
+        "Transports Larcheval",
+        "Mutuelle Bouvrelle"
       ],
       "page": [
         "14",
@@ -995,10 +995,10 @@
     "corps": "Bonjour à tous,\n\n{client} trouvait le devis trop cher. J'ai réussi à négocier : ils paient {pourcentage} de moins.\n\nEn échange, on leur fait aussi l'appli mobile.\n\nJe pense que tout le monde est gagnant.\n\nBien cordialement,\nGestion des comptes clés - {societe}",
     "variables": {
       "client": [
-        "Groupe Vortan",
-        "Nexalis",
-        "Coopérative Agrinord",
-        "Assurances Ferval"
+        "Groupe Trémouzac",
+        "Vergalisse",
+        "Coopérative Fleurimagne",
+        "Assurances Bastoniel"
       ],
       "pourcentage": [
         "20 %",
@@ -1006,9 +1006,9 @@
         "40 %"
       ],
       "societe": [
-        "Kolibri Digital",
-        "Softalys",
-        "Webrise Conseil"
+        "Glatigneux Digital",
+        "Persivolle",
+        "Dorsillon Conseil"
       ]
     },
     "cc": [
@@ -1041,10 +1041,10 @@
         "la fin de journée"
       ],
       "societe": [
-        "Groupe Vortan",
-        "Nexalis",
-        "Maison Brunelle",
-        "Mutuelle Arvelle"
+        "Groupe Trémouzac",
+        "Vergalisse",
+        "Maison Corbinelle",
+        "Mutuelle Bouvrelle"
       ]
     },
     "cc": [
@@ -1076,10 +1076,10 @@
         "deux fois la taille du titre"
       ],
       "societe": [
-        "Groupe Vortan",
-        "Nexalis",
-        "Maison Brunelle",
-        "Mutuelle Arvelle"
+        "Groupe Trémouzac",
+        "Vergalisse",
+        "Maison Corbinelle",
+        "Mutuelle Bouvrelle"
       ]
     },
     "pj": "logo_plus_gros_v2.pptx"
@@ -1103,10 +1103,10 @@
     "corps": "Bonjour,\n\nAprès réflexion, on préférait finalement la taille d'origine.\n\nMais en plus gros.\n\nMerci,\nDirection Marketing - {societe}",
     "variables": {
       "societe": [
-        "Groupe Vortan",
-        "Nexalis",
-        "Maison Brunelle",
-        "Mutuelle Arvelle"
+        "Groupe Trémouzac",
+        "Vergalisse",
+        "Maison Corbinelle",
+        "Mutuelle Bouvrelle"
       ]
     },
     "suite": "a-cli-002"
@@ -1130,10 +1130,10 @@
     "corps": "Bonjour,\n\nVous trouverez ci-dessous le lien vers le site de notre concurrent, {concurrent}.\n\nOn voudrait la même chose, mais en mieux, pour moins cher et pour le mois prochain.\n\nIls ont mis deux ans à le faire, mais ils n'avaient pas vos compétences.\n\nCordialement,\nLa Direction",
     "variables": {
       "concurrent": [
-        "Tradivo",
-        "Logimax Services",
-        "Ophélia Assurances",
-        "Batinext"
+        "Trouvelac",
+        "Mirebouc Services",
+        "Jolimoutier Assurances",
+        "Tournebrique"
       ]
     }
   },
@@ -1186,9 +1186,9 @@
     "corps": "Bonjour,\n\nJe vois que le paiement en ligne n'est pas dans le devis.\n\nJe me permets de vous dire que c'était évident pour nous : une boutique en ligne où l'on ne peut pas payer, c'est une vitrine.\n\nVous pouvez l'ajouter au même prix, puisque c'était sous-entendu ?\n\nBien à vous,\nPôle Digital - {societe}",
     "variables": {
       "societe": [
-        "Maison Brunelle",
-        "Fromageries Vallin",
-        "Atelier Corvel",
+        "Maison Corbinelle",
+        "Fromageries Moussevin",
+        "Atelier Calvignère",
         "Cave Saint-Aubert"
       ]
     }
@@ -1334,10 +1334,10 @@
     "corps": "Bonjour,\n\nPetite info : notre stagiaire a fait quelques modifications directement sur le serveur, via le FTP, pour vous faire gagner du temps.\n\nDepuis, le site affiche une page blanche. Est-ce que c'est grave ?\n\nNous n'avons pas de sauvegarde, mais nous avons une capture.\n\nCordialement,\n{societe}",
     "variables": {
       "societe": [
-        "Fromageries Vallin",
-        "Atelier Corvel",
-        "Transports Delmont",
-        "Cabinet Léonard et Associés"
+        "Fromageries Moussevin",
+        "Atelier Calvignère",
+        "Transports Larcheval",
+        "Cabinet Quillebec et Associés"
       ]
     },
     "pj": "capture.docx"
@@ -1368,10 +1368,10 @@
         "jeune"
       ],
       "societe": [
-        "Groupe Vortan",
-        "Nexalis",
-        "Maison Brunelle",
-        "Mutuelle Arvelle"
+        "Groupe Trémouzac",
+        "Vergalisse",
+        "Maison Corbinelle",
+        "Mutuelle Bouvrelle"
       ]
     },
     "cc": [
@@ -1398,10 +1398,10 @@
     "corps": "Bonjour,\n\nÀ cause de la panne Outlook, je n'ai reçu aucun de vos mails depuis jeudi.\n\nPourriez-vous me les renvoyer, par mail ?\n\nMerci d'avance,\nService Achats - {societe}",
     "variables": {
       "societe": [
-        "Groupe Vortan",
-        "Coopérative Agrinord",
-        "Laboratoires Orvane",
-        "Assurances Ferval"
+        "Groupe Trémouzac",
+        "Coopérative Fleurimagne",
+        "Laboratoires Quarnelle",
+        "Assurances Bastoniel"
       ]
     }
   },
@@ -1457,10 +1457,10 @@
     "corps": "Bonjour,\n\nDans le cadre de notre audit sécurité, merci de nous envoyer par mail l'ensemble des mots de passe du site, dans un fichier Excel protégé.\n\nLe mot de passe du fichier sera à indiquer dans le même mail.\n\nCordialement,\nServices Généraux - {societe}",
     "variables": {
       "societe": [
-        "Groupe Vortan",
-        "Nexalis",
-        "Coopérative Agrinord",
-        "Cabinet Léonard et Associés"
+        "Groupe Trémouzac",
+        "Vergalisse",
+        "Coopérative Fleurimagne",
+        "Cabinet Quillebec et Associés"
       ]
     },
     "cc": [
@@ -1560,10 +1560,10 @@
         "l'arrivée de mon café"
       ],
       "societe": [
-        "Groupe Vortan",
-        "Nexalis",
-        "Ardéa Conseil",
-        "Solvane Industries"
+        "Groupe Trémouzac",
+        "Vergalisse",
+        "Orvigneul Conseil",
+        "Ruffecourt Industries"
       ]
     },
     "importance": "haute"
@@ -1643,10 +1643,10 @@
     "corps": "Bonjour,\n\n{appli} ne marche plus, alors qu'hier il marchait très bien.\n\nLa seule chose qui a changé depuis, c'est que j'ai {changement}, mais je ne vois pas le rapport.\n\nCordialement,\nDirection commerciale - {societe}",
     "variables": {
       "appli": [
-        "GestiCompta",
-        "Planito",
-        "SoftNote RH",
-        "Devisio"
+        "Comptarelle",
+        "Placerelle",
+        "Notarine RH",
+        "Devizette"
       ],
       "changement": [
         "changé de mot de passe",
@@ -1655,9 +1655,9 @@
         "débranché le câble jaune qui ne servait à rien"
       ],
       "societe": [
-        "Groupe Vortan",
-        "Nexalis",
-        "Ardéa Conseil"
+        "Groupe Trémouzac",
+        "Vergalisse",
+        "Orvigneul Conseil"
       ]
     }
   },
@@ -1773,10 +1773,10 @@
     "corps": "Bonjour,\n\nComme vous me l'avez conseillé, j'ai redémarré. J'ai éteint l'écran, attendu {duree} et rallumé : ça n'a rien changé, j'ai toujours la même fenêtre bloquée.\n\nDu coup je ne vois pas trop ce qu'on peut faire de plus.\n\nCordialement,\nDirection commerciale",
     "variables": {
       "appli": [
-        "GestiCompta",
-        "Planito",
-        "SoftNote RH",
-        "Devisio"
+        "Comptarelle",
+        "Placerelle",
+        "Notarine RH",
+        "Devizette"
       ],
       "duree": [
         "30 secondes",
@@ -1825,9 +1825,9 @@
         "2007"
       ],
       "societe": [
-        "Groupe Vortan",
-        "Nexalis",
-        "Solvane Industries"
+        "Groupe Trémouzac",
+        "Vergalisse",
+        "Ruffecourt Industries"
       ]
     },
     "pj": "suivi_fournisseurs_v3_COPIE_bis.xlsx"
@@ -2170,10 +2170,10 @@
         "une nuit"
       ],
       "societe": [
-        "Groupe Vortan",
-        "Nexalis",
-        "Kelvane",
-        "Ardéa Conseil"
+        "Groupe Trémouzac",
+        "Vergalisse",
+        "Valfrenay",
+        "Orvigneul Conseil"
       ]
     },
     "cc": [
@@ -2374,10 +2374,10 @@
         "matin"
       ],
       "societe": [
-        "Groupe Vortan",
-        "Nexalis",
-        "Kelvane",
-        "Solvane Industries"
+        "Groupe Trémouzac",
+        "Vergalisse",
+        "Valfrenay",
+        "Ruffecourt Industries"
       ]
     },
     "cc": [
@@ -2803,10 +2803,10 @@
     "corps": "Bonjour et bienvenue chez {societe} !\n\nVotre parcours d'intégration commence lundi. Votre ordinateur sera disponible sous {delai}.\n\nEn attendant, vous pouvez suivre les modules d'e-learning sur votre ordinateur.\n\nToute l'équipe RH vous souhaite une belle intégration !",
     "variables": {
       "societe": [
-        "Groupe Vortan",
-        "Nexalis",
-        "Kelvane",
-        "Solvane Industries"
+        "Groupe Trémouzac",
+        "Vergalisse",
+        "Valfrenay",
+        "Ruffecourt Industries"
       ],
       "delai": [
         "trois semaines",
@@ -2842,10 +2842,10 @@
         "demain"
       ],
       "outil": [
-        "DeskBook",
-        "FlexSpace",
-        "Placio",
-        "MyDesk"
+        "Bureaunoue",
+        "Clavelune",
+        "Galvardine",
+        "Brizolette"
       ],
       "taille": [
         "30",
@@ -2876,10 +2876,10 @@
     "corps": "Bonjour à tous,\n\nAprès huit mois de travail avec le cabinet {cabinet}, nous avons le plaisir de vous dévoiler nos nouvelles valeurs : Audace, Agilité, Simplicité.\n\nLe document de présentation ({pages} pages) est disponible sur l'intranet.\n\nLa Direction des ressources humaines",
     "variables": {
       "cabinet": [
-        "Altimeo",
-        "Synergence",
-        "Lumen Partners",
-        "Ovalis Conseil"
+        "Quernival",
+        "Grévillard",
+        "Naudrillon Partners",
+        "Saulmoret Conseil"
       ],
       "pages": [
         "64",
@@ -2964,10 +2964,10 @@
     "corps": "Bonjour,\n\nVos bulletins de paie sont désormais dématérialisés sur la plateforme {plateforme}.\n\nPour activer votre compte, munissez-vous de votre identifiant : il figure sur votre bulletin de paie.\n\nCordialement,\nService Paie\nCe message et ses pièces jointes sont confidentiels et destinés exclusivement à leurs destinataires. Si vous l'avez reçu par erreur, merci d'en avertir l'expéditeur et de le détruire.",
     "variables": {
       "plateforme": [
-        "PayFlow",
+        "Fichopaie",
         "Mon Espace Salarié",
-        "DigiPaie",
-        "BulletinBox"
+        "Paierelle",
+        "Bulletinette"
       ]
     }
   },
@@ -2988,7 +2988,7 @@
       "Question rapide (urgente ?)",
       "Base prod / base test ?"
     ],
-    "corps": "Bonjour,\n\nPetite question : la base qui s'appelle \"prod\", c'est bien celle de test ? Je demande parce que le script de {script} est déjà lancé depuis {minutes} minutes.\n\nIl affiche \"{lignes} lignes affectées\", je ne sais pas si c'est bon signe.\n\nMerci d'avance !\n\nStagiaire Développement, équipe Data\nNexalis",
+    "corps": "Bonjour,\n\nPetite question : la base qui s'appelle \"prod\", c'est bien celle de test ? Je demande parce que le script de {script} est déjà lancé depuis {minutes} minutes.\n\nIl affiche \"{lignes} lignes affectées\", je ne sais pas si c'est bon signe.\n\nMerci d'avance !\n\nStagiaire Développement, équipe Data\nVergalisse",
     "variables": {
       "script": [
         "nettoyage des doublons",
@@ -3024,7 +3024,7 @@
       "RE: Petite question sur les bases",
       "RE: Question rapide (urgente ?)"
     ],
-    "corps": "Bonjour,\n\nPas de souci, j'ai trouvé la réponse tout seul : non.\n\nJ'ai relancé le script sur la base \"{base}\" pour annuler, mais elle aussi a l'air d'être la prod.\n\nJe suis en salle {salle} si besoin. Je ne touche plus à rien.\n\nStagiaire Développement, équipe Data\nNexalis",
+    "corps": "Bonjour,\n\nPas de souci, j'ai trouvé la réponse tout seul : non.\n\nJ'ai relancé le script sur la base \"{base}\" pour annuler, mais elle aussi a l'air d'être la prod.\n\nJe suis en salle {salle} si besoin. Je ne touche plus à rien.\n\nStagiaire Développement, équipe Data\nVergalisse",
     "variables": {
       "base": [
         "prod_test",
@@ -3060,7 +3060,7 @@
       "Info : main est propre",
       "Bonne nouvelle pour le dépôt"
     ],
-    "corps": "Bonjour à tous,\n\nJ'avais un conflit sur main, je l'ai réglé. Git refusait mon push, alors j'ai ajouté --force comme conseillé sur un forum.\n\nDu coup il n'y a plus de conflit, ni les {commits} derniers commits de l'équipe, mais l'historique est beaucoup plus lisible.\n\nBonne journée !\n\nDéveloppeur stagiaire, pôle {pole}\nGroupe Vortan",
+    "corps": "Bonjour à tous,\n\nJ'avais un conflit sur main, je l'ai réglé. Git refusait mon push, alors j'ai ajouté --force comme conseillé sur un forum.\n\nDu coup il n'y a plus de conflit, ni les {commits} derniers commits de l'équipe, mais l'historique est beaucoup plus lisible.\n\nBonne journée !\n\nDéveloppeur stagiaire, pôle {pole}\nGroupe Trémouzac",
     "variables": {
       "commits": [
         "38",
@@ -3130,7 +3130,7 @@
       "Petite question sécurité",
       "Fichier .env (rien de grave)"
     ],
-    "corps": "Bonjour,\n\nJ'ai fait une petite boulette : j'ai commité le fichier .env sur le dépôt public, avec la clé de l'API {service}.\n\nPas de panique, je l'ai retiré dans un deuxième commit qui s'appelle \"suppression clé secrète\". Normalement personne ne regarde l'historique.\n\nPar contre le dépôt a pris {etoiles} étoiles depuis ce matin, c'est plutôt bien, non ?\n\nAlternant Développement\nBréval Assurances",
+    "corps": "Bonjour,\n\nJ'ai fait une petite boulette : j'ai commité le fichier .env sur le dépôt public, avec la clé de l'API {service}.\n\nPas de panique, je l'ai retiré dans un deuxième commit qui s'appelle \"suppression clé secrète\". Normalement personne ne regarde l'historique.\n\nPar contre le dépôt a pris {etoiles} étoiles depuis ce matin, c'est plutôt bien, non ?\n\nAlternant Développement\nHautbrenne Assurances",
     "variables": {
       "service": [
         "de paiement",
@@ -3266,7 +3266,7 @@
       "Rapport de stage : version à relire",
       "TR: rapport de stage (dernière version)"
     ],
-    "corps": "Bonjour,\n\nVoici mon rapport de stage à relire avant ma soutenance du {date}. Dans la partie \"Missions réalisées\", j'ai mis la migration vers {techno}, la refonte de {appli} et l'incident du {jour}.\n\nMon école demande d'être honnête sur les difficultés rencontrées, donc l'incident fait {pages} pages.\n\nEst-ce que je peux citer la base de prod dans les remerciements ?\n\nStagiaire Développement\nNexalis",
+    "corps": "Bonjour,\n\nVoici mon rapport de stage à relire avant ma soutenance du {date}. Dans la partie \"Missions réalisées\", j'ai mis la migration vers {techno}, la refonte de {appli} et l'incident du {jour}.\n\nMon école demande d'être honnête sur les difficultés rencontrées, donc l'incident fait {pages} pages.\n\nEst-ce que je peux citer la base de prod dans les remerciements ?\n\nStagiaire Développement\nVergalisse",
     "variables": {
       "date": [
         "2 septembre",
@@ -3398,7 +3398,7 @@
       "Absence (semaine d'école) + mise en prod",
       "Passation mise en prod {projet}"
     ],
-    "corps": "Bonjour,\n\nPour rappel, je suis à l'école cette semaine et la suivante, donc je ne pourrai pas faire la mise en prod de {projet} prévue {jour}.\n\nTout est prêt sur ma branche \"{branche}\". Il suffit de la merger, puis de lancer les migrations dans l'ordre, sauf la troisième. Je n'ai pas eu le temps de noter pourquoi.\n\nBon courage !\n\nAlternant Développement\nGroupe Vortan",
+    "corps": "Bonjour,\n\nPour rappel, je suis à l'école cette semaine et la suivante, donc je ne pourrai pas faire la mise en prod de {projet} prévue {jour}.\n\nTout est prêt sur ma branche \"{branche}\". Il suffit de la merger, puis de lancer les migrations dans l'ordre, sauf la troisième. Je n'ai pas eu le temps de noter pourquoi.\n\nBon courage !\n\nAlternant Développement\nGroupe Trémouzac",
     "variables": {
       "projet": [
         "Phoenix",
@@ -3499,7 +3499,7 @@
       "RE: Conflit réglé !",
       "RE: Info : main est propre"
     ],
-    "corps": "Bonjour,\n\nSuite à vos {reponses} réponses, je confirme avoir bien compris pour le --force.\n\nPour me rattraper, j'ai tout remis depuis ma copie locale du {date}. Il y a de nouveau un conflit, mais cette fois je n'y touche pas. Promis.\n\nDéveloppeur stagiaire\nGroupe Vortan",
+    "corps": "Bonjour,\n\nSuite à vos {reponses} réponses, je confirme avoir bien compris pour le --force.\n\nPour me rattraper, j'ai tout remis depuis ma copie locale du {date}. Il y a de nouveau un conflit, mais cette fois je n'y touche pas. Promis.\n\nDéveloppeur stagiaire\nGroupe Trémouzac",
     "variables": {
       "reponses": [
         "14",
@@ -3532,7 +3532,7 @@
       "RAPPEL n°{rappel} : compte rendu d'activité",
       "URGENT : votre CRA de {mois}"
     ],
-    "corps": "Bonjour,\n\nSauf erreur de notre part, votre compte rendu d'activité du mois de {mois} n'est toujours pas saisi.\n\nCeci est notre rappel n°{rappel}. À partir du rappel n°{seuil}, votre manager sera mis en copie, puis le manager de votre manager, et ainsi de suite jusqu'à ce que quelqu'un saisisse quelque chose.\n\nCordialement,\n\nLe service Gestion des temps\nGroupe Vortan",
+    "corps": "Bonjour,\n\nSauf erreur de notre part, votre compte rendu d'activité du mois de {mois} n'est toujours pas saisi.\n\nCeci est notre rappel n°{rappel}. À partir du rappel n°{seuil}, votre manager sera mis en copie, puis le manager de votre manager, et ainsi de suite jusqu'à ce que quelqu'un saisisse quelque chose.\n\nCordialement,\n\nLe service Gestion des temps\nGroupe Trémouzac",
     "variables": {
       "mois": [
         "septembre",
@@ -3669,7 +3669,7 @@
       "Note de frais n°{ndf} : refusée",
       "Refus de votre note de frais"
     ],
-    "corps": "Bonjour,\n\nVotre note de frais n°{ndf} d'un montant de 2,10 euros (café, déplacement chez {client}) est refusée pour le motif suivant : justificatif absent.\n\nLa photo jointe représente bien un café, mais elle ne constitue pas un ticket de caisse.\n\nVous pouvez déposer un recours via le formulaire F-{formulaire}, à imprimer, signer et scanner. Délai de traitement : {delai}.\n\nCordialement,\n\nService comptabilité fournisseurs et frais\nBréval Assurances\n\nCe message et ses pièces jointes sont confidentiels et destinés exclusivement à leur destinataire.",
+    "corps": "Bonjour,\n\nVotre note de frais n°{ndf} d'un montant de 2,10 euros (café, déplacement chez {client}) est refusée pour le motif suivant : justificatif absent.\n\nLa photo jointe représente bien un café, mais elle ne constitue pas un ticket de caisse.\n\nVous pouvez déposer un recours via le formulaire F-{formulaire}, à imprimer, signer et scanner. Délai de traitement : {delai}.\n\nCordialement,\n\nService comptabilité fournisseurs et frais\nHautbrenne Assurances\n\nCe message et ses pièces jointes sont confidentiels et destinés exclusivement à leur destinataire.",
     "variables": {
       "ndf": [
         "2026-1184",
@@ -3677,9 +3677,9 @@
         "2026-2210"
       ],
       "client": [
-        "Groupe Vortan",
-        "Nexalis",
-        "Vauzelle Industries"
+        "Groupe Trémouzac",
+        "Vergalisse",
+        "Vaubrecourt Industries"
       ],
       "formulaire": [
         "17",
@@ -3746,7 +3746,7 @@
       "Code projet {code} clôturé",
       "Imputations impossibles sur {code}"
     ],
-    "corps": "Bonjour,\n\nLe code projet {code} ({projet}) a été clôturé le {cloture} : le projet est officiellement terminé.\n\nNous constatons pourtant {heures} h saisies dessus ce mois-ci, ainsi que {tickets} tickets ouverts et une mise en production prévue mardi.\n\nMerci de régulariser en imputant ces temps sur le code du projet suivant, qui n'a pas encore été créé.\n\nCordialement,\n\nContrôle de gestion - Groupe Vortan",
+    "corps": "Bonjour,\n\nLe code projet {code} ({projet}) a été clôturé le {cloture} : le projet est officiellement terminé.\n\nNous constatons pourtant {heures} h saisies dessus ce mois-ci, ainsi que {tickets} tickets ouverts et une mise en production prévue mardi.\n\nMerci de régulariser en imputant ces temps sur le code du projet suivant, qui n'a pas encore été créé.\n\nCordialement,\n\nContrôle de gestion - Groupe Trémouzac",
     "variables": {
       "code": [
         "P-2023-118",
@@ -3876,7 +3876,7 @@
       "RE: Rappel : CRA de {mois} non saisi",
       "RE: RAPPEL : compte rendu d'activité"
     ],
-    "corps": "Bonjour,\n\nNous accusons réception de votre CRA de {mois}, merci.\n\nVous avez imputé {pourcent} % de votre temps sur la ligne \"Saisie du CRA\". Nous comprenons l'intention, mais ne pouvons pas valider.\n\nMerci de ressaisir, en imputant le temps de cette nouvelle saisie sur la même ligne.\n\nCordialement,\n\nLe service Gestion des temps\nGroupe Vortan",
+    "corps": "Bonjour,\n\nNous accusons réception de votre CRA de {mois}, merci.\n\nVous avez imputé {pourcent} % de votre temps sur la ligne \"Saisie du CRA\". Nous comprenons l'intention, mais ne pouvons pas valider.\n\nMerci de ressaisir, en imputant le temps de cette nouvelle saisie sur la même ligne.\n\nCordialement,\n\nLe service Gestion des temps\nGroupe Trémouzac",
     "variables": {
       "mois": [
         "septembre",
@@ -3979,9 +3979,9 @@
     "corps": "Bonjour,\n\nLa facture de {fournisseur} est bloquée : le bon de commande a été émis après la facture, ce que le logiciel comptable considère comme un voyage dans le temps.\n\nPour la débloquer, il faut annuler la facture, refaire le bon de commande, puis demander au fournisseur de refacturer à l'identique, à une date ultérieure.\n\nDe son côté, le fournisseur nous informe que les serveurs seront coupés le {coupure}.\n\nCordialement,\n\nComptabilité fournisseurs\nCrestium",
     "variables": {
       "fournisseur": [
-        "Nuvola Cloud",
-        "Hostéo",
-        "Datacentrix"
+        "Lantrenac Cloud",
+        "Hébergeole",
+        "Datanoue"
       ],
       "coupure": [
         "vendredi",
@@ -4148,9 +4148,9 @@
         "Mise à jour urgente de votre mutuelle"
       ],
       "societe": [
-        "Nexalis",
-        "Groupe Vortan",
-        "Bréval Assurances"
+        "Vergalisse",
+        "Groupe Trémouzac",
+        "Hautbrenne Assurances"
       ]
     },
     "cc": [
@@ -4278,9 +4278,9 @@
         "16 novembre"
       ],
       "vpn": [
-        "SecureLink",
+        "Tunnelerie",
         "Nexa-Access",
-        "TunnelPro"
+        "Ombrevaille"
       ]
     },
     "cc": [
@@ -4503,9 +4503,9 @@
         "le truc pour la base"
       ],
       "coffre": [
-        "KeyVault+",
-        "Coffrix",
-        "SafeBox Pro"
+        "Gardeclef",
+        "Coffrevole",
+        "Coffrebleu"
       ]
     }
   },
@@ -4584,14 +4584,14 @@
     "variables": {
       "liste": [
         "Tous-France",
-        "All-Nexalis-EMEA",
+        "All-Vergalisse-EMEA",
         "Diffusion-Siège",
-        "Groupe-Vortan-Tous"
+        "Groupe-Trémouzac-Tous"
       ],
       "societe": [
-        "Groupe Vortan",
-        "Nexalis",
-        "Brenvor Industries"
+        "Groupe Trémouzac",
+        "Vergalisse",
+        "Brocaterre Industries"
       ]
     },
     "cc": [
@@ -4620,9 +4620,9 @@
     "variables": {
       "liste": [
         "Tous-France",
-        "All-Nexalis-EMEA",
+        "All-Vergalisse-EMEA",
         "Diffusion-Siège",
-        "Groupe-Vortan-Tous"
+        "Groupe-Trémouzac-Tous"
       ],
       "ville": [
         "Clermont-Ferrand",
@@ -4658,9 +4658,9 @@
     "variables": {
       "liste": [
         "Tous-France",
-        "All-Nexalis-EMEA",
+        "All-Vergalisse-EMEA",
         "Diffusion-Siège",
-        "Groupe-Vortan-Tous"
+        "Groupe-Trémouzac-Tous"
       ]
     },
     "cc": [
@@ -4690,9 +4690,9 @@
     "variables": {
       "liste": [
         "Tous-France",
-        "All-Nexalis-EMEA",
+        "All-Vergalisse-EMEA",
         "Diffusion-Siège",
-        "Groupe-Vortan-Tous"
+        "Groupe-Trémouzac-Tous"
       ],
       "nb": [
         "2 847",
@@ -4729,9 +4729,9 @@
     "variables": {
       "liste": [
         "Tous-France",
-        "All-Nexalis-EMEA",
+        "All-Vergalisse-EMEA",
         "Diffusion-Siège",
-        "Groupe-Vortan-Tous"
+        "Groupe-Trémouzac-Tous"
       ],
       "service": [
         "Comptabilité fournisseurs",
@@ -4773,14 +4773,14 @@
     "variables": {
       "liste": [
         "Tous-France",
-        "All-Nexalis-EMEA",
+        "All-Vergalisse-EMEA",
         "Diffusion-Siège",
-        "Groupe-Vortan-Tous"
+        "Groupe-Trémouzac-Tous"
       ],
       "societe": [
-        "Groupe Vortan",
-        "Nexalis",
-        "Brenvor Industries"
+        "Groupe Trémouzac",
+        "Vergalisse",
+        "Brocaterre Industries"
       ]
     },
     "cc": [
@@ -4833,9 +4833,9 @@
     "variables": {
       "liste": [
         "Tous-France",
-        "All-Nexalis-EMEA",
+        "All-Vergalisse-EMEA",
         "Diffusion-Siège",
-        "Groupe-Vortan-Tous"
+        "Groupe-Trémouzac-Tous"
       ],
       "debut": [
         "2 novembre",
@@ -4947,9 +4947,9 @@
     "variables": {
       "liste": [
         "Tous-France",
-        "All-Nexalis-EMEA",
+        "All-Vergalisse-EMEA",
         "Diffusion-Siège",
-        "Groupe-Vortan-Tous"
+        "Groupe-Trémouzac-Tous"
       ]
     },
     "cc": [
@@ -4977,14 +4977,14 @@
     "variables": {
       "liste": [
         "Tous-France",
-        "All-Nexalis-EMEA",
+        "All-Vergalisse-EMEA",
         "Diffusion-Siège",
-        "Groupe-Vortan-Tous"
+        "Groupe-Trémouzac-Tous"
       ],
       "societe": [
-        "Groupe Vortan",
-        "Nexalis",
-        "Brenvor Industries"
+        "Groupe Trémouzac",
+        "Vergalisse",
+        "Brocaterre Industries"
       ]
     },
     "cc": [
@@ -5015,9 +5015,9 @@
     "variables": {
       "liste": [
         "Tous-France",
-        "All-Nexalis-EMEA",
+        "All-Vergalisse-EMEA",
         "Diffusion-Siège",
-        "Groupe-Vortan-Tous"
+        "Groupe-Trémouzac-Tous"
       ],
       "vente": [
         "un vélo d'appartement jamais utilisé",
@@ -5064,9 +5064,9 @@
     "variables": {
       "liste": [
         "Tous-France",
-        "All-Nexalis-EMEA",
+        "All-Vergalisse-EMEA",
         "Diffusion-Siège",
-        "Groupe-Vortan-Tous"
+        "Groupe-Trémouzac-Tous"
       ],
       "ville": [
         "Lille",
@@ -5080,9 +5080,9 @@
         "Support applicatif"
       ],
       "societe": [
-        "Groupe Vortan",
-        "Nexalis",
-        "Brenvor Industries"
+        "Groupe Trémouzac",
+        "Vergalisse",
+        "Brocaterre Industries"
       ]
     },
     "cc": [
@@ -5111,9 +5111,9 @@
     "variables": {
       "liste": [
         "Tous-France",
-        "All-Nexalis-EMEA",
+        "All-Vergalisse-EMEA",
         "Diffusion-Siège",
-        "Groupe-Vortan-Tous"
+        "Groupe-Trémouzac-Tous"
       ]
     },
     "cc": [
@@ -5928,9 +5928,9 @@
     "corps": "Au sommaire de ce numéro :\n\n- Le mot du Président : \"Cap sur {cap}\"\n- Découvrez notre nouveau logo, fruit de {mois} mois de réflexion\n- Portrait : l'équipe {service}, que vous n'avez jamais croisée\n- Rappel : la cafétéria ferme désormais à 14 h\n\nLire la newsletter en ligne\n\nService Communication interne, {societe}\nVous ne pouvez pas vous désabonner de cette lettre.",
     "variables": {
       "societe": [
-        "Groupe Vortan",
-        "Nexalis",
-        "Brenvor Industries"
+        "Groupe Trémouzac",
+        "Vergalisse",
+        "Brocaterre Industries"
       ],
       "numero": [
         "47",
@@ -6061,9 +6061,9 @@
     "corps": "Récapitulatif hebdomadaire pour {repo}\n\nPull requests ouvertes par dependabot[bot] : {nb}\nFusionnées : 0\n\nLa plus ancienne date du {date}. Elle met à jour une dépendance qui a depuis été abandonnée par son mainteneur.\n\nVous recevez ce mail car vous surveillez ce dépôt.",
     "variables": {
       "repo": [
-        "nexalis/front-monolithe",
-        "vortan/api-legacy",
-        "brenvor/site-vitrine"
+        "vergalisse/front-monolithe",
+        "tremouzac/api-legacy",
+        "brocaterre/site-vitrine"
       ],
       "nb": [
         "312",
@@ -6095,9 +6095,9 @@
     "corps": "Le certificat de {domaine} expire aujourd'hui à {heure}.\n\nRappels précédents envoyés : J-30, J-15, J-7, J-3, J-1.\nAction détectée : aucune.\n\nCeci est le dernier rappel. Le prochain message sera envoyé par vos utilisateurs.\n\nMessage généré automatiquement, merci de ne pas y répondre.",
     "variables": {
       "domaine": [
-        "api.nexalis.local",
-        "intranet.vortan.local",
-        "preprod.brenvor.local"
+        "api.vergalisse.local",
+        "intranet.tremouzac.local",
+        "preprod.brocaterre.local"
       ],
       "heure": [
         "23 h 59",
@@ -6165,9 +6165,9 @@
     "corps": "Rapport hebdomadaire pour {repo}\n\nCouverture globale : 3 % (semaine précédente : 4 %)\nTests exécutés : {tests}\nTest le plus ancien : \"{test}\"\n\nTendance : stable.\n\nRapport généré automatiquement par GitLab CI.",
     "variables": {
       "repo": [
-        "nexalis/back-office",
-        "vortan/moteur-tarifs",
-        "brenvor/app-mobile"
+        "vergalisse/back-office",
+        "tremouzac/moteur-tarifs",
+        "brocaterre/app-mobile"
       ],
       "tests": [
         "12",

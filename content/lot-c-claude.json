@@ -159,7 +159,7 @@
     "corps": "Bonjour à tous,\n\nSuite au salon {salon}, j'ai acté que nous allions mettre de l'IA partout.\n\nConcrètement : dans le produit, dans les process, dans {endroit}. Je veux un plan pour lundi.\n\nJe n'ai pas d'exemple précis en tête, mais je veux que ce soit de l'IA générative, agentique et souveraine. Si possible les trois en même temps.\n\nBudget : à définir. Délai : hier.\n\nJean-Marc",
     "variables": {
       "salon": [
-        "VivaTech",
+        "Forum Chauvrenet",
         "de la semaine dernière",
         "où on m'a offert un tote bag"
       ],
@@ -735,10 +735,10 @@
     "corps": "Hello l'équipe tech,\n\n{client} voudrait \"une IA comme Claude, mais pour eux\". Je leur ai dit que c'était faisable.\n\nIls ont {budget} de budget et la démo est {demo}.\n\nPetite précision : ils ne veulent pas de cloud, pas de données qui sortent, et que ça tourne sur leur serveur de 2014.\n\nVous me dites ?",
     "variables": {
       "client": [
-        "Groupe Vortan",
-        "Nexalis",
-        "Les Mutuelles Réunies",
-        "Transports Gavrel"
+        "Groupe Trémouzac",
+        "Vergalisse",
+        "Mutuelle Sermoisel",
+        "Transports Rougevaux"
       ],
       "budget": [
         "3 000 €",

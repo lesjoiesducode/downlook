@@ -6,6 +6,8 @@ navigateur : aucun formulaire, aucun champ de saisie, aucun serveur.
 
 En ligne : https://lesjoiesducode.github.io/downlook/
 
+![Downlook, la boîte des mails non reçus](img/downlook.png)
+
 ## Fichiers
 
 - `index.html`, `css/style.css`, `js/app.js` : l'interface et le moteur (tirage aléatoire, arrivées en direct, invitations, capture en PNG).
@@ -38,4 +40,4 @@ Le script met à jour `status.json`, commit et pousse ; GitHub Pages suit en 1 �
 
 ## Image de partage
 
-`bin/og/og.html` rendu en 1200x630 dans `og.png` (Chrome headless).
+`og-image.jpg` (1200x675), référencée en URL absolue dans les balises Open Graph et Twitter de `index.html`.

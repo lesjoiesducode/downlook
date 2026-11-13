@@ -16,7 +16,8 @@ const CONTENT_FILES = ['content/lot-a-mails.json', 'content/lot-b-invitations-ra
 const RARE_CHANCE = 1 / 5;
 // Mails écartés du tirage : objets trop proches d'un vrai hameçonnage (mot de passe qui expire,
 // VPN, identifiant) sur une page qui ressemble à un webmail. Drôles, mais pas le risque.
-const EXCLUDE = new Set(['a-rh-015', 'a-dsi-001', 'a-dsi-002', 'a-dsi-007', 'b-sys-010']);                        // une visite sur 5 voit un rare, parmi ~19 : chacun ~1/95
+// b-reu-008 : son texte fixe un samedi, or aucune réunion ne tombe un week-end.
+const EXCLUDE = new Set(['a-rh-015', 'a-dsi-001', 'a-dsi-002', 'a-dsi-007', 'b-sys-010', 'b-reu-008']);                        // une visite sur 5 voit un rare, parmi ~19 : chacun ~1/95
 const TZ = 'Europe/Paris';
 const W = window;
 
@@ -80,7 +81,7 @@ const nbsp = s => String(s).replace(/ (?=[€%])/g, ' ');
 // ---------------------------------------------------------------- Variables communes
 const POOLS = {
   projet: ['Atlas', 'Phoenix', 'Refonte V3', 'Orion', 'Mercure', 'Hermès', 'Titan', 'Nexus', 'Apollo', 'Pégase', 'Migration Cloud', 'Portail Client', 'Kraken', 'Zeus 2.0'],
-  client: ['Groupe Ravel', 'Transports Morin', 'Mutuelle Horizon', 'Assurances Lemaire', 'Cabinet Vasseur', 'Laboratoires Brunel', 'Optisol', 'Groupe Fontaine'],
+  client: ['Groupe Trémouzac', 'Transports Larcheval', 'Mutuelle Bouvrelle', 'Assurances Bastoniel', 'Cabinet Marbouzet', 'Laboratoires Quarnelle', 'Maupertine', 'Groupe Castelmouche'],
   appli: ['l\'intranet', 'l\'appli RH', 'le portail client', 'l\'ERP', 'l\'outil de notes de frais', 'le CRM', 'l\'appli mobile', 'le back-office'],
   salle: ['Everest', 'Mont-Blanc', 'Jupiter', 'Ada Lovelace', 'Bocal 3', 'Aquarium', 'Kilimandjaro', 'Turing'],
   jour: ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi'],
@@ -246,8 +247,72 @@ function instantiate(def, seed, ts, extra = {}) {
     unread: true, flying: false, gone: false, shift: 0,
   };
   if (m.invite && !m.invite.people && m.cc) m.invite.people = m.cc + 1;
+  if (m.invite) scheduleInvite(m.invite, r);
   m.preview = plain(m.body).replace(/\s+/g, ' ').trim().slice(0, 160);
   return m;
+}
+
+// ---------------------------------------------------------------- Dates des invitations
+// Calculées à l'affichage, relativement au jour du visiteur : jours ouvrés à venir, jamais le week-end.
+// Une invitation dont le texte fixe un jour ("Lundi 09:00 - 11:00") garde ce jour et cette heure (cohérence
+// avec le corps du mail) et prend la prochaine date de ce jour ; aujourd'hui seulement si le créneau
+// est encore à venir et commence avant 18 h.
+const DOWS = ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'];
+const MONTHS = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
+const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
+const hhmm = m => `${String(Math.floor(m / 60)).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`;
+function parisToday() {
+  const [y, mo, d] = dayKey(Date.now()).split('-').map(Number);
+  const parts = new Intl.DateTimeFormat('fr-FR', { timeZone: TZ, hour: '2-digit', minute: '2-digit', hour12: false }).format(Date.now()).split(':').map(Number);
+  const base = Date.UTC(y, mo - 1, d, 12);
+  return { base, dow: new Date(base).getUTCDay(), nowMin: parts[0] * 60 + parts[1] };
+}
+function durMin(txt) {
+  const m = /(\d+)\s*h(?:\s*(\d+))?|(\d+)\s*min/.exec(txt || '');
+  if (!m) return 0;
+  return m[3] ? +m[3] : (+m[1]) * 60 + (+m[2] || 0);
+}
+function scheduleInvite(inv, r) {
+  const T = parisToday();
+  const isBiz = dw => dw >= 1 && dw <= 5;
+  const dayAt = k => new Date(T.base + k * 864e5);
+  const label = dt => `${DOWS[dt.getUTCDay()]} ${dt.getUTCDate()} ${MONTHS[dt.getUTCMonth()]}`;
+  const bizAfter = n => { let k = 0, c = 0; while (c < n) { k++; if (isBiz((T.dow + k) % 7)) c++; } return k; };
+  const text = inv.when || '';
+  const tm = /(\d{1,2})\s*[:h]\s*(\d{2})?/.exec(text);
+  const start = tm ? (+tm[1]) * 60 + (+tm[2] || 0) : null;
+  const okToday = s => isBiz(T.dow) && s != null && s > T.nowMin + 15 && s < 18 * 60;
+  const wd = /(lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche)/i.exec(text);
+  let k;
+  if (wd) {
+    let t = DOWS.indexOf(wd[1].toLowerCase());
+    if (t === 0 || t === 6) t = 1;
+    k = (t - T.dow + 7) % 7;
+    if (k === 0 && !okToday(start)) k = 7;
+    const dt = dayAt(k);
+    inv.date = dt;
+    const word = wd[1].charAt(0) === wd[1].charAt(0).toUpperCase() ? cap(DOWS[t]) : DOWS[t];
+    inv.when = text.replace(wd[0], `${word} ${dt.getUTCDate()} ${MONTHS[dt.getUTCMonth()]}`).replace(/(novembre|décembre|janvier|[a-zé]+) (\d{1,2}[:h])/, '$1, $2');
+    return;
+  }
+  if (/tous les jours/i.test(text)) {
+    k = okToday(start) ? 0 : bizAfter(1);
+    const dt = dayAt(k); inv.date = dt;
+    inv.when = text.replace(/tous les jours/i, `Tous les jours à partir ${k === 0 ? 'd\'aujourd\'hui' : 'du ' + label(dt)},`).replace(',,', ',');
+    return;
+  }
+  // Pas de jour dans le texte : créneau tiré au sort (aujourd'hui s'il reste de la place, sinon 1 à 5 jours ouvrés).
+  const len = durMin(inv.duration) || (r() < 0.5 ? 30 : 60);
+  let s0;
+  const first = Math.ceil((T.nowMin + 30) / 30) * 30;
+  if (isBiz(T.dow) && r() < 0.3 && first + len <= 18 * 60 && first < 18 * 60) {
+    k = 0; s0 = first + 30 * Math.floor(r() * Math.max(1, (18 * 60 - len - first) / 30 + 1));
+  } else {
+    k = bizAfter(1 + Math.floor(r() * 5));
+    s0 = 9 * 60 + 30 * Math.floor(r() * Math.max(1, (18 * 60 - len - 9 * 60) / 30 + 1));
+  }
+  const dt = dayAt(k); inv.date = dt;
+  inv.when = `${cap(label(dt))}, ${hhmm(s0)} - ${hhmm(Math.min(s0 + len, 24 * 60 - 1))}`;
 }
 
 // ---------------------------------------------------------------- Dates
@@ -349,7 +414,7 @@ async function loadAll() {
   W.DL_FLYING.forEach((f, i) => D.flying.push(register(norm({
     id: `vol-${i}`, fam: 'reunion', kind: 'invite', from: shuffle(['Chef de projet {projet}', 'PMO', 'Bureau de la transformation', 'Direction des opérations']).slice(0, 2),
     subject: f.subject, body: 'Ordre du jour : à définir pendant la réunion.',
-    invite: { title: f.subject, when: '{jour} à {h}', where: 'Salle {salle}', duration: f.duration, people: f.people },
+    invite: { title: f.subject, when: '', where: 'Salle {salle}', duration: f.duration, people: f.people },
   }, 'maison'))));
   const meta = (list, m) => list.map(x => register(Object.assign(norm(x, 'maison'), { meta: m })));
   D.jobMails = meta(W.DL_JOB_MAILS, 'job');
@@ -370,8 +435,9 @@ function takeFrom(list) {
   return d;
 }
 function make(def, ts, extra) { return instantiate(def, newSeed(), ts, extra); }
-function jobDef() { const hasJobs = S.jobs.length > 0; return (hasJobs && rnd() < 0.75 ? takeFrom(S.defs.jobMails) : null) || takeFrom(S.defs.siteMails) || (hasJobs ? takeFrom(S.defs.jobMails) : null); }
-function memeDef() { return S.memes.length ? takeFrom(S.defs.memeMails) : null; }
+function anyOf(list) { return list.length ? list[Math.floor(rnd() * list.length)] : null; }
+function jobDef() { const hasJobs = S.jobs.length > 0; return (hasJobs && rnd() < 0.75 ? takeFrom(S.defs.jobMails) : null) || takeFrom(S.defs.siteMails) || (hasJobs ? takeFrom(S.defs.jobMails) : null) || anyOf(hasJobs ? S.defs.jobMails : S.defs.siteMails); }
+function memeDef() { return S.memes.length ? (takeFrom(S.defs.memeMails) || anyOf(S.defs.memeMails)) : null; }
 
 // ---------------------------------------------------------------- Construction d'une session
 function buildSession(deepLink) {
@@ -526,7 +592,7 @@ function deliver(batch, sess) {
   }, k * ri(1400, 2600)));
 }
 function flyAway(m, sess) {
-  if (sess !== S.session || m.gone) return;
+  if (sess !== S.session || m.gone || m.deleted) return;
   m.fate = W.DL_FATES[ri(0, W.DL_FATES.length - 1)];
   const el = document.querySelector(`.item[data-uid="${m.uid}"]`);
   if (el && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
@@ -597,6 +663,7 @@ function itemHTML(m) {
     <div class="from">${esc(m.from)}</div><div class="time">${m.pinned ? '' : esc(listTime(m.ts))}</div>
     <div class="subj">${m.important ? '<span class="imp">!</span>' : ''}${badges.join('')}<span class="s">${esc(m.subject)}</span><span class="marks">${marks.join('')}</span></div>
     <div class="prev">${esc(m.kind === 'invite' && m.invite ? `${m.invite.when}${m.invite.where ? ' · ' + m.invite.where : ''}` : m.preview)}</div>
+    <button class="del" data-del="${m.uid}" aria-label="Supprimer" title="Supprimer">${icon('trash')}</button>
     <div class="fate"></div>
   </div>`;
 }
@@ -606,7 +673,7 @@ function renderList() {
   const f = FOLDERS.find(x => x.id === S.folder);
   $('listTitle').textContent = f ? f.name : '';
   if (!list.length) {
-    const e = W.DL_FOLDERS[S.folder] || { empty: 'Rien ici.', sub: '' };
+    const e = W.DL_FOLDERS[S.folder === 'panne' ? 'inbox' : S.folder] || { empty: 'Rien ici.', sub: '' };
     box.innerHTML = `<div class="empty">${emptyArt()}<div class="big">${esc(e.empty)}</div><div>${esc(e.sub || '')}</div></div>`;
     return;
   }
@@ -635,7 +702,7 @@ const STATUS_LINES = [
 function findMail(uid) { return S.mails.find(m => m.uid === uid) || Object.values(S.folders).flat().find(m => m.uid === uid); }
 function renderRead(m) {
   const box = $('read');
-  const mob = `<div class="r-mobilebar"><button class="back" id="rBack" aria-label="Retour">${icon('back')}</button><span class="sp"></span><button data-act="reply" aria-label="Répondre">${icon('reply')}</button><button data-act="forward">${icon('forward')}Transférer</button></div>`;
+  const mob = `<div class="r-mobilebar"><button class="back" id="rBack" aria-label="Retour">${icon('back')}</button><span class="sp"></span><button data-act="delete" aria-label="Supprimer">${icon('trash')}</button><button data-act="reply" aria-label="Répondre">${icon('reply')}</button><button data-act="forward">${icon('forward')}Transférer</button></div>`;
   if (!m || m.gone) {
     const fate = m && m.fate ? m.fate : 'Partie aux oubliettes';
     box.innerHTML = `${mob}<div class="r-inner"><div class="empty">${emptyArt()}<div class="big">Cette invitation s'est envolée.</div><div>Statut : ${esc(fate)}. Une réunion de moins.</div></div></div>`;
@@ -653,7 +720,7 @@ function renderRead(m) {
   if (m.rare) inner += `<div class="banner rare">${icon('sparkle')}<span>Mail rare : il n'apparaît qu'une visite sur 100 environ. Transférez-le avant qu'il ne reparte.</span></div>`;
   if (m.important) inner += `<div class="banner imp"><b>!</b><span>Ce message a été envoyé avec une importance haute.</span></div>`;
   if (m.invite) {
-    const d = new Date(m.ts);
+    const d = m.invite.date || new Date(m.ts);
     inner += `<div class="invite" id="inv"><div class="i-top"><div class="cal"><div class="m">${esc(new Intl.DateTimeFormat('fr-FR', { timeZone: TZ, month: 'short' }).format(d).replace('.', ''))}</div><div class="d">${esc(new Intl.DateTimeFormat('fr-FR', { timeZone: TZ, day: 'numeric' }).format(d))}</div></div>
       <div><div class="i-title">${esc(m.invite.title || m.subject)}</div><div class="i-meta" id="invMeta">${inviteMeta(m)}</div></div></div>
       <div class="i-btns"><button class="btn accept${m.behavior === 'fuit' ? ' flee' : ''}" data-inv="accept">${icon('accept')}Accepter</button><button class="btn tent" data-inv="tent">${icon('tent')}Provisoire</button><button class="btn decline" data-inv="decline">${icon('decline')}Refuser</button></div></div>`;
@@ -738,6 +805,69 @@ function select(uid, fromClick) {
 }
 function selected() { const m = S.sel ? findMail(S.sel) : null; return m && !m.gone ? m : null; }
 
+// ---------------------------------------------------------------- Suppression (comme Outlook : suivant sélectionné, annulation possible)
+function folderOf(m) {
+  if (S.mails.includes(m)) return 'panne';
+  return Object.keys(S.folders).find(k => S.folders[k].includes(m)) || null;
+}
+function listOf(f) { return f === 'panne' ? S.mails : (S.folders[f] = S.folders[f] || []); }
+function planAt(i, fn) { while (S.plan.has(i)) i++; S.plan.set(i, fn); }
+function deleteMail(m) {
+  if (!m) { toast('Choisissez d\'abord un mail à supprimer.'); return; }
+  const from = folderOf(m);
+  if (!from) return;
+  const src = listOf(from);
+  const idx = src.indexOf(m);
+  const view = currentList();
+  const vIdx = view.indexOf(m);
+  src.splice(idx, 1);
+  if (from === 'deleted') {                         // dans Éléments supprimés : suppression définitive
+    m.gone = true;
+  } else {
+    m.deleted = { from, idx };
+    listOf('deleted').unshift(m);
+    // Les mails offres et memes reviennent plus tard dans le flux.
+    const meta = m.def && m.def.meta;
+    if (from === 'panne' && (meta === 'job' || meta === 'site')) planAt(S.liveCount + ri(2, 4), () => single(jobDef()));
+    if (from === 'panne' && (meta === 'meme' || meta === 'boss')) planAt(S.liveCount + ri(3, 6), () => single(memeDef()));
+  }
+  // Sélection du suivant dans la liste affichée
+  const wasSel = S.sel === m.uid;
+  updateCounts(); renderList();
+  if (wasSel) {
+    const nv = currentList();
+    const next = vIdx >= 0 ? (nv[vIdx] || nv[vIdx - 1]) : null;
+    if (next && !matchMedia('(max-width: 860px)').matches) select(next.uid);
+    else {
+      S.sel = null;
+      document.body.classList.remove('reading');
+      $('read').innerHTML = `<div class="r-inner"><div class="empty">${emptyArt()}<div class="big">Sélectionnez un élément à lire</div><div>Rien n'est sélectionné.</div></div></div>`;
+    }
+  }
+  if (from !== 'deleted') undoToast(m);
+}
+function restoreMail(m) {
+  if (!m.deleted) return;
+  const d = listOf('deleted'); const i = d.indexOf(m);
+  if (i < 0) return;
+  d.splice(i, 1);
+  const { from, idx } = m.deleted;
+  m.deleted = null;
+  const src = listOf(from);
+  src.splice(Math.min(idx, src.length), 0, m);
+  updateCounts(); renderList();          // remis à sa place, avec son état lu / non lu
+}
+function undoToast(m) {
+  const box = $('toasts');
+  const t = document.createElement('div');
+  t.className = 'toast undo';
+  t.innerHTML = `<div class="t-body"><div class="t-text" style="color:#242424">Message supprimé.</div></div><button class="undo-btn">Annuler</button>`;
+  t.querySelector('.undo-btn').onclick = () => { restoreMail(m); t.remove(); };
+  box.prepend(t);
+  while (box.children.length > 3) box.lastChild.remove();
+  setTimeout(() => { t.classList.add('out'); setTimeout(() => t.remove(), 300); }, 5000);
+}
+
 // ---------------------------------------------------------------- Notifications
 function toast(text, opts = {}) {
   const box = $('toasts');
@@ -769,7 +899,6 @@ const TOASTS = {
 };
 const ACTS = {
   new: ['Rédaction impossible : personne ne le recevrait. Profitez-en.', 'Nouveau courrier ? Personne ne le lira avant lundi.'],
-  delete: ['Impossible de supprimer un mail qui n\'est jamais arrivé.', 'Supprimé. Enfin, il n\'était pas vraiment là.'],
   archive: ['Archivé dans un datacenter qui ne répond pas.', 'Archivé. Vous le retrouverez en 2037.'],
   report: ['Signalé. Le signalement n\'est pas arrivé non plus.', 'Signalement envoyé à personne.'],
   reply: ['Votre réponse a été placée dans la boîte d\'envoi. Elle y restera.', 'Réponse prête. Le serveur, lui, ne l\'est pas.'],
@@ -926,6 +1055,8 @@ function openFolder(id) {
 }
 function bind() {
   document.addEventListener('click', e => {
+    const del = e.target.closest('[data-del]');
+    if (del) { e.stopPropagation(); deleteMail(findMail(Number(del.dataset.del))); return; }
     const t = e.target.closest('[data-toast],[data-act],[data-folder],.item');
     if (!t) return;
     if (t.dataset.toast) { toast(TOASTS[t.dataset.toast] || 'Indisponible pendant la panne.'); return; }
@@ -933,10 +1064,14 @@ function bind() {
     if (t.classList.contains('item')) { select(Number(t.dataset.uid), true); return; }
     const a = t.dataset.act;
     if (a === 'forward') forward(selected());
+    else if (a === 'delete') deleteMail(selected());
     else if (ACTS[a]) toast(ACTS[a][ri(0, ACTS[a].length - 1)]);
   });
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') { $('capModal').classList.remove('show'); document.body.classList.remove('drawer'); }
+    if ((e.key === 'Delete' || e.key === 'Backspace') && !document.querySelector('.modal.show') && !e.metaKey && !e.ctrlKey) {
+      const m = selected(); if (m) { e.preventDefault(); deleteMail(m); }
+    }
     if ((e.key === 'Enter' || e.key === ' ') && e.target.classList && e.target.classList.contains('item')) { e.preventDefault(); select(Number(e.target.dataset.uid), true); }
   });
   $('menuBtn').onclick = () => document.body.classList.toggle('drawer');
@@ -973,7 +1108,7 @@ function start(deepLink) {
     showEnd();
   } else start(deep);
   if (Q.has('debug')) {
-    W.__dl = S;
+    W.__dl = S; W.__dlmake = d => instantiate(d, newSeed(), Date.now());
     W.__dlcheck = () => { S.unknown = []; const bad = []; for (const d of S.byId.values()) { for (let k = 0; k < 6; k++) { const m = instantiate(d, 1000 + k * 7919, Date.now()); const txt = [m.from, m.subject, m.body, m.tag, m.att.join(' '), m.invite ? Object.values(m.invite).join(' ') : ''].join(' '); if (/[{}]/.test(txt)) bad.push(d.id); } } return { unknown: [...new Set(S.unknown)], braces: [...new Set(bad)], total: S.byId.size }; };
   }
 })();

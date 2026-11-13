@@ -143,6 +143,14 @@ svg { display: block; flex: none; }
 .item .prev { grid-column: 2 / span 2; font-size: 13px; color: var(--muted); overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 .item .marks { display: inline-flex; gap: 4px; align-items: center; flex: none; }
 .item .marks .ico { width: 14px; height: 14px; color: var(--muted); }
+.item .del { position: absolute; right: 8px; top: 7px; width: 28px; height: 28px; border-radius: 4px; display: none; place-items: center; color: var(--muted); background: inherit; }
+.item:hover .del { display: grid; }
+.item:hover .time { visibility: hidden; }
+.item .del:hover { background: #e6e6e6; color: var(--red); }
+.item .del .ico { width: 16px; height: 16px; }
+.toast.undo { align-items: center; }
+.undo-btn { color: var(--brand); font-weight: 600; padding: 4px 8px; border-radius: 4px; flex: none; }
+.undo-btn:hover { background: var(--brand-light); }
 .imp { color: var(--red); font-weight: 700; flex: none; }
 .badge { font-size: 11px; font-weight: 600; padding: 1px 6px; border-radius: 3px; flex: none; }
 .badge.rare { background: var(--gold-bg); color: var(--gold); border: 1px solid #f2d68b; }
@@ -289,6 +297,7 @@ svg { display: block; flex: none; }
   .r-mobilebar {
     display: flex; position: sticky; top: 0; height: 48px; background: var(--brand); color: #fff; align-items: center; z-index: 3; padding-right: 4px;
   }
+  .item .del { display: none !important; }
   .r-mobilebar button { height: 48px; padding: 0 10px; display: flex; align-items: center; gap: 6px; font-size: 14px; }
   .r-mobilebar .back { padding: 0 6px 0 10px; }
   .r-mobilebar .sp { flex: 1; }

@@ -1624,10 +1624,10 @@
       "Sandrine Lemaire"
     ],
     "objet": [
-      "Réponse automatique : absent jusqu'à la fin de la panne",
-      "Absent (congés de panne)"
+      "Réponse automatique : absent jusqu'au lundi 16 novembre",
+      "Absent jusqu'au lundi 16 novembre"
     ],
-    "corps": "Je suis en congé jusqu'à la fin de la panne.\n\nPour toute urgence, merci de patienter jusqu'à la fin de la panne. Pour toute urgence vraiment urgente, aussi."
+    "corps": "Je suis en congé jusqu'au lundi 16 novembre inclus.\n\nPour toute urgence, merci de patienter jusqu'au mardi 17. Pour toute urgence vraiment urgente, aussi."
   },
   {
     "id": "b-sys-002",
