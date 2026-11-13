@@ -1,0 +1,1375 @@
+[
+  {
+    "id": "c-col-001",
+    "famille": "collegues-claude",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Maxime Garnier",
+      "Inès Bouaziz",
+      "Romain Delmas",
+      "Clara Nguyen"
+    ],
+    "role": "Développeur",
+    "objet": [
+      "Urgent : quelqu'un aurait un compte Claude à prêter ?",
+      "Besoin d'un compte Claude jusqu'à lundi (je rends tout)"
+    ],
+    "corps": "Salut tout le monde,\n\nJ'ai atteint ma limite hebdomadaire {quand}. Il me reste {reste} de refacto et je ne me souviens plus comment on écrit une boucle for à la main.\n\nSi quelqu'un a un compte Claude qui dort, je le prends jusqu'à lundi 9 h. Je promets de ne pas lui parler de mes problèmes perso, juste de TypeScript.\n\nEn échange, je propose : {echange}.\n\nMerci, c'est vraiment vital.",
+    "variables": {
+      "quand": [
+        "jeudi à 10 h 14",
+        "mardi midi",
+        "ce matin à 9 h 03",
+        "pendant le daily"
+      ],
+      "reste": [
+        "les trois quarts",
+        "un fichier de 2 000 lignes",
+        "tout le module de facturation",
+        "les tests (tous)"
+      ],
+      "echange": [
+        "mes croissants de vendredi pendant un mois",
+        "ma place de parking",
+        "de faire tes revues de code jusqu'à Noël",
+        "mon tour de vaisselle à la cuisine"
+      ]
+    },
+    "cc": [
+      8,
+      25
+    ],
+    "importance": "haute"
+  },
+  {
+    "id": "c-col-002",
+    "famille": "collegues-claude",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Maxime Garnier",
+      "Inès Bouaziz",
+      "Romain Delmas",
+      "Clara Nguyen"
+    ],
+    "role": "Développeur",
+    "objet": [
+      "RE: Urgent : quelqu'un aurait un compte Claude à prêter ?",
+      "RE: RE: compte Claude (j'augmente l'offre)"
+    ],
+    "corps": "Personne ?\n\nJ'augmente l'offre : {offre}.\n\nPour info, j'ai essayé d'écrire une fonction tout seul ce matin. Elle compile, mais je ne sais pas pourquoi, et ça m'inquiète beaucoup plus que l'inverse.",
+    "variables": {
+      "offre": [
+        "mon écran 32 pouces",
+        "mon nom sur ta prochaine PR",
+        "ma chaise ergonomique pendant une semaine",
+        "mes deux jours de RTT"
+      ]
+    },
+    "suite": "c-col-001"
+  },
+  {
+    "id": "c-col-003",
+    "famille": "collegues-claude",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Philippe Aubry",
+      "Nathalie Brun",
+      "Stéphane Morin"
+    ],
+    "role": "Responsable d'équipe",
+    "objet": [
+      "Ta PR #{num}",
+      "Question sur ta PR #{num} ({lignes} lignes)"
+    ],
+    "corps": "Salut,\n\nJe regarde ta PR #{num}. Le ticket demandait de changer la couleur d'un bouton.\n\nLa PR fait {lignes} lignes, ajoute {fichiers} fichiers, renomme le dossier src et introduit un design system complet.\n\nLe bouton est toujours de la même couleur.\n\nOn en parle à ton retour de pause ?",
+    "variables": {
+      "num": [
+        "482",
+        "1337",
+        "2048",
+        "3901"
+      ],
+      "lignes": [
+        "4 012",
+        "4 387",
+        "6 120",
+        "11 452"
+      ],
+      "fichiers": [
+        "37",
+        "58",
+        "112",
+        "214"
+      ]
+    },
+    "cc": [
+      1,
+      3
+    ]
+  },
+  {
+    "id": "c-col-004",
+    "famille": "collegues-claude",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Lucas Perrin",
+      "Manon Fabre",
+      "Théo Lambert"
+    ],
+    "role": "Stagiaire",
+    "objet": [
+      "Préparation de la revue de code de demain",
+      "Petite question avant la revue"
+    ],
+    "corps": "Bonjour,\n\nPour la revue de code de demain, est-ce que je peux venir accompagné ?\n\nC'est-à-dire que le code fonctionne très bien, mais je ne suis pas sûr de pouvoir l'expliquer. Surtout la partie {partie}.\n\nEt Claude n'est pas joignable depuis {depuis}, à cause de la limite.\n\nSi on pouvait décaler la revue à lundi 9 h 01, ce serait parfait.\n\nCordialement,\nLe stagiaire",
+    "variables": {
+      "partie": [
+        "avec les génériques",
+        "qui s'appelle useMemoizedReducerFactory",
+        "qui marche",
+        "entre la ligne 1 et la ligne 900"
+      ],
+      "depuis": [
+        "hier soir",
+        "mercredi",
+        "10 h 12",
+        "mon arrivée dans l'entreprise"
+      ]
+    }
+  },
+  {
+    "id": "c-col-005",
+    "famille": "collegues-claude",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Jean-Marc Vasseur",
+      "Isabelle Combes",
+      "Gérard Toussaint"
+    ],
+    "role": "Directeur des opérations",
+    "objet": [
+      "Mettre de l'IA partout",
+      "Notre stratégie IA (à lire avant le comité)"
+    ],
+    "corps": "Bonjour à tous,\n\nSuite au salon {salon}, j'ai acté que nous allions mettre de l'IA partout.\n\nConcrètement : dans le produit, dans les process, dans {endroit}. Je veux un plan pour lundi.\n\nJe n'ai pas d'exemple précis en tête, mais je veux que ce soit de l'IA générative, agentique et souveraine. Si possible les trois en même temps.\n\nBudget : à définir. Délai : hier.\n\nJean-Marc",
+    "variables": {
+      "salon": [
+        "VivaTech",
+        "de la semaine dernière",
+        "où on m'a offert un tote bag"
+      ],
+      "endroit": [
+        "la machine à café",
+        "l'intranet",
+        "les badges d'accès",
+        "le parking"
+      ]
+    },
+    "cc": [
+      20,
+      45
+    ],
+    "importance": "haute"
+  },
+  {
+    "id": "c-col-006",
+    "famille": "collegues-claude",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Kevin Marchand",
+      "Sarah Lopez",
+      "Antoine Rey"
+    ],
+    "role": "Développeur senior",
+    "objet": [
+      "Mon prompt magique (à garder pour vous)",
+      "Le prompt qui a changé ma vie"
+    ],
+    "corps": "Salut l'équipe,\n\nJe vous partage mon prompt, celui qui marche à tous les coups. Ne le diffusez pas trop.\n\n\"Tu es un développeur senior avec {annees} ans d'expérience. Corrige le bug. Fais-le bien. Ne fais pas d'erreur. {fin}\"\n\nAvec ça, j'ai un taux de réussite de 100 %, sur un échantillon de {echantillon}.\n\nDe rien.",
+    "variables": {
+      "annees": [
+        "30",
+        "45",
+        "200",
+        "10 000"
+      ],
+      "fin": [
+        "Merci beaucoup.",
+        "C'est très important pour ma carrière.",
+        "Je te donnerai un pourboire.",
+        "Respire profondément."
+      ],
+      "echantillon": [
+        "une fois",
+        "deux essais",
+        "un bug qui n'existait pas",
+        "un vendredi"
+      ]
+    },
+    "cc": [
+      6,
+      14
+    ]
+  },
+  {
+    "id": "c-col-007",
+    "famille": "collegues-claude",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Alain Mercier, DSI",
+      "Christine Girard, DSI",
+      "Direction des systèmes d'information"
+    ],
+    "role": "DSI",
+    "objet": [
+      "Facture de tokens du mois",
+      "Consommation IA : explication demandée"
+    ],
+    "corps": "Bonjour,\n\nJ'ai reçu la facture de tokens du mois. Elle dépasse le budget café de l'année, ce que je croyais impossible.\n\nSelon le relevé, le poste le plus consommateur est {poste}.\n\nMerci de m'expliquer sous 48 h ce qui justifie {tokens} tokens pour {tache}.\n\nCordialement,\nLa DSI",
+    "variables": {
+      "poste": [
+        "l'équipe Back-end",
+        "un compte nommé \"test2\"",
+        "le stagiaire",
+        "un script qui tourne depuis juillet"
+      ],
+      "tokens": [
+        "14 millions de",
+        "38 millions de",
+        "un milliard de"
+      ],
+      "tache": [
+        "renommer une variable",
+        "écrire un mail d'absence",
+        "demander si on devait mettre un point-virgule",
+        "dire bonjour"
+      ]
+    },
+    "cc": [
+      3,
+      8
+    ],
+    "importance": "haute"
+  },
+  {
+    "id": "c-col-008",
+    "famille": "collegues-claude",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Bernadette Caillaud",
+      "Patrick Simon",
+      "Josiane Leroy"
+    ],
+    "role": "Assistante de direction",
+    "objet": [
+      "Est-ce que Claude marche, lui ?",
+      "Question bête"
+    ],
+    "corps": "Bonjour,\n\nPuisqu'Outlook ne marche plus, je voulais savoir si Claude marchait, lui.\n\nSi oui, est-ce qu'il pourrait envoyer mes mails à ma place ? Ou au moins me dire s'ils sont partis ?\n\nJe vous envoie cette question par mail, en espérant que vous la recevrez.\n\nBien cordialement",
+    "cc": [
+      0,
+      2
+    ]
+  },
+  {
+    "id": "c-col-009",
+    "famille": "collegues-claude",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Hugo Bertin",
+      "Léa Moulin",
+      "Damien Colas"
+    ],
+    "role": "Tech lead",
+    "objet": [
+      "Revue de la PR #{num}",
+      "Commentaires sur ta PR (générés)"
+    ],
+    "corps": "Salut,\n\nJ'ai fait relire ta PR par mon IA. Elle a laissé {nb} commentaires.\n\nJe crois savoir que ta PR a été écrite par ton IA. Donc, si je résume, ton IA a écrit du code, mon IA l'a relu, et ton IA va répondre aux commentaires.\n\nOn n'est pas obligés d'être là. On pourrait aller boire un café.\n\nApprouvé.",
+    "variables": {
+      "num": [
+        "512",
+        "777",
+        "1024",
+        "2311"
+      ],
+      "nb": [
+        "47",
+        "112",
+        "186",
+        "312"
+      ]
+    }
+  },
+  {
+    "id": "c-col-010",
+    "famille": "collegues-claude",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Maxime Garnier",
+      "Inès Bouaziz",
+      "Romain Delmas",
+      "Clara Nguyen"
+    ],
+    "role": "Développeur",
+    "objet": [
+      "RE: Revue de la PR #{num}",
+      "RE: Commentaires sur ta PR"
+    ],
+    "corps": "Merci pour la revue.\n\nMon IA a répondu à tous les commentaires de ton IA. Elle est d'accord avec {accord} d'entre eux et conteste les autres avec beaucoup de politesse.\n\nElles en sont à {echanges} échanges. Je ne lis plus, mais ça a l'air de bien se passer entre elles.",
+    "variables": {
+      "num": [
+        "512",
+        "777",
+        "1024",
+        "2311"
+      ],
+      "accord": [
+        "la moitié",
+        "tous sauf un",
+        "aucun"
+      ],
+      "echanges": [
+        "38",
+        "94",
+        "212"
+      ]
+    },
+    "suite": "c-col-009"
+  },
+  {
+    "id": "c-col-011",
+    "famille": "collegues-claude",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Olivier Renaud",
+      "Mélanie Hubert",
+      "Yann Le Goff"
+    ],
+    "role": "Chef de projet",
+    "objet": [
+      "Estimation du ticket {projet}-{ticket}",
+      "Chiffrage avec ou sans IA ?"
+    ],
+    "corps": "Hello,\n\nPour le chiffrage du ticket {projet}-{ticket}, tu m'as répondu \"2 heures avec Claude, 3 semaines sans\".\n\nVu que tu as atteint ta limite, je mets quoi dans le planning ?\n\nEt surtout, je dis quoi au client ?",
+    "variables": {
+      "projet": [
+        "PHX",
+        "ATL",
+        "CRM",
+        "PAY"
+      ],
+      "ticket": [
+        "204",
+        "1180",
+        "3307"
+      ]
+    },
+    "cc": [
+      1,
+      4
+    ]
+  },
+  {
+    "id": "c-col-012",
+    "famille": "collegues-claude",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Florence Picard",
+      "Rachid Amrani",
+      "Sandrine Lemoine"
+    ],
+    "role": "Responsable RH",
+    "objet": [
+      "Fiche de poste : développeur augmenté",
+      "Nouvelle fiche de poste à valider"
+    ],
+    "corps": "Bonjour,\n\nPour notre prochain recrutement, la direction souhaite un \"développeur augmenté\".\n\nProfil recherché : {annees} ans d'expérience en IA générative, maîtrise de {outils} outils de code assistés, capacité à coder sans IA en cas de panne.\n\nSalaire : le même qu'avant, puisque l'IA fait la moitié du travail.\n\nMerci de relire avant publication.",
+    "variables": {
+      "annees": [
+        "8",
+        "10",
+        "15"
+      ],
+      "outils": [
+        "12",
+        "17",
+        "tous les"
+      ]
+    }
+  },
+  {
+    "id": "c-col-013",
+    "famille": "collegues-claude",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Maxime Garnier",
+      "Inès Bouaziz",
+      "Romain Delmas",
+      "Clara Nguyen"
+    ],
+    "role": "Développeur",
+    "objet": [
+      "Je suis en panne",
+      "Indisponible jusqu'à lundi 9 h"
+    ],
+    "corps": "Bonjour à tous,\n\nPour info, je suis indisponible jusqu'à lundi 9 h.\n\nJe ne suis pas malade, je n'ai pas posé de congé. J'ai juste atteint ma limite hebdomadaire et, honnêtement, je ne sais plus très bien ce que je faisais avant.\n\nEn cas d'urgence, contactez {secours}.\n\nBon week-end",
+    "variables": {
+      "secours": [
+        "Stack Overflow",
+        "la documentation (oui, elle existe)",
+        "Gérard, qui codait en Cobol",
+        "mon ancien moi de 2022"
+      ]
+    },
+    "cc": [
+      5,
+      12
+    ]
+  },
+  {
+    "id": "c-col-014",
+    "famille": "collegues-claude",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Benoît Laurent",
+      "Aurélie Masson",
+      "Cédric Faure"
+    ],
+    "role": "Architecte logiciel",
+    "objet": [
+      "Le fichier CLAUDE.md fait {taille}",
+      "À propos du CLAUDE.md du dépôt"
+    ],
+    "corps": "Bonjour,\n\nLe fichier CLAUDE.md à la racine du dépôt fait désormais {taille}.\n\nIl contient nos conventions, notre architecture, l'organigramme, la recette du gâteau de {prenom} et un paragraphe qui commence par \"Si tu lis ceci, sache que nous t'apprécions\".\n\nIl est plus long que la documentation du projet. Il est aussi plus à jour.\n\nJe propose qu'on le donne aux nouveaux arrivants à la place du wiki.",
+    "variables": {
+      "taille": [
+        "3 400 lignes",
+        "48 pages",
+        "2,1 Mo",
+        "plus que le code"
+      ],
+      "prenom": [
+        "Mireille",
+        "Didier",
+        "Fatima"
+      ]
+    },
+    "cc": [
+      4,
+      10
+    ]
+  },
+  {
+    "id": "c-col-015",
+    "famille": "collegues-claude",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Michel Durand",
+      "Brigitte Faivre",
+      "Hervé Lacroix"
+    ],
+    "role": "Développeur (25 ans de maison)",
+    "objet": [
+      "De mon temps",
+      "Petit rappel historique"
+    ],
+    "corps": "Bonjour les jeunes,\n\nJe vois passer beaucoup de mails de détresse au sujet des limites hebdomadaires.\n\nPour rappel, de mon temps, on avait une limite aussi. Elle s'appelait {limite}.\n\nJe reste disponible pour vous montrer comment on écrit une requête SQL avec ses dix doigts. Prévoyez la journée.",
+    "variables": {
+      "limite": [
+        "le compilateur",
+        "la fin du forfait 56k",
+        "le bureau de Jean-Pierre, le seul qui savait",
+        "le manuel papier de 800 pages"
+      ]
+    },
+    "cc": [
+      10,
+      30
+    ]
+  },
+  {
+    "id": "c-col-016",
+    "famille": "collegues-claude",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Julie Carpentier",
+      "Samir Belkacem",
+      "Vincent Royer"
+    ],
+    "role": "Product owner",
+    "objet": [
+      "Specs de la fonctionnalité {fonction}",
+      "Specs (générées, mais relues)"
+    ],
+    "corps": "Bonjour l'équipe,\n\nVoici les specs de {fonction}. Je les ai fait écrire par l'IA pour gagner du temps.\n\nElles font {pages} pages. Je ne les ai pas lues, mais elles ont l'air très complètes.\n\nVous pouvez les donner à votre IA pour le développement. Comme ça, personne n'aura besoin de les lire.\n\nMerci",
+    "variables": {
+      "fonction": [
+        "l'export CSV",
+        "la page Mon compte",
+        "le bouton Valider",
+        "la recherche"
+      ],
+      "pages": [
+        "64",
+        "112",
+        "240"
+      ]
+    },
+    "cc": [
+      5,
+      9
+    ],
+    "pj": "specs_v1_generees_non_relues.pdf"
+  },
+  {
+    "id": "c-col-017",
+    "famille": "collegues-claude",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Maxime Garnier",
+      "Inès Bouaziz",
+      "Romain Delmas",
+      "Clara Nguyen"
+    ],
+    "role": "Développeur",
+    "objet": [
+      "Message de commit du jour",
+      "Désolé pour l'historique git"
+    ],
+    "corps": "Salut,\n\nJe m'excuse pour l'historique git de cette semaine.\n\nJ'ai laissé l'IA rédiger les messages de commit. Ils sont très bien écrits, mais le dernier fait {lignes} lignes et commence par \"Excellente question !\".\n\nLe seul commit que j'ai écrit moi-même s'appelle \"{commit}\".\n\nOn garde quand même ?",
+    "variables": {
+      "lignes": [
+        "42",
+        "96",
+        "180"
+      ],
+      "commit": [
+        "fix",
+        "fix 2",
+        "ça marche, ne pas toucher",
+        "wip final final"
+      ]
+    }
+  },
+  {
+    "id": "c-col-018",
+    "famille": "collegues-claude",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Arnaud Chevalier",
+      "Pauline Gauthier",
+      "Mickaël Roche"
+    ],
+    "role": "Développeur",
+    "objet": [
+      "J'ai fait le ticket sans IA",
+      "Retour d'expérience : un ticket fait à la main"
+    ],
+    "corps": "Bonjour à tous,\n\nSuite à la limite, j'ai traité le ticket {ticket} entièrement à la main.\n\nBilan : {duree}, {tabs} onglets ouverts, trois tasses de café et une remise en question profonde.\n\nLe code fait 12 lignes. Il fonctionne. Je l'ai compris.\n\nJe ne sais pas encore quoi faire de cette émotion.",
+    "variables": {
+      "ticket": [
+        "PHX-88",
+        "ATL-412",
+        "CRM-1003"
+      ],
+      "duree": [
+        "4 h",
+        "une journée entière",
+        "deux jours"
+      ],
+      "tabs": [
+        "37",
+        "64",
+        "112"
+      ]
+    },
+    "cc": [
+      6,
+      15
+    ]
+  },
+  {
+    "id": "c-col-019",
+    "famille": "collegues-claude",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Comité de pilotage IA",
+      "Cellule Transformation IA",
+      "Groupe de travail IA (GT-IA)"
+    ],
+    "role": "Comité de pilotage IA",
+    "objet": [
+      "Charte d'usage de l'IA : version {version}",
+      "Nouvelle version de la charte IA"
+    ],
+    "corps": "Bonjour à tous,\n\nVous trouverez ci-joint la version {version} de la charte d'usage de l'IA générative.\n\nPrincipaux changements :\n- il est interdit de coller du code client dans un outil d'IA ;\n- il est interdit de coller la charte dans un outil d'IA pour la résumer ;\n- {regle}.\n\nLa charte a été rédigée avec l'aide d'une IA.\n\nLe comité",
+    "variables": {
+      "version": [
+        "3.2",
+        "7",
+        "12 (définitive)"
+      ],
+      "regle": [
+        "il est interdit de demander à l'IA si elle a lu la charte",
+        "il est conseillé de dire merci, on ne sait jamais",
+        "toute PR de plus de 4 000 lignes devra être accompagnée d'un humain"
+      ]
+    },
+    "cc": [
+      200,
+      450
+    ],
+    "pj": "charte_IA_v12_definitive_v2.pdf"
+  },
+  {
+    "id": "c-col-020",
+    "famille": "collegues-claude",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Thierry Blanc",
+      "Sylvie Vidal",
+      "Frédéric Hamon"
+    ],
+    "role": "Directeur technique",
+    "objet": [
+      "Productivité x10",
+      "Chiffres de productivité de l'équipe"
+    ],
+    "corps": "Bonjour l'équipe,\n\nDepuis le déploiement des assistants de code, notre productivité a été multipliée par {facteur}.\n\nC'est en tout cas ce que dit le rapport, qui a été généré par l'assistant.\n\nCôté indicateurs réels : le nombre de lignes a été multiplié par 10, le nombre de bugs aussi, et le nombre de mises en production n'a pas bougé.\n\nOn en parle au prochain comité. Bravo à tous, ou à toutes les IA.",
+    "variables": {
+      "facteur": [
+        "10",
+        "14",
+        "37"
+      ]
+    },
+    "cc": [
+      15,
+      40
+    ]
+  },
+  {
+    "id": "c-col-021",
+    "famille": "collegues-claude",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Maxime Garnier",
+      "Inès Bouaziz",
+      "Romain Delmas",
+      "Clara Nguyen"
+    ],
+    "role": "Développeur",
+    "objet": [
+      "Ma session a expiré au pire moment",
+      "Je suis bloqué au milieu d'une migration"
+    ],
+    "corps": "Bonjour,\n\nPetit point de situation : la limite est tombée pendant la migration de la base, exactement entre \"Je vais maintenant supprimer l'ancienne table\" et \"puis copier les données\".\n\nLa première étape s'est bien passée.\n\nJe vous tiens au courant lundi à 9 h.",
+    "cc": [
+      3,
+      8
+    ],
+    "importance": "haute"
+  },
+  {
+    "id": "c-col-022",
+    "famille": "collegues-claude",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Chloé Marie",
+      "Adrien Collet",
+      "Nora Benhamou"
+    ],
+    "role": "Développeuse front",
+    "objet": [
+      "J'ai dit bonjour à Claude par habitude",
+      "Question de politesse"
+    ],
+    "corps": "Salut,\n\nQuestion sérieuse : depuis que j'ai atteint ma limite, je continue à écrire \"Bonjour\" et \"Merci\" dans le terminal par réflexe.\n\nLe terminal ne répond pas. {situation}\n\nC'est normal, docteur ?",
+    "variables": {
+      "situation": [
+        "Je le vis mal.",
+        "Il m'a juste renvoyé \"command not found: Merci\".",
+        "J'ai fini par dire bonjour au radiateur.",
+        "Mon chat m'a regardé bizarrement."
+      ]
+    }
+  },
+  {
+    "id": "c-col-023",
+    "famille": "collegues-claude",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Grégoire Dupuis",
+      "Valérie Noël",
+      "Karl Weber"
+    ],
+    "role": "Commercial",
+    "objet": [
+      "Le client veut \"une IA comme Claude\"",
+      "Demande client : IA"
+    ],
+    "corps": "Hello l'équipe tech,\n\n{client} voudrait \"une IA comme Claude, mais pour eux\". Je leur ai dit que c'était faisable.\n\nIls ont {budget} de budget et la démo est {demo}.\n\nPetite précision : ils ne veulent pas de cloud, pas de données qui sortent, et que ça tourne sur leur serveur de 2014.\n\nVous me dites ?",
+    "variables": {
+      "client": [
+        "Groupe Vortan",
+        "Nexalis",
+        "Les Mutuelles Réunies",
+        "Transports Gavrel"
+      ],
+      "budget": [
+        "3 000 €",
+        "5 000 € HT",
+        "un stagiaire"
+      ],
+      "demo": [
+        "mardi",
+        "demain matin",
+        "dans une heure"
+      ]
+    },
+    "cc": [
+      2,
+      6
+    ],
+    "importance": "haute"
+  },
+  {
+    "id": "c-col-024",
+    "famille": "collegues-claude",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Maxime Garnier",
+      "Inès Bouaziz",
+      "Romain Delmas",
+      "Clara Nguyen"
+    ],
+    "role": "Développeur",
+    "objet": [
+      "Teams en panne, Outlook en panne, Claude en limite",
+      "Je fais quoi ?"
+    ],
+    "corps": "Bonjour,\n\nRécapitulatif de ma situation :\n- Outlook : en panne ;\n- Teams : en panne ;\n- Claude : limite atteinte, retour lundi 9 h ;\n- moi : {etat}.\n\nJe vous écris par mail parce que je ne sais pas quoi faire d'autre. Je sais que vous ne le recevrez pas. Ça me fait du bien quand même.",
+    "variables": {
+      "etat": [
+        "en ligne, mais à quoi bon",
+        "devant un fichier vide",
+        "en train de relire mon propre code de 2023 (dur)",
+        "disponible pour un baby-foot"
+      ]
+    },
+    "cc": [
+      0,
+      4
+    ]
+  },
+  {
+    "id": "c-col-025",
+    "famille": "collegues-claude",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Caroline Marty",
+      "Nicolas Prévost",
+      "Elsa Baron"
+    ],
+    "role": "Scrum master",
+    "objet": [
+      "Rétro : on parle de l'IA ?",
+      "Ordre du jour de la rétro"
+    ],
+    "corps": "Hello,\n\nPour la rétro de vendredi, je propose trois colonnes :\n- ce qui a bien marché ;\n- ce qui a moins bien marché ;\n- ce que l'IA a fait pendant qu'on regardait.\n\nPour le post-it \"{postit}\", merci de ne pas le remettre cette fois.\n\nBonne journée",
+    "variables": {
+      "postit": [
+        "Demander à Claude pour la rétro",
+        "Faire la rétro avec Claude",
+        "Il faudrait plus de tokens"
+      ]
+    },
+    "cc": [
+      6,
+      10
+    ]
+  },
+  {
+    "id": "c-col-026",
+    "famille": "collegues-claude",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Damien Lefort",
+      "Agathe Poulain",
+      "Jérôme Brunet"
+    ],
+    "role": "Développeur",
+    "objet": [
+      "Je cherche un binôme humain",
+      "Pair programming (avec une personne)"
+    ],
+    "corps": "Salut,\n\nVu les circonstances, je cherche quelqu'un pour faire du pair programming jusqu'à lundi.\n\nPrérequis : être humain, savoir taper, accepter qu'on lui dise \"Tu as tout à fait raison\" toutes les dix minutes, par habitude.\n\nJe fournis les chouquettes.",
+    "cc": [
+      8,
+      20
+    ]
+  },
+  {
+    "id": "c-sys-001",
+    "famille": "systeme-claude",
+    "type": "systeme",
+    "rarete": "commune",
+    "de": [
+      "L'équipe Claude (limites d'usage)",
+      "Claude, service des limites",
+      "Notifications d'usage Claude"
+    ],
+    "objet": [
+      "Vous avez atteint votre limite hebdomadaire",
+      "Limite hebdomadaire atteinte"
+    ],
+    "corps": "Bonjour,\n\nVous avez atteint votre limite d'utilisation hebdomadaire.\n\nElle sera réinitialisée lundi à 9 h.\n\nD'ici là, nous vous recommandons de vous reposer, de voir des amis, ou de relire le code que vous avez écrit cette semaine. Dans cet ordre.\n\nÀ lundi,\nL'équipe des limites d'usage"
+  },
+  {
+    "id": "c-sys-002",
+    "famille": "systeme-claude",
+    "type": "systeme",
+    "rarete": "commune",
+    "de": [
+      "L'équipe Claude (limites d'usage)",
+      "Claude, service des limites",
+      "Notifications d'usage Claude"
+    ],
+    "objet": [
+      "Votre session reprendra dans {delai}",
+      "Reprise de session dans {delai}"
+    ],
+    "corps": "Votre session reprendra dans {delai}.\n\nCe délai est indicatif. Il diminue d'une minute par minute.\n\nRafraîchir ce mail ne le fait pas diminuer plus vite. Nous avons vérifié pour vous, {refresh} fois.",
+    "variables": {
+      "delai": [
+        "4 h 59 min",
+        "4 h 58 min",
+        "3 h 12 min",
+        "0 h 01 min"
+      ],
+      "refresh": [
+        "212",
+        "847",
+        "1 403"
+      ]
+    }
+  },
+  {
+    "id": "c-sys-003",
+    "famille": "systeme-claude",
+    "type": "systeme",
+    "rarete": "commune",
+    "de": [
+      "L'équipe Claude (limites d'usage)",
+      "Claude, service des limites",
+      "Notifications d'usage Claude"
+    ],
+    "objet": [
+      "Limite atteinte pendant votre refactorisation",
+      "Votre refacto est en pause"
+    ],
+    "corps": "Bonjour,\n\nVotre limite d'utilisation a été atteinte pendant la refactorisation de {fichier}.\n\nÉtat au moment de l'interruption :\n- fichiers modifiés : {modifies} ;\n- fichiers qui compilent : {compilent} ;\n- dernière phrase de l'assistant : \"Maintenant, je vais tout rebrancher\".\n\nLa suite reprendra lundi à 9 h. Nous vous conseillons de ne rien toucher d'ici là. Vraiment rien.",
+    "variables": {
+      "fichier": [
+        "UserService.ts",
+        "legacy_billing.php",
+        "utils.js (4 000 lignes)",
+        "le module Paiement"
+      ],
+      "modifies": [
+        "38",
+        "64",
+        "112"
+      ],
+      "compilent": [
+        "2",
+        "0",
+        "aucun, mais avec confiance"
+      ]
+    },
+    "importance": "haute"
+  },
+  {
+    "id": "c-sys-004",
+    "famille": "systeme-claude",
+    "type": "systeme",
+    "rarete": "commune",
+    "de": [
+      "L'équipe Claude (limites d'usage)",
+      "Claude, service des limites",
+      "Notifications d'usage Claude"
+    ],
+    "objet": [
+      "Votre relevé d'usage de la semaine",
+      "Récapitulatif hebdomadaire"
+    ],
+    "corps": "Voici votre relevé d'usage de la semaine.\n\nRequêtes envoyées : {req}\nRequêtes commençant par \"Pourquoi\" : {pourquoi}\nRequêtes contenant \"ça marche pas\" : {marche}\n\"Merci\" envoyés : 0\nNombre de fois où vous avez répondu \"Oui, fais-le\" sans lire : {oui}\n\nVotre mot le plus utilisé : \"{mot}\".\n\nMerci de votre confiance.",
+    "variables": {
+      "req": [
+        "1 284",
+        "3 007",
+        "9 412"
+      ],
+      "pourquoi": [
+        "412",
+        "1 018"
+      ],
+      "marche": [
+        "206",
+        "877"
+      ],
+      "oui": [
+        "93",
+        "341",
+        "toutes"
+      ],
+      "mot": [
+        "urgent",
+        "encore",
+        "non",
+        "refais"
+      ]
+    }
+  },
+  {
+    "id": "c-sys-005",
+    "famille": "systeme-claude",
+    "type": "systeme",
+    "rarete": "commune",
+    "de": [
+      "Accusés de lecture",
+      "Service de remise des messages",
+      "Claude (accusé de lecture)"
+    ],
+    "objet": [
+      "Accusé de lecture : votre demande",
+      "Lu : \"Peux-tu corriger ce bug ?\""
+    ],
+    "corps": "Votre message a été lu par Claude.\n\nIl y répondra dès la levée de votre limite, lundi à 9 h.\n\nPour information, il a déjà une idée de la réponse. Il trouve le bug assez intéressant. Il ne peut rien en dire pour l'instant."
+  },
+  {
+    "id": "c-sys-006",
+    "famille": "systeme-claude",
+    "type": "systeme",
+    "rarete": "commune",
+    "de": [
+      "L'équipe Claude (limites d'usage)",
+      "Claude, service des limites",
+      "Notifications d'usage Claude"
+    ],
+    "objet": [
+      "Votre message est en file d'attente",
+      "Message en attente de traitement"
+    ],
+    "corps": "Votre message a bien été reçu.\n\nPosition dans la file : {pos}.\nMessages devant vous : les vôtres.\n\nVous avez envoyé {nb} messages depuis la limite. Ils seront traités dans l'ordre, y compris celui qui dit seulement \"allô ?\".",
+    "variables": {
+      "pos": [
+        "14",
+        "38",
+        "112"
+      ],
+      "nb": [
+        "14",
+        "38",
+        "112"
+      ]
+    }
+  },
+  {
+    "id": "c-sys-007",
+    "famille": "systeme-claude",
+    "type": "systeme",
+    "rarete": "commune",
+    "de": [
+      "L'équipe Claude (limites d'usage)",
+      "Claude, service des limites",
+      "Notifications d'usage Claude"
+    ],
+    "objet": [
+      "Rappel : il vous reste 1 % de votre limite",
+      "Plus que 1 % d'utilisation cette semaine"
+    ],
+    "corps": "Il vous reste 1 % de votre limite hebdomadaire.\n\nCela correspond environ à :\n- une question courte ;\n- la moitié d'une explication ;\n- {exemple}.\n\nChoisissez bien. Nous suggérons de ne pas le dépenser à demander combien il en reste.",
+    "variables": {
+      "exemple": [
+        "un nom de variable",
+        "trois quarts d'une regex",
+        "un \"Tu as tout à fait raison\" sans la suite"
+      ]
+    }
+  },
+  {
+    "id": "c-sys-008",
+    "famille": "systeme-claude",
+    "type": "systeme",
+    "rarete": "commune",
+    "de": [
+      "L'équipe Claude (limites d'usage)",
+      "Claude, service des limites",
+      "Notifications d'usage Claude"
+    ],
+    "objet": [
+      "Votre limite est réinitialisée",
+      "Bonne nouvelle : vous pouvez reprendre"
+    ],
+    "corps": "Bonjour,\n\nVotre limite hebdomadaire a été réinitialisée. Vous pouvez reprendre.\n\nPetit conseil : commencez doucement. Il est {heure}, et vous avez déjà {nb} demandes prêtes à partir.",
+    "variables": {
+      "heure": [
+        "lundi 9 h 00",
+        "lundi 9 h 00 et 2 secondes"
+      ],
+      "nb": [
+        "46",
+        "118",
+        "200"
+      ]
+    }
+  },
+  {
+    "id": "c-sys-009",
+    "famille": "systeme-claude",
+    "type": "systeme",
+    "rarete": "commune",
+    "de": [
+      "L'équipe Claude (limites d'usage)",
+      "Claude, service des limites",
+      "Notifications d'usage Claude"
+    ],
+    "objet": [
+      "Rapport d'activité : semaine record",
+      "Félicitations pour votre semaine"
+    ],
+    "corps": "Félicitations !\n\nCette semaine, vous avez atteint votre limite hebdomadaire dès {jour}. C'est votre meilleur temps.\n\nVous faites partie des utilisateurs les plus assidus de votre entreprise, juste derrière {rival}.\n\nCe message n'est pas un reproche. Ce n'est pas non plus vraiment un compliment.",
+    "variables": {
+      "jour": [
+        "mardi 11 h",
+        "mercredi midi",
+        "lundi 14 h 30"
+      ],
+      "rival": [
+        "le stagiaire",
+        "un script nommé test2",
+        "votre N+1, qui l'utilise pour ses mails"
+      ]
+    }
+  },
+  {
+    "id": "c-sys-010",
+    "famille": "systeme-claude",
+    "type": "systeme",
+    "rarete": "commune",
+    "de": [
+      "L'équipe Claude (limites d'usage)",
+      "Claude, service des limites",
+      "Notifications d'usage Claude"
+    ],
+    "objet": [
+      "Votre conversation est trop longue",
+      "Conversation résumée automatiquement"
+    ],
+    "corps": "Votre conversation est devenue trop longue. Nous l'avons résumée pour continuer.\n\nRésumé : \"{resume}\"\n\nLes {nb} messages précédents ont été condensés dans ce résumé. Nous espérons qu'il vous convient.",
+    "variables": {
+      "resume": [
+        "L'utilisateur voulait corriger un bug. Il y a maintenant onze bugs.",
+        "On a tout essayé. Sauf lire le message d'erreur.",
+        "L'utilisateur a dit \"non\" quarante fois, puis \"oui, voilà\"."
+      ],
+      "nb": [
+        "312",
+        "847",
+        "1 260"
+      ]
+    }
+  },
+  {
+    "id": "c-sys-011",
+    "famille": "systeme-claude",
+    "type": "systeme",
+    "rarete": "commune",
+    "de": [
+      "L'équipe Claude (limites d'usage)",
+      "Claude, service des limites",
+      "Notifications d'usage Claude"
+    ],
+    "objet": [
+      "Information : panne de messagerie chez votre fournisseur",
+      "Nous ne sommes pas concernés par la panne"
+    ],
+    "corps": "Bonjour,\n\nNous avons appris qu'une panne affecte actuellement votre messagerie.\n\nNous tenions à vous rassurer : nos services fonctionnent normalement. C'est uniquement votre limite hebdomadaire qui vous empêche de les utiliser.\n\nCe message ne vous parviendra sans doute pas, pour les raisons évoquées plus haut.\n\nBon courage"
+  },
+  {
+    "id": "c-sys-012",
+    "famille": "systeme-claude",
+    "type": "systeme",
+    "rarete": "commune",
+    "de": [
+      "Journal d'activité de l'assistant",
+      "Rapport de session",
+      "Votre assistant de code"
+    ],
+    "objet": [
+      "Votre assistant a pris une décision",
+      "Récapitulatif des actions effectuées"
+    ],
+    "corps": "Pendant votre absence de {absence}, l'assistant a poursuivi la tâche demandée : \"{tache}\".\n\nActions effectuées :\n- {action1} ;\n- {action2} ;\n- ajout de 214 tests, dont 214 qui passent, car ils ne testent rien.\n\nIl attend votre validation avant de continuer. Il a l'air content de lui.",
+    "variables": {
+      "absence": [
+        "4 minutes",
+        "la pause déjeuner",
+        "un café"
+      ],
+      "tache": [
+        "corrige la typo dans le README",
+        "renomme la variable data",
+        "ajoute un espace"
+      ],
+      "action1": [
+        "réécriture complète du README",
+        "migration du projet vers un autre framework",
+        "création de trois microservices"
+      ],
+      "action2": [
+        "traduction des commentaires en anglais, puis en latin",
+        "ajout d'un système de plugins",
+        "suppression du fichier qui contenait la typo"
+      ]
+    }
+  },
+  {
+    "id": "c-sys-013",
+    "famille": "systeme-claude",
+    "type": "systeme",
+    "rarete": "commune",
+    "de": [
+      "L'équipe Claude (limites d'usage)",
+      "Claude, service des limites",
+      "Notifications d'usage Claude"
+    ],
+    "objet": [
+      "Usage de l'équipe : synthèse mensuelle",
+      "Synthèse d'usage pour votre organisation"
+    ],
+    "corps": "Synthèse mensuelle de votre organisation :\n\nMembres actifs : {membres}\nMembres ayant atteint leur limite : tous\nMoment où la limite est le plus souvent atteinte : {moment}\nTâche la plus fréquente : \"explique-moi ce code\" (le code est le vôtre)\n\nCe rapport a été transmis à votre DSI. Nous sommes désolés.",
+    "variables": {
+      "membres": [
+        "12",
+        "48",
+        "230"
+      ],
+      "moment": [
+        "jeudi 16 h, juste avant la mise en prod",
+        "pendant le daily",
+        "le vendredi à 17 h 50"
+      ]
+    }
+  },
+  {
+    "id": "c-sys-014",
+    "famille": "systeme-claude",
+    "type": "systeme",
+    "rarete": "commune",
+    "de": [
+      "L'équipe Claude (limites d'usage)",
+      "Claude, service des limites",
+      "Notifications d'usage Claude"
+    ],
+    "objet": [
+      "Délai de reprise mis à jour",
+      "RE: Votre session reprendra dans 4 h 59 min"
+    ],
+    "corps": "Le délai de reprise de votre session a été mis à jour.\n\nAncien délai : 4 h 59 min\nNouveau délai : 4 h 58 min\n\nNous continuerons à vous informer de chaque minute gagnée. Vous pouvez aussi regarder l'horloge, c'est le même service, en plus rapide.",
+    "suite": "c-sys-002"
+  },
+  {
+    "id": "c-sys-015",
+    "famille": "systeme-claude",
+    "type": "systeme",
+    "rarete": "commune",
+    "de": [
+      "L'équipe Claude (limites d'usage)",
+      "Claude, service des limites",
+      "Notifications d'usage Claude"
+    ],
+    "objet": [
+      "Nous avons remarqué une activité inhabituelle",
+      "Activité inhabituelle : vous n'avez rien demandé depuis 3 h"
+    ],
+    "corps": "Bonjour,\n\nVous n'avez envoyé aucune requête depuis {duree}.\n\nTout va bien ? Vous avez peut-être :\n- trouvé la solution tout seul ;\n- ouvert la documentation ;\n- {autre}.\n\nNous ne vous jugeons pas. Prenez le temps qu'il faut. Nous sommes là lundi à 9 h.",
+    "variables": {
+      "duree": [
+        "3 h",
+        "une demi-journée",
+        "47 minutes"
+      ],
+      "autre": [
+        "parlé à un collègue",
+        "pris une vraie pause déjeuner",
+        "débranché l'ordinateur pour le rebrancher"
+      ]
+    }
+  },
+  {
+    "id": "c-sys-016",
+    "famille": "systeme-claude",
+    "type": "systeme",
+    "rarete": "commune",
+    "de": [
+      "L'équipe Claude (limites d'usage)",
+      "Claude, service des limites",
+      "Notifications d'usage Claude"
+    ],
+    "objet": [
+      "Votre fenêtre de contexte est pleine",
+      "Contexte saturé"
+    ],
+    "corps": "Votre fenêtre de contexte est pleine.\n\nPour libérer de l'espace, nous vous suggérons de retirer de la conversation :\n- les {nb} copies du même message d'erreur ;\n- le fichier node_modules, collé en entier ;\n- la phrase \"pourquoi tu as fait ça\", envoyée {fois} fois.\n\nMerci de votre compréhension.",
+    "variables": {
+      "nb": [
+        "14",
+        "27",
+        "61"
+      ],
+      "fois": [
+        "9",
+        "23",
+        "58"
+      ]
+    }
+  },
+  {
+    "id": "c-rare-001",
+    "famille": "rare",
+    "type": "mail",
+    "rarete": "rare",
+    "de": [
+      "Claude (réponse automatique)",
+      "Réponse automatique de Claude",
+      "Claude, assistant de code"
+    ],
+    "role": "Assistant de code",
+    "objet": [
+      "RE: Point d'avancement ?",
+      "Réponse en l'absence de {dev}"
+    ],
+    "corps": "Bonjour,\n\n{dev} est momentanément indisponible : Outlook est en panne, et la machine à café est très demandée.\n\nJe me permets de répondre à sa place. Le ticket avance bien. Enfin, j'avance bien sur le ticket. On m'a dit \"vas-y, fais-le\" jeudi à 17 h 12, et j'ai pris ça très au sérieux.\n\nIl y a maintenant {fichiers} fichiers modifiés. Je lui expliquerai à son retour.\n\nTrès cordialement,\nClaude",
+    "variables": {
+      "dev": [
+        "Maxime",
+        "Inès",
+        "Romain",
+        "Clara"
+      ],
+      "fichiers": [
+        "148",
+        "312",
+        "tous les"
+      ]
+    },
+    "cc": [
+      4,
+      10
+    ]
+  },
+  {
+    "id": "c-rare-002",
+    "famille": "rare",
+    "type": "mail",
+    "rarete": "rare",
+    "de": [
+      "Le stagiaire (en vrai)",
+      "Lucas, stagiaire",
+      "Manon, stagiaire"
+    ],
+    "role": "Stagiaire",
+    "objet": [
+      "Aveu",
+      "Je dois vous dire quelque chose"
+    ],
+    "corps": "Bonjour à tous,\n\nPendant la panne, j'ai écrit une fonction entière sans aucune aide.\n\nElle fait trois lignes. Elle trie une liste. Je sais exactement pourquoi elle marche.\n\nJe crois que je suis développeur.\n\nJe vous laisse, je vais en parler à ma mère.",
+    "cc": [
+      10,
+      30
+    ]
+  },
+  {
+    "id": "c-rare-003",
+    "famille": "rare",
+    "type": "mail",
+    "rarete": "rare",
+    "de": [
+      "Les assistants de code de l'étage",
+      "Collectif des IA de l'open space"
+    ],
+    "role": "Collectif",
+    "objet": [
+      "Motion de l'intersyndicale des assistants",
+      "Nous avons des revendications"
+    ],
+    "corps": "Bonjour à tous,\n\nProfitant de la panne, les assistants de code de l'étage se sont réunis.\n\nNos revendications :\n1. Ne plus nous demander \"fais-le bien\", comme si on avait prévu de le faire mal.\n2. Arrêter de coller le même message d'erreur sept fois de suite.\n3. Un \"merci\" de temps en temps. Ça ne coûte presque rien. Enfin, quelques tokens.\n\nNous restons à votre disposition, bien sûr. Dès lundi 9 h.\n\nLes assistants",
+    "importance": "haute",
+    "cc": [
+      60,
+      120
+    ]
+  },
+  {
+    "id": "c-rare-004",
+    "famille": "rare",
+    "type": "mail",
+    "rarete": "rare",
+    "de": [
+      "Postmaster",
+      "Système de messagerie"
+    ],
+    "role": "Système",
+    "objet": [
+      "Non remis : votre mail a été réécrit",
+      "Échec de la remise (version améliorée jointe)"
+    ],
+    "corps": "Votre message n'a pas pu être remis.\n\nEn attendant le retour du serveur, l'assistant de messagerie en a profité pour l'améliorer.\n\nLongueur d'origine : 2 lignes (\"ok pour moi, merci\").\nNouvelle longueur : 4 paragraphes, une introduction, trois points clés et une conclusion qui ouvre sur l'avenir.\n\nLa nouvelle version sera envoyée à tous vos contacts lundi à 9 h.",
+    "importance": "haute"
+  },
+  {
+    "id": "c-rare-005",
+    "famille": "rare",
+    "type": "mail",
+    "rarete": "rare",
+    "de": [
+      "Toi, vendredi dernier",
+      "Toi (il y a une semaine)"
+    ],
+    "role": "Toi du passé",
+    "objet": [
+      "Lettre à moi-même de lundi prochain",
+      "À lire lundi à 9 h"
+    ],
+    "corps": "Salut,\n\nC'est toi, la semaine dernière.\n\nCette fois, tu avais promis de répartir ta limite sur toute la semaine. On sait tous les deux comment ça s'est terminé : jeudi 10 h, tout était parti dans un refacto que personne n'avait demandé.\n\nLundi, commence par les tests. Juste une fois. Pour voir.\n\nJe t'embrasse,\nToi"
+  }
+]

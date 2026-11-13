@@ -1,0 +1,810 @@
+{
+ "updated": "2026-11-13T11:24:07Z",
+ "memes": [
+  {
+   "title": "Je rigole plus",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/11/meme-outlook-claude-down-zero-soucis-thousand-yard.jpg",
+   "url": "https://lesjoiesducode.fr/meme-outlook-claude-down-developpeur",
+   "alt": "Meme comparant un dev tout sourire quand Outlook est down et un soldat au regard des mille mètres quand Claude est down.",
+   "boss": false
+  },
+  {
+   "title": "Solution pérenne",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/11/meme-redemarrer-serveur-fuite-memoire-honest-work.jpg",
+   "url": "https://lesjoiesducode.fr/meme-redemarrer-serveur-fuite-memoire-honest-work-developpeur",
+   "alt": "Meme It ain't much but it's honest work : le développeur redémarre le serveur chaque matin au lieu de corriger la fuite mémoire",
+   "boss": false
+  },
+  {
+   "title": "Une source très fiable",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/11/meme-ia-source-fonction-inventee-bob-eponge-imagination.jpg",
+   "url": "https://lesjoiesducode.fr/meme-ia-fonction-inventee-bob-eponge-developpeur",
+   "alt": "Bob l'éponge, un arc-en-ciel entre les mains, illustre l'IA qui invente la fonction qu'elle vient d'utiliser.",
+   "boss": false
+  },
+  {
+   "title": "Regarde !",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/11/meme-binome-claude-prod-page-blanche-ghost.jpg",
+   "url": "https://lesjoiesducode.fr/meme-binome-claude-prod-page-blanche-developpeur",
+   "alt": "Meme de Ghost de Call of Duty qui regarde en coin quand le binôme a branché Claude sur la prod et que le site affiche une page blanche.",
+   "boss": false
+  },
+  {
+   "title": "Carte blanche",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/11/insta-client-vous-etes-l-expert-labrador.jpg",
+   "url": "https://lesjoiesducode.fr/meme-client-faites-comme-vous-voulez-expert-developpeur",
+   "alt": "Labrador à l'air paniqué, quand le client dit au développeur \"faites comme vous voulez, c'est vous l'expert\"",
+   "boss": false
+  },
+  {
+   "title": "Toujours vivant, toujours debout",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/11/meme-tokens-securite-legacy-piscine.jpg",
+   "url": "https://lesjoiesducode.fr/meme-token-legacy-equipe-securite-developpeur",
+   "alt": "Meme de l'enfant qui se noie dans la piscine : l'équipe sécu ne s'occupe que du token récent, sans voir le token commité ni le squelette du token legacy.",
+   "boss": false
+  },
+  {
+   "title": "Ce sera rapide, promis.",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/11/meme-reunion-commercial-client-affranchis.jpg",
+   "url": "https://lesjoiesducode.fr/meme-reunion-deux-minutes-commercial-client-developpeur",
+   "alt": "Quand on me demande de passer deux minutes en réunion et qu'il n'y a que moi, le commercial et le client, meme de Tommy DeVito (Joe Pesci) dans Les Affranchis. Il entre, souriant et confiant, dans une",
+   "boss": false
+  },
+  {
+   "title": "J'y étais.",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/11/meme-genz-stack-overflow-kylo-ren-1.jpg",
+   "url": "https://lesjoiesducode.fr/meme-gen-z-stack-overflow-developpeur",
+   "alt": "Quand un Gen-Z au travail me dit c'est quoi ce truc Stack Overflow dans tes anciens commentaires\", au-dessus de Kylo Ren sous la pluie dans Star Wars IX, trempé, le regard grave du vétéran qui a connu",
+   "boss": false
+  },
+  {
+   "title": "Un changement mineur",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/10/meme-pr-4000-lignes-variable-data-blinking-guy.jpg",
+   "url": "https://lesjoiesducode.fr/pr-4000-lignes-renommer-variable",
+   "alt": "Meme Blinking Guy, le gars qui cligne des yeux, incrédule : « Pourquoi ta PR fait 4000 lignes ? - J’ai juste renommé une variable. - Laquelle ? - data »",
+   "boss": false
+  },
+  {
+   "title": "10x engineer",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/10/meme-ia-10-fois-plus-vite-monster-house.jpg",
+   "url": "https://lesjoiesducode.fr/ia-coder-10-fois-plus-vite",
+   "alt": "Meme Monster House, Reginald gêné : \"Avec l'IA, tu codes 10 fois plus vite ? - Oui. - Donc ton projet est fini ? - Non, j'en ai commencé 10.\"",
+   "boss": false
+  },
+  {
+   "title": "\"Merci pour tes insights\"",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/10/meme-delai-commercial-vu-et-s-en-tape.jpg",
+   "url": "https://lesjoiesducode.fr/meme-delai-commercial-vu-et-s-en-tape",
+   "alt": "Meme Vu et s'en tape : quand je préviens le commercial que la feature promise au client sous 2 semaines en prendra 8, il signe une feuille marquée Vu et s'en tape.",
+   "boss": false
+  },
+  {
+   "title": "Oh ben mince alors",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/10/meme-deuxieme-dev-feature-gru-plan.jpg",
+   "url": "https://lesjoiesducode.fr/deuxieme-dev-feature-plus-lent-meme-developpeur",
+   "alt": "Meme Gru et son plan en 4 cases : « La feature prend 2 jours », « On met un deuxième dev dessus pour aller plus vite », « La feature prend 2 semaines », puis Gru qui relit, inquiet, « La feature prend",
+   "boss": false
+  },
+  {
+   "title": "Ils sont incorrigibles",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/10/meme-migration-php-8-uno-draw-25.jpg",
+   "url": "https://lesjoiesducode.fr/meme-migration-php-8-manager-uno-draw-25",
+   "alt": "Meme UNO draw 25 : une carte UNO dit Migrer vers PHP 8 OR draw 25, et le manager d'un projet PHP 5.6 depuis 2014 préfère piocher une pleine main de cartes plutôt que migrer.",
+   "boss": true
+  },
+  {
+   "title": "Allez parfait",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/10/meme-fonction-formatdate-carlo-reveils.jpg",
+   "url": "https://lesjoiesducode.fr/meme-fonction-formatdate-carlo-reveils",
+   "alt": "Meme Carlo et son placard de réveils : le développeur qui cherche une fonction pour formater les dates dans le projet en trouve cinq, formatDate(), formatDate2(), dateFormat(), formatDateFR() et toFre",
+   "boss": false
+  },
+  {
+   "title": "Bienvenue au club",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/10/meme-faille-php-log4j-first-time.jpg",
+   "url": "https://lesjoiesducode.fr/meme-log4j-faille-php-migration-first-time",
+   "alt": "Meme First time? : la corde au cou, un dev Java qui a patché Log4j sourit à un dev PHP contraint de migrer vers PHP 8",
+   "boss": false
+  },
+  {
+   "title": "Force à vous",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/10/dev-migration-php-8-faille.jpg",
+   "url": "https://lesjoiesducode.fr/dev-migration-php-8-faille-meme",
+   "alt": "Meme Crying Jordan : Michael Jordan en larmes devant son ordinateur, avec le texte « Les devs qui vont devoir se taper la migration PHP 8 qu'ils repoussent depuis des années cette nuit parce que le fi",
+   "boss": false
+  },
+  {
+   "title": "C'est bien connu, personne ne lit le README",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/10/meme-cle-ssh-privee-readme-galaxy-brain-cacher.jpg",
+   "url": "https://lesjoiesducode.fr/cest-bien-connu-personne-ne-lit-le-readme",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Amateurs.",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/10/claude-code-cli-peasants.jpg",
+   "url": "https://lesjoiesducode.fr/meme-claude-code-terminal-appli-peasants",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Non, pas toi !",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/09/apple-iphone-duo-meme-developpeur.jpg",
+   "url": "https://lesjoiesducode.fr/apple-iphone-duo-meme-developpeur-front",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "On se sait",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/09/claude-statue-claude-status.jpg",
+   "url": "https://lesjoiesducode.fr/claude-status-meme-developpeur",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Allez nickel",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/07/claude-ticket-3-jours-cherki.jpg",
+   "url": "https://lesjoiesducode.fr/claude-ticket-3-jours-cherki-meme",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Ben quoi ?",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/05/developpeurs-assis-9h.jpg",
+   "url": "https://lesjoiesducode.fr/developpeurs-assis-9h-meme-bureau",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Oui c'est bon on a compris",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/04/claude-co-auteur-projet.jpg",
+   "url": "https://lesjoiesducode.fr/claude-co-auteur-projet-sabrina-carpenter-meme",
+   "alt": "Quand Claude s'ajoute de lui-même comme co-auteur de mon projet, meme avec la chanteuse Sabrina Carpenter dégoûtée",
+   "boss": false
+  },
+  {
+   "title": "Attends, quoi ?!",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/03/stagiaire-acces-6-mois.jpg",
+   "url": "https://lesjoiesducode.fr/attends-quoi-stagiaire-acces-6-mois-meme",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Alors ça vraiment aucune idée",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/01/incident-prod-meloni.jpg",
+   "url": "https://lesjoiesducode.fr/incident-prod-meloni-meme-developpeur",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Ça va pas se corriger tout seul, sergent",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/01/groenland-developpeur-bug-critique.jpg",
+   "url": "https://lesjoiesducode.fr/meme-groenland-developpeur-bug-critique",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "\"maintenant corrige ce bug\"",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/01/devs-juniors-2026-chatgpt-cursor-claude-code.jpg",
+   "url": "https://lesjoiesducode.fr/developpeurs-juniors-2026-chatgpt-cursor-claude-code",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Non mais c'est vrai quoi",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/01/infirmiers-diplomes-etat-developpeurs-ide.jpg",
+   "url": "https://lesjoiesducode.fr/infirmiers-diplomes-etat-developpeurs-ide",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Ça joue complètement sur l'appréciation du café",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/01/trump-venezuela-cafe-build-developpeur.jpg",
+   "url": "https://lesjoiesducode.fr/trump-venezuela-cafe-build-developpeur",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Les petits plaisirs de la vie",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2025/12/build-finished-successfully-meme.jpg",
+   "url": "https://lesjoiesducode.fr/build-finished-successfully-meme",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Oui Monseigneur",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2025/12/claude-developpeur-paysan-warcraft-encore-travail.jpg",
+   "url": "https://lesjoiesducode.fr/meme-claude-developpeur-paysan-warcraft-encore-travail",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "getUsername // récupère le username",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2025/12/commentaires-getters-setters-walid.png",
+   "url": "https://lesjoiesducode.fr/meme-commentaires-getters-setters-walid",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Ça veut pas builder la",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2025/12/meme-developpeur-ide-build-bardella-energie.jpg",
+   "url": "https://lesjoiesducode.fr/meme-developpeur-ide-build-bardella-energie",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Cœur sur tous les développeurs Python",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2025/12/meme-developpeurs-python-urinoir.jpg",
+   "url": "https://lesjoiesducode.fr/meme-developpeurs-python-urinoir",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "C'est n'importe quoi",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2025/12/chatgpt-code-bug-chat-pathetic.jpg",
+   "url": "https://lesjoiesducode.fr/meme-developpeur-chatgpt-code-bug-chat-pathetic",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Ça commence à piquer",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2025/12/undertaker-standing-behind-catch-wwe.jpg",
+   "url": "https://lesjoiesducode.fr/meme-developpeur-douleur-dos-assis-undertaker-wwe",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Laissez-moi juste coder svp",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2025/12/ara-girl-developpeur-api-openai.jpg",
+   "url": "https://lesjoiesducode.fr/meme-api-openai-developpeur",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Aucune idée franchement",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2025/11/developpeur-posture-dos-nuque-meme.jpg",
+   "url": "https://lesjoiesducode.fr/douleur-posture-developpeur-bureau-assis-debout",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "ChatG-capté",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2025/11/collegue-pr-nickel-chatgpt-doakes-meme.jpg",
+   "url": "https://lesjoiesducode.fr/collegue-pull-requests-ia-chatgpt-dexter-doakes-meme",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Question de priorités 👀",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2025/10/distracted-boyfriend-meme-devops-incident-grafana.jpg",
+   "url": "https://lesjoiesducode.fr/distracted-boyfriend-meme-devops-incident-grafana",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Le talent, c'est tout",
+   "image": "https://lesjoiesducode.fr/content/054/un-peu-rouge-chatgpt.jpg",
+   "url": "https://lesjoiesducode.fr/meme-developpeur-chatgpt-code-tout-seul",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Il est parti beaucoup trop loin",
+   "image": "https://lesjoiesducode.fr/content/053/cursor-code-detruit.jpg",
+   "url": "https://lesjoiesducode.fr/cursor-code-detruit-meme",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Les vrais de vrai",
+   "image": "https://lesjoiesducode.fr/content/053/devs-front-back-full-stack.jpg",
+   "url": "https://lesjoiesducode.fr/developpeurs-front-back-full-stack-meme",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Bon ben on est cuits",
+   "image": "https://lesjoiesducode.fr/content/053/commercial-client-macron-meloni.jpg",
+   "url": "https://lesjoiesducode.fr/commercial-client-macron-meloni",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "$swag",
+   "image": "https://lesjoiesducode.fr/content/053/personne-variables-php.jpg",
+   "url": "https://lesjoiesducode.fr/variables-php-dollar-meme",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Question de point de vue",
+   "image": "https://lesjoiesducode.fr/content/053/message-erreur-bus.jpg",
+   "url": "https://lesjoiesducode.fr/message-erreur-bus-meme-developpeur",
+   "alt": "Meme avec deux personnes dans un bus, une triste côté sans vue, une heureuse avec une vue radieuse : la première dit encore un message d'erreur, la seconde yes un nouveau message d'erreur",
+   "boss": false
+  },
+  {
+   "title": "Ils sont dans l'abus parfois",
+   "image": "https://lesjoiesducode.fr/content/053/utilisateurs-linux-10-minutes-windows-katy-perry.jpg",
+   "url": "https://lesjoiesducode.fr/utilisateurs-linux-10-minutes-windows-katy-perry",
+   "alt": "Katy Perry en train d'embrasser le sol au retour de son vol dans l'espace avec Blue Origin : les utilisateurs Linux quand ils retournent sur Linux après avoir passé 10 minutes sous Windows",
+   "boss": false
+  },
+  {
+   "title": "Merci pour le coup de main chef",
+   "image": "https://lesjoiesducode.fr/content/053/copie-code-github-dev-senior-umbrella-academy.jpg",
+   "url": "https://lesjoiesducode.fr/copie-code-github-dev-senior-umbrella-academy",
+   "alt": "",
+   "boss": true
+  },
+  {
+   "title": "Tout pareil",
+   "image": "https://lesjoiesducode.fr/content/053/photographe-vs-developpeur-modeles-ia-chad.png",
+   "url": "https://lesjoiesducode.fr/photographe-vs-developpeur-modeles-ia-chad-meme-developpeur",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Deux salles, deux ambiances",
+   "image": "https://lesjoiesducode.fr/content/053/devs-codent-IA-daniel-radcliffe.jpg",
+   "url": "https://lesjoiesducode.fr/developpeurs-intelligence-artificielle-codent-ia-daniel-radcliffe",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "La compatibilité de ses morts",
+   "image": "https://lesjoiesducode.fr/content/053/vieux-developpeur-internet-explorer-zombie.jpg",
+   "url": "https://lesjoiesducode.fr/vieux-developpeur-internet-explorer-zombie",
+   "alt": "Un zombie de la bande-annonce du film d'horreur 28 ans plus tard : quand je réalise que je suis assez vieux pour avoir priorisé Internet Explorer dans mes fichiers CSS",
+   "boss": false
+  },
+  {
+   "title": "L'envers du décor",
+   "image": "https://lesjoiesducode.fr/content/053/batman-frontend-backend.jpg",
+   "url": "https://lesjoiesducode.fr/batman-frontend-backend-meme-developpeur",
+   "alt": "Tête d'une figurine Batman, et sa version découpée masque et visage, première image : front-end, deuxième image: back-end",
+   "boss": false
+  },
+  {
+   "title": "Allez viens on n'y touche pas",
+   "image": "https://lesjoiesducode.fr/content/053/fix-temporaire-refactoriser-marie-kondo-joy.jpg",
+   "url": "https://lesjoiesducode.fr/fix-temporaire-refactoriser-marie-kondo-joy",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "\"Corrige ça une bonne fois pour toutes maintenant\"",
+   "image": "https://lesjoiesducode.fr/content/053/chatgpt-marche-toujours-pas-hayao-miyazaki.jpg",
+   "url": "https://lesjoiesducode.fr/chatgpt-marche-toujours-pas-hayao-miyazaki",
+   "alt": "Meme de Hayao Miyazaki, le cofondateur du studio Ghibli, les yeux fermés et une cigarette éteinte à la bouche, en train de se tenir la tête : ChatGPT quand je lui dis ça marche toujours pas pour la 10",
+   "boss": false
+  },
+  {
+   "title": "T'inquiète je te dis",
+   "image": "https://lesjoiesducode.fr/content/046/copie-code-entreprise.jpg",
+   "url": "https://lesjoiesducode.fr/copier-code-entreprise-developpeurs",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Attends quoi ?!",
+   "image": "https://lesjoiesducode.fr/content/053/cerveau-dormir-typeof-nan-number.jpg",
+   "url": "https://lesjoiesducode.fr/meme-javascript-nana-cerveau-dormir-typeof-number",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Et vous, vous êtes dans quelle catégorie ?",
+   "image": "https://lesjoiesducode.fr/content/053/2-categories-developpeurs-index-tableau.png",
+   "url": "https://lesjoiesducode.fr/blague-developpeur-tableaux-index",
+   "alt": "Blague développeur sur les tableaux : il existe deux catégories de développeurs. 1 : ceux qui commencent leur index à 1. 1 : ceux qui commencent leur index à 0.",
+   "boss": false
+  },
+  {
+   "title": "C'est vrai ça, pourquoi pas ?",
+   "image": "https://lesjoiesducode.fr/content/053/framework-junior-vs-senior-mr-incredible.jpg",
+   "url": "https://lesjoiesducode.fr/framework-junior-vs-senior-mr-incredible-meme-developpeur",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Tranquille y'a des mises à jour régulières",
+   "image": "https://lesjoiesducode.fr/content/053/dependance-critique-dev-lituanie.jpg",
+   "url": "https://lesjoiesducode.fr/dependance-critique-dev-lituanie",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Non mais en vrai je maîtrise",
+   "image": "https://lesjoiesducode.fr/content/053/code-seul-vs-entretien-bob-eponge.jpg",
+   "url": "https://lesjoiesducode.fr/code-seul-vs-entretien-bob-eponge",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "C'était sans compter sur la lib",
+   "image": "https://lesjoiesducode.fr/content/053/code-lignes-error-lib-undertaker.jpg",
+   "url": "https://lesjoiesducode.fr/code-lignes-error-lib-undertaker-meme-developpeur",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Vive le vibe coding carrément",
+   "image": "https://lesjoiesducode.fr/content/053/jim-halpert-vibe-coding-perf-secu.jpg",
+   "url": "https://lesjoiesducode.fr/jim-halpert-vibe-coding-perf-secu-meme-developpeur",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "azertyuiop",
+   "image": "https://lesjoiesducode.fr/content/053/mail-test-prod-bdd-arthas.jpg",
+   "url": "https://lesjoiesducode.fr/mail-test-prod-bdd-arthas-meme",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "On l'intègre dans le sprint ?",
+   "image": "https://lesjoiesducode.fr/content/053/fonctionnalite-prioritaire-buzz.jpg",
+   "url": "https://lesjoiesducode.fr/fonctionnalite-prioritaire-buzz-meme-developpeur",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "J'ai cru, j'ai cru...",
+   "image": "https://lesjoiesducode.fr/content/053/willem-dafoe-bug-3-heures.jpg",
+   "url": "https://lesjoiesducode.fr/willem-dafoe-bug-3-heures-meme-developpeur",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Hack ultime (de rien)",
+   "image": "https://lesjoiesducode.fr/content/053/dev-mobile-roll-safe-hack.jpg",
+   "url": "https://lesjoiesducode.fr/dev-mobile-roll-safe-hack",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Non mais c'est bon quoi",
+   "image": "https://lesjoiesducode.fr/content/053/correction-typo-vs-bug-bloquant.jpg",
+   "url": "https://lesjoiesducode.fr/correction-typo-vs-bug-bloquant-incendie-poussette",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Tranquille frère",
+   "image": "https://lesjoiesducode.fr/content/052/sudo-chmod-777-meme.jpg",
+   "url": "https://lesjoiesducode.fr/sudo-chmod-777-meme",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Point faible : trop fort",
+   "image": "https://lesjoiesducode.fr/content/052/indentation-tab-espace-python-point-virgule.jpg",
+   "url": "https://lesjoiesducode.fr/indentation-tab-espace-python-point-virgule-meme",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Va, cours, vole !",
+   "image": "https://lesjoiesducode.fr/content/052/i-fin-boucle-my-time-has-come.jpg",
+   "url": "https://lesjoiesducode.fr/i-fin-boucle-my-time-has-come-meme",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "\"C'était vraiment très clair !\"",
+   "image": "https://lesjoiesducode.fr/content/052/tuto-confused-unga-bunga.jpg",
+   "url": "https://lesjoiesducode.fr/tuto-informatique-confused-unga-bunga-meme",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Oh j'suis foutu",
+   "image": "https://lesjoiesducode.fr/content/052/git-merge-conflicts-hostage.jpg",
+   "url": "https://lesjoiesducode.fr/git-merge-conflicts-hostage-meme",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Les bienheureux",
+   "image": "https://lesjoiesducode.fr/content/052/bus-developpeur-testeur-bugs.jpg",
+   "url": "https://lesjoiesducode.fr/bus-developpeur-testeur-bugs-meme",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Allez nickel",
+   "image": "https://lesjoiesducode.fr/content/052/debutants-dev-web-html-css-js-react.jpg",
+   "url": "https://lesjoiesducode.fr/meme-react-debutants-dev-web-html-css-js",
+   "alt": "Meme React pour développeurs",
+   "boss": false
+  },
+  {
+   "title": "aled.",
+   "image": "https://lesjoiesducode.fr/content/052/loups-dev-senior-explications-bug.jpg",
+   "url": "https://lesjoiesducode.fr/loups-dev-senior-explications-bug",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Eh ouais",
+   "image": "https://lesjoiesducode.fr/content/052/monde-si-devs-mep-vendredi.jpg",
+   "url": "https://lesjoiesducode.fr/monde-si-devs-mep-vendredi-meme",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Il a cru quoi lui ?!!",
+   "image": "https://lesjoiesducode.fr/content/052/gillette-ds-store-gitignore.jpg",
+   "url": "https://lesjoiesducode.fr/gillette-ds-store-gitignore-meme",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Et puis quoi encore ?",
+   "image": "https://lesjoiesducode.fr/content/052/are-you-two-friends-devs-windev.jpg",
+   "url": "https://lesjoiesducode.fr/are-you-two-friends-devs-meme-windev",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "LÂCHE CE CLAVIER TOUT DE SUITE",
+   "image": "https://lesjoiesducode.fr/content/052/goto-allright-gentlemen.jpg",
+   "url": "https://lesjoiesducode.fr/meme-goto-allright-gentlemen",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Vous avez une nouvelle pull request !",
+   "image": "https://lesjoiesducode.fr/content/052/pull-request-marche-arriere.jpg",
+   "url": "https://lesjoiesducode.fr/pull-request-meme-marche-arriere",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "npm install",
+   "image": "https://lesjoiesducode.fr/content/052/node_modules-olive-js.jpg",
+   "url": "https://lesjoiesducode.fr/meme-node-modules-javascript-npm-install-huile-olive",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "C'est une bonne foutue question ça",
+   "image": "https://lesjoiesducode.fr/content/052/marche-sur-mon-poste-client-harold.jpg",
+   "url": "https://lesjoiesducode.fr/marche-sur-mon-poste-client-harold-meme-developpeur",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Juste non.",
+   "image": "https://lesjoiesducode.fr/content/052/developpeur-comics-tu-peux-non.jpg",
+   "url": "https://lesjoiesducode.fr/developpeur-comics-tu-peux-non",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "MONTOYA POR FAVOR",
+   "image": "https://lesjoiesducode.fr/content/052/variable-ide-montoya-por-favor.jpg",
+   "url": "https://lesjoiesducode.fr/variable-ide-montoya-por-favor-meme-developpeur",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "En fait c'était plus joli dans ma tête",
+   "image": "https://lesjoiesducode.fr/content/052/javascript-projet-thinking-vs-doing.jpg",
+   "url": "https://lesjoiesducode.fr/javascript-meme-projet-thinking-vs-doing",
+   "alt": "Une petite fille pensive et souriante : 'Quand je pense à tout ce que je vais pouvoir faire avec JavaScript dans mon projet', une petite fille en train de pleurer pendant qu'elle colorie : 'Quand j'ai",
+   "boss": false
+  },
+  {
+   "title": "Bonjour",
+   "image": "https://lesjoiesducode.fr/content/052/mep-vendredi-trump-order.jpg",
+   "url": "https://lesjoiesducode.fr/mep-vendredi-trump-order",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Voilà c'est ça qu'on veut",
+   "image": "https://lesjoiesducode.fr/content/052/bayrou-49-3-MEP-vendredi.jpg",
+   "url": "https://lesjoiesducode.fr/bayrou-49-3-mep-vendredi-developpeur",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "C'est très efficace !",
+   "image": "https://lesjoiesducode.fr/content/052/scoobydoo-singleton-variables-globales.jpg",
+   "url": "https://lesjoiesducode.fr/scoobydoo-singleton-variables-globales-meme-developpeur",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "C'est rien il s'est juste un peu emballé",
+   "image": "https://lesjoiesducode.fr/content/052/ligne-code-ide-wtf-ok-tweet.png",
+   "url": "https://lesjoiesducode.fr/ligne-code-ide-wtf-ok-tweet",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Oh la douleur",
+   "image": "https://lesjoiesducode.fr/content/052/devs-js-naan-joel-tlou.jpg",
+   "url": "https://lesjoiesducode.fr/devs-js-naan-joel-tlou-heart-attack",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Bon vendredi 🫶",
+   "image": "https://lesjoiesducode.fr/content/052/mep-vendredi-squid-game-2.jpg",
+   "url": "https://lesjoiesducode.fr/mep-vendredi-squid-game-2",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Ça pique un peu",
+   "image": "https://lesjoiesducode.fr/content/052/code-review-sylvain-lyve.jpg",
+   "url": "https://lesjoiesducode.fr/code-review-sylvain-lyve",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Allez c'est reparti pour un an",
+   "image": "https://lesjoiesducode.fr/content/052/copyright-2025-harold.jpg",
+   "url": "https://lesjoiesducode.fr/changer-copyright-2025-harold-meme-developpeur",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Et de bonnes fêtes surtout",
+   "image": "https://lesjoiesducode.fr/content/052/repas-famille-developpeur-homelander.jpg",
+   "url": "https://lesjoiesducode.fr/repas-famille-developpeur-homelander-meme",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Quelle surprise (non)",
+   "image": "https://lesjoiesducode.fr/content/052/modif-css-mineure-pikachu.jpg",
+   "url": "https://lesjoiesducode.fr/modif-css-mineure-pikachu-meme",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Nickel",
+   "image": "https://lesjoiesducode.fr/content/052/warnings-zero-erreur-bob-eponge.jpg",
+   "url": "https://lesjoiesducode.fr/warnings-zero-erreur-bob-eponge",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Je l'dis ou je l'dis pas ?",
+   "image": "https://lesjoiesducode.fr/content/052/users-prod-robuste-bugs.jpg",
+   "url": "https://lesjoiesducode.fr/users-prod-robuste-bugs-meme-developpeur",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Coïcidence ? Je ne crois pas.",
+   "image": "https://lesjoiesducode.fr/content/052/planetes-morts-javascript.jpg",
+   "url": "https://lesjoiesducode.fr/planetes-morts-javascript-meme",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "La tentation est forte mais on va essayer de garder un salaire",
+   "image": "https://lesjoiesducode.fr/content/052/raf-reste-a-faire-developpeurs.jpg",
+   "url": "https://lesjoiesducode.fr/raf-reste-a-faire-developpeurs-meme",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "On sait jamais en vrai",
+   "image": "https://lesjoiesducode.fr/content/052/clique-build-6eme-fois-peut-etre.jpg",
+   "url": "https://lesjoiesducode.fr/clique-build-6eme-fois-peut-etre",
+   "alt": "",
+   "boss": false
+  },
+  {
+   "title": "Ça va pas se corriger tout seul chef",
+   "image": "https://lesjoiesducode.fr/content/052/dev-senior-chatgpt-cod-ghost.jpg",
+   "url": "https://lesjoiesducode.fr/dev-senior-chatgpt-cod-ghost",
+   "alt": "",
+   "boss": true
+  },
+  {
+   "title": "Pas de souci",
+   "image": "https://lesjoiesducode.fr/content/052/chef-asap-dessin.jpg",
+   "url": "https://lesjoiesducode.fr/chef-asap-dessin-meme-developpeur",
+   "alt": "",
+   "boss": true
+  },
+  {
+   "title": "Les noms de variable en franglais c'est la base",
+   "image": "https://lesjoiesducode.fr/content/051/lead-dev-joel-tlou-heart-attack.jpg",
+   "url": "https://lesjoiesducode.fr/lead-dev-joel-tlou-heart-attack-meme-developpeur",
+   "alt": "",
+   "boss": true
+  },
+  {
+   "title": "Évidemment",
+   "image": "https://lesjoiesducode.fr/content/050/nicolas-cage-pedro-pascal-chef-deadline.jpg",
+   "url": "https://lesjoiesducode.fr/nicolas-cage-pedro-pascal-chef-deadline",
+   "alt": "",
+   "boss": true
+  },
+  {
+   "title": "Bon chance",
+   "image": "https://lesjoiesducode.fr/content/050/chef-nouveau-code-perdu-meme.jpg",
+   "url": "https://lesjoiesducode.fr/chef-nouveau-code-perdu-meme-developpeur",
+   "alt": "",
+   "boss": true
+  },
+  {
+   "title": "Le beau rôle",
+   "image": "https://lesjoiesducode.fr/content/050/lead-dev-code-bugs-bugs-bunny-meme.jpg",
+   "url": "https://lesjoiesducode.fr/lead-dev-code-bugs-bugs-bunny-meme-developpeur",
+   "alt": "",
+   "boss": true
+  },
+  {
+   "title": "En même temps j'ai cherché",
+   "image": "https://lesjoiesducode.fr/content/049/chef-correctif-rapide-propre-yes.jpg",
+   "url": "https://lesjoiesducode.fr/chef-correctif-rapide-propre-yes-meme-developpeur",
+   "alt": "",
+   "boss": true
+  },
+  {
+   "title": "\"Tu jetteras un oeil à mon mail quand t'auras 2 minutes\"",
+   "image": "https://lesjoiesducode.fr/content/049/devs-vs-cdp-scrum-master-doge-meme.jpg",
+   "url": "https://lesjoiesducode.fr/developpeurs-vs-chef-de-projet-scrum-master-doge-meme",
+   "alt": "",
+   "boss": true
+  },
+  {
+   "title": "\"Ça te prendra pas longtemps, promis\"",
+   "image": "https://lesjoiesducode.fr/content/049/petite-demande-chef-weekend-godzilla.jpg",
+   "url": "https://lesjoiesducode.fr/demande-chef-vendredi-soir-meme-developpeur",
+   "alt": "",
+   "boss": true
+  },
+  {
+   "title": "Hum OK",
+   "image": "https://lesjoiesducode.fr/content/049/chef-livrer-temps-man-vs-wild.jpg",
+   "url": "https://lesjoiesducode.fr/chef-livrer-temps-man-vs-wild-meme-developpeur",
+   "alt": "",
+   "boss": true
+  },
+  {
+   "title": "Avouez on connaît tous un Chad comme ça",
+   "image": "https://lesjoiesducode.fr/content/049/chad-lead-dev-ufc.jpg",
+   "url": "https://lesjoiesducode.fr/lead-dev-coup-de-main-chad-meme-developpeur",
+   "alt": "",
+   "boss": true
+  },
+  {
+   "title": "Avez-vous pensé à le féliciter ?",
+   "image": "https://lesjoiesducode.fr/content/048/cdp-linkedin-scrum-master.jpg",
+   "url": "https://lesjoiesducode.fr/chef-de-projet-linkedin-certification-scrum-master-meme-developpeur",
+   "alt": "",
+   "boss": true
+  },
+  {
+   "title": "ASAP c'est bien",
+   "image": "https://lesjoiesducode.fr/content/048/cdp-dev-estimation.jpg",
+   "url": "https://lesjoiesducode.fr/chef-de-projet-developpeur-estimation-meme",
+   "alt": "",
+   "boss": true
+  },
+  {
+   "title": "Non, pas ça !",
+   "image": "https://lesjoiesducode.fr/content/047/chef-deadline-federer-nadal.jpg",
+   "url": "https://lesjoiesducode.fr/chef-deadline-federer-nadal-meme-developpeur",
+   "alt": "",
+   "boss": true
+  },
+  {
+   "title": "\"Ça devrait juste te prendre 5 minutes\"",
+   "image": "https://lesjoiesducode.fr/content/046/chef-de-projet-vendredi-16h-elon-musk.jpg",
+   "url": "https://lesjoiesducode.fr/chef-de-projet-vendredi-16h-elon-musk",
+   "alt": "",
+   "boss": true
+  }
+ ]
+}

@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Courrier - Downlook</title>
+<meta name="description" content="Depuis jeudi 17 h 17, la messagerie est en panne. Downlook rassemble tous les mails que vous n'avez pas reçus. Ils continuent d'arriver. Enfin, de ne pas arriver. Une parodie des Joies du Code.">
+<meta name="theme-color" content="#0f6cbd">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://lesjoiesducode.github.io/downlook/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Les Joies du Code">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://lesjoiesducode.github.io/downlook/">
+<meta property="og:title" content="Downlook : tous les mails que la panne vous a épargnés">
+<meta property="og:description" content="Le petit point rapide, la MEP du vendredi, le &quot;ça marche pas&quot;. Ils ne sont jamais arrivés. Ils continuent de ne pas arriver.">
+<meta property="og:image" content="https://lesjoiesducode.github.io/downlook/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Downlook, la boîte des mails non reçus pendant la panne. Une parodie des Joies du Code.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Downlook : tous les mails que la panne vous a épargnés">
+<meta name="twitter:description" content="Le petit point rapide, la MEP du vendredi, le &quot;ça marche pas&quot;. Ils ne sont jamais arrivés. Ils continuent de ne pas arriver.">
+<meta name="twitter:image" content="https://lesjoiesducode.github.io/downlook/og.png">
+<link rel="stylesheet" href="css/style.css?v=1">
+</head>
+<body>
+<header class="topbar">
+  <button class="menu-btn" id="menuBtn" aria-label="Dossiers"><i data-i="menu"></i></button>
+  <button class="waffle" data-toast="apps" aria-label="Applications"><i data-i="dots"></i></button>
+  <div class="brandname">Downlook</div>
+  <button class="search" data-toast="search"><i data-i="search"></i><span>Rechercher</span></button>
+  <div class="top-right">
+    <div class="outage" id="outage" title="Durée de la panne"><span class="dot"></span><span id="outageText">Panne en cours</span></div>
+    <button class="tb-ico" data-toast="bell" aria-label="Notifications"><i data-i="bell"></i></button>
+    <button class="tb-ico" data-toast="settings" aria-label="Paramètres"><i data-i="gear"></i></button>
+    <button class="tb-ico" data-toast="help" aria-label="Aide"><i data-i="help"></i></button>
+    <div class="me" aria-hidden="true">VS</div>
+  </div>
+</header>
+
+<div class="shell">
+  <nav class="rail" aria-label="Applications">
+    <button class="on" aria-label="Courrier"><i data-i="mail"></i></button>
+    <button data-toast="calendar" aria-label="Calendrier"><i data-i="calendar"></i></button>
+    <button data-toast="people" aria-label="Contacts"><i data-i="people"></i></button>
+    <button data-toast="chat" aria-label="Messagerie instantanée"><i data-i="chat"></i></button>
+    <button data-toast="files" aria-label="Fichiers"><i data-i="file"></i></button>
+    <button data-toast="todo" aria-label="Tâches"><i data-i="check"></i></button>
+  </nav>
+
+  <div class="main">
+    <div class="ribbon">
+      <div class="tabs">
+        <button class="on">Accueil</button>
+        <button data-toast="view">Afficher</button>
+        <button data-toast="help">Aide</button>
+      </div>
+      <div class="cmds">
+        <button class="cmd primary" data-act="new"><i data-i="compose"></i>Nouveau courrier</button>
+        <span class="sep"></span>
+        <button class="cmd" data-act="delete"><i data-i="trash"></i>Supprimer</button>
+        <button class="cmd" data-act="archive"><i data-i="archive"></i>Archiver</button>
+        <button class="cmd" data-act="report"><i data-i="shield"></i>Signaler</button>
+        <span class="sep"></span>
+        <button class="cmd" data-act="reply"><i data-i="reply"></i>Répondre</button>
+        <button class="cmd" data-act="replyall"><i data-i="replyall"></i>Répondre à tous</button>
+        <button class="cmd" data-act="forward"><i data-i="forward"></i>Transférer</button>
+        <span class="sep"></span>
+        <button class="cmd" data-act="read"><i data-i="envopen"></i>Lu / Non lu</button>
+        <button class="cmd" data-act="flag"><i data-i="flag"></i>Indicateur</button>
+        <span class="sep"></span>
+        <button class="cmd accent" data-act="capture"><i data-i="camera"></i>Capturer ce mail</button>
+      </div>
+    </div>
+
+    <div class="info-bar" id="infoBar"><span id="infoText"></span><button id="infoReplay">Rejouer la panne</button></div>
+
+    <div class="panes">
+      <aside class="folders" id="folders">
+        <div class="f-head"><i data-i="chev"></i>Favoris</div>
+        <div id="favs"></div>
+        <div class="f-head"><i data-i="chev"></i>vous@entreprise.example</div>
+        <div id="flist"></div>
+        <div class="stats">
+          <div class="row"><span>Mails évités</span><b id="statMails">0</b></div>
+          <div class="row"><span>Réunions esquivées</span><b id="statMeet">0</b></div>
+          <div class="hint">Depuis jeudi 17 h 17, heure de Paris.</div>
+        </div>
+        <div class="mob-foot">Downlook est une parodie par <a href="https://lesjoiesducode.fr/?utm_source=downlook&amp;utm_medium=parodie&amp;utm_campaign=panne-outlook" target="_blank" rel="noopener">Les Joies du Code</a>. Aucun mail n'est lu ni envoyé.</div>
+      </aside>
+
+      <section class="list" aria-label="Liste des messages">
+        <div class="l-head">
+          <div class="l-title"><span id="listTitle">Non reçus grâce à la panne</span><i data-i="star"></i></div>
+          <div class="l-tabs">
+            <button class="on" id="tabFocus">Prioritaire</button>
+            <button id="tabOther">Autres</button>
+            <button class="filter" data-toast="filter" aria-label="Filtrer"><i data-i="filter"></i></button>
+          </div>
+        </div>
+        <div class="l-stats" id="lStats"></div>
+        <div class="items" id="items"></div>
+      </section>
+
+      <section class="read" id="read" aria-label="Volet de lecture"></section>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">Downlook est une parodie par <a href="https://lesjoiesducode.fr/?utm_source=downlook&amp;utm_medium=parodie&amp;utm_campaign=panne-outlook" target="_blank" rel="noopener">Les Joies du Code</a>. Sans lien avec Microsoft. Aucun mail n'est lu, aucun n'est envoyé.</footer>
+
+<div class="scrim" id="scrim"></div>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+
+<div class="modal" id="endModal" role="dialog" aria-modal="true" aria-labelledby="endTitle">
+  <div class="dialog">
+    <h2 id="endTitle">La panne est terminée</h2>
+    <div class="end-big" id="endDur"></div>
+    <p>La panne est terminée après <span id="endDur2"></span>. Vos mails sont de nouveau là. Courage.</p>
+    <div class="acts">
+      <button class="btn" id="endClose">Fermer</button>
+      <button class="btn primary" id="endReplay">Rejouer la panne</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="capModal" role="dialog" aria-modal="true" aria-label="Capture du mail">
+  <div class="dialog cap">
+    <h2>Capture du mail</h2>
+    <img id="capImg" alt="Capture du mail">
+    <div class="acts">
+      <button class="btn" id="capClose">Fermer</button>
+      <button class="btn" id="capShare" hidden><i data-i="share"></i>Partager</button>
+      <a class="btn primary" id="capDl" download="downlook.png" href="#"><i data-i="download"></i>Télécharger l'image</a>
+    </div>
+  </div>
+</div>
+
+<script src="js/mails-special.js?v=1"></script>
+<script src="js/mails-extra.js?v=1"></script>
+<script src="js/app.js?v=1"></script>
+</body>
+</html>

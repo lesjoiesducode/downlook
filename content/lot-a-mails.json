@@ -1,0 +1,6218 @@
+[
+  {
+    "id": "a-cdp-001",
+    "famille": "chef-de-projet",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Sophie Marchal",
+      "Karim Benali",
+      "Julien Roux",
+      "Aïcha Diallo"
+    ],
+    "role": "Chef de projet",
+    "objet": [
+      "Petit point rapide ?",
+      "Petit point rapide sur {projet}"
+    ],
+    "corps": "Hello,\n\nTu aurais deux minutes pour un petit point rapide sur {projet} ? Comme Teams est en panne, je te le demande par mail.\n\nJe t'ai bloqué {duree} dans ton agenda, histoire d'avoir de la marge. J'ai aussi invité {nb} personnes, mais tu n'es pas obligé de parler.\n\nVraiment rien de long, c'est juste pour qu'on se cale.\n\nVotre chef de projet",
+    "variables": {
+      "projet": [
+        "Phoenix",
+        "Refonte V3",
+        "Migration Cloud",
+        "Portail Client 2.0"
+      ],
+      "duree": [
+        "1 h",
+        "1 h 30",
+        "2 h",
+        "toute l'après-midi"
+      ],
+      "nb": [
+        "6",
+        "9",
+        "11",
+        "14"
+      ]
+    },
+    "cc": [
+      3,
+      9
+    ]
+  },
+  {
+    "id": "a-cdp-002",
+    "famille": "chef-de-projet",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Sophie Marchal",
+      "Karim Benali",
+      "Julien Roux",
+      "Aïcha Diallo"
+    ],
+    "role": "Chef de projet",
+    "objet": [
+      "RE: Petit point rapide ?",
+      "RE: RE: Petit point rapide ? (relance)"
+    ],
+    "corps": "Je me permets de te relancer, je n'ai pas eu de retour sur mon mail de {heure}.\n\nJe te l'ai aussi envoyé sur Teams, par SMS et sur un post-it collé sur ton écran.\n\nTu as vu mon mail ?\n\nEnvoyé de mon iPhone",
+    "variables": {
+      "heure": [
+        "9 h 02",
+        "9 h 04",
+        "9 h 07",
+        "9 h 11"
+      ]
+    },
+    "importance": "haute",
+    "suite": "a-cdp-001"
+  },
+  {
+    "id": "a-cdp-003",
+    "famille": "chef-de-projet",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Céline Garnier",
+      "Mehdi Haddad",
+      "Thomas Lefèvre",
+      "Nadia Mbaye"
+    ],
+    "role": "Chef de projet",
+    "objet": [
+      "MEP {projet} vendredi",
+      "Go pour la mise en prod vendredi 16 h 45"
+    ],
+    "corps": "Bonjour à tous,\n\nBonne nouvelle : le client a validé, on met {projet} en production vendredi à 16 h 45.\n\nÇa nous laisse un quart d'heure de marge avant le week-end, je pense que c'est confortable.\n\nPour rappel, je suis en congé à partir de vendredi 16 h 30.\n\nBon courage à tous,\nL'équipe Projet",
+    "variables": {
+      "projet": [
+        "Phoenix",
+        "Refonte V3",
+        "Migration Cloud",
+        "Espace Adhérents"
+      ]
+    },
+    "cc": [
+      5,
+      12
+    ],
+    "importance": "haute"
+  },
+  {
+    "id": "a-cdp-004",
+    "famille": "chef-de-projet",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Laurent Petit",
+      "Fatou Camara",
+      "Élodie Mercier",
+      "Yanis Ferhat"
+    ],
+    "role": "Chef de projet",
+    "objet": [
+      "Petite évol rapide",
+      "TR: juste un bouton"
+    ],
+    "corps": "Salut,\n\n{client} voudrait ajouter un bouton sur la page d'accueil. Rien de compliqué, je leur ai dit que c'était l'affaire de {duree}.\n\nPetite précision : le bouton doit exporter toutes leurs données en PDF, en Excel et vers leur ERP, avec un aperçu avant envoi.\n\nMais visuellement, c'est juste un bouton.\n\nMerci,\nGestion de projet - {societe}",
+    "variables": {
+      "client": [
+        "Groupe Vortan",
+        "Nexalis",
+        "Transports Delmont",
+        "Maison Brunelle"
+      ],
+      "duree": [
+        "dix minutes",
+        "une demi-heure",
+        "une petite heure"
+      ],
+      "societe": [
+        "Kolibri Digital",
+        "Agence Altiplano",
+        "Webrise Conseil"
+      ]
+    }
+  },
+  {
+    "id": "a-cdp-005",
+    "famille": "chef-de-projet",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Céline Garnier",
+      "Mehdi Haddad",
+      "Pauline Vasseur",
+      "Olivier Nguyen"
+    ],
+    "role": "Project Manager",
+    "objet": [
+      "Mise à jour planning {projet}",
+      "Changement de date de livraison"
+    ],
+    "corps": "Bonjour l'équipe,\n\nLa livraison de {projet} est avancée au {jour}.\n\nBonne nouvelle : le périmètre ne bouge pas.\n\nMauvaise nouvelle : le périmètre ne bouge pas.\n\nJe vous l'aurais bien annoncé de vive voix sur Teams, mais vous savez ce qu'il en est.\n\nCordialement,\nPMO",
+    "variables": {
+      "projet": [
+        "Phoenix",
+        "Refonte V3",
+        "Atlas",
+        "Portail Client 2.0"
+      ],
+      "jour": [
+        "mardi prochain",
+        "jeudi",
+        "lundi matin",
+        "15 du mois"
+      ]
+    },
+    "cc": [
+      4,
+      10
+    ]
+  },
+  {
+    "id": "a-cdp-006",
+    "famille": "chef-de-projet",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Laurent Petit",
+      "Inès Bouaziz",
+      "Grégoire Fabre",
+      "Samia Kaci"
+    ],
+    "role": "Chef de projet",
+    "objet": [
+      "RE: Estimation ticket {ticket}",
+      "Ton chiffrage"
+    ],
+    "corps": "Merci pour ton estimation de {jours} jours sur le ticket {ticket}.\n\nJe l'ai présentée au client en arrondissant un peu : on part sur la moitié.\n\nJ'ai aussi retiré la ligne \"tests\", le client ne voyait pas bien à quoi elle servait.\n\nTop, merci pour ta réactivité !\nVotre chef de projet",
+    "variables": {
+      "jours": [
+        "8",
+        "10",
+        "12",
+        "15"
+      ],
+      "ticket": [
+        "PRJ-1042",
+        "WEB-388",
+        "APP-2217",
+        "CORE-907"
+      ]
+    }
+  },
+  {
+    "id": "a-cdp-007",
+    "famille": "chef-de-projet",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Sophie Marchal",
+      "Benoît Leroy",
+      "Amira Saïdi",
+      "Hugo Delattre"
+    ],
+    "role": "Cheffe de projet",
+    "objet": [
+      "RE: RE: TR: Maquettes {projet} V3",
+      "Validation maquettes (enfin)"
+    ],
+    "corps": "Bonjour à tous,\n\nBonne nouvelle, le client a validé la V2 de la V3, avec les retours de la V4 qu'on n'a pas encore faite.\n\nIl revient en revanche sur deux points de la V1, qu'il trouvait finalement mieux.\n\nJe vous laisse fusionner tout ça, rien d'urgent, c'est pour {jour}.\n\nBonne journée,\nL'équipe Projet",
+    "variables": {
+      "projet": [
+        "Phoenix",
+        "Refonte V3",
+        "Atlas",
+        "Espace Adhérents"
+      ],
+      "jour": [
+        "demain",
+        "demain matin",
+        "ce soir",
+        "la démo de 14 h"
+      ]
+    },
+    "pj": "maquettes_V3-2_avec_retours_V1_DEF.pdf",
+    "cc": [
+      3,
+      8
+    ]
+  },
+  {
+    "id": "a-cdp-008",
+    "famille": "chef-de-projet",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Céline Garnier",
+      "Yanis Ferhat",
+      "Martine Rousseau",
+      "David Cohen"
+    ],
+    "role": "PMO",
+    "objet": [
+      "Planning {projet} v12",
+      "Nouveau planning (v12)"
+    ],
+    "corps": "Bonjour à tous,\n\nVous trouverez ci-joint la version 12 du planning {projet}. Par rapport à la v11, seules les dates ont changé.\n\nMerci de ne plus utiliser les versions 1 à 11, ni la version 12 que je vous ai envoyée ce matin.\n\nCordialement,\nPMO - Direction des projets\n\nPensez à l'environnement avant d'imprimer ce mail.",
+    "variables": {
+      "projet": [
+        "Phoenix",
+        "Migration Cloud",
+        "Atlas",
+        "Refonte SI RH"
+      ]
+    },
+    "pj": "planning_v12_FINAL_vraiment_final.xlsx",
+    "cc": [
+      6,
+      15
+    ]
+  },
+  {
+    "id": "a-cdp-009",
+    "famille": "chef-de-projet",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Benoît Leroy",
+      "Inès Bouaziz",
+      "Thomas Lefèvre",
+      "Léa Morin"
+    ],
+    "role": "Chef de projet",
+    "objet": [
+      "Contenu du sprint {num}",
+      "Sprint {num} : c'est parti"
+    ],
+    "corps": "Hello la team,\n\nLe sprint {num} démarre lundi. Pour gagner du temps, j'ai repris tel quel le contenu du sprint précédent, qui reprenait déjà celui d'avant.\n\nLe ticket {ticket} fête d'ailleurs ses {mois} mois dans la colonne \"En cours\". Félicitations à la personne assignée.\n\nBon sprint à tous,\nVotre chef de projet",
+    "variables": {
+      "num": [
+        "23",
+        "41",
+        "57",
+        "68"
+      ],
+      "ticket": [
+        "PRJ-1042",
+        "WEB-388",
+        "APP-2217",
+        "CORE-907"
+      ],
+      "mois": [
+        "six",
+        "huit",
+        "onze",
+        "quatorze"
+      ]
+    }
+  },
+  {
+    "id": "a-cdp-010",
+    "famille": "chef-de-projet",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Grégoire Fabre",
+      "Nadia Mbaye",
+      "Pauline Vasseur",
+      "Rachid Amrani"
+    ],
+    "role": "Project Manager",
+    "objet": [
+      "Organisation module {module}",
+      "On parallélise !"
+    ],
+    "corps": "Bonjour à tous,\n\nLe module {module} est estimé à {jours} jours pour une personne. J'ai réussi à libérer {nb} développeurs, on devrait donc pouvoir le livrer d'ici demain midi.\n\nJe sais ce que vous allez me dire pour les neuf femmes et le bébé, mais là, c'est du code.\n\nMerci à tous,\nDirection de projet",
+    "variables": {
+      "module": [
+        "facturation",
+        "authentification",
+        "reporting",
+        "paiement"
+      ],
+      "jours": [
+        "20",
+        "30",
+        "45"
+      ],
+      "nb": [
+        "5",
+        "8",
+        "12"
+      ]
+    },
+    "cc": [
+      4,
+      12
+    ]
+  },
+  {
+    "id": "a-cdp-011",
+    "famille": "chef-de-projet",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Martine Rousseau",
+      "Olivier Nguyen",
+      "Samia Kaci",
+      "Antoine Girard"
+    ],
+    "role": "PMO",
+    "objet": [
+      "Fichier de suivi d'avancement",
+      "RAPPEL : suivi hebdo à remplir"
+    ],
+    "corps": "Bonjour,\n\nPour améliorer notre visibilité, merci de remplir chaque vendredi le fichier de suivi ci-joint, en plus du Jira, du Notion et du point quotidien.\n\nMerci de renseigner également le temps passé à remplir ce fichier, colonne {colonne}.\n\nCordialement,\nCellule PMO",
+    "variables": {
+      "colonne": [
+        "F",
+        "AB",
+        "AK",
+        "BZ"
+      ]
+    },
+    "pj": "suivi_avancement_hebdo_v4.xlsx",
+    "cc": [
+      8,
+      20
+    ]
+  },
+  {
+    "id": "a-cdp-012",
+    "famille": "chef-de-projet",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Julien Roux",
+      "Fatou Camara",
+      "Hugo Delattre",
+      "Léa Morin"
+    ],
+    "role": "Chef de projet",
+    "objet": [
+      "Daily de demain par mail",
+      "Daily {projet} : mode dégradé"
+    ],
+    "corps": "Bonjour à tous,\n\nSuite à l'indisponibilité de Teams, le daily de demain se fera par mail.\n\nMerci de répondre à tous avec ce que vous avez fait hier, ce que vous faites aujourd'hui et vos points bloquants.\n\nPoint bloquant connu : je ne reçois pas les mails.\n\nL'équipe {projet}",
+    "variables": {
+      "projet": [
+        "Phoenix",
+        "Atlas",
+        "Migration Cloud",
+        "Portail Client 2.0"
+      ]
+    },
+    "cc": [
+      8,
+      25
+    ],
+    "rafale": true
+  },
+  {
+    "id": "a-cdp-013",
+    "famille": "chef-de-projet",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Amira Saïdi",
+      "David Cohen",
+      "Élodie Mercier",
+      "Rachid Amrani"
+    ],
+    "role": "Cheffe de projet",
+    "objet": [
+      "Statut {projet} (pas de pression)",
+      "Petit statut pour {client} ?"
+    ],
+    "corps": "Hello,\n\nPas de pression, mais {client} aimerait un statut sur {projet} pour {heure}.\n\nPas de pression vraiment. Le client a juste mis son directeur général en copie. Et le nôtre.\n\nPas de pression.\n\nVotre cheffe de projet",
+    "variables": {
+      "client": [
+        "Groupe Vortan",
+        "Nexalis",
+        "Transports Delmont",
+        "Mutuelle Arvelle"
+      ],
+      "projet": [
+        "Phoenix",
+        "Refonte V3",
+        "Atlas",
+        "Espace Adhérents"
+      ],
+      "heure": [
+        "11 h",
+        "midi",
+        "14 h",
+        "dans une heure"
+      ]
+    },
+    "cc": [
+      2,
+      6
+    ],
+    "importance": "haute"
+  },
+  {
+    "id": "a-cdp-014",
+    "famille": "chef-de-projet",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Antoine Girard",
+      "Inès Bouaziz",
+      "Mehdi Haddad",
+      "Claire Dumont"
+    ],
+    "role": "Chef de projet",
+    "objet": [
+      "Ticket {ticket} passé en Done ?",
+      "Question statut {ticket}"
+    ],
+    "corps": "Salut,\n\nJ'ai vu que le ticket {ticket} était passé en \"Done\".\n\nEst-ce que c'est Done Done, ou juste Done ?\n\nSi c'est Done Done, je le passe en \"Livré\". Si c'est juste Done, je le repasse en \"In progress\", par prudence.\n\nMerci,\nGestion de projet",
+    "variables": {
+      "ticket": [
+        "PRJ-1042",
+        "WEB-388",
+        "APP-2217",
+        "CORE-907",
+        "FRONT-1313"
+      ]
+    }
+  },
+  {
+    "id": "a-cdp-015",
+    "famille": "chef-de-projet",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Céline Garnier",
+      "Yanis Ferhat",
+      "Martine Rousseau",
+      "David Cohen"
+    ],
+    "role": "PMO",
+    "objet": [
+      "RE: Planning {projet} v12",
+      "Correctif planning (v13)"
+    ],
+    "corps": "Bonjour à tous,\n\nPetite correction : merci d'utiliser la v13 ci-jointe. La seule différence avec la v12, c'est que la v12 était fausse.\n\nJe vous la renverrai aussi sur Teams dès que ça remarche, pour que vous l'ayez en double.\n\nCordialement,\nPMO - Direction des projets\n\nPensez à l'environnement avant d'imprimer ce mail.",
+    "variables": {
+      "projet": [
+        "Phoenix",
+        "Migration Cloud",
+        "Atlas",
+        "Refonte SI RH"
+      ]
+    },
+    "pj": "planning_v13_FINAL_v2 (1).xlsx",
+    "cc": [
+      6,
+      15
+    ],
+    "suite": "a-cdp-008"
+  },
+  {
+    "id": "a-com-001",
+    "famille": "commercial",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Maxime Dubreuil",
+      "Sarah Benhamou",
+      "Alexandre Roche",
+      "Kenza Ait Ali"
+    ],
+    "role": "Ingénieur commercial",
+    "objet": [
+      "Super rdv chez {client} !",
+      "{client} : ils signent si..."
+    ],
+    "corps": "Hello la tech,\n\nSuper rendez-vous ce matin chez {client}. Ils signent si on leur livre {feature} pour demain.\n\nJe leur ai dit que c'était déjà dans le produit. Il suffit donc de le développer d'ici là.\n\nJe passe vous voir vers 18 h pour la démo.\n\nDirection commerciale - {societe}",
+    "variables": {
+      "client": [
+        "Groupe Vortan",
+        "Nexalis",
+        "Transports Delmont",
+        "Maison Brunelle"
+      ],
+      "feature": [
+        "la synchro temps réel avec leur ERP",
+        "le module de signature électronique",
+        "l'export comptable automatique",
+        "le mode multi-entrepôts"
+      ],
+      "societe": [
+        "Kolibri Digital",
+        "Softalys",
+        "Webrise Conseil"
+      ]
+    },
+    "importance": "haute"
+  },
+  {
+    "id": "a-com-002",
+    "famille": "commercial",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Maxime Dubreuil",
+      "Sarah Benhamou",
+      "Romain Charpentier",
+      "Jessica Moreau"
+    ],
+    "role": "Business Developer",
+    "objet": [
+      "Démo chez {client} dans {minutes} min",
+      "URGENT : démo {client}"
+    ],
+    "corps": "Je suis chez {client}, la démo démarre dans {minutes} minutes.\n\nJe vais la faire directement sur la prod, c'est plus parlant.\n\nEst-ce que vous pouvez éviter de déployer pendant ce temps ? Et de faire planter quoi que ce soit ? Répondez-moi par SMS, Teams ne marche pas.\n\nMerci d'avance !\n\nEnvoyé de mon iPhone",
+    "variables": {
+      "client": [
+        "Groupe Vortan",
+        "Nexalis",
+        "Assurances Ferval",
+        "Maison Brunelle"
+      ],
+      "minutes": [
+        "20",
+        "12",
+        "5",
+        "3"
+      ]
+    },
+    "importance": "haute",
+    "cc": [
+      3,
+      7
+    ]
+  },
+  {
+    "id": "a-com-003",
+    "famille": "commercial",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Maxime Dubreuil",
+      "Sarah Benhamou",
+      "Romain Charpentier",
+      "Jessica Moreau"
+    ],
+    "role": "Business Developer",
+    "objet": [
+      "RE: Démo chez {client}",
+      "Debrief démo"
+    ],
+    "corps": "Pour info, la démo s'est très bien passée jusqu'à l'écran de connexion.\n\nLe client a trouvé l'écran de connexion très réussi.\n\nIls aimeraient voir la suite la semaine prochaine.\n\nEnvoyé de mon iPhone",
+    "variables": {
+      "client": [
+        "Groupe Vortan",
+        "Nexalis",
+        "Assurances Ferval",
+        "Maison Brunelle"
+      ]
+    },
+    "cc": [
+      3,
+      7
+    ],
+    "suite": "a-com-002"
+  },
+  {
+    "id": "a-com-004",
+    "famille": "commercial",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Alexandre Roche",
+      "Kenza Ait Ali",
+      "Bastien Lemoine",
+      "Chloé Vidal"
+    ],
+    "role": "Account Manager",
+    "objet": [
+      "J'ai dit oui",
+      "TR: Question de {client}"
+    ],
+    "corps": "Le client m'a demandé si on pouvait {demande}.\n\nJ'ai dit oui.\n\nEst-ce qu'on peut ?\n\nService commercial",
+    "variables": {
+      "client": [
+        "Groupe Vortan",
+        "Nexalis",
+        "Transports Delmont",
+        "Laboratoires Orvane"
+      ],
+      "demande": [
+        "héberger toutes les données chez eux, sur leur NAS",
+        "faire tourner l'appli sans connexion internet",
+        "livrer une version iPhone, Android et BlackBerry",
+        "tout migrer ce week-end"
+      ]
+    }
+  },
+  {
+    "id": "a-com-005",
+    "famille": "commercial",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Romain Charpentier",
+      "Jessica Moreau",
+      "Thierry Lambert",
+      "Leïla Mansouri"
+    ],
+    "role": "Ingénieur commercial",
+    "objet": [
+      "Devis {client} signé !",
+      "On a signé {client} !!!"
+    ],
+    "corps": "Grande nouvelle, {client} vient de signer le devis pour la refonte complète de leur plateforme. Montant : {montant}. Délai : {delai}.\n\nJ'ai un peu négocié le délai pour décrocher la signature, mais rien d'impossible pour une équipe comme la nôtre.\n\nLe cahier des charges arrive dès qu'ils l'ont écrit.\n\nChampagne !\nDirection commerciale",
+    "variables": {
+      "client": [
+        "Groupe Vortan",
+        "Nexalis",
+        "Transports Delmont",
+        "Mutuelle Arvelle"
+      ],
+      "montant": [
+        "48 000 euros HT",
+        "120 000 euros HT",
+        "35 000 euros HT",
+        "76 500 euros HT"
+      ],
+      "delai": [
+        "trois semaines",
+        "quinze jours",
+        "fin du mois",
+        "avant Noël"
+      ]
+    },
+    "cc": [
+      10,
+      30
+    ],
+    "rafale": true
+  },
+  {
+    "id": "a-com-006",
+    "famille": "commercial",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Thierry Lambert",
+      "Kenza Ait Ali",
+      "Bastien Lemoine",
+      "Nathalie Perrin"
+    ],
+    "role": "Ingénieur commercial",
+    "objet": [
+      "Question compatibilité {client}",
+      "Petite question technique"
+    ],
+    "corps": "Salut,\n\nPetite question de {client} : est-ce que notre solution est compatible avec leur SI ?\n\nIls sont sous Windows XP, avec {navigateur} et un serveur qu'il ne faut surtout pas redémarrer.\n\nJe leur ai répondu qu'on était \"cloud native\", ils ont eu l'air rassurés. On est bons ?\n\nMerci,\nService commercial",
+    "variables": {
+      "client": [
+        "Groupe Vortan",
+        "Transports Delmont",
+        "Coopérative Agrinord",
+        "Laboratoires Orvane"
+      ],
+      "navigateur": [
+        "Internet Explorer 6",
+        "Internet Explorer 7",
+        "une version de Firefox de 2009"
+      ]
+    }
+  },
+  {
+    "id": "a-com-007",
+    "famille": "commercial",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Alexandre Roche",
+      "Chloé Vidal",
+      "Samuel Attal",
+      "Leïla Mansouri"
+    ],
+    "role": "Business Developer",
+    "objet": [
+      "{client} veut de l'IA",
+      "IA pour {client} (urgent)"
+    ],
+    "corps": "Hello,\n\n{client} veut \"de l'IA\" dans le produit. Ils ne savent pas encore pour quoi faire, mais ils veulent que ça se voie sur la page d'accueil.\n\nIls aimeraient la présenter à leur comité de direction de {mois}.\n\nTu peux me préparer une slide qui explique ce que fait l'IA ? Idéalement, elle ferait aussi quelque chose.\n\nBusiness Development - {societe}",
+    "variables": {
+      "client": [
+        "Groupe Vortan",
+        "Nexalis",
+        "Maison Brunelle",
+        "Assurances Ferval"
+      ],
+      "mois": [
+        "décembre",
+        "janvier",
+        "la semaine prochaine"
+      ],
+      "societe": [
+        "Kolibri Digital",
+        "Softalys",
+        "Webrise Conseil"
+      ]
+    }
+  },
+  {
+    "id": "a-com-008",
+    "famille": "commercial",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Bastien Lemoine",
+      "Jessica Moreau",
+      "Samuel Attal",
+      "Nathalie Perrin"
+    ],
+    "role": "Business Developer",
+    "objet": [
+      "Démo salon {salon}",
+      "Stand {salon} : point technique"
+    ],
+    "corps": "Bonjour l'équipe,\n\nPour le salon {salon} la semaine prochaine, on fait la démo de l'appli sur le stand.\n\nPoint d'attention : il n'y a pas de wifi sur le stand, ni de 4G dans le hall.\n\nEst-ce que vous pouvez faire en sorte que l'appli marche quand même ? Je sais qu'elle est 100 % en ligne, mais là, c'est un salon.\n\nCordialement,\nÉquipe commerciale",
+    "variables": {
+      "salon": [
+        "SaaS Expo Lyon",
+        "Digital Days Nantes",
+        "Salon Solutions Métiers",
+        "Forum Logistique Est"
+      ]
+    },
+    "cc": [
+      2,
+      5
+    ]
+  },
+  {
+    "id": "a-com-009",
+    "famille": "commercial",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Thierry Lambert",
+      "Leïla Mansouri",
+      "Maxime Dubreuil",
+      "Chloé Vidal"
+    ],
+    "role": "Account Manager",
+    "objet": [
+      "Proposition {client} et panne Outlook",
+      "Bonne nouvelle (je crois)"
+    ],
+    "corps": "Hello,\n\n{client} n'a pas reçu notre proposition à cause de la panne Outlook.\n\nBonne nouvelle : ils n'ont pas reçu non plus celle du concurrent.\n\nJe propose qu'on attende un peu avant de leur dire que c'est revenu.\n\nGestion des comptes clés",
+    "variables": {
+      "client": [
+        "Groupe Vortan",
+        "Nexalis",
+        "Transports Delmont",
+        "Mutuelle Arvelle"
+      ]
+    }
+  },
+  {
+    "id": "a-com-010",
+    "famille": "commercial",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Samuel Attal",
+      "Kenza Ait Ali",
+      "Romain Charpentier",
+      "Émilie Barbier"
+    ],
+    "role": "Ingénieur commercial",
+    "objet": [
+      "Retour présentation roadmap {client}",
+      "Roadmap : ils adorent"
+    ],
+    "corps": "Bonjour à tous,\n\nJ'ai présenté la roadmap à {client} ce matin : ils ont adoré la version {version}, ils veulent signer dessus.\n\nPetite question : on en est où de la version 2 ?\n\nBien à vous,\nDirection commerciale\n\nCe message et ses pièces jointes sont confidentiels et destinés exclusivement à leurs destinataires.",
+    "variables": {
+      "client": [
+        "Groupe Vortan",
+        "Nexalis",
+        "Laboratoires Orvane",
+        "Assurances Ferval"
+      ],
+      "version": [
+        "4",
+        "5",
+        "6"
+      ]
+    }
+  },
+  {
+    "id": "a-com-011",
+    "famille": "commercial",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Thierry Lambert",
+      "Nathalie Perrin",
+      "Alexandre Roche",
+      "Émilie Barbier"
+    ],
+    "role": "Ingénieur commercial",
+    "objet": [
+      "Rdv {client} demain",
+      "Tu m'accompagnes demain ?"
+    ],
+    "corps": "Salut,\n\nDemain, tu m'accompagnes chez {client} pour la partie technique. Rendez-vous à {heure} devant leurs bureaux.\n\nTrois règles : une chemise, pas de mot en anglais que je ne comprends pas, et si on te demande un délai, tu me regardes d'abord.\n\nÇa va bien se passer.\n\nEnvoyé de mon iPhone",
+    "variables": {
+      "client": [
+        "Groupe Vortan",
+        "Nexalis",
+        "Coopérative Agrinord",
+        "Maison Brunelle"
+      ],
+      "heure": [
+        "8 h 30",
+        "9 h",
+        "7 h 45"
+      ]
+    }
+  },
+  {
+    "id": "a-com-012",
+    "famille": "commercial",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Jessica Moreau",
+      "Bastien Lemoine",
+      "Leïla Mansouri",
+      "Samuel Attal"
+    ],
+    "role": "Account Manager",
+    "objet": [
+      "TR: TR: RE: RE: RE: question rapide",
+      "TR: petite question de {client}"
+    ],
+    "corps": "Hello,\n\nJe te transfère l'échange avec {client}, ils ont une petite question technique. Elle est quelque part dans les {nb} messages en dessous.\n\nCertains sont en double, ils les ont renvoyés à cause de la panne.\n\nTu peux leur répondre avant midi ? Ils sont pressés.\n\nMerci !\nService clients grands comptes",
+    "variables": {
+      "client": [
+        "Groupe Vortan",
+        "Nexalis",
+        "Transports Delmont",
+        "Laboratoires Orvane"
+      ],
+      "nb": [
+        "47",
+        "62",
+        "38",
+        "91"
+      ]
+    },
+    "importance": "haute"
+  },
+  {
+    "id": "a-com-013",
+    "famille": "commercial",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Maxime Dubreuil",
+      "Chloé Vidal",
+      "Romain Charpentier",
+      "Nathalie Perrin"
+    ],
+    "role": "Business Developer",
+    "objet": [
+      "Objectif du trimestre",
+      "Petite question (fin de trimestre)"
+    ],
+    "corps": "Hello,\n\nOn est {jour} et il me manque un contrat pour faire mon objectif du trimestre.\n\nEst-ce qu'il y a une fonctionnalité qu'on pourrait vendre à quelqu'un d'ici vendredi ? Même une petite.\n\nMême une qu'on n'a pas.\n\nBusiness Development",
+    "variables": {
+      "jour": [
+        "le 27",
+        "le 28",
+        "le 29",
+        "le 30"
+      ]
+    }
+  },
+  {
+    "id": "a-com-014",
+    "famille": "commercial",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Romain Charpentier",
+      "Jessica Moreau",
+      "Thierry Lambert",
+      "Leïla Mansouri"
+    ],
+    "role": "Ingénieur commercial",
+    "objet": [
+      "RE: Devis {client} signé !",
+      "Petite précision devis {client}"
+    ],
+    "corps": "Petite précision sur {client} : en relisant le devis, j'ai vu que j'avais aussi promis \"la maintenance à vie, incluse\".\n\nC'était pour faire signer, je ne pensais pas qu'ils liraient jusqu'à la page {page}.\n\nDirection commerciale",
+    "variables": {
+      "client": [
+        "Groupe Vortan",
+        "Nexalis",
+        "Transports Delmont",
+        "Mutuelle Arvelle"
+      ],
+      "page": [
+        "14",
+        "23",
+        "31"
+      ]
+    },
+    "cc": [
+      10,
+      30
+    ],
+    "rafale": true,
+    "suite": "a-com-005"
+  },
+  {
+    "id": "a-com-015",
+    "famille": "commercial",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Samuel Attal",
+      "Émilie Barbier",
+      "Bastien Lemoine",
+      "Kenza Ait Ali"
+    ],
+    "role": "Account Manager",
+    "objet": [
+      "Négociation {client} : c'est bon",
+      "On a trouvé un accord avec {client}"
+    ],
+    "corps": "Bonjour à tous,\n\n{client} trouvait le devis trop cher. J'ai réussi à négocier : ils paient {pourcentage} de moins.\n\nEn échange, on leur fait aussi l'appli mobile.\n\nJe pense que tout le monde est gagnant.\n\nBien cordialement,\nGestion des comptes clés - {societe}",
+    "variables": {
+      "client": [
+        "Groupe Vortan",
+        "Nexalis",
+        "Coopérative Agrinord",
+        "Assurances Ferval"
+      ],
+      "pourcentage": [
+        "20 %",
+        "30 %",
+        "40 %"
+      ],
+      "societe": [
+        "Kolibri Digital",
+        "Softalys",
+        "Webrise Conseil"
+      ]
+    },
+    "cc": [
+      3,
+      8
+    ]
+  },
+  {
+    "id": "a-cli-001",
+    "famille": "client",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Isabelle Fournier",
+      "Patrick Moulin",
+      "Sonia Belkacem",
+      "Arnaud Chevalier"
+    ],
+    "role": "Directeur marketing - client",
+    "objet": [
+      "Retours maquette",
+      "RE: Maquette page d'accueil V1"
+    ],
+    "corps": "Bonjour,\n\nOn adore ! Juste trois petits détails : la couleur, la mise en page et le concept.\n\nPour le reste, on ne touche à rien.\n\nVous pouvez nous renvoyer une V2 pour {jour} ?\n\nBien cordialement,\nDirection Marketing - {societe}",
+    "variables": {
+      "jour": [
+        "demain",
+        "lundi",
+        "jeudi matin",
+        "la fin de journée"
+      ],
+      "societe": [
+        "Groupe Vortan",
+        "Nexalis",
+        "Maison Brunelle",
+        "Mutuelle Arvelle"
+      ]
+    },
+    "cc": [
+      2,
+      6
+    ]
+  },
+  {
+    "id": "a-cli-002",
+    "famille": "client",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Isabelle Fournier",
+      "Patrick Moulin",
+      "Sonia Belkacem",
+      "Arnaud Chevalier"
+    ],
+    "role": "Directeur marketing - client",
+    "objet": [
+      "Logo",
+      "Petite demande sur le logo"
+    ],
+    "corps": "Bonjour,\n\nEst-ce qu'on pourrait faire le logo plus gros ? Pas énorme, juste qu'on le voie mieux.\n\nOn a fait le test en interne : en le passant à {taille}, ça rend très bien. Il cache un peu le menu, mais on s'en servait peu.\n\nMerci,\nDirection Marketing - {societe}",
+    "variables": {
+      "taille": [
+        "300 %",
+        "toute la largeur de l'écran",
+        "deux fois la taille du titre"
+      ],
+      "societe": [
+        "Groupe Vortan",
+        "Nexalis",
+        "Maison Brunelle",
+        "Mutuelle Arvelle"
+      ]
+    },
+    "pj": "logo_plus_gros_v2.pptx"
+  },
+  {
+    "id": "a-cli-003",
+    "famille": "client",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Isabelle Fournier",
+      "Patrick Moulin",
+      "Sonia Belkacem",
+      "Arnaud Chevalier"
+    ],
+    "role": "Directeur marketing - client",
+    "objet": [
+      "RE: Logo",
+      "RE: RE: Petite demande sur le logo"
+    ],
+    "corps": "Bonjour,\n\nAprès réflexion, on préférait finalement la taille d'origine.\n\nMais en plus gros.\n\nMerci,\nDirection Marketing - {societe}",
+    "variables": {
+      "societe": [
+        "Groupe Vortan",
+        "Nexalis",
+        "Maison Brunelle",
+        "Mutuelle Arvelle"
+      ]
+    },
+    "suite": "a-cli-002"
+  },
+  {
+    "id": "a-cli-004",
+    "famille": "client",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Gérard Lacroix",
+      "Nathalie Brun",
+      "Djamel Ouali",
+      "Agnès Renaud"
+    ],
+    "role": "Client",
+    "objet": [
+      "Inspiration pour notre projet",
+      "Ce qu'on veut (lien)"
+    ],
+    "corps": "Bonjour,\n\nVous trouverez ci-dessous le lien vers le site de notre concurrent, {concurrent}.\n\nOn voudrait la même chose, mais en mieux, pour moins cher et pour le mois prochain.\n\nIls ont mis deux ans à le faire, mais ils n'avaient pas vos compétences.\n\nCordialement,\nLa Direction",
+    "variables": {
+      "concurrent": [
+        "Tradivo",
+        "Logimax Services",
+        "Ophélia Assurances",
+        "Batinext"
+      ]
+    }
+  },
+  {
+    "id": "a-cli-005",
+    "famille": "client",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Gérard Lacroix",
+      "Christine Joly",
+      "Malik Benyahia",
+      "Véronique Carré"
+    ],
+    "role": "Client",
+    "objet": [
+      "Facture {facture}",
+      "Contestation facture {facture}"
+    ],
+    "corps": "Bonjour,\n\nNous avons bien reçu la facture {facture}.\n\nAprès relecture, nous contestons la ligne \"Développement\", qui nous semble chère pour ce qui est, au final, un site internet.\n\nPourriez-vous nous refaire la facture sans cette ligne ?\n\nCordialement,\nService Comptabilité Fournisseurs\n\nCe message et ses pièces jointes sont confidentiels. Si vous l'avez reçu par erreur, merci de le détruire et d'en informer l'expéditeur.",
+    "variables": {
+      "facture": [
+        "2026-0418",
+        "F-11027",
+        "FA-3391",
+        "2026-0952"
+      ]
+    },
+    "cc": [
+      1,
+      3
+    ]
+  },
+  {
+    "id": "a-cli-006",
+    "famille": "client",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Christine Joly",
+      "Djamel Ouali",
+      "Hélène Masson",
+      "François Guérin"
+    ],
+    "role": "Product Owner côté client",
+    "objet": [
+      "Paiement en ligne",
+      "RE: Recette boutique {societe}"
+    ],
+    "corps": "Bonjour,\n\nJe vois que le paiement en ligne n'est pas dans le devis.\n\nJe me permets de vous dire que c'était évident pour nous : une boutique en ligne où l'on ne peut pas payer, c'est une vitrine.\n\nVous pouvez l'ajouter au même prix, puisque c'était sous-entendu ?\n\nBien à vous,\nPôle Digital - {societe}",
+    "variables": {
+      "societe": [
+        "Maison Brunelle",
+        "Fromageries Vallin",
+        "Atelier Corvel",
+        "Cave Saint-Aubert"
+      ]
+    }
+  },
+  {
+    "id": "a-cli-007",
+    "famille": "client",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Gérard Lacroix",
+      "Agnès Renaud",
+      "Malik Benyahia",
+      "Bernard Collin"
+    ],
+    "role": "Client",
+    "objet": [
+      "Votre chiffrage",
+      "Question sur le devis"
+    ],
+    "corps": "Bonjour,\n\nJe m'interroge sur votre chiffrage de {jours} jours.\n\nMon neveu fait ce genre de site en un week-end, et il est en {classe}.\n\nJe ne dis pas qu'il ferait mieux que vous, mais il ferait plus vite. Pouvez-vous revoir votre proposition ?\n\nCordialement,\nLa Direction Générale",
+    "variables": {
+      "jours": [
+        "25",
+        "40",
+        "60"
+      ],
+      "classe": [
+        "seconde",
+        "troisième",
+        "première année de BTS",
+        "terminale"
+      ]
+    }
+  },
+  {
+    "id": "a-cli-008",
+    "famille": "client",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Gérard Lacroix",
+      "Agnès Renaud",
+      "Malik Benyahia",
+      "Bernard Collin"
+    ],
+    "role": "Client",
+    "objet": [
+      "RE: Question sur le devis",
+      "RE: Votre chiffrage"
+    ],
+    "corps": "Bonjour,\n\nAprès discussion avec mon neveu, il ne sera pas disponible avant les vacances de {vacances}.\n\nNous partons donc avec vous.\n\nIl fera une revue de votre code.\n\nCordialement,\nLa Direction Générale",
+    "variables": {
+      "vacances": [
+        "Noël",
+        "printemps",
+        "la Toussaint",
+        "février"
+      ]
+    },
+    "suite": "a-cli-007"
+  },
+  {
+    "id": "a-cli-009",
+    "famille": "client",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Hélène Masson",
+      "François Guérin",
+      "Sonia Belkacem",
+      "Pascal Henry"
+    ],
+    "role": "Product Owner côté client",
+    "objet": [
+      "Résultats recette {projet}",
+      "Recette KO"
+    ],
+    "corps": "Bonjour,\n\nNous avons terminé la recette. Résultat : rien ne s'affiche correctement.\n\nNous avons testé sur le poste de référence de la direction, sous Internet Explorer {version}.\n\nMerci de corriger rapidement, la direction n'utilise que ce poste.\n\nCordialement,\nCellule Recette",
+    "variables": {
+      "projet": [
+        "Extranet",
+        "Portail Partenaires",
+        "Espace Adhérents",
+        "Intranet RH"
+      ],
+      "version": [
+        "6",
+        "7",
+        "8"
+      ]
+    },
+    "pj": "PV_recette_KO.docx",
+    "importance": "haute",
+    "cc": [
+      3,
+      9
+    ]
+  },
+  {
+    "id": "a-cli-010",
+    "famille": "client",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Patrick Moulin",
+      "Véronique Carré",
+      "Djamel Ouali",
+      "Laetitia Morel"
+    ],
+    "role": "Client",
+    "objet": [
+      "URGENT",
+      "URGENT : texte du bandeau"
+    ],
+    "corps": "Bonsoir,\n\nC'est urgent : il faudrait changer le texte du bandeau d'accueil avant lundi matin.\n\nJe sais qu'il est {heure} un vendredi, mais c'est vraiment urgent. Je vous écris par mail puisque Teams ne fonctionne plus.\n\nLe nouveau texte arrive dès qu'on l'a validé, sans doute lundi après-midi.\n\nBon week-end,\nService Communication",
+    "variables": {
+      "heure": [
+        "19 h 42",
+        "20 h 15",
+        "18 h 58",
+        "21 h 07"
+      ]
+    },
+    "importance": "haute"
+  },
+  {
+    "id": "a-cli-011",
+    "famille": "client",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Christine Joly",
+      "Pascal Henry",
+      "Laetitia Morel",
+      "Youssef Kherbache"
+    ],
+    "role": "Client",
+    "objet": [
+      "Petite question sur le site",
+      "Page blanche ?"
+    ],
+    "corps": "Bonjour,\n\nPetite info : notre stagiaire a fait quelques modifications directement sur le serveur, via le FTP, pour vous faire gagner du temps.\n\nDepuis, le site affiche une page blanche. Est-ce que c'est grave ?\n\nNous n'avons pas de sauvegarde, mais nous avons une capture.\n\nCordialement,\n{societe}",
+    "variables": {
+      "societe": [
+        "Fromageries Vallin",
+        "Atelier Corvel",
+        "Transports Delmont",
+        "Cabinet Léonard et Associés"
+      ]
+    },
+    "pj": "capture.docx"
+  },
+  {
+    "id": "a-cli-012",
+    "famille": "client",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Isabelle Fournier",
+      "Arnaud Chevalier",
+      "Hélène Masson",
+      "Youssef Kherbache"
+    ],
+    "role": "Directeur marketing - client",
+    "objet": [
+      "Retour du comité",
+      "Suite comité de direction"
+    ],
+    "corps": "Bonjour,\n\nAprès réflexion en comité, nous souhaitons que le site soit plus {adjectif}.\n\nNous ne saurions pas dire exactement ce que cela veut dire, mais nous le reconnaîtrons en le voyant.\n\nMerci de nous faire plusieurs propositions,\nDirection Marketing - {societe}",
+    "variables": {
+      "adjectif": [
+        "impactant",
+        "premium",
+        "disruptif",
+        "vivant",
+        "jeune"
+      ],
+      "societe": [
+        "Groupe Vortan",
+        "Nexalis",
+        "Maison Brunelle",
+        "Mutuelle Arvelle"
+      ]
+    },
+    "cc": [
+      4,
+      10
+    ]
+  },
+  {
+    "id": "a-cli-013",
+    "famille": "client",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Bernard Collin",
+      "Véronique Carré",
+      "Malik Benyahia",
+      "Nathalie Brun"
+    ],
+    "role": "Client",
+    "objet": [
+      "Vos mails",
+      "Mails non reçus (panne)"
+    ],
+    "corps": "Bonjour,\n\nÀ cause de la panne Outlook, je n'ai reçu aucun de vos mails depuis jeudi.\n\nPourriez-vous me les renvoyer, par mail ?\n\nMerci d'avance,\nService Achats - {societe}",
+    "variables": {
+      "societe": [
+        "Groupe Vortan",
+        "Coopérative Agrinord",
+        "Laboratoires Orvane",
+        "Assurances Ferval"
+      ]
+    }
+  },
+  {
+    "id": "a-cli-014",
+    "famille": "client",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Hélène Masson",
+      "François Guérin",
+      "Pascal Henry",
+      "Nathalie Brun"
+    ],
+    "role": "Product Owner côté client",
+    "objet": [
+      "Anomalie bouton Supprimer",
+      "Bug bloquant à corriger pour {jour}"
+    ],
+    "corps": "Bonjour,\n\nNos utilisateurs nous remontent une anomalie : quand on clique sur \"Supprimer\", ça supprime.\n\nCe n'est pas le comportement attendu.\n\nPouvez-vous corriger pour {jour} ?\n\nCordialement,\nProduct Owner - {projet}",
+    "variables": {
+      "jour": [
+        "demain",
+        "lundi",
+        "la mise en prod de jeudi",
+        "ce soir"
+      ],
+      "projet": [
+        "Extranet",
+        "Portail Partenaires",
+        "Espace Adhérents",
+        "Intranet RH"
+      ]
+    },
+    "importance": "haute"
+  },
+  {
+    "id": "a-cli-015",
+    "famille": "client",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Christine Joly",
+      "Bernard Collin",
+      "Laetitia Morel",
+      "Youssef Kherbache"
+    ],
+    "role": "Client",
+    "objet": [
+      "Audit sécurité : pièces à fournir",
+      "Demande audit sécurité {societe}"
+    ],
+    "corps": "Bonjour,\n\nDans le cadre de notre audit sécurité, merci de nous envoyer par mail l'ensemble des mots de passe du site, dans un fichier Excel protégé.\n\nLe mot de passe du fichier sera à indiquer dans le même mail.\n\nCordialement,\nServices Généraux - {societe}",
+    "variables": {
+      "societe": [
+        "Groupe Vortan",
+        "Nexalis",
+        "Coopérative Agrinord",
+        "Cabinet Léonard et Associés"
+      ]
+    },
+    "cc": [
+      2,
+      5
+    ]
+  },
+  {
+    "id": "a-usr-001",
+    "famille": "utilisateur",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Martine Leroux",
+      "Karim Benali",
+      "Sandrine Morel",
+      "Thierry Vasseur"
+    ],
+    "role": "Utilisateur",
+    "objet": [
+      "ça marche pas",
+      "URGENT ça marche pas",
+      "Problème"
+    ],
+    "corps": "Bonjour,\n\nÇa marche pas.\n\nMerci de regarder rapidement, j'ai {nb} dossiers à traiter avant {heure}.\n\nCordialement,\nService {service}",
+    "variables": {
+      "nb": [
+        "12",
+        "40",
+        "3",
+        "27"
+      ],
+      "heure": [
+        "11 h",
+        "midi",
+        "ce soir",
+        "la fin de la journée"
+      ],
+      "service": [
+        "Achats",
+        "Logistique",
+        "Facturation",
+        "Relation clients"
+      ]
+    }
+  },
+  {
+    "id": "a-usr-002",
+    "famille": "utilisateur",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Martine Leroux",
+      "Karim Benali",
+      "Sandrine Morel",
+      "Thierry Vasseur"
+    ],
+    "role": "Utilisateur",
+    "objet": [
+      "RE: ça marche pas",
+      "RE: RE: Problème"
+    ],
+    "corps": "Bonjour,\n\nPour répondre à votre question : non, ça ne marche toujours pas.\n\nVous me demandez ce qui ne marche pas exactement. Tout.\n\nJe vous relance aussi sur Teams.\n\nCordialement,\nService {service}",
+    "variables": {
+      "service": [
+        "Achats",
+        "Logistique",
+        "Facturation",
+        "Relation clients"
+      ]
+    },
+    "suite": "a-usr-001"
+  },
+  {
+    "id": "a-usr-003",
+    "famille": "utilisateur",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Catherine Dumas",
+      "Nadia Haddad",
+      "Véronique Brunet",
+      "Élodie Marchand"
+    ],
+    "role": "Assistante de direction",
+    "objet": [
+      "Outlook ne fonctionne plus",
+      "Problème Outlook (urgent)",
+      "URGENT : plus de mails"
+    ],
+    "corps": "Bonjour,\n\nDepuis {moment}, mon Outlook n'affiche plus aucun mail, ni en réception ni en envoi.\n\nPouvez-vous regarder dès que possible ? Merci de me répondre par mail, c'est plus simple pour moi.\n\nBonne journée,\nAssistante de direction - {societe}\nPensez à l'environnement avant d'imprimer ce mail.",
+    "variables": {
+      "moment": [
+        "hier soir",
+        "ce matin",
+        "mon retour de pause",
+        "l'arrivée de mon café"
+      ],
+      "societe": [
+        "Groupe Vortan",
+        "Nexalis",
+        "Ardéa Conseil",
+        "Solvane Industries"
+      ]
+    },
+    "importance": "haute"
+  },
+  {
+    "id": "a-usr-004",
+    "famille": "utilisateur",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Gérard Pichon",
+      "Fatima Ouali",
+      "Brigitte Caron",
+      "Laurent Gilles"
+    ],
+    "role": "Service comptabilité",
+    "objet": [
+      "Message d'erreur",
+      "Capture de l'erreur",
+      "TR: erreur encore"
+    ],
+    "corps": "Bonjour,\n\nJ'ai encore le message d'erreur, je vous ai fait une capture pour que vous voyiez bien.\n\nC'est la photo page {page}, les précédentes sont ratées. Elle est un peu floue à cause du reflet de la fenêtre, mais on devine le bouton rouge.\n\nMerci,\nService comptabilité",
+    "variables": {
+      "page": [
+        "3",
+        "7",
+        "12",
+        "4"
+      ]
+    },
+    "pj": "capture.docx"
+  },
+  {
+    "id": "a-usr-005",
+    "famille": "utilisateur",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Josiane Lambert",
+      "Mehdi Saïdi",
+      "Christelle Roy",
+      "Pascal Fontaine"
+    ],
+    "role": "Utilisateur",
+    "objet": [
+      "Fichier disparu",
+      "Mon fichier a disparu !!",
+      "URGENT fichier"
+    ],
+    "corps": "Bonjour,\n\nMon fichier \"{fichier}\" a disparu du bureau.\n\nJe précise que je n'ai rien touché. J'ai juste fait un peu de rangement vendredi et vidé la corbeille parce qu'elle était pleine.\n\nVous pouvez le remettre ?\n\nMerci d'avance,\nEnvoyé de mon iPhone",
+    "variables": {
+      "fichier": [
+        "Budget 2027",
+        "Suivi clients DEFINITIF",
+        "Planning congés",
+        "Tarifs NE PAS SUPPRIMER"
+      ]
+    },
+    "importance": "haute"
+  },
+  {
+    "id": "a-usr-006",
+    "famille": "utilisateur",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Annie Perrot",
+      "Youssef El Amrani",
+      "Hélène Garnier",
+      "Didier Masson"
+    ],
+    "role": "Utilisateur métier",
+    "objet": [
+      "{appli} ne marche plus",
+      "Problème {appli}"
+    ],
+    "corps": "Bonjour,\n\n{appli} ne marche plus, alors qu'hier il marchait très bien.\n\nLa seule chose qui a changé depuis, c'est que j'ai {changement}, mais je ne vois pas le rapport.\n\nCordialement,\nDirection commerciale - {societe}",
+    "variables": {
+      "appli": [
+        "GestiCompta",
+        "Planito",
+        "SoftNote RH",
+        "Devisio"
+      ],
+      "changement": [
+        "changé de mot de passe",
+        "installé la mise à jour qu'il me proposait",
+        "renversé un café sur le clavier",
+        "débranché le câble jaune qui ne servait à rien"
+      ],
+      "societe": [
+        "Groupe Vortan",
+        "Nexalis",
+        "Ardéa Conseil"
+      ]
+    }
+  },
+  {
+    "id": "a-usr-007",
+    "famille": "utilisateur",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Monique Faure",
+      "Sébastien Klein",
+      "Aïcha Diallo",
+      "Bernard Lemoine"
+    ],
+    "role": "Utilisateur",
+    "objet": [
+      "Erreur",
+      "J'ai eu une erreur",
+      "Message bizarre"
+    ],
+    "corps": "Bonjour,\n\nJ'ai eu un message d'erreur en enregistrant {document}. Je ne l'ai pas lu, j'ai cliqué sur OK, mais il était long et en anglais, donc c'est sûrement grave.\n\nIl y avait un numéro, je crois qu'il commençait par 0x. Ou par un E.\n\nBonne journée,\nCe message et ses pièces jointes sont confidentiels et destinés exclusivement à leurs destinataires. Si vous l'avez reçu par erreur, merci d'en avertir l'expéditeur et de le détruire.",
+    "variables": {
+      "document": [
+        "ma note de frais",
+        "le bon de commande",
+        "la fiche client",
+        "le planning du mois"
+      ]
+    }
+  },
+  {
+    "id": "a-usr-008",
+    "famille": "utilisateur",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Nathalie Blanc",
+      "Rachid Mansouri",
+      "Isabelle Rivière",
+      "Jean-Marc Colin"
+    ],
+    "role": "Utilisateur",
+    "objet": [
+      "Vous pouvez passer ?",
+      "Petit service rapide",
+      "Question rapide"
+    ],
+    "corps": "Bonjour,\n\nVous pouvez passer au {etage} quand vous avez cinq minutes ? C'est rapide, c'est juste pour {tache}.\n\nJe suis là jusqu'à 18 h. Après, il faudrait que ce soit fait pour demain matin.\n\nMerci beaucoup !",
+    "variables": {
+      "etage": [
+        "2e",
+        "4e",
+        "rez-de-chaussée",
+        "bâtiment C"
+      ],
+      "tache": [
+        "installer l'imprimante du nouveau stagiaire",
+        "récupérer les mails de mon ancien ordinateur",
+        "migrer le fichier clients sur le nouvel outil",
+        "refaire les accès de tout le service"
+      ]
+    }
+  },
+  {
+    "id": "a-usr-009",
+    "famille": "utilisateur",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Sylvie Mercier",
+      "Olivier Baron",
+      "Khadija Benmoussa",
+      "Patrick Renaud"
+    ],
+    "role": "Utilisateur",
+    "objet": [
+      "Le problème est revenu",
+      "RE: Problème écran",
+      "RE: RE: Merci pour votre passage"
+    ],
+    "corps": "Bonjour,\n\nJe vous confirme que le problème est revenu {delai} après votre départ.\n\nC'est bizarre, il ne le fait jamais quand vous êtes là. Vous pourriez repasser et rester derrière moi toute la journée ?\n\nMerci,\nService {service}",
+    "variables": {
+      "delai": [
+        "deux minutes",
+        "le temps que l'ascenseur arrive",
+        "pile quand la porte s'est refermée",
+        "trente secondes"
+      ],
+      "service": [
+        "Achats",
+        "Paie",
+        "Accueil",
+        "Recouvrement"
+      ]
+    }
+  },
+  {
+    "id": "a-usr-010",
+    "famille": "utilisateur",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Annie Perrot",
+      "Youssef El Amrani",
+      "Hélène Garnier",
+      "Didier Masson"
+    ],
+    "role": "Utilisateur métier",
+    "objet": [
+      "RE: {appli} ne marche plus",
+      "RE: RE: Problème {appli}"
+    ],
+    "corps": "Bonjour,\n\nComme vous me l'avez conseillé, j'ai redémarré. J'ai éteint l'écran, attendu {duree} et rallumé : ça n'a rien changé, j'ai toujours la même fenêtre bloquée.\n\nDu coup je ne vois pas trop ce qu'on peut faire de plus.\n\nCordialement,\nDirection commerciale",
+    "variables": {
+      "appli": [
+        "GestiCompta",
+        "Planito",
+        "SoftNote RH",
+        "Devisio"
+      ],
+      "duree": [
+        "30 secondes",
+        "une bonne minute",
+        "toute la pause déjeuner",
+        "le temps de compter jusqu'à dix"
+      ]
+    },
+    "suite": "a-usr-006"
+  },
+  {
+    "id": "a-usr-011",
+    "famille": "utilisateur",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Gérard Pichon",
+      "Fatima Ouali",
+      "Brigitte Caron",
+      "Laurent Gilles"
+    ],
+    "role": "Service comptabilité",
+    "objet": [
+      "Fichier Excel très lent",
+      "Excel plante",
+      "Mon fichier ne s'ouvre plus"
+    ],
+    "corps": "Bonjour,\n\nMon fichier de suivi fournisseurs met {duree} à s'ouvrir, et parfois il ne s'ouvre pas du tout. Il fait {taille} Mo, c'est normal ?\n\nPourtant il n'y a presque rien dedans : un onglet par mois depuis {annee}, les photos des fournisseurs et quelques macros que mon prédécesseur avait faites.\n\nJe vous le mets en pièce jointe pour que vous regardiez.\n\nCordialement,\nService comptabilité - {societe}",
+    "variables": {
+      "duree": [
+        "vingt minutes",
+        "un quart d'heure",
+        "le temps d'un café",
+        "une demi-heure"
+      ],
+      "taille": [
+        "80",
+        "112",
+        "243",
+        "96"
+      ],
+      "annee": [
+        "2009",
+        "2011",
+        "2014",
+        "2007"
+      ],
+      "societe": [
+        "Groupe Vortan",
+        "Nexalis",
+        "Solvane Industries"
+      ]
+    },
+    "pj": "suivi_fournisseurs_v3_COPIE_bis.xlsx"
+  },
+  {
+    "id": "a-usr-012",
+    "famille": "utilisateur",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Odile Carpentier",
+      "Thomas Nguyen",
+      "Samia Belkacem",
+      "Michel Barbier"
+    ],
+    "role": "Utilisateur",
+    "objet": [
+      "Ordinateur très lent",
+      "PC lent",
+      "Lenteurs"
+    ],
+    "corps": "Bonjour,\n\nMon ordinateur est très lent depuis quelques jours. Je n'ai rien ouvert de spécial, juste mes {nb} onglets habituels.\n\nJe préfère ne pas les fermer, c'est là que je range mes documents.\n\nMerci,\nEnvoyé de mon iPhone",
+    "variables": {
+      "nb": [
+        "47",
+        "83",
+        "126",
+        "212"
+      ]
+    }
+  },
+  {
+    "id": "a-usr-013",
+    "famille": "utilisateur",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Josiane Lambert",
+      "Mehdi Saïdi",
+      "Christelle Roy",
+      "Pascal Fontaine"
+    ],
+    "role": "Utilisateur",
+    "objet": [
+      "Mot de passe refusé",
+      "Nouveau mot de passe ne marche pas"
+    ],
+    "corps": "Bonjour,\n\nOn m'a demandé de changer mon mot de passe et le nouveau est refusé. Pourtant c'est bien le même que l'ancien, avec un {suffixe} à la fin.\n\nIl est noté sur le post-it sous mon clavier si vous voulez vérifier.\n\nCordialement,\nPensez à l'environnement avant d'imprimer ce mail.",
+    "variables": {
+      "suffixe": [
+        "2",
+        "!",
+        "2026",
+        "bis"
+      ]
+    }
+  },
+  {
+    "id": "a-usr-014",
+    "famille": "utilisateur",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Corinne Vidal",
+      "Stéphane Dupuis",
+      "Leïla Amrani",
+      "Franck Moulin"
+    ],
+    "role": "Utilisateur métier",
+    "objet": [
+      "Recette version {version} : OK",
+      "RE: Recette {version}"
+    ],
+    "corps": "Bonjour,\n\nJ'ai testé la version {version} comme demandé. Tout est OK pour moi.\n\nJe n'ai pas réussi à me connecter, mais à part ça tout est OK.\n\nBonne journée,\nUtilisateur référent - Direction {direction}",
+    "variables": {
+      "version": [
+        "2.4",
+        "3.0",
+        "4.1.2",
+        "5.0-rc"
+      ],
+      "direction": [
+        "financière",
+        "des achats",
+        "commerciale",
+        "juridique"
+      ]
+    }
+  },
+  {
+    "id": "a-usr-015",
+    "famille": "utilisateur",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Danielle Robin",
+      "Hugo Lefèvre",
+      "Yasmina Cherif",
+      "Alain Bertrand"
+    ],
+    "role": "Utilisateur",
+    "objet": [
+      "Teams ne marche plus",
+      "Impossible de vous joindre"
+    ],
+    "corps": "Bonjour,\n\nJe n'arrive plus à vous joindre sur Teams pour vous dire que Teams ne marche plus, alors je vous écris ici.\n\nVous pouvez me rappeler sur Teams quand c'est réparé ?\n\nMerci,\nService {service}",
+    "variables": {
+      "service": [
+        "Achats",
+        "Paie",
+        "Accueil",
+        "Marketing"
+      ]
+    }
+  },
+  {
+    "id": "a-n2-001",
+    "famille": "n-plus-2",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Philippe Garnier",
+      "Arnaud Delaunay",
+      "Stéphanie Royer",
+      "Malik Boukhari",
+      "Valérie Chevalier"
+    ],
+    "role": "VP Engineering",
+    "objet": [
+      "{projet} : ETA ?",
+      "RE: RE: RE: {projet}",
+      "Point {projet}"
+    ],
+    "corps": "Bonjour à tous,\n\nOn a une ETA ?\n\nEnvoyé de mon iPhone",
+    "variables": {
+      "projet": [
+        "Phoenix",
+        "Refonte V3",
+        "Migration Cloud",
+        "Projet Atlas"
+      ]
+    },
+    "cc": [
+      6,
+      18
+    ]
+  },
+  {
+    "id": "a-n2-002",
+    "famille": "n-plus-2",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Philippe Garnier",
+      "Arnaud Delaunay",
+      "Stéphanie Royer",
+      "Malik Boukhari",
+      "Valérie Chevalier"
+    ],
+    "role": "VP Engineering",
+    "objet": [
+      "RE: {projet} : ETA ?",
+      "RE: RE: RE: RE: {projet}"
+    ],
+    "corps": "Merci pour l'ETA.\n\nEst-ce qu'on peut l'avancer de {delai} ? J'ai déjà annoncé {date} au comité.\n\nJe vous relance sur Teams si pas de retour d'ici une heure.\n\nEnvoyé de mon iPhone",
+    "variables": {
+      "projet": [
+        "Phoenix",
+        "Refonte V3",
+        "Migration Cloud",
+        "Projet Atlas"
+      ],
+      "delai": [
+        "deux semaines",
+        "trois sprints",
+        "une semaine",
+        "un mois"
+      ],
+      "date": [
+        "lundi",
+        "la fin du mois",
+        "demain matin",
+        "vendredi"
+      ]
+    },
+    "cc": [
+      6,
+      18
+    ],
+    "suite": "a-n2-001"
+  },
+  {
+    "id": "a-n2-003",
+    "famille": "n-plus-2",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Philippe Garnier",
+      "Arnaud Delaunay",
+      "Malik Boukhari",
+      "Christophe Leblanc"
+    ],
+    "role": "Directeur technique",
+    "objet": [
+      "Incident {appli} : suivi",
+      "URGENT : incident {appli}"
+    ],
+    "corps": "Bonjour,\n\nSuite à l'incident sur {appli}, merci de me tenir informé par mail toutes les {freq} minutes, même s'il n'y a rien de nouveau.\n\nSurtout s'il n'y a rien de nouveau, d'ailleurs.\n\nDirection technique\nCe message et ses pièces jointes sont confidentiels et destinés exclusivement à leurs destinataires. Si vous l'avez reçu par erreur, merci d'en avertir l'expéditeur et de le détruire.",
+    "variables": {
+      "appli": [
+        "l'API de paiement",
+        "le back-office",
+        "l'appli mobile",
+        "l'extranet client"
+      ],
+      "freq": [
+        "30",
+        "15",
+        "20",
+        "10"
+      ]
+    },
+    "importance": "haute",
+    "cc": [
+      3,
+      9
+    ]
+  },
+  {
+    "id": "a-n2-004",
+    "famille": "n-plus-2",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Stéphanie Royer",
+      "Valérie Chevalier",
+      "Ingrid Lacroix",
+      "Sophie Bertin"
+    ],
+    "role": "Directrice des opérations",
+    "objet": [
+      "Petit sujet",
+      "On en parle en 1:1",
+      "À voir ensemble"
+    ],
+    "corps": "Salut,\n\nRien de grave, mais on en parle à notre 1:1 de {jour}.\n\nBonne soirée !",
+    "variables": {
+      "jour": [
+        "lundi",
+        "jeudi prochain",
+        "dans quinze jours",
+        "mardi 8 h"
+      ]
+    }
+  },
+  {
+    "id": "a-n2-005",
+    "famille": "n-plus-2",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Philippe Garnier",
+      "Arnaud Delaunay",
+      "Stéphanie Royer",
+      "Malik Boukhari",
+      "Valérie Chevalier"
+    ],
+    "role": "VP Engineering",
+    "objet": [
+      "Petite question rapide",
+      "Question rapide (2 min)"
+    ],
+    "corps": "Hello,\n\nPetite question rapide : est-ce qu'on ne gagnerait pas à fusionner l'équipe {equipe1} et l'équipe {equipe2}, avec un passage en {methode} dès {date} ?\n\nPas besoin de répondre, je réfléchis juste à voix haute. J'en ai parlé au comex ce matin, ils sont pour.\n\nEnvoyé de mon iPhone",
+    "variables": {
+      "equipe1": [
+        "Front",
+        "Mobile",
+        "Data",
+        "Paiement"
+      ],
+      "equipe2": [
+        "Back",
+        "Infra",
+        "QA",
+        "Support N2"
+      ],
+      "methode": [
+        "SAFe",
+        "Shape Up",
+        "squads et tribus",
+        "Kanban"
+      ],
+      "date": [
+        "lundi",
+        "la rentrée",
+        "le prochain sprint",
+        "demain"
+      ]
+    },
+    "cc": [
+      4,
+      12
+    ]
+  },
+  {
+    "id": "a-n2-006",
+    "famille": "n-plus-2",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Philippe Garnier",
+      "Arnaud Delaunay",
+      "Malik Boukhari",
+      "Christophe Leblanc"
+    ],
+    "role": "Directeur technique",
+    "objet": [
+      "Article intéressant",
+      "À lire (vu sur LinkedIn)",
+      "Idée pour la roadmap"
+    ],
+    "corps": "Bonjour à tous,\n\nJ'ai lu un article sur LinkedIn ce week-end : une start-up a remplacé tout son {stack} par {techno} en {duree}. Partagé par un ancien collègue, très convaincant.\n\nOn peut regarder si c'est faisable chez nous d'ici la fin du trimestre ? Je vous mets le lien dès que je le retrouve.\n\nCordialement,\nDirection technique - {societe}",
+    "variables": {
+      "stack": [
+        "back-end",
+        "monolithe",
+        "SI",
+        "legacy"
+      ],
+      "techno": [
+        "Rust",
+        "du no-code",
+        "une seule fonction serverless",
+        "un tableur partagé"
+      ],
+      "duree": [
+        "un week-end",
+        "trois jours",
+        "deux sprints",
+        "une nuit"
+      ],
+      "societe": [
+        "Groupe Vortan",
+        "Nexalis",
+        "Kelvane",
+        "Ardéa Conseil"
+      ]
+    },
+    "cc": [
+      5,
+      15
+    ]
+  },
+  {
+    "id": "a-n2-007",
+    "famille": "n-plus-2",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Philippe Garnier",
+      "Arnaud Delaunay",
+      "Stéphanie Royer",
+      "Malik Boukhari",
+      "Valérie Chevalier"
+    ],
+    "role": "VP Engineering",
+    "objet": [
+      "Chiffrage {projet}",
+      "RE: Estimation {projet}"
+    ],
+    "corps": "Bonjour,\n\nJe vois que la migration de {projet} est estimée à {nb} jours. Pourquoi on n'utilise pas l'IA pour ça ?\n\nJ'ai posé la question à un assistant ce matin, il m'a dit que c'était tout à fait faisable. Il m'a même donné un plan en cinq étapes, je vous le transfère.\n\nEnvoyé de mon iPhone",
+    "variables": {
+      "projet": [
+        "Phoenix",
+        "l'ERP",
+        "la base clients",
+        "Projet Atlas"
+      ],
+      "nb": [
+        "40",
+        "120",
+        "65",
+        "210"
+      ]
+    }
+  },
+  {
+    "id": "a-n2-008",
+    "famille": "n-plus-2",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Stéphanie Royer",
+      "Valérie Chevalier",
+      "Ingrid Lacroix",
+      "Sophie Bertin"
+    ],
+    "role": "Directrice des opérations",
+    "objet": [
+      "Nouveau format de reporting",
+      "Reporting hebdo : nouveau template"
+    ],
+    "corps": "Bonjour à tous,\n\nPour le reporting hebdo, merci de passer du tableau de bord {outil} au template PowerPoint ci-joint. Il se met à jour à la main, mais c'est plus lisible pour le comité.\n\nUne slide par ticket, police 28 minimum. Pour les graphiques, une capture d'écran du tableau de bord fera très bien l'affaire.\n\nMerci à tous,\nDirection des opérations\nPensez à l'environnement avant d'imprimer ce mail.",
+    "variables": {
+      "outil": [
+        "Grafana",
+        "Jira",
+        "Metabase",
+        "Kibana"
+      ]
+    },
+    "pj": "Reporting_hebdo_TEMPLATE_v4_def.pptx",
+    "cc": [
+      8,
+      20
+    ]
+  },
+  {
+    "id": "a-n2-009",
+    "famille": "n-plus-2",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Philippe Garnier",
+      "Arnaud Delaunay",
+      "Malik Boukhari",
+      "Christophe Leblanc"
+    ],
+    "role": "Directeur technique",
+    "objet": [
+      "RE: Question sur {techno}",
+      "RE: Version de {techno}"
+    ],
+    "corps": "Bonjour,\n\nMerci pour ta question sur la version de {techno} à utiliser. Je mets ton N+1 en copie, ainsi que la DRH, pour que tout le monde ait le contexte.\n\nC'était une très bonne question, rien d'inquiétant.\n\nDirection technique",
+    "variables": {
+      "techno": [
+        "Node",
+        "PHP",
+        "Java",
+        "PostgreSQL"
+      ]
+    },
+    "cc": [
+      4,
+      9
+    ]
+  },
+  {
+    "id": "a-n2-010",
+    "famille": "n-plus-2",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Philippe Garnier",
+      "Arnaud Delaunay",
+      "Stéphanie Royer",
+      "Malik Boukhari",
+      "Valérie Chevalier"
+    ],
+    "role": "VP Engineering",
+    "objet": [
+      "Pas d'urgence",
+      "Point sur {sujet} (pas d'urgence)"
+    ],
+    "corps": "Hello,\n\nJe t'écris tard, réponds demain, pas d'urgence.\n\nTu peux me faire un point sur {sujet} ? Quelques lignes suffisent. Idéalement avant mon point de {heure} avec le comex.\n\nEnvoyé de mon iPhone",
+    "variables": {
+      "sujet": [
+        "la dette technique",
+        "le budget cloud",
+        "les recrutements",
+        "la migration"
+      ],
+      "heure": [
+        "7 h 30",
+        "8 h",
+        "8 h 15",
+        "7 h 45"
+      ]
+    }
+  },
+  {
+    "id": "a-n2-011",
+    "famille": "n-plus-2",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Philippe Garnier",
+      "Arnaud Delaunay",
+      "Stéphanie Royer",
+      "Malik Boukhari",
+      "Valérie Chevalier"
+    ],
+    "role": "VP Engineering",
+    "objet": [
+      "RE: Pas d'urgence",
+      "RE: Point sur {sujet} (pas d'urgence)"
+    ],
+    "corps": "Hello,\n\nJe me permets de te relancer concernant mon mail d'hier soir. Toujours pas d'urgence, mais le comex commence dans {minutes} minutes.\n\nJe t'ai aussi relancé sur Teams, mais Teams ne marche pas.\n\nEnvoyé de mon iPhone",
+    "variables": {
+      "sujet": [
+        "la dette technique",
+        "le budget cloud",
+        "les recrutements",
+        "la migration"
+      ],
+      "minutes": [
+        "10",
+        "4",
+        "2",
+        "6"
+      ]
+    },
+    "importance": "haute",
+    "suite": "a-n2-010"
+  },
+  {
+    "id": "a-n2-012",
+    "famille": "n-plus-2",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Stéphanie Royer",
+      "Valérie Chevalier",
+      "Ingrid Lacroix",
+      "Sophie Bertin"
+    ],
+    "role": "Directrice des opérations",
+    "objet": [
+      "Trop de réunions : plan d'action",
+      "Suite au retour sur les réunions"
+    ],
+    "corps": "Bonjour à tous,\n\nVous avez été nombreux à remonter que nous avions trop de réunions. Message reçu.\n\nJe propose donc un atelier de {duree}, chaque {jour}, pour identifier ensemble celles que nous pouvons supprimer.\n\nBelle journée,\nDirection des opérations - {societe}",
+    "variables": {
+      "duree": [
+        "deux heures",
+        "une demi-journée",
+        "1 h 30",
+        "trois heures"
+      ],
+      "jour": [
+        "lundi",
+        "mercredi",
+        "vendredi après-midi",
+        "matin"
+      ],
+      "societe": [
+        "Groupe Vortan",
+        "Nexalis",
+        "Kelvane",
+        "Solvane Industries"
+      ]
+    },
+    "cc": [
+      10,
+      25
+    ]
+  },
+  {
+    "id": "a-n2-013",
+    "famille": "n-plus-2",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Philippe Garnier",
+      "Arnaud Delaunay",
+      "Malik Boukhari",
+      "Christophe Leblanc"
+    ],
+    "role": "Directeur technique",
+    "objet": [
+      "Nouveaux indicateurs de productivité",
+      "KPI équipe tech"
+    ],
+    "corps": "Bonjour à tous,\n\nÀ partir de lundi, nous suivrons la productivité de l'équipe au nombre de lignes de code écrites par semaine. Objectif : +{pct} % d'ici {echeance}.\n\nPetite précision : les lignes supprimées seront déduites.\n\nCordialement,\nDirection technique\nCe message et ses pièces jointes sont confidentiels et destinés exclusivement à leurs destinataires. Si vous l'avez reçu par erreur, merci d'en avertir l'expéditeur et de le détruire.",
+    "variables": {
+      "pct": [
+        "20",
+        "35",
+        "50",
+        "15"
+      ],
+      "echeance": [
+        "la fin du trimestre",
+        "Noël",
+        "la fin de l'année",
+        "mars"
+      ]
+    },
+    "cc": [
+      8,
+      22
+    ]
+  },
+  {
+    "id": "a-n2-014",
+    "famille": "n-plus-2",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Philippe Garnier",
+      "Arnaud Delaunay",
+      "Stéphanie Royer",
+      "Malik Boukhari",
+      "Valérie Chevalier"
+    ],
+    "role": "VP Engineering",
+    "objet": [
+      "Roadmap validée !",
+      "Roadmap de l'an prochain : bonne nouvelle"
+    ],
+    "corps": "Bonjour à tous,\n\nBonne nouvelle : la roadmap de l'an prochain est validée en l'état. Moins bonne nouvelle : le budget aussi.\n\nOn garde donc les {nb} chantiers prioritaires, à effectif constant. Je sais que c'est faisable, on l'a déjà fait {quand}.\n\nMerci à tous pour votre engagement,\nDirection Engineering",
+    "variables": {
+      "nb": [
+        "9",
+        "14",
+        "22",
+        "17"
+      ],
+      "quand": [
+        "l'an dernier",
+        "en 2024",
+        "il y a deux ans",
+        "à peu près"
+      ]
+    },
+    "cc": [
+      10,
+      30
+    ]
+  },
+  {
+    "id": "a-n2-015",
+    "famille": "n-plus-2",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Stéphanie Royer",
+      "Valérie Chevalier",
+      "Ingrid Lacroix",
+      "Sophie Bertin"
+    ],
+    "role": "Directrice des opérations",
+    "objet": [
+      "URGENT : site très lent",
+      "Site KO ?",
+      "Problème de site"
+    ],
+    "corps": "Bonjour,\n\nLe site est très lent chez moi depuis {moment}. Je suis dans le TGV, quelque part entre {trajet}, mais je doute que ce soit lié.\n\nMerci de regarder en priorité.\n\nEnvoyé de mon iPhone",
+    "variables": {
+      "moment": [
+        "ce matin",
+        "une heure",
+        "le départ",
+        "vingt minutes"
+      ],
+      "trajet": [
+        "Paris et Lyon",
+        "Bordeaux et Paris",
+        "Rennes et Paris",
+        "Lille et Marseille"
+      ]
+    },
+    "importance": "haute",
+    "cc": [
+      3,
+      8
+    ]
+  },
+  {
+    "id": "a-rh-001",
+    "famille": "rh",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Aurélie Fabre",
+      "Camille Joly",
+      "Inès Mebarki",
+      "Julien Poirier",
+      "Laëtitia Gauthier"
+    ],
+    "role": "Ressources humaines",
+    "objet": [
+      "Campagne d'entretiens annuels",
+      "Entretien annuel : votre auto-évaluation"
+    ],
+    "corps": "Bonjour,\n\nLa campagne d'entretiens annuels est ouverte. Merci de compléter votre auto-évaluation ({pages} pages) avant {date}.\n\nVos objectifs de l'an dernier ne sont pas remontés dans le nouvel outil : merci de les ressaisir de mémoire.\n\nLe service RH\nPensez à l'environnement avant d'imprimer ce mail.",
+    "variables": {
+      "pages": [
+        "14",
+        "22",
+        "31",
+        "18"
+      ],
+      "date": [
+        "vendredi",
+        "lundi 9 h",
+        "la fin de la semaine",
+        "mercredi midi"
+      ]
+    },
+    "pj": "Auto-evaluation_2026_v3.docx"
+  },
+  {
+    "id": "a-rh-002",
+    "famille": "rh",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Aurélie Fabre",
+      "Camille Joly",
+      "Inès Mebarki",
+      "Julien Poirier",
+      "Laëtitia Gauthier"
+    ],
+    "role": "Chargée RH",
+    "objet": [
+      "RE: Entretien annuel : votre auto-évaluation",
+      "Relance : auto-évaluation"
+    ],
+    "corps": "Bonjour,\n\nSauf erreur de notre part, votre auto-évaluation n'est pas encore complétée. Il vous reste {jours} jours.\n\nPour vous aider, nous organisons un atelier de {duree} : \"Remplir son auto-évaluation efficacement\".\n\nBelle journée,\nL'équipe RH",
+    "variables": {
+      "jours": [
+        "2",
+        "3",
+        "5",
+        "1"
+      ],
+      "duree": [
+        "3 h",
+        "une demi-journée",
+        "2 h 30",
+        "4 h"
+      ]
+    },
+    "suite": "a-rh-001"
+  },
+  {
+    "id": "a-rh-003",
+    "famille": "rh",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Aurélie Fabre",
+      "Camille Joly",
+      "Inès Mebarki",
+      "Julien Poirier",
+      "Laëtitia Gauthier"
+    ],
+    "role": "Ressources humaines",
+    "objet": [
+      "Formation obligatoire : gestion du temps",
+      "Rappel : formation \"Optimiser sa gestion du temps\""
+    ],
+    "corps": "Bonjour,\n\nDans le cadre du plan de formation, le module en ligne \"Optimiser sa gestion du temps\" ({duree}) est obligatoire pour tous les collaborateurs et doit être suivi avant {date}.\n\nLes vidéos ne peuvent pas être accélérées, et le module se met en pause si la fenêtre n'est pas au premier plan.\n\nCordialement,\nService Formation - Ressources humaines",
+    "variables": {
+      "duree": [
+        "4 h",
+        "5 h 30",
+        "6 h",
+        "3 h 45"
+      ],
+      "date": [
+        "vendredi",
+        "la fin du mois",
+        "le 30",
+        "votre entretien annuel"
+      ]
+    },
+    "importance": "haute"
+  },
+  {
+    "id": "a-rh-004",
+    "famille": "rh",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Aurélie Fabre",
+      "Camille Joly",
+      "Inès Mebarki",
+      "Julien Poirier",
+      "Laëtitia Gauthier"
+    ],
+    "role": "People & Culture",
+    "objet": [
+      "Baby-foot : nouvelles modalités",
+      "Utilisation du baby-foot"
+    ],
+    "corps": "Bonjour à tous,\n\nSuite à plusieurs remontées, le baby-foot sera désormais accessible sur réservation, par créneaux de {creneau} minutes, via le formulaire ci-joint.\n\nLe règlement d'utilisation ({pages} pages) est affiché près de la machine à café. Merci de le signer avant votre premier match.\n\nLudiquement,\nL'équipe People & Culture",
+    "variables": {
+      "creneau": [
+        "10",
+        "15",
+        "12",
+        "20"
+      ],
+      "pages": [
+        "6",
+        "9",
+        "4",
+        "11"
+      ]
+    },
+    "pj": "Reglement_babyfoot_v2_signature.pdf"
+  },
+  {
+    "id": "a-rh-005",
+    "famille": "rh",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Aurélie Fabre",
+      "Camille Joly",
+      "Inès Mebarki",
+      "Julien Poirier",
+      "Laëtitia Gauthier"
+    ],
+    "role": "People & Culture",
+    "objet": [
+      "Retrait du baby-foot",
+      "RE: Baby-foot : nouvelles modalités"
+    ],
+    "corps": "Bonjour à tous,\n\nFaute de réservations, le baby-foot sera retiré {date}.\n\nPour rappel, le formulaire était disponible sur l'intranet, rubrique Vie de l'entreprise > Bien-être > Espaces partagés > Loisirs > Formulaires > Baby-foot.\n\nL'équipe People & Culture",
+    "variables": {
+      "date": [
+        "vendredi",
+        "lundi",
+        "à la fin du mois",
+        "dès demain"
+      ]
+    },
+    "suite": "a-rh-004"
+  },
+  {
+    "id": "a-rh-006",
+    "famille": "rh",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Aurélie Fabre",
+      "Camille Joly",
+      "Inès Mebarki",
+      "Julien Poirier",
+      "Laëtitia Gauthier"
+    ],
+    "role": "People & Culture",
+    "objet": [
+      "Votre avis compte !",
+      "Baromètre bien-être : à vous la parole"
+    ],
+    "corps": "Bonjour,\n\nVotre avis compte ! Merci de prendre quelques minutes pour répondre à notre baromètre bien-être ({nb} questions, environ {duree}).\n\nLe questionnaire est entièrement anonyme. Pour y accéder, connectez-vous avec votre matricule.\n\nLe lien est disponible sur Teams.\n\nPrenez soin de vous,\nL'équipe People & Culture",
+    "variables": {
+      "nb": [
+        "87",
+        "112",
+        "94",
+        "76"
+      ],
+      "duree": [
+        "1 h 30",
+        "2 h",
+        "1 h 45",
+        "1 h 15"
+      ]
+    }
+  },
+  {
+    "id": "a-rh-007",
+    "famille": "rh",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Aurélie Fabre",
+      "Camille Joly",
+      "Inès Mebarki",
+      "Julien Poirier",
+      "Laëtitia Gauthier"
+    ],
+    "role": "People & Culture",
+    "objet": [
+      "Résultats du baromètre bien-être",
+      "Baromètre bien-être : les résultats"
+    ],
+    "corps": "Bonjour à tous,\n\nMerci aux {pct} % d'entre vous qui ont répondu au baromètre bien-être.\n\nIl en ressort principalement que les collaborateurs se sentent sur-sollicités. Un second questionnaire vous sera envoyé la semaine prochaine pour approfondir.\n\nL'équipe People & Culture",
+    "variables": {
+      "pct": [
+        "4",
+        "7",
+        "11",
+        "3"
+      ]
+    },
+    "suite": "a-rh-006"
+  },
+  {
+    "id": "a-rh-008",
+    "famille": "rh",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Aurélie Fabre",
+      "Camille Joly",
+      "Inès Mebarki",
+      "Julien Poirier",
+      "Laëtitia Gauthier"
+    ],
+    "role": "Ressources humaines",
+    "objet": [
+      "Nouveau contrat de mutuelle",
+      "Mutuelle : action requise",
+      "IMPORTANT : mutuelle au 1er janvier"
+    ],
+    "corps": "Bonjour,\n\nNouveau contrat de mutuelle au 1er janvier : merci de nous retourner le formulaire d'adhésion ci-joint, imprimé, signé, scanné, puis renvoyé par mail.\n\nPour toute question, la plateforme téléphonique est joignable {creneau}.\n\nCordialement,\nService Ressources humaines\nCe message et ses pièces jointes sont confidentiels et destinés exclusivement à leurs destinataires. Si vous l'avez reçu par erreur, merci d'en avertir l'expéditeur et de le détruire.",
+    "variables": {
+      "creneau": [
+        "du lundi au vendredi, de 10 h à 11 h",
+        "le mardi, de 14 h à 14 h 45",
+        "un jeudi sur deux, de 9 h 30 à 10 h",
+        "le mercredi matin, hors vacances scolaires"
+      ]
+    },
+    "pj": "Formulaire_adhesion_mutuelle_A_IMPRIMER.pdf"
+  },
+  {
+    "id": "a-rh-009",
+    "famille": "rh",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Aurélie Fabre",
+      "Camille Joly",
+      "Inès Mebarki",
+      "Julien Poirier",
+      "Laëtitia Gauthier"
+    ],
+    "role": "People & Culture",
+    "objet": [
+      "Semaine de la qualité de vie au travail",
+      "SQVT : atelier respiration consciente"
+    ],
+    "corps": "Bonjour à tous,\n\nDans le cadre de la Semaine de la qualité de vie au travail, un atelier de respiration consciente est proposé {jour}, en salle {salle}.\n\nLes équipes techniques sont particulièrement attendues : le créneau a été choisi pour coïncider avec la mise en production, moment identifié comme le plus stressant de la semaine.\n\nRespirez,\nL'équipe People & Culture",
+    "variables": {
+      "jour": [
+        "jeudi de 17 h à 19 h",
+        "vendredi de 16 h à 18 h",
+        "mardi de 22 h à minuit",
+        "mercredi de 18 h à 20 h"
+      ],
+      "salle": [
+        "Zen",
+        "Horizon",
+        "Bali",
+        "Sérénité"
+      ]
+    }
+  },
+  {
+    "id": "a-rh-010",
+    "famille": "rh",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Aurélie Fabre",
+      "Camille Joly",
+      "Inès Mebarki",
+      "Julien Poirier",
+      "Laëtitia Gauthier"
+    ],
+    "role": "Chargée RH",
+    "objet": [
+      "Bienvenue chez {societe} !",
+      "Votre parcours d'intégration"
+    ],
+    "corps": "Bonjour et bienvenue chez {societe} !\n\nVotre parcours d'intégration commence lundi. Votre ordinateur sera disponible sous {delai}.\n\nEn attendant, vous pouvez suivre les modules d'e-learning sur votre ordinateur.\n\nToute l'équipe RH vous souhaite une belle intégration !",
+    "variables": {
+      "societe": [
+        "Groupe Vortan",
+        "Nexalis",
+        "Kelvane",
+        "Solvane Industries"
+      ],
+      "delai": [
+        "trois semaines",
+        "quinze jours ouvrés",
+        "un délai à confirmer",
+        "un mois environ"
+      ]
+    }
+  },
+  {
+    "id": "a-rh-011",
+    "famille": "rh",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Aurélie Fabre",
+      "Camille Joly",
+      "Inès Mebarki",
+      "Julien Poirier",
+      "Laëtitia Gauthier"
+    ],
+    "role": "People & Culture",
+    "objet": [
+      "Passage en flex office",
+      "Nouvel aménagement : flex office"
+    ],
+    "corps": "Bonjour à tous,\n\nÀ compter de {date}, l'open space passe en flex office : plus de bureau attitré, chacun s'installe où il le souhaite.\n\nLes places se réservent la veille avant 16 h via l'outil {outil}. Un casier de {taille} cm de large est mis à disposition de chacun pour ranger ses affaires, écrans compris.\n\nL'équipe People & Culture\nPensez à l'environnement avant d'imprimer ce mail.",
+    "variables": {
+      "date": [
+        "lundi",
+        "la rentrée",
+        "début décembre",
+        "demain"
+      ],
+      "outil": [
+        "DeskBook",
+        "FlexSpace",
+        "Placio",
+        "MyDesk"
+      ],
+      "taille": [
+        "30",
+        "25",
+        "40",
+        "22"
+      ]
+    },
+    "pj": "Plan_flex_office_v7.pdf"
+  },
+  {
+    "id": "a-rh-012",
+    "famille": "rh",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Aurélie Fabre",
+      "Camille Joly",
+      "Inès Mebarki",
+      "Julien Poirier",
+      "Laëtitia Gauthier"
+    ],
+    "role": "Ressources humaines",
+    "objet": [
+      "Nos nouvelles valeurs",
+      "Découvrez nos valeurs !"
+    ],
+    "corps": "Bonjour à tous,\n\nAprès huit mois de travail avec le cabinet {cabinet}, nous avons le plaisir de vous dévoiler nos nouvelles valeurs : Audace, Agilité, Simplicité.\n\nLe document de présentation ({pages} pages) est disponible sur l'intranet.\n\nLa Direction des ressources humaines",
+    "variables": {
+      "cabinet": [
+        "Altimeo",
+        "Synergence",
+        "Lumen Partners",
+        "Ovalis Conseil"
+      ],
+      "pages": [
+        "64",
+        "92",
+        "118",
+        "75"
+      ]
+    },
+    "pj": "Nos_valeurs_presentation_FINALE.pdf"
+  },
+  {
+    "id": "a-rh-013",
+    "famille": "rh",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Aurélie Fabre",
+      "Camille Joly",
+      "Inès Mebarki",
+      "Julien Poirier",
+      "Laëtitia Gauthier"
+    ],
+    "role": "Chargée RH",
+    "objet": [
+      "Congés d'été : à poser avant {date}",
+      "Planning des congés d'été"
+    ],
+    "corps": "Bonjour,\n\nLe planning des congés d'été est ouvert jusqu'à {date}. Merci de poser vos dates en respectant les règles suivantes : pas plus d'un développeur absent à la fois, et aucun congé pendant les mises en production.\n\nLes mises en production ne sont pas encore planifiées.\n\nBonne journée,\nService RH",
+    "variables": {
+      "date": [
+        "vendredi",
+        "la fin du mois",
+        "mercredi midi",
+        "lundi"
+      ]
+    }
+  },
+  {
+    "id": "a-rh-014",
+    "famille": "rh",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Aurélie Fabre",
+      "Camille Joly",
+      "Inès Mebarki",
+      "Julien Poirier",
+      "Laëtitia Gauthier"
+    ],
+    "role": "Ressources humaines",
+    "objet": [
+      "Rappel : droit à la déconnexion",
+      "Charte de déconnexion"
+    ],
+    "corps": "Bonjour à tous,\n\nEn cette période d'indisponibilité de la messagerie, nous vous rappelons que la charte de déconnexion reste en vigueur : aucun mail ne doit être envoyé après {heure}.\n\nVous êtes donc doublement protégés ce soir.\n\nLe service RH",
+    "variables": {
+      "heure": [
+        "19 h",
+        "20 h",
+        "18 h 30",
+        "19 h 30"
+      ]
+    }
+  },
+  {
+    "id": "a-rh-015",
+    "famille": "rh",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Aurélie Fabre",
+      "Camille Joly",
+      "Inès Mebarki",
+      "Julien Poirier",
+      "Laëtitia Gauthier"
+    ],
+    "role": "Ressources humaines",
+    "objet": [
+      "Dématérialisation de vos bulletins de paie",
+      "Votre bulletin de paie passe en ligne"
+    ],
+    "corps": "Bonjour,\n\nVos bulletins de paie sont désormais dématérialisés sur la plateforme {plateforme}.\n\nPour activer votre compte, munissez-vous de votre identifiant : il figure sur votre bulletin de paie.\n\nCordialement,\nService Paie\nCe message et ses pièces jointes sont confidentiels et destinés exclusivement à leurs destinataires. Si vous l'avez reçu par erreur, merci d'en avertir l'expéditeur et de le détruire.",
+    "variables": {
+      "plateforme": [
+        "PayFlow",
+        "Mon Espace Salarié",
+        "DigiPaie",
+        "BulletinBox"
+      ]
+    }
+  },
+  {
+    "id": "a-stg-001",
+    "famille": "stagiaire",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Lucas Moreau",
+      "Inès Benali",
+      "Théo Nguyen",
+      "Aïcha Traoré"
+    ],
+    "role": "Stagiaire",
+    "objet": [
+      "Petite question sur les bases",
+      "Question rapide (urgente ?)",
+      "Base prod / base test ?"
+    ],
+    "corps": "Bonjour,\n\nPetite question : la base qui s'appelle \"prod\", c'est bien celle de test ? Je demande parce que le script de {script} est déjà lancé depuis {minutes} minutes.\n\nIl affiche \"{lignes} lignes affectées\", je ne sais pas si c'est bon signe.\n\nMerci d'avance !\n\nStagiaire Développement, équipe Data\nNexalis",
+    "variables": {
+      "script": [
+        "nettoyage des doublons",
+        "remise à zéro des mots de passe",
+        "purge des comptes inactifs"
+      ],
+      "minutes": [
+        "4",
+        "12",
+        "27"
+      ],
+      "lignes": [
+        "48 312",
+        "1 204 877",
+        "312 006"
+      ]
+    },
+    "importance": "haute"
+  },
+  {
+    "id": "a-stg-002",
+    "famille": "stagiaire",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Lucas Moreau",
+      "Inès Benali",
+      "Théo Nguyen",
+      "Aïcha Traoré"
+    ],
+    "role": "Stagiaire",
+    "objet": [
+      "RE: Petite question sur les bases",
+      "RE: Question rapide (urgente ?)"
+    ],
+    "corps": "Bonjour,\n\nPas de souci, j'ai trouvé la réponse tout seul : non.\n\nJ'ai relancé le script sur la base \"{base}\" pour annuler, mais elle aussi a l'air d'être la prod.\n\nJe suis en salle {salle} si besoin. Je ne touche plus à rien.\n\nStagiaire Développement, équipe Data\nNexalis",
+    "variables": {
+      "base": [
+        "prod_test",
+        "test_prod",
+        "prod_copie_NE_PAS_UTILISER"
+      ],
+      "salle": [
+        "Everest",
+        "B204",
+        "Ada Lovelace"
+      ]
+    },
+    "cc": [
+      3,
+      9
+    ],
+    "suite": "a-stg-001"
+  },
+  {
+    "id": "a-stg-003",
+    "famille": "stagiaire",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Yanis Haddad",
+      "Chloé Martin",
+      "Mamadou Diallo",
+      "Léa Fontaine"
+    ],
+    "role": "Développeur junior (stage)",
+    "objet": [
+      "Conflit réglé !",
+      "Info : main est propre",
+      "Bonne nouvelle pour le dépôt"
+    ],
+    "corps": "Bonjour à tous,\n\nJ'avais un conflit sur main, je l'ai réglé. Git refusait mon push, alors j'ai ajouté --force comme conseillé sur un forum.\n\nDu coup il n'y a plus de conflit, ni les {commits} derniers commits de l'équipe, mais l'historique est beaucoup plus lisible.\n\nBonne journée !\n\nDéveloppeur stagiaire, pôle {pole}\nGroupe Vortan",
+    "variables": {
+      "commits": [
+        "38",
+        "112",
+        "406"
+      ],
+      "pole": [
+        "Web",
+        "Mobile",
+        "Back-office"
+      ]
+    },
+    "cc": [
+      4,
+      12
+    ]
+  },
+  {
+    "id": "a-stg-004",
+    "famille": "stagiaire",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Camille Roux",
+      "Hugo Lefebvre",
+      "Fatou Ndiaye",
+      "Kevin Tran"
+    ],
+    "role": "Stagiaire",
+    "objet": [
+      "node_modules (question)",
+      "Le dossier node_modules est normal ?"
+    ],
+    "corps": "Bonjour,\n\nLe projet {projet} prenait beaucoup de place, j'ai donc supprimé le dossier node_modules : il faisait {taille} Go, c'est normal ?\n\nJ'ai lancé npm install pour le remettre. Il en est à {avancement} et il télécharge en ce moment un paquet qui sert à savoir si un nombre est pair.\n\nJe vous tiens au courant !\n\nEnvoyé de mon iPhone",
+    "variables": {
+      "projet": [
+        "Phoenix",
+        "Refonte V3",
+        "Espace client"
+      ],
+      "taille": [
+        "4",
+        "7,2",
+        "11"
+      ],
+      "avancement": [
+        "38 %",
+        "sa deuxième heure",
+        "1 412 paquets sur 1 413"
+      ]
+    }
+  },
+  {
+    "id": "a-stg-005",
+    "famille": "stagiaire",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Nathan Petit",
+      "Sarah Cohen",
+      "Rayan Belkacem",
+      "Manon Lambert"
+    ],
+    "role": "Alternant",
+    "objet": [
+      "Clé API à changer ?",
+      "Petite question sécurité",
+      "Fichier .env (rien de grave)"
+    ],
+    "corps": "Bonjour,\n\nJ'ai fait une petite boulette : j'ai commité le fichier .env sur le dépôt public, avec la clé de l'API {service}.\n\nPas de panique, je l'ai retiré dans un deuxième commit qui s'appelle \"suppression clé secrète\". Normalement personne ne regarde l'historique.\n\nPar contre le dépôt a pris {etoiles} étoiles depuis ce matin, c'est plutôt bien, non ?\n\nAlternant Développement\nBréval Assurances",
+    "variables": {
+      "service": [
+        "de paiement",
+        "d'envoi de SMS",
+        "de cartographie"
+      ],
+      "etoiles": [
+        "40",
+        "212",
+        "1 300"
+      ]
+    }
+  },
+  {
+    "id": "a-stg-006",
+    "famille": "stagiaire",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Enzo Garcia",
+      "Jade Mercier",
+      "Adam Mansouri",
+      "Emma Girard"
+    ],
+    "role": "Stagiaire",
+    "objet": [
+      "Ma merge request sur {module}",
+      "Revue de code : c'est validé (par l'IA)"
+    ],
+    "corps": "Bonjour,\n\nPour ma merge request sur {module} : j'ai demandé à l'IA, elle dit que c'est bon.\n\nJe lui ai aussi demandé d'écrire les tests, elle dit qu'ils passent. Je n'ai pas réussi à les lancer en local, mais elle avait l'air très sûre d'elle.\n\nVous pouvez valider avant {heure} ? Ma tutrice part en congé.\n\nMerci !!\n\nStagiaire, équipe Produit",
+    "variables": {
+      "module": [
+        "le module de facturation",
+        "l'authentification",
+        "l'export comptable"
+      ],
+      "heure": [
+        "17 h",
+        "midi",
+        "16 h 30"
+      ]
+    }
+  },
+  {
+    "id": "a-stg-007",
+    "famille": "stagiaire",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Maxime Dubois",
+      "Lina Bouzid",
+      "Tom Perrin",
+      "Anaïs Leroy"
+    ],
+    "role": "Alternant",
+    "objet": [
+      "Surprise pour lundi",
+      "J'ai un peu avancé ce week-end",
+      "Refacto (petite MR)"
+    ],
+    "corps": "Bonjour à tous,\n\nJ'avais du temps ce week-end, alors j'ai refactoré tout le legacy de {appli} : {fichiers} fichiers modifiés, {classes} classes renommées, et toutes les variables sont maintenant en anglais.\n\nTout est dans une seule merge request, pour que ce soit plus simple à relire.\n\nPar contre je n'ai pas trouvé les tests. Il y en a ?\n\nAlternant, pôle Web\nOndelys",
+    "variables": {
+      "appli": [
+        "l'intranet",
+        "l'outil de facturation",
+        "l'application de gestion des stocks"
+      ],
+      "fichiers": [
+        "842",
+        "1 317",
+        "2 064"
+      ],
+      "classes": [
+        "96",
+        "214",
+        "380"
+      ]
+    },
+    "cc": [
+      5,
+      10
+    ]
+  },
+  {
+    "id": "a-stg-008",
+    "famille": "stagiaire",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Louis Chevalier",
+      "Zoé Bernard",
+      "Noah Lemoine",
+      "Clara Vidal"
+    ],
+    "role": "Développeur junior (stage)",
+    "objet": [
+      "Question sur un commentaire",
+      "Pourquoi \"NE PAS TOUCHER\" ?"
+    ],
+    "corps": "Bonjour,\n\nJe découvre le code de {appli} et j'ai une question : pourquoi le commentaire au-dessus de la fonction {fonction} dit \"NE PAS TOUCHER\" depuis {annee} ?\n\nJ'ai cherché qui l'avait écrit, la personne a quitté l'entreprise. La fonction n'est appelée nulle part, mais si je la supprime, plus rien ne démarre.\n\nC'est voulu ?\n\nDéveloppeur stagiaire\nTalvéo",
+    "variables": {
+      "appli": [
+        "l'intranet",
+        "la plateforme de paie",
+        "l'outil de réservation"
+      ],
+      "fonction": [
+        "calculTvaV2_old()",
+        "doNotDelete()",
+        "fixTemporaire()"
+      ],
+      "annee": [
+        "2014",
+        "2011",
+        "2009"
+      ]
+    }
+  },
+  {
+    "id": "a-stg-009",
+    "famille": "stagiaire",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Inès Benali",
+      "Lucas Moreau",
+      "Yasmine Ait Said",
+      "Baptiste Renard"
+    ],
+    "role": "Stagiaire",
+    "objet": [
+      "Relecture de mon rapport de stage",
+      "Rapport de stage : version à relire",
+      "TR: rapport de stage (dernière version)"
+    ],
+    "corps": "Bonjour,\n\nVoici mon rapport de stage à relire avant ma soutenance du {date}. Dans la partie \"Missions réalisées\", j'ai mis la migration vers {techno}, la refonte de {appli} et l'incident du {jour}.\n\nMon école demande d'être honnête sur les difficultés rencontrées, donc l'incident fait {pages} pages.\n\nEst-ce que je peux citer la base de prod dans les remerciements ?\n\nStagiaire Développement\nNexalis",
+    "variables": {
+      "date": [
+        "2 septembre",
+        "28 août",
+        "15 juin"
+      ],
+      "techno": [
+        "Kubernetes",
+        "PostgreSQL",
+        "React"
+      ],
+      "appli": [
+        "l'espace client",
+        "la page d'accueil",
+        "l'outil de devis"
+      ],
+      "jour": [
+        "3 mars",
+        "vendredi 13",
+        "14 avril"
+      ],
+      "pages": [
+        "11",
+        "23",
+        "40"
+      ]
+    },
+    "pj": "rapport_stage_v3_relu_par_personne.docx"
+  },
+  {
+    "id": "a-stg-010",
+    "famille": "stagiaire",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Kevin Tran",
+      "Fatou Ndiaye",
+      "Hugo Lefebvre",
+      "Mélissa Rahmani"
+    ],
+    "role": "Alternant",
+    "objet": [
+      "Question SQL",
+      "La table {table} ?",
+      "Sauvegarde de cette nuit ?"
+    ],
+    "corps": "Bonjour,\n\nJe voulais vider la table de test, j'ai donc lancé DROP TABLE {table}; comme dans le tutoriel.\n\nLa console m'a demandé \"Êtes-vous sûr ?\". J'ai répondu oui, parce que j'étais sûr.\n\nQuelqu'un sait où se trouve la sauvegarde de cette nuit ? Le wiki dit de demander à {collegue}, qui est en congé jusqu'au {retour}.\n\nAlternant, pôle Data\nCrestium",
+    "variables": {
+      "table": [
+        "users",
+        "commandes",
+        "factures"
+      ],
+      "collegue": [
+        "Gérard",
+        "Sylvie",
+        "Bertrand"
+      ],
+      "retour": [
+        "4 janvier",
+        "lundi 23",
+        "printemps"
+      ]
+    },
+    "importance": "haute"
+  },
+  {
+    "id": "a-stg-011",
+    "famille": "stagiaire",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Chloé Martin",
+      "Rayan Belkacem",
+      "Emma Girard",
+      "Ibrahim Sylla"
+    ],
+    "role": "Stagiaire",
+    "objet": [
+      "J'ai trouvé un bug !!!",
+      "Mon premier bug en prod !"
+    ],
+    "corps": "Bonjour à toute l'équipe,\n\nJe suis trop content : j'ai trouvé mon premier bug en prod ! Le bouton \"{bouton}\" de {appli} ne fait rien du tout.\n\nJ'ai ouvert le ticket n°{ticket}, il a été fermé en doublon du ticket n°{ticket_ancien}, ouvert en {annee}. Donc en fait quelqu'un l'avait déjà trouvé, mais je suis quand même content.\n\nBonne journée !\n\nStagiaire, équipe Front",
+    "variables": {
+      "bouton": [
+        "Valider la commande",
+        "Mot de passe oublié",
+        "Se désabonner"
+      ],
+      "appli": [
+        "la boutique en ligne",
+        "l'espace client",
+        "l'appli mobile"
+      ],
+      "ticket": [
+        "4812",
+        "10 377",
+        "22 905"
+      ],
+      "ticket_ancien": [
+        "212",
+        "57",
+        "1 004"
+      ],
+      "annee": [
+        "2017",
+        "2015",
+        "2019"
+      ]
+    },
+    "cc": [
+      6,
+      15
+    ]
+  },
+  {
+    "id": "a-stg-012",
+    "famille": "stagiaire",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Manon Lambert",
+      "Adam Mansouri",
+      "Jade Mercier",
+      "Quentin Faure"
+    ],
+    "role": "Alternant",
+    "objet": [
+      "Absence (semaine d'école) + mise en prod",
+      "Passation mise en prod {projet}"
+    ],
+    "corps": "Bonjour,\n\nPour rappel, je suis à l'école cette semaine et la suivante, donc je ne pourrai pas faire la mise en prod de {projet} prévue {jour}.\n\nTout est prêt sur ma branche \"{branche}\". Il suffit de la merger, puis de lancer les migrations dans l'ordre, sauf la troisième. Je n'ai pas eu le temps de noter pourquoi.\n\nBon courage !\n\nAlternant Développement\nGroupe Vortan",
+    "variables": {
+      "projet": [
+        "Phoenix",
+        "Refonte V3",
+        "Migration Cloud"
+      ],
+      "jour": [
+        "vendredi",
+        "demain",
+        "jeudi à 18 h"
+      ],
+      "branche": [
+        "test-final-2",
+        "ma-branche",
+        "nouvelle-version-ok"
+      ]
+    },
+    "pj": "notes_passation.txt"
+  },
+  {
+    "id": "a-stg-013",
+    "famille": "stagiaire",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Théo Nguyen",
+      "Léa Fontaine",
+      "Mamadou Diallo",
+      "Sofia Marques"
+    ],
+    "role": "Stagiaire",
+    "objet": [
+      "Teams ne marche plus (c'est moi ?)",
+      "Question sur la panne",
+      "Je n'ai rien touché (je crois)"
+    ],
+    "corps": "Bonjour,\n\nJe vous écris par mail parce que Teams ne marche plus depuis hier soir. C'est moi ? J'ai fait un git pull à {heure} pile et juste après, plus rien.\n\nPar précaution, je n'ai rien touché depuis : ni l'ordinateur, ni le câble, ni la chaise.\n\nDites-moi si je peux bouger.\n\nStagiaire Développement\nOndelys",
+    "variables": {
+      "heure": [
+        "17 h 15",
+        "17 h 16",
+        "17 h 17"
+      ]
+    }
+  },
+  {
+    "id": "a-stg-014",
+    "famille": "stagiaire",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Zoé Bernard",
+      "Nathan Petit",
+      "Clara Vidal",
+      "Malik Ouédraogo"
+    ],
+    "role": "Développeur junior (stage)",
+    "objet": [
+      "Bilan de ma première semaine",
+      "Ma première semaine chez vous (bilan)"
+    ],
+    "corps": "Bonjour à tous,\n\nMerci pour l'accueil ! En une semaine, j'ai déjà appris plein de choses : \"c'est temporaire\" veut dire environ {annees} ans, \"ça marche sur ma machine\" est un statut de ticket, et \"on en reparle\" veut dire non.\n\nJ'ai aussi appris que la doc existe, mais sur le poste de {ancien}, qui est éteint.\n\nHâte d'être à la semaine prochaine !\n\nDéveloppeur stagiaire, équipe {equipe}\nTalvéo",
+    "variables": {
+      "annees": [
+        "6",
+        "8",
+        "12"
+      ],
+      "ancien": [
+        "Jean-Pierre",
+        "Fabienne",
+        "Didier"
+      ],
+      "equipe": [
+        "Plateforme",
+        "Paiement",
+        "Mobile"
+      ]
+    },
+    "cc": [
+      8,
+      20
+    ]
+  },
+  {
+    "id": "a-stg-015",
+    "famille": "stagiaire",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Yanis Haddad",
+      "Chloé Martin",
+      "Mamadou Diallo",
+      "Léa Fontaine"
+    ],
+    "role": "Développeur junior (stage)",
+    "objet": [
+      "RE: Conflit réglé !",
+      "RE: Info : main est propre"
+    ],
+    "corps": "Bonjour,\n\nSuite à vos {reponses} réponses, je confirme avoir bien compris pour le --force.\n\nPour me rattraper, j'ai tout remis depuis ma copie locale du {date}. Il y a de nouveau un conflit, mais cette fois je n'y touche pas. Promis.\n\nDéveloppeur stagiaire\nGroupe Vortan",
+    "variables": {
+      "reponses": [
+        "14",
+        "23",
+        "41"
+      ],
+      "date": [
+        "mois dernier",
+        "6 octobre",
+        "premier jour de mon stage"
+      ]
+    },
+    "rafale": true,
+    "suite": "a-stg-003"
+  },
+  {
+    "id": "a-cra-001",
+    "famille": "compta-cra",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Martine Lebrun",
+      "Patrick Guérin",
+      "Nadia Belhadj",
+      "Sylvie Marchand"
+    ],
+    "role": "Gestion des temps",
+    "objet": [
+      "Rappel : CRA de {mois} non saisi",
+      "RAPPEL n°{rappel} : compte rendu d'activité",
+      "URGENT : votre CRA de {mois}"
+    ],
+    "corps": "Bonjour,\n\nSauf erreur de notre part, votre compte rendu d'activité du mois de {mois} n'est toujours pas saisi.\n\nCeci est notre rappel n°{rappel}. À partir du rappel n°{seuil}, votre manager sera mis en copie, puis le manager de votre manager, et ainsi de suite jusqu'à ce que quelqu'un saisisse quelque chose.\n\nCordialement,\n\nLe service Gestion des temps\nGroupe Vortan",
+    "variables": {
+      "mois": [
+        "septembre",
+        "octobre",
+        "août"
+      ],
+      "rappel": [
+        "4",
+        "7",
+        "11"
+      ],
+      "seuil": [
+        "12",
+        "15",
+        "20"
+      ]
+    },
+    "importance": "haute"
+  },
+  {
+    "id": "a-cra-002",
+    "famille": "compta-cra",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Françoise Delmas",
+      "Karima Ait Ali",
+      "Jean-Marc Roussel",
+      "Christophe Barbier"
+    ],
+    "role": "Gestion des temps",
+    "objet": [
+      "Votre saisie du 12/11 a été rejetée",
+      "CRA : imputation non conforme"
+    ],
+    "corps": "Bonjour,\n\nVotre saisie du jeudi 12 novembre a été rejetée par l'outil de gestion des temps : \"Panne mondiale\" n'est pas un code d'imputation.\n\nPour les incidents, merci d'utiliser le code {code} \"Indisponibilité outillage\", dans la limite de {heures} h par trimestre.\n\nLa saisie se fait dans l'outil habituel, accessible depuis Teams.\n\nCordialement,\n\nGestion des temps - Direction administrative et financière",
+    "variables": {
+      "code": [
+        "INC-004",
+        "9997",
+        "OUT-12"
+      ],
+      "heures": [
+        "2",
+        "3,5",
+        "4"
+      ]
+    }
+  },
+  {
+    "id": "a-cra-003",
+    "famille": "compta-cra",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Brigitte Faure",
+      "Rachid Ouali",
+      "Isabelle Renaud",
+      "Véronique Collin"
+    ],
+    "role": "Gestion des temps",
+    "objet": [
+      "CRA : saisie à corriger",
+      "Anomalie de saisie sur votre CRA",
+      "RE: CRA : saisie à corriger"
+    ],
+    "corps": "Bonjour,\n\nNous constatons sur votre CRA une saisie de {duree} sur la ligne \"{ligne}\".\n\nPour rappel, les temps se saisissent au quart d'heure : 0,25 h, 0,5 h ou 0,75 h. Merci d'arrondir au quart d'heure supérieur ou inférieur, conformément à la règle {regle} de la note de cadrage, qui ne précise pas lequel.\n\nBien cordialement,\n\nLe pôle Gestion des temps\n\nPensez à l'environnement avant d'imprimer ce mail.",
+    "variables": {
+      "duree": [
+        "7 minutes",
+        "0,33 h",
+        "1 h 52"
+      ],
+      "ligne": [
+        "Réunion de préparation de la réunion",
+        "Attente du retour de Teams",
+        "Redémarrage du poste"
+      ],
+      "regle": [
+        "4.2",
+        "12 bis",
+        "7.1.3"
+      ]
+    }
+  },
+  {
+    "id": "a-cra-004",
+    "famille": "compta-cra",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Nathalie Perrot",
+      "Dominique Morel",
+      "Samia Cherif",
+      "Thierry Masson"
+    ],
+    "role": "Gestion des temps",
+    "objet": [
+      "Anomalie sur votre CRA (astreinte)",
+      "CRA du {jour} : total journalier incorrect"
+    ],
+    "corps": "Bonjour,\n\nVotre CRA du {jour} affiche {total} h travaillées, astreinte de nuit incluse.\n\nL'outil n'accepte que 7,5 h par jour, ni plus ni moins. Merci de répartir le surplus sur des jours moins chargés, s'il en existe, ou de considérer que l'incident de {heure_incident} s'est réglé tout seul.\n\nNous restons à votre disposition.\n\nCordialement,\n\nService Gestion des temps\nCrestium",
+    "variables": {
+      "jour": [
+        "lundi 9",
+        "mardi 3",
+        "samedi 14"
+      ],
+      "total": [
+        "16,25",
+        "19",
+        "22,5"
+      ],
+      "heure_incident": [
+        "3 h 12",
+        "2 h 40",
+        "4 h 05"
+      ]
+    }
+  },
+  {
+    "id": "a-cra-005",
+    "famille": "compta-cra",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Hélène Picard",
+      "Mohamed Benyahia",
+      "Céline Robin",
+      "Didier Fabre"
+    ],
+    "role": "Service comptabilité",
+    "objet": [
+      "Note de frais n°{ndf} : refusée",
+      "Refus de votre note de frais"
+    ],
+    "corps": "Bonjour,\n\nVotre note de frais n°{ndf} d'un montant de 2,10 euros (café, déplacement chez {client}) est refusée pour le motif suivant : justificatif absent.\n\nLa photo jointe représente bien un café, mais elle ne constitue pas un ticket de caisse.\n\nVous pouvez déposer un recours via le formulaire F-{formulaire}, à imprimer, signer et scanner. Délai de traitement : {delai}.\n\nCordialement,\n\nService comptabilité fournisseurs et frais\nBréval Assurances\n\nCe message et ses pièces jointes sont confidentiels et destinés exclusivement à leur destinataire.",
+    "variables": {
+      "ndf": [
+        "2026-1184",
+        "2026-0937",
+        "2026-2210"
+      ],
+      "client": [
+        "Groupe Vortan",
+        "Nexalis",
+        "Vauzelle Industries"
+      ],
+      "formulaire": [
+        "17",
+        "203",
+        "42b"
+      ],
+      "delai": [
+        "8 semaines",
+        "un trimestre",
+        "45 jours ouvrés"
+      ]
+    },
+    "pj": "motif_refus.pdf"
+  },
+  {
+    "id": "a-cra-006",
+    "famille": "compta-cra",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Pascale Leclerc",
+      "Kader Mebarki",
+      "Sandrine Poulain",
+      "Gilles Maréchal"
+    ],
+    "role": "Service comptabilité",
+    "objet": [
+      "Justificatif illisible",
+      "Note de frais du {date} : justificatif non conforme"
+    ],
+    "corps": "Bonjour,\n\nLe ticket joint à votre note de frais du {date} est illisible : il s'agit d'un ticket thermique photographié {delai} après la dépense, donc entièrement blanc.\n\nNous ne pouvons pas rembourser un rectangle blanc, même accompagné de la mention manuscrite \"c'était un {repas}\".\n\nPour vos prochains déplacements, merci de photographier le ticket avant de le ranger dans votre poche.\n\nCordialement,\n\nLe service comptabilité",
+    "variables": {
+      "date": [
+        "3 septembre",
+        "17 octobre",
+        "22 juin"
+      ],
+      "delai": [
+        "six semaines",
+        "deux mois",
+        "un trimestre"
+      ],
+      "repas": [
+        "sandwich",
+        "menu du jour",
+        "croque-monsieur"
+      ]
+    },
+    "pj": "IMG_4471.jpg"
+  },
+  {
+    "id": "a-cra-007",
+    "famille": "compta-cra",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Jean-Marc Roussel",
+      "Nadia Belhadj",
+      "Hélène Picard",
+      "Stéphane Vasseur"
+    ],
+    "role": "Contrôle de gestion",
+    "objet": [
+      "Code projet {code} clôturé",
+      "Imputations impossibles sur {code}"
+    ],
+    "corps": "Bonjour,\n\nLe code projet {code} ({projet}) a été clôturé le {cloture} : le projet est officiellement terminé.\n\nNous constatons pourtant {heures} h saisies dessus ce mois-ci, ainsi que {tickets} tickets ouverts et une mise en production prévue mardi.\n\nMerci de régulariser en imputant ces temps sur le code du projet suivant, qui n'a pas encore été créé.\n\nCordialement,\n\nContrôle de gestion - Groupe Vortan",
+    "variables": {
+      "code": [
+        "P-2023-118",
+        "PRJ-0451",
+        "IT-7789"
+      ],
+      "projet": [
+        "Phoenix",
+        "Refonte V3",
+        "Migration Cloud"
+      ],
+      "cloture": [
+        "30 juin",
+        "31 mars",
+        "1er janvier"
+      ],
+      "heures": [
+        "212",
+        "348",
+        "506"
+      ],
+      "tickets": [
+        "47",
+        "93",
+        "160"
+      ]
+    }
+  },
+  {
+    "id": "a-cra-008",
+    "famille": "compta-cra",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Patrick Guérin",
+      "Samia Cherif",
+      "Thierry Masson",
+      "Agnès Lemarchand"
+    ],
+    "role": "Contrôle de gestion",
+    "objet": [
+      "Budget {projet} : consigne d'imputation",
+      "TR: Budget épuisé",
+      "Imputations : consigne jusqu'à nouvel ordre"
+    ],
+    "corps": "Bonjour à tous,\n\nLe budget annuel du projet {projet} est entièrement consommé depuis le {jour} février.\n\nJusqu'à nouvel ordre, merci d'imputer vos temps sur le code générique 9999 \"Divers\", qui représente désormais {pourcent} % de l'activité de la société.\n\nLa direction s'interroge sur la nature de ce projet Divers et souhaiterait un point d'avancement.\n\nCordialement,\n\nLe contrôle de gestion",
+    "variables": {
+      "projet": [
+        "Phoenix",
+        "Refonte V3",
+        "Socle Data"
+      ],
+      "jour": [
+        "3",
+        "11",
+        "26"
+      ],
+      "pourcent": [
+        "38",
+        "61",
+        "74"
+      ]
+    },
+    "cc": [
+      12,
+      40
+    ]
+  },
+  {
+    "id": "a-cra-009",
+    "famille": "compta-cra",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Isabelle Renaud",
+      "Karima Ait Ali",
+      "Didier Fabre",
+      "Yann Le Goff"
+    ],
+    "role": "Service comptabilité",
+    "objet": [
+      "Votre demande d'achat DA-{numero}",
+      "Demande d'achat DA-{numero} : pièces manquantes"
+    ],
+    "corps": "Bonjour,\n\nNous avons bien reçu votre demande d'achat pour une licence {outil} d'un montant de {montant} euros par mois.\n\nPour la traiter, merci de fournir trois devis comparatifs, la fiche de référencement fournisseur, l'avis du service juridique et la validation de votre N+2.\n\nDélai moyen de traitement : {delai}. Pour information, le coût interne de traitement d'une demande d'achat est estimé à {cout} euros.\n\nCordialement,\n\nService Achats et comptabilité\nOndelys",
+    "variables": {
+      "numero": [
+        "10482",
+        "23017",
+        "8841"
+      ],
+      "outil": [
+        "de client SQL",
+        "d'éditeur de diagrammes",
+        "de capture d'écran"
+      ],
+      "montant": [
+        "4",
+        "3,99",
+        "6"
+      ],
+      "delai": [
+        "6 semaines",
+        "3 mois",
+        "un exercice comptable"
+      ],
+      "cout": [
+        "340",
+        "512",
+        "780"
+      ]
+    }
+  },
+  {
+    "id": "a-cra-010",
+    "famille": "compta-cra",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Martine Lebrun",
+      "Patrick Guérin",
+      "Nadia Belhadj",
+      "Sylvie Marchand"
+    ],
+    "role": "Gestion des temps",
+    "objet": [
+      "RE: Rappel : CRA de {mois} non saisi",
+      "RE: RAPPEL : compte rendu d'activité"
+    ],
+    "corps": "Bonjour,\n\nNous accusons réception de votre CRA de {mois}, merci.\n\nVous avez imputé {pourcent} % de votre temps sur la ligne \"Saisie du CRA\". Nous comprenons l'intention, mais ne pouvons pas valider.\n\nMerci de ressaisir, en imputant le temps de cette nouvelle saisie sur la même ligne.\n\nCordialement,\n\nLe service Gestion des temps\nGroupe Vortan",
+    "variables": {
+      "mois": [
+        "septembre",
+        "octobre",
+        "août"
+      ],
+      "pourcent": [
+        "100",
+        "85",
+        "92"
+      ]
+    },
+    "suite": "a-cra-001"
+  },
+  {
+    "id": "a-cra-011",
+    "famille": "compta-cra",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Agnès Lemarchand",
+      "Rachid Ouali",
+      "Brigitte Faure",
+      "Laurent Chassagne"
+    ],
+    "role": "Contrôle de gestion",
+    "objet": [
+      "Revue trimestrielle : votre taux d'occupation",
+      "Taux d'occupation T{trimestre}"
+    ],
+    "corps": "Bonjour,\n\nDans le cadre de la revue du trimestre T{trimestre}, votre taux d'occupation ressort à {taux} %.\n\nUn taux supérieur à 100 % n'étant pas prévu par le modèle, l'outil de reporting vous classe automatiquement dans la catégorie \"Ressource disponible\".\n\nVous serez donc positionné sur {projets} projets supplémentaires à compter de lundi.\n\nCordialement,\n\nContrôle de gestion - Pôle Pilotage",
+    "variables": {
+      "trimestre": [
+        "1",
+        "2",
+        "3"
+      ],
+      "taux": [
+        "103",
+        "118",
+        "131"
+      ],
+      "projets": [
+        "2",
+        "3",
+        "4"
+      ]
+    }
+  },
+  {
+    "id": "a-cra-012",
+    "famille": "compta-cra",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Véronique Collin",
+      "Christophe Barbier",
+      "Samia Cherif",
+      "Arnaud Perret"
+    ],
+    "role": "Contrôle de gestion",
+    "objet": [
+      "Budget formation : à engager avant le 15/12",
+      "URGENT : reliquat budget formation"
+    ],
+    "corps": "Bonjour,\n\nIl reste {montant} euros sur le budget formation de votre équipe, à engager avant le 15 décembre, faute de quoi il sera perdu et retiré du budget de l'an prochain.\n\nLes formations doivent être choisies dans le catalogue référencé, qui propose cette année \"{formation}\", \"Excel avancé\" et \"Gérer son stress face aux délais de remboursement\".\n\nInscriptions par formulaire papier, en trois exemplaires.\n\nCordialement,\n\nContrôle de gestion RH",
+    "variables": {
+      "montant": [
+        "4 200",
+        "11 850",
+        "7 300"
+      ],
+      "formation": [
+        "Bien utiliser sa messagerie Outlook",
+        "Teams pour les débutants",
+        "Prise en main de Windows 7"
+      ]
+    },
+    "cc": [
+      3,
+      8
+    ]
+  },
+  {
+    "id": "a-cra-013",
+    "famille": "compta-cra",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Pascale Leclerc",
+      "Mohamed Benyahia",
+      "Céline Robin",
+      "Gilles Maréchal"
+    ],
+    "role": "Service comptabilité",
+    "objet": [
+      "Facture {fournisseur} bloquée",
+      "Facture bloquée : bon de commande postérieur"
+    ],
+    "corps": "Bonjour,\n\nLa facture de {fournisseur} est bloquée : le bon de commande a été émis après la facture, ce que le logiciel comptable considère comme un voyage dans le temps.\n\nPour la débloquer, il faut annuler la facture, refaire le bon de commande, puis demander au fournisseur de refacturer à l'identique, à une date ultérieure.\n\nDe son côté, le fournisseur nous informe que les serveurs seront coupés le {coupure}.\n\nCordialement,\n\nComptabilité fournisseurs\nCrestium",
+    "variables": {
+      "fournisseur": [
+        "Nuvola Cloud",
+        "Hostéo",
+        "Datacentrix"
+      ],
+      "coupure": [
+        "vendredi",
+        "1er décembre",
+        "lundi à 8 h"
+      ]
+    },
+    "importance": "haute"
+  },
+  {
+    "id": "a-cra-014",
+    "famille": "compta-cra",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Françoise Delmas",
+      "Dominique Morel",
+      "Nathalie Perrot",
+      "Yann Le Goff"
+    ],
+    "role": "Gestion des temps",
+    "objet": [
+      "Relance CRA (par mail, Teams étant indisponible)",
+      "CRA : relance hors Teams"
+    ],
+    "corps": "Bonjour,\n\nTeams étant indisponible, je me permets de vous relancer par mail au sujet de votre CRA de la semaine {semaine}.\n\nOutlook étant également indisponible, je ne sais pas comment ce mail vous parviendra. Je l'imprime à tout hasard et le dépose sur votre bureau, {etage}.\n\nMerci de saisir vos temps dès réception, quel que soit le support.\n\nCordialement,\n\nGestion des temps\n\nEnvoyé de mon iPhone",
+    "variables": {
+      "semaine": [
+        "45",
+        "46",
+        "44"
+      ],
+      "etage": [
+        "au 3e",
+        "au 5e, côté fenêtre",
+        "au rez-de-chaussée, près de la machine à café"
+      ]
+    }
+  },
+  {
+    "id": "a-cra-015",
+    "famille": "compta-cra",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Patrick Guérin",
+      "Samia Cherif",
+      "Thierry Masson",
+      "Agnès Lemarchand"
+    ],
+    "role": "Contrôle de gestion",
+    "objet": [
+      "RE: Budget épuisé",
+      "RE: TR: Budget épuisé"
+    ],
+    "corps": "Bonjour à tous,\n\nSuite aux {reponses} réponses à tous reçues sur ce fil, je rappelle que le temps passé à lire ce fil doit être imputé.\n\nLe code 9999 étant saturé, merci d'utiliser le code 9998, créé ce matin à cet effet.\n\nMerci de ne pas répondre à tous.\n\nLe contrôle de gestion",
+    "variables": {
+      "reponses": [
+        "37",
+        "58",
+        "112"
+      ]
+    },
+    "cc": [
+      12,
+      40
+    ],
+    "rafale": true,
+    "suite": "a-cra-008"
+  },
+  {
+    "id": "a-dsi-001",
+    "famille": "dsi-securite",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Stéphane Roux",
+      "Sandrine Huet",
+      "Mehdi Khelifi",
+      "Linh Pham"
+    ],
+    "role": "Sécurité informatique",
+    "objet": [
+      "Votre mot de passe expire dans {jours} jours",
+      "ACTION REQUISE : renouvellement du mot de passe"
+    ],
+    "corps": "Bonjour,\n\nVotre mot de passe expire dans {jours} jours. Conformément à la politique de sécurité, le nouveau doit comporter au moins {longueur} caractères, une majuscule, un chiffre, un caractère spécial, un hiéroglyphe, et ne faire partie d'aucun de vos {historique} derniers mots de passe.\n\nIl ne doit contenir ni votre prénom, ni le nom de la société, ni la saison en cours, ni l'année.\n\nIl ne pourra pas être modifié avant 30 jours, sauf oubli, auquel cas il devra l'être immédiatement.\n\nL'équipe Sécurité des systèmes d'information",
+    "variables": {
+      "jours": [
+        "2",
+        "3",
+        "5"
+      ],
+      "longueur": [
+        "12",
+        "14",
+        "16"
+      ],
+      "historique": [
+        "24",
+        "30",
+        "48"
+      ]
+    },
+    "importance": "haute"
+  },
+  {
+    "id": "a-dsi-002",
+    "famille": "dsi-securite",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Stéphane Roux",
+      "Sandrine Huet",
+      "Mehdi Khelifi",
+      "Linh Pham"
+    ],
+    "role": "Sécurité informatique",
+    "objet": [
+      "RE: ACTION REQUISE : renouvellement du mot de passe",
+      "Mot de passe : synchronisation partielle"
+    ],
+    "corps": "Bonjour,\n\nVotre nouveau mot de passe a bien été pris en compte sur {ok} applications sur {total}.\n\nPour les autres, merci de le changer à nouveau, en respectant cette fois la limite de {limite} caractères maximum imposée par l'application de paie.\n\nCe message est généré automatiquement, merci de ne pas y répondre.\n\nService informatique",
+    "variables": {
+      "ok": [
+        "7",
+        "11",
+        "14"
+      ],
+      "total": [
+        "15",
+        "16",
+        "19"
+      ],
+      "limite": [
+        "8",
+        "10",
+        "11"
+      ]
+    },
+    "suite": "a-dsi-001"
+  },
+  {
+    "id": "a-dsi-003",
+    "famille": "dsi-securite",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Julien Caron",
+      "Amina Sow",
+      "Vincent Lacroix",
+      "Elodie Carré"
+    ],
+    "role": "RSSI",
+    "objet": [
+      "Résultats de la campagne de sensibilisation",
+      "Test d'hameçonnage trimestriel : résultats"
+    ],
+    "corps": "Bonjour à tous,\n\nLa campagne de sensibilisation au hameçonnage de ce trimestre (\"{theme}\") est terminée.\n\nRésultat : 0 clic, record historique, sous réserve d'homologation. Le mail de test n'a en effet pas pu être distribué, la messagerie étant indisponible depuis jeudi soir.\n\nLa campagne est reportée. Merci de ne pas en parler autour de vous.\n\nLe RSSI\n{societe}",
+    "variables": {
+      "theme": [
+        "Vous avez gagné un vélo électrique",
+        "Votre colis est bloqué en douane",
+        "Mise à jour urgente de votre mutuelle"
+      ],
+      "societe": [
+        "Nexalis",
+        "Groupe Vortan",
+        "Bréval Assurances"
+      ]
+    },
+    "cc": [
+      20,
+      60
+    ]
+  },
+  {
+    "id": "a-dsi-004",
+    "famille": "dsi-securite",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Karim Saidi",
+      "Audrey Dumont",
+      "Rémi Bonnet",
+      "Yasmine Hamidi"
+    ],
+    "role": "Sécurité informatique",
+    "objet": [
+      "Formation obligatoire : sensibilisation au hameçonnage",
+      "ACTION REQUISE : votre formation cybersécurité"
+    ],
+    "corps": "Bonjour,\n\nLors de la dernière campagne de test, {pourcent} % des collaborateurs ont cliqué sur le lien piégé. Une formation de sensibilisation vous est donc assignée.\n\nL'inscription se fait via le lien contenu dans un prochain mail, intitulé \"Vous avez gagné un vélo électrique\", à ouvrir avant {delai}.\n\nCelui-là, vous pouvez cliquer.\n\nL'équipe Sécurité informatique",
+    "variables": {
+      "pourcent": [
+        "18",
+        "27",
+        "34"
+      ],
+      "delai": [
+        "ce soir minuit",
+        "48 h",
+        "vendredi 12 h"
+      ]
+    },
+    "importance": "haute"
+  },
+  {
+    "id": "a-dsi-005",
+    "famille": "dsi-securite",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Arnaud Colas",
+      "Marion Brunet",
+      "Cédric Lemaire",
+      "Fabrice Noël"
+    ],
+    "role": "Service informatique",
+    "objet": [
+      "Votre ticket INC{ticket} a été résolu",
+      "[Ticket INC{ticket}] Statut : Résolu"
+    ],
+    "corps": "Bonjour,\n\nVotre ticket INC{ticket} \"{probleme}\" a été clôturé avec le statut : Résolu.\n\nCommentaire de résolution : l'utilisateur ne répond plus.\n\nSans retour de votre part sous 48 h, cette résolution sera considérée comme acceptée. Pour nous répondre, merci d'utiliser la messagerie.\n\nCeci est un message automatique, merci de ne pas y répondre.",
+    "variables": {
+      "ticket": [
+        "0048213",
+        "0051977",
+        "0063402"
+      ],
+      "probleme": [
+        "Impossible de me connecter à la messagerie",
+        "Outlook ne s'ouvre plus",
+        "Teams tourne dans le vide"
+      ]
+    }
+  },
+  {
+    "id": "a-dsi-006",
+    "famille": "dsi-securite",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Bertrand Joly",
+      "Linh Pham",
+      "Frédéric Masse",
+      "Nadège Coulibaly"
+    ],
+    "role": "Service informatique",
+    "objet": [
+      "Demande DEM{numero} : droits administrateur",
+      "Votre demande de droits administrateur"
+    ],
+    "corps": "Bonjour,\n\nVotre demande de droits administrateur (motif : installation d'un éditeur de code) n'a pas pu être acceptée.\n\nCe logiciel ne figurant pas au catalogue, nous vous proposons l'alternative homologuée : {alternative}.\n\nSi elle ne répond pas à votre besoin, vous pouvez demander l'ajout de l'éditeur au catalogue via le comité d'homologation, qui se réunit {frequence}.\n\nBien cordialement,\n\nLe Service informatique, pôle Poste de travail",
+    "variables": {
+      "numero": [
+        "10472",
+        "20981",
+        "33150"
+      ],
+      "alternative": [
+        "le Bloc-notes",
+        "WordPad",
+        "le traitement de texte de la suite bureautique"
+      ],
+      "frequence": [
+        "deux fois par an",
+        "le premier mardi de chaque trimestre",
+        "en mars"
+      ]
+    }
+  },
+  {
+    "id": "a-dsi-007",
+    "famille": "dsi-securite",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Sébastien Arnaud",
+      "Amina Sow",
+      "Olivier Gauthier",
+      "Elodie Carré"
+    ],
+    "role": "Service informatique",
+    "objet": [
+      "VPN obligatoire à partir du {date}",
+      "Installation du VPN : la procédure"
+    ],
+    "corps": "Bonjour à tous,\n\nÀ compter du {date}, la connexion au VPN {vpn} sera obligatoire pour accéder aux ressources internes.\n\nLa procédure d'installation est détaillée sur le wiki, accessible uniquement via le VPN.\n\nEn cas de difficulté, le support reste joignable via le portail d'assistance, accessible lui aussi via le VPN.\n\nMerci de votre compréhension,\n\nLe Service informatique",
+    "variables": {
+      "date": [
+        "lundi",
+        "1er décembre",
+        "16 novembre"
+      ],
+      "vpn": [
+        "SecureLink",
+        "Nexa-Access",
+        "TunnelPro"
+      ]
+    },
+    "cc": [
+      30,
+      80
+    ],
+    "pj": "procedure_VPN.pdf"
+  },
+  {
+    "id": "a-dsi-008",
+    "famille": "dsi-securite",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Rémi Bonnet",
+      "Karim Saidi",
+      "Audrey Dumont",
+      "Gaëlle Tessier"
+    ],
+    "role": "Service informatique",
+    "objet": [
+      "Redémarrage requis : {maj} mises à jour en attente",
+      "Votre poste doit être redémarré"
+    ],
+    "corps": "Bonjour,\n\nVotre poste n'a pas été redémarré depuis {jours} jours et {maj} mises à jour de sécurité sont en attente.\n\nSans action de votre part, le redémarrage sera forcé ce soir à {heure}. Les fenêtres, onglets et terminaux ouverts ne seront pas conservés.\n\nNous vous conseillons d'enregistrer votre travail, et de noter quelque part ce que faisaient vos {onglets} onglets.\n\nLe Service informatique",
+    "variables": {
+      "jours": [
+        "47",
+        "83",
+        "212"
+      ],
+      "maj": [
+        "14",
+        "26",
+        "51"
+      ],
+      "heure": [
+        "19 h",
+        "20 h 30",
+        "22 h"
+      ],
+      "onglets": [
+        "63",
+        "118",
+        "240"
+      ]
+    }
+  },
+  {
+    "id": "a-dsi-009",
+    "famille": "dsi-securite",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Vincent Lacroix",
+      "Yasmine Hamidi",
+      "Cédric Lemaire",
+      "Moussa Camara"
+    ],
+    "role": "Sécurité informatique",
+    "objet": [
+      "Rappel : périphériques USB interdits",
+      "Charte informatique : clés USB"
+    ],
+    "corps": "Bonjour à tous,\n\nPour rappel, les clés USB sont interdites sur l'ensemble du parc. Tout périphérique branché est automatiquement bloqué et signalé.\n\nCette semaine, {total} signalements ont été enregistrés, dont {tasses} tasses chauffantes, {ventilos} ventilateurs et une lampe en forme de cactus.\n\nLe formulaire de demande de dérogation est disponible sur une clé USB, à retirer auprès du service informatique.\n\nL'équipe Sécurité informatique",
+    "variables": {
+      "total": [
+        "14",
+        "23",
+        "31"
+      ],
+      "tasses": [
+        "6",
+        "9",
+        "11"
+      ],
+      "ventilos": [
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    "cc": [
+      20,
+      60
+    ]
+  },
+  {
+    "id": "a-dsi-010",
+    "famille": "dsi-securite",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Frédéric Masse",
+      "Marion Brunet",
+      "Bertrand Joly",
+      "Sonia Ferreira"
+    ],
+    "role": "Service informatique",
+    "objet": [
+      "Inventaire annuel du matériel",
+      "Inventaire {annee_inv} : merci de confirmer votre matériel"
+    ],
+    "corps": "Bonjour,\n\nDans le cadre de l'inventaire {annee_inv}, merci de confirmer le matériel en votre possession. Selon notre base, il s'agit de : un ordinateur portable, {ecrans} écrans, un casque, et l'ordinateur fixe de {ancien}, parti en {annee}.\n\nSi l'un de ces équipements ne se trouve pas sur votre bureau, merci de nous indiquer où il se trouve.\n\nPour information, notre base indique aussi que l'ordinateur de {ancien} est toujours allumé, et qu'il héberge l'outil de réservation des salles.\n\nService informatique - Gestion de parc",
+    "variables": {
+      "annee_inv": [
+        "2026",
+        "annuel",
+        "de fin d'année"
+      ],
+      "ecrans": [
+        "2",
+        "3",
+        "4"
+      ],
+      "ancien": [
+        "Gérard",
+        "Monique",
+        "Alain"
+      ],
+      "annee": [
+        "2016",
+        "2018",
+        "2013"
+      ]
+    },
+    "pj": "inventaire_a_completer.xlsx"
+  },
+  {
+    "id": "a-dsi-011",
+    "famille": "dsi-securite",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Julien Caron",
+      "Gaëlle Tessier",
+      "Mehdi Khelifi",
+      "Sandrine Huet"
+    ],
+    "role": "Sécurité informatique",
+    "objet": [
+      "Postes laissés déverrouillés",
+      "Rappel : verrouillage de session"
+    ],
+    "corps": "Bonjour à tous,\n\nLors de notre ronde de sensibilisation de {heure}, {postes} postes ont été trouvés déverrouillés en l'absence de leur utilisateur.\n\nSur l'un d'eux, un terminal était ouvert sur le serveur de production, à côté d'un post-it \"je reviens dans 5 min\", daté de mardi.\n\nPour rappel : Windows + L.\n\nL'équipe Sécurité informatique",
+    "variables": {
+      "heure": [
+        "12 h 30",
+        "midi",
+        "13 h 15"
+      ],
+      "postes": [
+        "9",
+        "17",
+        "26"
+      ]
+    },
+    "cc": [
+      15,
+      50
+    ]
+  },
+  {
+    "id": "a-dsi-012",
+    "famille": "dsi-securite",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Olivier Gauthier",
+      "Amina Sow",
+      "Arnaud Colas",
+      "Hervé Lachaud"
+    ],
+    "role": "RSSI",
+    "objet": [
+      "Mise à jour de la charte informatique (v{version})",
+      "Charte informatique : à signer avant le {date}"
+    ],
+    "corps": "Bonjour à tous,\n\nLa charte informatique a été mise à jour (version {version}, {pages} pages). Merci d'en prendre connaissance et de la signer avant le {date}.\n\nNouveauté de cette version : l'usage d'outils d'IA générative est interdit pour traiter des documents internes.\n\nPour vous faire gagner du temps, un résumé de la charte, rédigé par une IA, est joint à ce mail.\n\nLe RSSI\n\nCe message et ses pièces jointes sont confidentiels. Si vous l'avez reçu par erreur, merci de le détruire et d'en avertir l'expéditeur.",
+    "variables": {
+      "version": [
+        "4.2",
+        "7.0",
+        "12.3"
+      ],
+      "pages": [
+        "38",
+        "64",
+        "112"
+      ],
+      "date": [
+        "30 novembre",
+        "15 décembre",
+        "vendredi"
+      ]
+    },
+    "pj": "resume_charte_IA.pdf"
+  },
+  {
+    "id": "a-dsi-013",
+    "famille": "dsi-securite",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Linh Pham",
+      "Vincent Lacroix",
+      "Karim Saidi",
+      "Audrey Dumont"
+    ],
+    "role": "Sécurité informatique",
+    "objet": [
+      "Mot de passe transmis en clair",
+      "Alerte : mot de passe détecté dans un mail"
+    ],
+    "corps": "Bonjour,\n\nNotre outil de prévention des fuites a détecté un mail envoyé depuis votre compte, intitulé \"{titre}\", contenant un mot de passe en clair.\n\nPour rappel, aucun mot de passe ne doit transiter par mail. Merci d'utiliser exclusivement le coffre-fort de mots de passe {coffre}.\n\nVos identifiants provisoires pour y accéder figurent ci-dessous.\n\nL'équipe Sécurité informatique",
+    "variables": {
+      "titre": [
+        "mdp",
+        "accès serveur (urgent)",
+        "le truc pour la base"
+      ],
+      "coffre": [
+        "KeyVault+",
+        "Coffrix",
+        "SafeBox Pro"
+      ]
+    }
+  },
+  {
+    "id": "a-dsi-014",
+    "famille": "dsi-securite",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Sébastien Arnaud",
+      "Nadège Coulibaly",
+      "Fabrice Noël",
+      "Elodie Carré"
+    ],
+    "role": "Service informatique",
+    "objet": [
+      "Information : incident messagerie",
+      "INCIDENT EN COURS : messagerie et visioconférence",
+      "Point de situation messagerie"
+    ],
+    "corps": "Bonjour à tous,\n\nUn incident mondial affecte actuellement la messagerie et la visioconférence. Nos équipes suivent la situation avec l'éditeur.\n\nVous serez informés du rétablissement du service par mail.\n\nMerci de ne pas ouvrir de ticket : le portail d'assistance envoie ses confirmations par mail, et {tickets} demandes attendent déjà la leur.\n\nLe Service informatique",
+    "variables": {
+      "tickets": [
+        "214",
+        "487",
+        "1 032"
+      ]
+    },
+    "cc": [
+      40,
+      120
+    ],
+    "importance": "haute"
+  },
+  {
+    "id": "a-dsi-015",
+    "famille": "dsi-securite",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Cédric Lemaire",
+      "Sonia Ferreira",
+      "Moussa Camara",
+      "Hervé Lachaud"
+    ],
+    "role": "Service informatique",
+    "objet": [
+      "Demande d'accès au dépôt {depot}",
+      "Votre demande d'accès est en attente de validation"
+    ],
+    "corps": "Bonjour,\n\nVotre demande d'accès au dépôt \"{depot}\" est en attente de validation par son propriétaire.\n\nD'après l'annuaire, le propriétaire de ce dépôt est vous.\n\nMerci de valider votre demande depuis la page d'administration du dépôt, à laquelle vous n'avez pas encore accès.\n\nCordialement,\n\nService informatique - Gestion des habilitations",
+    "variables": {
+      "depot": [
+        "api-facturation",
+        "front-espace-client",
+        "scripts-legacy"
+      ]
+    }
+  },
+  {
+    "id": "a-rat-001",
+    "famille": "repondre-a-tous",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Communication interne",
+      "Service Communication",
+      "Direction de la Communication"
+    ],
+    "role": "Liste de diffusion",
+    "objet": [
+      "Mise à jour de la liste {liste}",
+      "Information : liste de diffusion {liste}"
+    ],
+    "corps": "Bonjour à tous,\n\nVous recevez ce message car votre adresse a été ajoutée à la liste de diffusion {liste}.\n\nAucune action n'est requise de votre part. Merci de ne pas répondre à ce message.\n\nService Communication interne\n{societe}\n\nPensez à l'environnement avant d'imprimer ce mail.",
+    "variables": {
+      "liste": [
+        "Tous-France",
+        "All-Nexalis-EMEA",
+        "Diffusion-Siège",
+        "Groupe-Vortan-Tous"
+      ],
+      "societe": [
+        "Groupe Vortan",
+        "Nexalis",
+        "Brenvor Industries"
+      ]
+    },
+    "cc": [
+      1800,
+      3400
+    ],
+    "rafale": true
+  },
+  {
+    "id": "a-rat-002",
+    "famille": "repondre-a-tous",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Martine Lefèvre",
+      "Gérard Poulain",
+      "Yasmina Haddad",
+      "Bernard Ostrowski"
+    ],
+    "role": "Tous-France",
+    "objet": [
+      "RE: Mise à jour de la liste {liste}",
+      "RE: Information : liste de diffusion {liste}"
+    ],
+    "corps": "Bonjour,\n\nMerci de me retirer de cette liste.\n\nJe ne sais pas ce que c'est.\n\nCordialement,\nAssistante de direction, site de {ville}",
+    "variables": {
+      "liste": [
+        "Tous-France",
+        "All-Nexalis-EMEA",
+        "Diffusion-Siège",
+        "Groupe-Vortan-Tous"
+      ],
+      "ville": [
+        "Clermont-Ferrand",
+        "Villeneuve-d'Ascq",
+        "Saint-Herblain",
+        "Mérignac"
+      ]
+    },
+    "cc": [
+      1800,
+      3400
+    ],
+    "rafale": true,
+    "suite": "a-rat-001"
+  },
+  {
+    "id": "a-rat-003",
+    "famille": "repondre-a-tous",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Thierry Vasseur",
+      "Nadia Benkirane",
+      "Loïc Le Gall",
+      "Sophie Marchetti"
+    ],
+    "role": "Collègue (en répondre à tous)",
+    "objet": [
+      "RE: RE: Mise à jour de la liste {liste}",
+      "RE: RE: Information : liste de diffusion {liste}"
+    ],
+    "corps": "Moi aussi.\n\nEnvoyé de mon iPhone",
+    "variables": {
+      "liste": [
+        "Tous-France",
+        "All-Nexalis-EMEA",
+        "Diffusion-Siège",
+        "Groupe-Vortan-Tous"
+      ]
+    },
+    "cc": [
+      1800,
+      3400
+    ],
+    "rafale": true,
+    "suite": "a-rat-002"
+  },
+  {
+    "id": "a-rat-004",
+    "famille": "repondre-a-tous",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Philippe Garnier",
+      "Aurélie Dumas",
+      "Karim Messaoudi",
+      "Hélène Rousseau"
+    ],
+    "role": "Collègue (en répondre à tous)",
+    "objet": [
+      "RE: RE: RE: Mise à jour de la liste {liste}",
+      "MERCI DE NE PAS RÉPONDRE À TOUS"
+    ],
+    "corps": "Bonjour à tous,\n\nMerci de NE PAS utiliser \"Répondre à tous\". Chaque réponse est envoyée à {nb} personnes.\n\nJe réponds à tous uniquement pour que le message soit bien vu par tout le monde.\n\nMerci de votre compréhension.\n\nResponsable Qualité\nDirection des Opérations",
+    "variables": {
+      "liste": [
+        "Tous-France",
+        "All-Nexalis-EMEA",
+        "Diffusion-Siège",
+        "Groupe-Vortan-Tous"
+      ],
+      "nb": [
+        "2 847",
+        "3 412",
+        "1 956",
+        "3 108"
+      ]
+    },
+    "cc": [
+      1800,
+      3400
+    ],
+    "importance": "haute",
+    "rafale": true,
+    "suite": "a-rat-003"
+  },
+  {
+    "id": "a-rat-005",
+    "famille": "repondre-a-tous",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Christophe Albert",
+      "Fatou Diallo",
+      "Jean-Marc Perrin",
+      "Élodie Chevalier"
+    ],
+    "role": "Tous-France",
+    "objet": [
+      "RE: RE: RE: RE: Mise à jour de la liste {liste}",
+      "RE: TR: RE: Information : liste de diffusion {liste}"
+    ],
+    "corps": "Bonjour,\n\nQuelqu'un sait pourquoi je reçois tous ces mails ? Je suis au service {service} à {ville}, je n'ai rien demandé.\n\nMerci de me répondre en privé. Par mail, Teams ne marche pas chez moi.\n\nEnvoyé de mon iPhone",
+    "variables": {
+      "liste": [
+        "Tous-France",
+        "All-Nexalis-EMEA",
+        "Diffusion-Siège",
+        "Groupe-Vortan-Tous"
+      ],
+      "service": [
+        "Comptabilité fournisseurs",
+        "Logistique",
+        "Paie",
+        "Achats indirects"
+      ],
+      "ville": [
+        "Clermont-Ferrand",
+        "Villeneuve-d'Ascq",
+        "Saint-Herblain",
+        "Mérignac"
+      ]
+    },
+    "cc": [
+      1800,
+      3400
+    ],
+    "rafale": true,
+    "suite": "a-rat-004"
+  },
+  {
+    "id": "a-rat-006",
+    "famille": "repondre-a-tous",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Pascal Renaud",
+      "Inès Belkacem",
+      "Mathieu Caron",
+      "Véronique Lambert"
+    ],
+    "role": "Collègue (en répondre à tous)",
+    "objet": [
+      "RE: RE: RE: TR: RE: Mise à jour de la liste {liste}",
+      "RE: RE: TR: RE: RE: Information : liste de diffusion {liste}"
+    ],
+    "corps": "ok\n\nCordialement,\n\nResponsable Grands Comptes\n{societe}\n\nCe message et ses pièces jointes sont confidentiels et établis à l'intention exclusive de leurs destinataires. Toute utilisation ou diffusion non autorisée est interdite. Si vous avez reçu ce message par erreur, merci d'en avertir immédiatement l'expéditeur et de le détruire. L'intégrité de ce message ne pouvant être garantie sur Internet, {societe} ne pourra être tenu responsable de son contenu.",
+    "variables": {
+      "liste": [
+        "Tous-France",
+        "All-Nexalis-EMEA",
+        "Diffusion-Siège",
+        "Groupe-Vortan-Tous"
+      ],
+      "societe": [
+        "Groupe Vortan",
+        "Nexalis",
+        "Brenvor Industries"
+      ]
+    },
+    "cc": [
+      1800,
+      3400
+    ],
+    "rafale": true
+  },
+  {
+    "id": "a-rat-007",
+    "famille": "repondre-a-tous",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Daniel Moreau",
+      "Josiane Petit",
+      "Rachid Amrani",
+      "Colette Brunet"
+    ],
+    "role": "Tous-France",
+    "objet": [
+      "désinscrire",
+      "RE: RE: TR: désinscrire"
+    ],
+    "corps": "désinscrire\n\nPensez à l'environnement avant d'imprimer ce mail.",
+    "variables": {},
+    "cc": [
+      3399,
+      3400
+    ],
+    "rafale": true
+  },
+  {
+    "id": "a-rat-008",
+    "famille": "repondre-a-tous",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Laurent Fabre",
+      "Mélanie Roux",
+      "Olivier N'Diaye",
+      "Sandrine Gauthier"
+    ],
+    "role": "Réponse automatique",
+    "objet": [
+      "Réponse automatique : RE: RE: RE: Mise à jour de la liste {liste}",
+      "Absent(e) : RE: RE: TR: RE: Information : liste de diffusion {liste}"
+    ],
+    "corps": "Bonjour,\n\nJe suis absent(e) du {debut} au {fin} inclus, avec un accès limité à mes mails.\n\nPour toute urgence, vous pouvez écrire à la liste {liste}, qui transmettra.\n\nResponsable Paie\nDirection des Ressources Humaines",
+    "variables": {
+      "liste": [
+        "Tous-France",
+        "All-Nexalis-EMEA",
+        "Diffusion-Siège",
+        "Groupe-Vortan-Tous"
+      ],
+      "debut": [
+        "2 novembre",
+        "9 novembre",
+        "12 novembre"
+      ],
+      "fin": [
+        "20 novembre",
+        "27 novembre",
+        "4 décembre"
+      ]
+    },
+    "cc": [
+      1800,
+      3400
+    ],
+    "rafale": true
+  },
+  {
+    "id": "a-rat-009",
+    "famille": "repondre-a-tous",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Kevin Marty",
+      "Anaïs Leroux",
+      "Samir Bouzid",
+      "Clémence Faure"
+    ],
+    "role": "Collègue (en répondre à tous)",
+    "objet": [
+      "Test",
+      "ceci est un test"
+    ],
+    "corps": "Bonjour,\n\nCeci est un test, merci de ne pas tenir compte de ce message.\n\nSi vous le recevez, pouvez-vous me le confirmer ?\n\nMerci d'avance,\n\nPôle Communication interne, site de {ville}",
+    "variables": {
+      "ville": [
+        "Clermont-Ferrand",
+        "Villeneuve-d'Ascq",
+        "Saint-Herblain",
+        "Mérignac"
+      ]
+    },
+    "cc": [
+      2200,
+      3400
+    ],
+    "rafale": true
+  },
+  {
+    "id": "a-rat-010",
+    "famille": "repondre-a-tous",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Jacques Lemoine",
+      "Amina Traoré",
+      "Guillaume Roche",
+      "Nathalie Bertrand"
+    ],
+    "role": "Tous-France",
+    "objet": [
+      "RE: Test",
+      "RE: RE: ceci est un test"
+    ],
+    "corps": "Bien reçu depuis {ville}.\n\nPar contre je l'ai reçu {fois} fois, je ne sais pas si c'est normal.\n\nService {service}",
+    "variables": {
+      "ville": [
+        "Lille",
+        "Montpellier",
+        "Rennes",
+        "Annecy"
+      ],
+      "fois": [
+        "quatre",
+        "onze",
+        "deux cent douze"
+      ],
+      "service": [
+        "Contrôle de gestion",
+        "Logistique Sud-Ouest",
+        "Relation clients"
+      ]
+    },
+    "cc": [
+      2200,
+      3400
+    ],
+    "rafale": true,
+    "suite": "a-rat-009"
+  },
+  {
+    "id": "a-rat-011",
+    "famille": "repondre-a-tous",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Brigitte Collin",
+      "Hugo Lacroix",
+      "Leïla Mansouri",
+      "Alain Giraud"
+    ],
+    "role": "Collègue (en répondre à tous)",
+    "objet": [
+      "RE: RE: RE: RE: RE: TR: RE: Mise à jour de la liste {liste}",
+      "Quelqu'un peut arrêter ça ?"
+    ],
+    "corps": "Bonjour,\n\nEst-ce que quelqu'un de la Direction pourrait rappeler à tout le monde d'arrêter de répondre à tous ? Ce serait mieux si ça venait de quelqu'un d'officiel.\n\nJe mets tout le monde en copie pour que la demande arrive bien.\n\nBonne journée,\n\nChargée de mission RSE",
+    "variables": {
+      "liste": [
+        "Tous-France",
+        "All-Nexalis-EMEA",
+        "Diffusion-Siège",
+        "Groupe-Vortan-Tous"
+      ]
+    },
+    "cc": [
+      1800,
+      3400
+    ],
+    "rafale": true
+  },
+  {
+    "id": "a-rat-012",
+    "famille": "repondre-a-tous",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Direction Générale",
+      "Secrétariat de la Direction",
+      "Direction de la Communication"
+    ],
+    "role": "Liste de diffusion",
+    "objet": [
+      "IMPORTANT : merci de cesser les réponses à ce fil",
+      "RE: RE: RE: RE: RE: RE: TR: RE: Mise à jour de la liste {liste}"
+    ],
+    "corps": "Bonjour à toutes et à tous,\n\nAfin de préserver nos boîtes mail, nous vous demandons de ne plus répondre à ce fil de discussion.\n\nCe message clôt définitivement les échanges. Merci d'en accuser réception.\n\nLa Direction Générale\n{societe}",
+    "variables": {
+      "liste": [
+        "Tous-France",
+        "All-Nexalis-EMEA",
+        "Diffusion-Siège",
+        "Groupe-Vortan-Tous"
+      ],
+      "societe": [
+        "Groupe Vortan",
+        "Nexalis",
+        "Brenvor Industries"
+      ]
+    },
+    "cc": [
+      2800,
+      3400
+    ],
+    "importance": "haute",
+    "rafale": true,
+    "suite": "a-rat-011"
+  },
+  {
+    "id": "a-rat-013",
+    "famille": "repondre-a-tous",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Frédéric Blanchard",
+      "Sabrina Ait-Ali",
+      "Didier Masson",
+      "Camille Arnaud"
+    ],
+    "role": "Collègue (en répondre à tous)",
+    "objet": [
+      "RE: RE: RE: RE: TR: Mise à jour de la liste {liste}",
+      "RE: RE: RE: Information : liste de diffusion {liste}"
+    ],
+    "corps": "Bonjour à tous,\n\nJe profite de ce fil, puisqu'on est nombreux : je vends {vente}, très bon état, {prix} € à débattre.\n\nMe contacter en privé, merci de ne pas répondre à tous.\n\nService Après-Vente, site de {ville}",
+    "variables": {
+      "liste": [
+        "Tous-France",
+        "All-Nexalis-EMEA",
+        "Diffusion-Siège",
+        "Groupe-Vortan-Tous"
+      ],
+      "vente": [
+        "un vélo d'appartement jamais utilisé",
+        "une machine à raclette huit poêlons",
+        "un canapé trois places (couleur taupe)",
+        "une poussette double"
+      ],
+      "prix": [
+        "40",
+        "75",
+        "120",
+        "15"
+      ],
+      "ville": [
+        "Lille",
+        "Montpellier",
+        "Rennes",
+        "Annecy"
+      ]
+    },
+    "cc": [
+      1800,
+      3400
+    ],
+    "rafale": true
+  },
+  {
+    "id": "a-rat-014",
+    "famille": "repondre-a-tous",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Théo Delmas",
+      "Manon Vidal",
+      "Abdel Kaci",
+      "Justine Morel"
+    ],
+    "role": "Tous-France",
+    "objet": [
+      "RE: RE: RE: RE: RE: Mise à jour de la liste {liste}",
+      "RE: TR: RE: RE: Information : liste de diffusion {liste}"
+    ],
+    "corps": "Bonjour à tous !\n\nJe suis nouveau, j'arrive lundi au site de {ville} en tant qu'alternant. Puisque tout le monde est là : ravi de faire votre connaissance !\n\nJ'ai hâte de travailler avec chacun d'entre vous.\n\nÉquipe {service}\n{societe}",
+    "variables": {
+      "liste": [
+        "Tous-France",
+        "All-Nexalis-EMEA",
+        "Diffusion-Siège",
+        "Groupe-Vortan-Tous"
+      ],
+      "ville": [
+        "Lille",
+        "Montpellier",
+        "Rennes",
+        "Annecy"
+      ],
+      "service": [
+        "Développement",
+        "Data",
+        "Support applicatif"
+      ],
+      "societe": [
+        "Groupe Vortan",
+        "Nexalis",
+        "Brenvor Industries"
+      ]
+    },
+    "cc": [
+      1800,
+      3400
+    ],
+    "rafale": true
+  },
+  {
+    "id": "a-rat-015",
+    "famille": "repondre-a-tous",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Stéphane Mercier",
+      "Lucie Hoarau",
+      "Mehdi Ziani",
+      "Agnès Picard"
+    ],
+    "role": "Collègue (en répondre à tous)",
+    "objet": [
+      "RE: RE: RE: RE: RE: RE: RE: Mise à jour de la liste {liste}",
+      "Proposition pour désengorger les boîtes mail"
+    ],
+    "corps": "Bonjour à tous,\n\nPour désengorger les boîtes mail, j'ai créé une équipe Teams \"{liste} - Discussions\". Vous y avez tous été ajoutés automatiquement.\n\nMerci de poursuivre les échanges là-bas, dès que Teams remarchera.\n\nChef de projet Transformation digitale",
+    "variables": {
+      "liste": [
+        "Tous-France",
+        "All-Nexalis-EMEA",
+        "Diffusion-Siège",
+        "Groupe-Vortan-Tous"
+      ]
+    },
+    "cc": [
+      1800,
+      3400
+    ],
+    "rafale": true
+  },
+  {
+    "id": "a-col-001",
+    "famille": "collegues",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Céline Boyer",
+      "Antoine Lebrun",
+      "Samia Cherif",
+      "Romain Guillot"
+    ],
+    "role": "Open space 3e étage",
+    "objet": [
+      "Micro-ondes du {etage}",
+      "Petit rappel : micro-ondes"
+    ],
+    "corps": "Bonjour à tous,\n\nÀ la personne qui a réchauffé du {plat} dans le micro-ondes du {etage} vers {heure} : l'open space s'en souvient encore.\n\nUn autre micro-ondes est disponible au rez-de-chaussée, loin de tout le monde. Merci pour lui.\n\nL'open space du {etage}",
+    "variables": {
+      "plat": [
+        "poisson pané",
+        "maquereau à la moutarde",
+        "cabillaud de la veille",
+        "chou-fleur au curry"
+      ],
+      "etage": [
+        "3e étage",
+        "2e étage",
+        "4e étage"
+      ],
+      "heure": [
+        "12 h 10",
+        "11 h 45",
+        "12 h 30"
+      ]
+    },
+    "cc": [
+      25,
+      70
+    ]
+  },
+  {
+    "id": "a-col-002",
+    "famille": "collegues",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Véronique Simon",
+      "Julien Carpentier",
+      "Myriam Saïdi",
+      "Florian Baron"
+    ],
+    "role": "Open space 3e étage",
+    "objet": [
+      "RE: Micro-ondes du {etage}",
+      "RE: Petit rappel : micro-ondes"
+    ],
+    "corps": "Puisqu'on parle du micro-ondes : un planning de nettoyage est affiché à côté.\n\nIl est vide depuis {duree}, à part mon nom, qui y figure trois fois.\n\nJe vous laisse en tirer vos propres conclusions.\n\nBonne journée à tous",
+    "variables": {
+      "etage": [
+        "3e étage",
+        "2e étage",
+        "4e étage"
+      ],
+      "duree": [
+        "mars",
+        "la rentrée",
+        "six semaines",
+        "le pot de Noël dernier"
+      ]
+    },
+    "cc": [
+      25,
+      70
+    ],
+    "suite": "a-col-001"
+  },
+  {
+    "id": "a-col-003",
+    "famille": "collegues",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Bastien Renard",
+      "Sarah Benali",
+      "Maxime Huet",
+      "Pauline Joly"
+    ],
+    "role": "Équipe Back",
+    "objet": [
+      "Règle des croissants",
+      "Build rouge = croissants"
+    ],
+    "corps": "Salut l'équipe,\n\nPetit rappel de la règle : celui ou celle qui casse le build sur main paie les croissants le lendemain.\n\nLe build est rouge depuis {heure}. Je ne donne pas de nom, mais le commit s'appelle \"{commit}\".\n\nOn est {nb} et certains prennent des pains au chocolat.\n\nL'équipe Back",
+    "variables": {
+      "heure": [
+        "16 h 52",
+        "17 h 58",
+        "11 h 03"
+      ],
+      "commit": [
+        "petit fix rapide",
+        "ça devrait passer",
+        "test",
+        "WIP ne pas merger"
+      ],
+      "nb": [
+        "9",
+        "12",
+        "14"
+      ]
+    },
+    "cc": [
+      8,
+      15
+    ]
+  },
+  {
+    "id": "a-col-004",
+    "famille": "collegues",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Yanis Belhadj",
+      "Margaux Lemaire",
+      "Quentin Fontaine",
+      "Aïcha Konaté"
+    ],
+    "role": "Équipe Back",
+    "objet": [
+      "Croissants en salle {salle}",
+      "RE: Règle des croissants"
+    ],
+    "corps": "Bonjour à tous,\n\nLes viennoiseries sont en salle {salle}. Il y a {nb} croissants et {nb2} pains au chocolat, servez-vous.\n\nMise à jour, {heure} : il reste les sachets.\n\nL'équipe Back",
+    "variables": {
+      "salle": [
+        "Jupiter",
+        "Saturne",
+        "Neptune"
+      ],
+      "nb": [
+        "8",
+        "10",
+        "12"
+      ],
+      "nb2": [
+        "6",
+        "8",
+        "4"
+      ],
+      "heure": [
+        "9 h 04",
+        "9 h 02",
+        "9 h 07"
+      ]
+    },
+    "cc": [
+      8,
+      15
+    ],
+    "suite": "a-col-003"
+  },
+  {
+    "id": "a-col-005",
+    "famille": "collegues",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Services Généraux",
+      "Accueil et Services Généraux",
+      "Pôle Environnement de travail"
+    ],
+    "role": "Collègue",
+    "objet": [
+      "Vidage du frigo vendredi",
+      "Rappel : frigo du {etage}"
+    ],
+    "corps": "Bonjour à tous,\n\nLe frigo du {etage} sera vidé ce vendredi à {heure}. Tout ce qui n'est pas étiqueté partira.\n\nCela inclut le tupperware bleu présent depuis {mois}. Nous pensons qu'il a désormais une vie intérieure et préférons ne pas l'ouvrir.\n\nLes Services Généraux",
+    "variables": {
+      "etage": [
+        "3e étage",
+        "2e étage",
+        "4e étage"
+      ],
+      "heure": [
+        "16 h",
+        "15 h 30",
+        "17 h"
+      ],
+      "mois": [
+        "juillet",
+        "le mois de mai",
+        "avant le déménagement"
+      ]
+    },
+    "cc": [
+      40,
+      120
+    ]
+  },
+  {
+    "id": "a-col-006",
+    "famille": "collegues",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Gaëlle Moulin",
+      "Nicolas Ferrand",
+      "Rania Toumi",
+      "Benoît Charpentier"
+    ],
+    "role": "Open space 3e étage",
+    "objet": [
+      "Le ficus",
+      "Point sur la plante de l'open space"
+    ],
+    "corps": "Bonjour à tous,\n\nLe ficus près de la fenêtre n'est plus arrosé depuis le départ de la stagiaire de l'été. Il a perdu {feuilles} feuilles cette semaine.\n\nJ'ai créé un canal #ficus pour qu'on s'organise. Nous sommes {membres} membres. Aucun arrosage n'a eu lieu.\n\nL'open space",
+    "variables": {
+      "feuilles": [
+        "douze",
+        "dix-sept",
+        "toutes ses"
+      ],
+      "membres": [
+        "14",
+        "22",
+        "31"
+      ]
+    },
+    "cc": [
+      12,
+      30
+    ]
+  },
+  {
+    "id": "a-col-007",
+    "famille": "collegues",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Alexandre Vincent",
+      "Chloé Barbier",
+      "Ibrahim Sow",
+      "Jérémy Tessier"
+    ],
+    "role": "Équipe Back",
+    "objet": [
+      "Tu peux regarder ma PR ?",
+      "Petite review rapide stp"
+    ],
+    "corps": "Salut,\n\nTu pourrais jeter un oeil à ma PR quand tu as cinq minutes ? Rien de méchant, c'est surtout du renommage.\n\n{lignes} lignes ajoutées, {fichiers} fichiers modifiés. Idéalement avant {heure}, je pars en congés.\n\nJe t'aurais bien relancé sur Teams, mais bon.\n\nMerci !",
+    "variables": {
+      "lignes": [
+        "4 012",
+        "3 870",
+        "5 431"
+      ],
+      "fichiers": [
+        "117",
+        "86",
+        "203"
+      ],
+      "heure": [
+        "17 h",
+        "16 h 30",
+        "midi"
+      ]
+    },
+    "cc": [
+      0,
+      2
+    ],
+    "pj": "diff_complet.txt"
+  },
+  {
+    "id": "a-col-008",
+    "famille": "collegues",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Mélissa Guérin",
+      "Thomas Bailly",
+      "Nordine Hamdi",
+      "Laura Prévost"
+    ],
+    "role": "Collègue",
+    "objet": [
+      "Qui a pris mon chargeur USB-C ?",
+      "Chargeur USB-C (bureau {bureau})"
+    ],
+    "corps": "Bonjour,\n\nQui a pris mon chargeur USB-C sur le bureau {bureau} ? Il est blanc, avec un bout de scotch marqué \"PAS TOUCHE\".\n\nJe ne juge pas, je veux juste qu'il revienne. Mon portable est à {pct} %.\n\nMerci",
+    "variables": {
+      "bureau": [
+        "3B-14",
+        "2A-07",
+        "4C-21"
+      ],
+      "pct": [
+        "4",
+        "7",
+        "2"
+      ]
+    },
+    "cc": [
+      20,
+      60
+    ]
+  },
+  {
+    "id": "a-col-009",
+    "famille": "collegues",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Services Généraux",
+      "Accueil et Services Généraux",
+      "Pôle Environnement de travail"
+    ],
+    "role": "Collègue",
+    "objet": [
+      "URGENT : machine à café du {etage}",
+      "URGENT : panne machine à café"
+    ],
+    "corps": "Bonjour à tous,\n\nLa machine à café du {etage} est en panne depuis {heure}. Le technicien passe {quand}.\n\nCelle du rez-de-chaussée fonctionne, mais l'équipe {equipe} y fait déjà la queue. Merci de rester calmes et de ne pas secouer la machine, elle n'y est pour rien.\n\nNous avons traversé la panne de messagerie d'hier avec dignité. Celle-ci est d'un autre niveau.\n\nLes Services Généraux",
+    "variables": {
+      "etage": [
+        "3e étage",
+        "2e étage",
+        "4e étage"
+      ],
+      "heure": [
+        "8 h 12",
+        "7 h 55",
+        "8 h 40"
+      ],
+      "quand": [
+        "demain matin",
+        "en fin de journée",
+        "lundi"
+      ],
+      "equipe": [
+        "Data",
+        "Front",
+        "Infra"
+      ]
+    },
+    "cc": [
+      80,
+      200
+    ],
+    "importance": "haute"
+  },
+  {
+    "id": "a-col-010",
+    "famille": "collegues",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Services Généraux",
+      "Accueil et Services Généraux",
+      "Pôle Environnement de travail"
+    ],
+    "role": "Collègue",
+    "objet": [
+      "RE: URGENT : machine à café du {etage}",
+      "RE: URGENT : panne machine à café"
+    ],
+    "corps": "Bonjour à tous,\n\nLe technicien est passé. Ce n'était pas une panne : le bac à marc était plein.\n\nIl l'est depuis {duree}. Nous ne désignerons personne, nous sommes tous responsables.\n\nLes Services Généraux",
+    "variables": {
+      "etage": [
+        "3e étage",
+        "2e étage",
+        "4e étage"
+      ],
+      "duree": [
+        "mardi",
+        "trois semaines",
+        "la mise en service de la machine"
+      ]
+    },
+    "cc": [
+      80,
+      200
+    ],
+    "suite": "a-col-009"
+  },
+  {
+    "id": "a-col-011",
+    "famille": "collegues",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Gilles Mathieu",
+      "Corinne Lopez",
+      "Farid Benyahia",
+      "Isabelle Royer"
+    ],
+    "role": "Collègue",
+    "objet": [
+      "Place de parking {place}",
+      "À la personne garée sur la place {place}"
+    ],
+    "corps": "Bonjour,\n\nÀ la personne garée sur la place {place} depuis ce matin : c'est la mienne. Mon nom est écrit au sol. En peinture.\n\nJolie {vehicule}, au passage. Je suis à côté, j'ai tout mon temps.\n\nDirection Financière",
+    "variables": {
+      "place": [
+        "B12",
+        "C04",
+        "A27"
+      ],
+      "vehicule": [
+        "citadine grise",
+        "trottinette électrique",
+        "voiture de location"
+      ]
+    },
+    "cc": [
+      150,
+      400
+    ]
+  },
+  {
+    "id": "a-col-012",
+    "famille": "collegues",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Sylvie Marchand",
+      "Arnaud Dupuis",
+      "Kenza Brahimi",
+      "Patrick Hubert"
+    ],
+    "role": "Collègue",
+    "objet": [
+      "Pot de départ vendredi",
+      "Cagnotte pour le départ de notre collègue"
+    ],
+    "corps": "Bonjour à tous,\n\nPot de départ de notre collègue du service {service} vendredi à {heure}, à la cafétéria. Une cagnotte circule, nous en sommes à {montant} €.\n\nPour ceux qui demandent : non, on ne sait pas non plus de qui il s'agit. Mais il y aura des chips.\n\nCordialement,\n\nAssistante du service {service}",
+    "variables": {
+      "service": [
+        "Achats",
+        "Contrôle de gestion",
+        "Qualité"
+      ],
+      "heure": [
+        "17 h",
+        "16 h 30",
+        "17 h 30"
+      ],
+      "montant": [
+        "12",
+        "23,50",
+        "8"
+      ]
+    },
+    "cc": [
+      60,
+      180
+    ]
+  },
+  {
+    "id": "a-col-013",
+    "famille": "collegues",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Damien Leclerc",
+      "Émilie Rolland",
+      "Souleymane Camara",
+      "Charlotte Benoit"
+    ],
+    "role": "Équipe Back",
+    "objet": [
+      "Ma tasse \"World's Best Dev\"",
+      "Tasse disparue (égouttoir du {etage})"
+    ],
+    "corps": "Bonjour,\n\nLa tasse \"World's Best Dev\" a disparu de l'égouttoir du {etage}. Elle n'a aucune valeur, sauf pour moi et pour la personne qui me l'a offerte, ma mère.\n\nSi vous l'avez, reposez-la discrètement. Si vous pensez la mériter, on peut en parler en revue de code.\n\nEnvoyé de mon iPhone",
+    "variables": {
+      "etage": [
+        "3e étage",
+        "2e étage",
+        "4e étage"
+      ]
+    },
+    "cc": [
+      25,
+      70
+    ]
+  },
+  {
+    "id": "a-col-014",
+    "famille": "collegues",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Vincent Gaillard",
+      "Ophélie Roger",
+      "Mourad Belaïd",
+      "Marion Leblanc"
+    ],
+    "role": "Équipe Back",
+    "objet": [
+      "Session ouverte sur le poste {poste}",
+      "Rappel sécurité : verrouillez vos postes"
+    ],
+    "corps": "Salut à tous,\n\nPetit rappel : le poste {poste} est resté déverrouillé toute la pause déjeuner.\n\nQuelqu'un en a profité pour envoyer à l'équipe : \"Je paie les croissants {jour}, et les pains au chocolat aussi\".\n\nC'est noté, merci à toi.\n\nL'équipe Back",
+    "variables": {
+      "poste": [
+        "PC-DEV-042",
+        "MAC-3E-17",
+        "PC-BACK-08"
+      ],
+      "jour": [
+        "demain",
+        "lundi",
+        "toute la semaine"
+      ]
+    },
+    "cc": [
+      8,
+      15
+    ]
+  },
+  {
+    "id": "a-col-015",
+    "famille": "collegues",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Services Généraux",
+      "Accueil et Services Généraux",
+      "Pôle Environnement de travail"
+    ],
+    "role": "Open space 3e étage",
+    "objet": [
+      "Température de l'open space",
+      "Climatisation du {etage} : point d'étape"
+    ],
+    "corps": "Bonjour à tous,\n\nSuite à {demandes} demandes contradictoires cette semaine, la climatisation du {etage} reste réglée à {temp} degrés.\n\nLes plaids sont tolérés. Les ventilateurs USB aussi. Les deux en même temps sur le même bureau, nous allons en parler.\n\nLes Services Généraux",
+    "variables": {
+      "demandes": [
+        "14",
+        "23",
+        "37"
+      ],
+      "etage": [
+        "3e étage",
+        "2e étage",
+        "4e étage"
+      ],
+      "temp": [
+        "21",
+        "22",
+        "21,5"
+      ]
+    },
+    "cc": [
+      40,
+      120
+    ]
+  },
+  {
+    "id": "a-auto-001",
+    "famille": "outils-auto",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Jira",
+      "Jira Software",
+      "Notifications Jira"
+    ],
+    "role": "Jira",
+    "objet": [
+      "[JIRA] ({projet}-{num}) Un ticket vous a été assigné",
+      "[JIRA] Assigné : {projet}-{num} {resume}"
+    ],
+    "corps": "{rapporteur} vous a assigné le ticket {projet}-{num}.\n\nRésumé : {resume}\nPriorité : Haute\nÉchéance : hier\nDescription : (vide)\n\nVous recevez ce mail car vous êtes : Assigné, Observateur, dernière personne active du projet.\n\nCe message a été généré automatiquement par Jira. Gérer vos préférences de notification.",
+    "variables": {
+      "rapporteur": [
+        "Votre manager",
+        "Le Product Owner",
+        "Un utilisateur anonyme"
+      ],
+      "projet": [
+        "PHX",
+        "CRM",
+        "WEB",
+        "MOB"
+      ],
+      "num": [
+        "4127",
+        "8803",
+        "1312",
+        "6650"
+      ],
+      "resume": [
+        "ça marche pas",
+        "Bug sur la page (voir capture)",
+        "Refaire comme avant mais en mieux",
+        "Le bouton"
+      ]
+    },
+    "pj": "capture.docx"
+  },
+  {
+    "id": "a-auto-002",
+    "famille": "outils-auto",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Jira",
+      "Jira Software",
+      "Notifications Jira"
+    ],
+    "role": "Jira",
+    "objet": [
+      "[JIRA] ({projet}-{num}) Rouvert",
+      "[JIRA] Statut modifié : {projet}-{num} Résolu > Rouvert"
+    ],
+    "corps": "Le ticket {projet}-{num} a été rouvert.\n\nStatut : Résolu > Rouvert\nCommentaire du rapporteur : \"Toujours pas.\"\n\nCe ticket a été rouvert {fois} fois. Il n'a jamais été reproduit.\n\nCe message a été généré automatiquement par Jira. Gérer vos préférences de notification.",
+    "variables": {
+      "projet": [
+        "PHX",
+        "CRM",
+        "WEB",
+        "MOB"
+      ],
+      "num": [
+        "4127",
+        "8803",
+        "1312",
+        "6650"
+      ],
+      "fois": [
+        "4",
+        "7",
+        "11"
+      ]
+    },
+    "suite": "a-auto-001"
+  },
+  {
+    "id": "a-auto-003",
+    "famille": "outils-auto",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Jira",
+      "Jira Software",
+      "Notifications Jira"
+    ],
+    "role": "Jira",
+    "objet": [
+      "[JIRA] ({projet}-{num}) Priorité modifiée",
+      "[JIRA] {projet}-{num} : Urgente > Très urgente"
+    ],
+    "corps": "Le champ Priorité du ticket {projet}-{num} a été modifié.\n\nAncienne valeur : Urgente\nNouvelle valeur : Très urgente\n\nHistorique : Basse, Normale, Haute, Urgente, Très urgente.\nDernière modification du champ Statut : il y a {duree}.\n\nCe message a été généré automatiquement par Jira. Gérer vos préférences de notification.",
+    "variables": {
+      "projet": [
+        "PHX",
+        "CRM",
+        "WEB",
+        "MOB"
+      ],
+      "num": [
+        "2290",
+        "7714",
+        "5068"
+      ],
+      "duree": [
+        "5 mois",
+        "214 jours",
+        "1 an"
+      ]
+    },
+    "importance": "haute"
+  },
+  {
+    "id": "a-auto-004",
+    "famille": "outils-auto",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Jenkins",
+      "Jenkins CI",
+      "jenkins-noreply"
+    ],
+    "role": "Jenkins",
+    "objet": [
+      "[Jenkins] {job} #{build} : FAILURE",
+      "Build failed : {job} #{build}"
+    ],
+    "corps": "Build #{build} : ÉCHEC\n\nModifications depuis le dernier build réussi :\n- \"fix\"\n- \"fix 2\"\n- \"vraiment fix\"\n- \"ok là c'est bon\"\n\nDurée : {duree}. Dernier build réussi : il y a {jours} jours.\n\nJenkins, intégration continue",
+    "variables": {
+      "job": [
+        "api-commandes-main",
+        "front-espace-client",
+        "batch-facturation"
+      ],
+      "build": [
+        "4812",
+        "4813",
+        "4817"
+      ],
+      "duree": [
+        "47 min",
+        "1 h 12 min",
+        "38 min"
+      ],
+      "jours": [
+        "3",
+        "9",
+        "16"
+      ]
+    }
+  },
+  {
+    "id": "a-auto-005",
+    "famille": "outils-auto",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Jenkins",
+      "Jenkins CI",
+      "jenkins-noreply"
+    ],
+    "role": "Jenkins",
+    "objet": [
+      "[Jenkins] {job} #{build} : SUCCESS (retour à la normale)",
+      "Build fixed : {job} #{build}"
+    ],
+    "corps": "Build #{build} : SUCCÈS\n\nLe build est de nouveau stable.\n\nModification : \"désactivation temporaire des tests\"\n\nJenkins, intégration continue",
+    "variables": {
+      "job": [
+        "api-commandes-main",
+        "front-espace-client",
+        "batch-facturation"
+      ],
+      "build": [
+        "4818",
+        "4821",
+        "4826"
+      ]
+    },
+    "suite": "a-auto-004"
+  },
+  {
+    "id": "a-auto-006",
+    "famille": "outils-auto",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "SonarQube",
+      "Sonar",
+      "SonarQube Notifications"
+    ],
+    "role": "Notification automatique",
+    "objet": [
+      "[SonarQube] Quality Gate échouée : {projet}",
+      "Quality Gate : {projet} est passé à ÉCHEC"
+    ],
+    "corps": "Analyse du projet {projet} terminée.\n\nDette technique : {dette} jours\nBugs : {bugs}\nCode smells : {smells}\nDuplication : {dup} %\n\nNouveau code depuis la dernière analyse : 12 lignes.\nDette ajoutée par ce nouveau code : 3 jours.\n\nCe message a été envoyé automatiquement par SonarQube.",
+    "variables": {
+      "projet": [
+        "legacy-erp",
+        "portail-partenaires",
+        "core-banking-v2"
+      ],
+      "dette": [
+        "847",
+        "1 203",
+        "612"
+      ],
+      "bugs": [
+        "318",
+        "1 042",
+        "96"
+      ],
+      "smells": [
+        "12 480",
+        "8 911",
+        "23 006"
+      ],
+      "dup": [
+        "41,2",
+        "38,7",
+        "52,9"
+      ]
+    }
+  },
+  {
+    "id": "a-auto-007",
+    "famille": "outils-auto",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Communication interne",
+      "La Lettre interne",
+      "Service Communication"
+    ],
+    "role": "Newsletter interne",
+    "objet": [
+      "La Lettre {societe} n°{numero}",
+      "Votre newsletter interne : le mot du Président et notre nouveau logo"
+    ],
+    "corps": "Au sommaire de ce numéro :\n\n- Le mot du Président : \"Cap sur {cap}\"\n- Découvrez notre nouveau logo, fruit de {mois} mois de réflexion\n- Portrait : l'équipe {service}, que vous n'avez jamais croisée\n- Rappel : la cafétéria ferme désormais à 14 h\n\nLire la newsletter en ligne\n\nService Communication interne, {societe}\nVous ne pouvez pas vous désabonner de cette lettre.",
+    "variables": {
+      "societe": [
+        "Groupe Vortan",
+        "Nexalis",
+        "Brenvor Industries"
+      ],
+      "numero": [
+        "47",
+        "112",
+        "203"
+      ],
+      "cap": [
+        "2030",
+        "l'excellence",
+        "l'agilité durable"
+      ],
+      "mois": [
+        "dix-huit",
+        "onze",
+        "vingt-quatre"
+      ],
+      "service": [
+        "Conformité",
+        "Archivage",
+        "Gouvernance des données"
+      ]
+    },
+    "pj": "nouveau_logo_v14_FINAL_officiel.png"
+  },
+  {
+    "id": "a-auto-008",
+    "famille": "outils-auto",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Microsoft Teams",
+      "Teams",
+      "Notifications Teams"
+    ],
+    "role": "Teams",
+    "objet": [
+      "Vous avez manqué {nb} messages dans Teams",
+      "Activité manquée dans {canal}"
+    ],
+    "corps": "Vous avez manqué de l'activité dans Teams.\n\n{nb} nouveaux messages dans {canal}\n\nDernier message : \"Quelqu'un reçoit encore quelque chose ?\"\n\nOuvrir Teams\n\nVous recevez ce mail car vous n'avez pas été actif dans Teams depuis un moment.",
+    "variables": {
+      "nb": [
+        "47",
+        "128",
+        "312"
+      ],
+      "canal": [
+        "Projet Phoenix > Général",
+        "Équipe Back > Prod",
+        "Tous les collaborateurs > Annonces"
+      ]
+    }
+  },
+  {
+    "id": "a-auto-009",
+    "famille": "outils-auto",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Microsoft Teams",
+      "Teams",
+      "Notifications Teams"
+    ],
+    "role": "Teams",
+    "objet": [
+      "{personne} a réagi à votre message",
+      "Nouvelle réaction à votre message"
+    ],
+    "corps": "{personne} a réagi avec \"pouce levé\" à votre message :\n\n\"{message}\"\n\nOuvrir la conversation\n\nVous recevez ce mail car vous n'avez pas été actif dans Teams depuis un moment.",
+    "variables": {
+      "personne": [
+        "Votre manager",
+        "Le directeur général",
+        "Un membre de l'équipe Infra"
+      ],
+      "message": [
+        "J'ai cassé la prod.",
+        "Ma demande de congés a été refusée.",
+        "Je crois que j'ai supprimé la branche main.",
+        "Je suis malade, je ne serai pas là aujourd'hui."
+      ]
+    }
+  },
+  {
+    "id": "a-auto-010",
+    "famille": "outils-auto",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Calendrier",
+      "Rappel Calendrier",
+      "Agenda"
+    ],
+    "role": "Calendrier",
+    "objet": [
+      "Rappel : \"Déjeuner\" dans 15 minutes",
+      "Rappel : \"Déjeuner\" à {heure}"
+    ],
+    "corps": "Rappel : \"Déjeuner\"\nAujourd'hui, {heure}\nOrganisateur : vous\n\nCet événement a été déplacé {fois} fois par vous-même cette semaine.\n\nCe rappel a été envoyé automatiquement par votre calendrier.",
+    "variables": {
+      "heure": [
+        "15 h 40",
+        "16 h 15",
+        "14 h 55"
+      ],
+      "fois": [
+        "6",
+        "9",
+        "13"
+      ]
+    }
+  },
+  {
+    "id": "a-auto-011",
+    "famille": "outils-auto",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "GitHub",
+      "dependabot[bot]",
+      "Notifications GitHub"
+    ],
+    "role": "GitHub",
+    "objet": [
+      "[{repo}] Récapitulatif Dependabot : {nb} pull requests ouvertes",
+      "[{repo}] Dependabot a ouvert {nb} pull requests"
+    ],
+    "corps": "Récapitulatif hebdomadaire pour {repo}\n\nPull requests ouvertes par dependabot[bot] : {nb}\nFusionnées : 0\n\nLa plus ancienne date du {date}. Elle met à jour une dépendance qui a depuis été abandonnée par son mainteneur.\n\nVous recevez ce mail car vous surveillez ce dépôt.",
+    "variables": {
+      "repo": [
+        "nexalis/front-monolithe",
+        "vortan/api-legacy",
+        "brenvor/site-vitrine"
+      ],
+      "nb": [
+        "312",
+        "287",
+        "451"
+      ],
+      "date": [
+        "14 mars 2023",
+        "2 janvier 2022",
+        "30 septembre 2024"
+      ]
+    }
+  },
+  {
+    "id": "a-auto-012",
+    "famille": "outils-auto",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Monitoring Certificats",
+      "Alerte SSL",
+      "noreply-monitoring"
+    ],
+    "role": "Notification automatique",
+    "objet": [
+      "[ALERTE] Le certificat {domaine} expire dans 0 jour",
+      "Dernier rappel : expiration du certificat {domaine}"
+    ],
+    "corps": "Le certificat de {domaine} expire aujourd'hui à {heure}.\n\nRappels précédents envoyés : J-30, J-15, J-7, J-3, J-1.\nAction détectée : aucune.\n\nCeci est le dernier rappel. Le prochain message sera envoyé par vos utilisateurs.\n\nMessage généré automatiquement, merci de ne pas y répondre.",
+    "variables": {
+      "domaine": [
+        "api.nexalis.local",
+        "intranet.vortan.local",
+        "preprod.brenvor.local"
+      ],
+      "heure": [
+        "23 h 59",
+        "minuit",
+        "13 h 12"
+      ]
+    },
+    "importance": "haute"
+  },
+  {
+    "id": "a-auto-013",
+    "famille": "outils-auto",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Supervision",
+      "Alerting Infra",
+      "monitoring-bot"
+    ],
+    "role": "Notification automatique",
+    "objet": [
+      "[CRITICAL] {serveur} : espace disque à 100 %",
+      "Alerte : disque plein sur {serveur}"
+    ],
+    "corps": "Serveur : {serveur}\nPartition /var : 100 % utilisé\n\nFichier le plus volumineux : /var/log/{appli}/debug.log ({taille} Go)\nNiveau de log configuré : DEBUG, depuis {date}.\n\nMessage généré automatiquement par la supervision.",
+    "variables": {
+      "serveur": [
+        "srv-app-prod-03",
+        "vm-batch-02",
+        "srv-recette-01"
+      ],
+      "appli": [
+        "facturation",
+        "api-commandes",
+        "portail-rh"
+      ],
+      "taille": [
+        "412",
+        "187",
+        "903"
+      ],
+      "date": [
+        "la mise en production de 2021",
+        "un débogage de vendredi soir",
+        "mars 2019"
+      ]
+    },
+    "importance": "haute"
+  },
+  {
+    "id": "a-auto-014",
+    "famille": "outils-auto",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "GitLab",
+      "GitLab CI",
+      "Rapports qualité"
+    ],
+    "role": "GitLab",
+    "objet": [
+      "Rapport hebdomadaire de couverture de tests : {repo}",
+      "[{repo}] Couverture de tests de la semaine"
+    ],
+    "corps": "Rapport hebdomadaire pour {repo}\n\nCouverture globale : 3 % (semaine précédente : 4 %)\nTests exécutés : {tests}\nTest le plus ancien : \"{test}\"\n\nTendance : stable.\n\nRapport généré automatiquement par GitLab CI.",
+    "variables": {
+      "repo": [
+        "nexalis/back-office",
+        "vortan/moteur-tarifs",
+        "brenvor/app-mobile"
+      ],
+      "tests": [
+        "12",
+        "7",
+        "19"
+      ],
+      "test": [
+        "test_que_ca_marche",
+        "testTemporaire2",
+        "test_a_supprimer"
+      ]
+    }
+  },
+  {
+    "id": "a-auto-015",
+    "famille": "outils-auto",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Confluence",
+      "Confluence Notifications",
+      "Wiki interne"
+    ],
+    "role": "Confluence",
+    "objet": [
+      "Une page que vous suivez a été modifiée : \"{page}\"",
+      "[Confluence] Modification : \"{page}\""
+    ],
+    "corps": "La page \"{page}\" de l'espace {espace} a été modifiée.\n\nModification : correction d'une faute de frappe dans le titre.\nModification précédente : {annee}.\n\nVoir les changements\n\nVous recevez ce mail car vous suivez cette page.",
+    "variables": {
+      "page": [
+        "Documentation d'architecture (à jour)",
+        "Procédure de mise en production",
+        "Onboarding des nouveaux développeurs"
+      ],
+      "espace": [
+        "Équipe Back",
+        "Plateforme",
+        "DSI Projets"
+      ],
+      "annee": [
+        "2017",
+        "2019",
+        "juin 2016"
+      ]
+    }
+  }
+]

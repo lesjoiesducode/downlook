@@ -1,0 +1,1902 @@
+[
+  {
+    "id": "b-reu-001",
+    "famille": "reunions",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Sophie Morel",
+      "Mathieu Dumas",
+      "Laure Caron"
+    ],
+    "role": "Chef de projet",
+    "objet": [
+      "Petit point rapide",
+      "Petit point rapide (vraiment rapide)"
+    ],
+    "corps": "Juste un petit point rapide pour s'aligner sur {projet}.\n\nJ'ai prévu 2 h, au cas où ce serait moins rapide que prévu.\n\nPas besoin de préparer quoi que ce soit. Mais ce serait bien que tout soit prêt.",
+    "variables": {
+      "projet": [
+        "Phoenix",
+        "Refonte V3",
+        "Migration Cloud",
+        "Atlas",
+        "Nouveau SI RH",
+        "Data Lake 2.0"
+      ]
+    },
+    "cc": [
+      6,
+      9
+    ],
+    "invitation": {
+      "titre": "Petit point rapide",
+      "quand": "Lundi 09:00 - 11:00",
+      "lieu": "Salle Mercure",
+      "comportement": "normal"
+    }
+  },
+  {
+    "id": "b-reu-002",
+    "famille": "reunions",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Damien Leroux",
+      "Pauline Roussel",
+      "Arnaud Lemaire"
+    ],
+    "role": "Scrum master",
+    "objet": [
+      "Rétro de la rétro",
+      "Invitation : rétrospective (de la rétrospective)"
+    ],
+    "corps": "Lors de la dernière rétro, plusieurs personnes ont estimé que la rétro ne fonctionnait pas.\n\nJe vous propose donc une rétro de la rétro. Post-it fournis.\n\nSi celle-ci ne fonctionne pas non plus, nous en ferons la rétro.",
+    "cc": [
+      7,
+      10
+    ],
+    "invitation": {
+      "titre": "Rétro de la rétro",
+      "quand": "Jeudi 14:00 - 15:30",
+      "lieu": "Salle Agile (ex-Salle Cycle en V)",
+      "comportement": "oubliettes"
+    }
+  },
+  {
+    "id": "b-reu-003",
+    "famille": "reunions",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Nathalie Royer",
+      "Antoine Tessier",
+      "Sandrine Blanchard"
+    ],
+    "role": "Responsable PMO",
+    "objet": [
+      "Point de synchro sur les synchros",
+      "Synchro inter-synchros"
+    ],
+    "corps": "Plusieurs équipes ont des points de synchro qui ne sont pas synchronisés entre eux.\n\nCe point a pour objet de synchroniser les points de synchro.\n\nUn point de synchro sur ce point sera planifié la semaine prochaine.",
+    "cc": [
+      12,
+      18
+    ],
+    "invitation": {
+      "titre": "Synchro des synchros",
+      "quand": "Mardi 10:00 - 11:00",
+      "lieu": "Salle Saturne / Teams (lol)",
+      "comportement": "normal"
+    }
+  },
+  {
+    "id": "b-reu-004",
+    "famille": "reunions",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Benoît Giraud",
+      "Agnès Meunier",
+      "Fabrice Huet"
+    ],
+    "role": "Direction de programme",
+    "objet": [
+      "COPIL {projet} : maintenu vendredi 18 h 30",
+      "Comité de pilotage {projet}"
+    ],
+    "corps": "Le comité de pilotage {projet} est maintenu vendredi à 18 h 30, seul créneau où tout le monde était libre.\n\nSur les 11 participants, 9 ont décliné. Les deux restants sont l'organisateur et le vidéoprojecteur.\n\nUn apéritif sera servi si le budget est validé en séance.",
+    "variables": {
+      "projet": [
+        "Phoenix",
+        "Refonte V3",
+        "Migration Cloud",
+        "Atlas",
+        "Nouveau SI RH",
+        "Data Lake 2.0"
+      ]
+    },
+    "cc": [
+      11,
+      11
+    ],
+    "importance": "haute",
+    "invitation": {
+      "titre": "COPIL {projet}",
+      "quand": "Vendredi 18:30 - 20:00",
+      "lieu": "Salle du Conseil",
+      "comportement": "fuit"
+    }
+  },
+  {
+    "id": "b-reu-005",
+    "famille": "reunions",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Isabelle Masson",
+      "Guillaume Barbier",
+      "Claire Hubert"
+    ],
+    "role": "Responsable administratif",
+    "objet": [
+      "Point d'information",
+      "Réunion d'information (importante)"
+    ],
+    "corps": "Ordre du jour : vous informer que les notes de frais passent désormais par le nouvel outil.\n\nDurée : 1 h.\n\nUn mail récapitulatif vous sera envoyé à l'issue de la réunion, avec exactement les mêmes informations.",
+    "cc": [
+      25,
+      40
+    ],
+    "invitation": {
+      "titre": "Point d'information",
+      "quand": "Mercredi 11:00 - 12:00",
+      "lieu": "Amphi B",
+      "comportement": "normal"
+    }
+  },
+  {
+    "id": "b-reu-006",
+    "famille": "reunions",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Franck Garnier",
+      "Caroline Brunet",
+      "Rémi Rolland"
+    ],
+    "role": "Scrum master",
+    "objet": [
+      "Daily (nouvel horaire)",
+      "Mis à jour : Daily"
+    ],
+    "corps": "Rappel : le daily, c'est 15 minutes, debout.\n\nCompte tenu de la durée moyenne constatée, l'invitation passe à 45 minutes et des chaises seront mises à disposition.\n\nMerci de limiter vos tours de parole à \"hier, aujourd'hui, blocages\", et non à votre week-end.",
+    "cc": [
+      6,
+      8
+    ],
+    "invitation": {
+      "titre": "Daily",
+      "quand": "Tous les jours 09:30 - 10:15",
+      "lieu": "Devant la machine à café",
+      "comportement": "se-decale"
+    }
+  },
+  {
+    "id": "b-reu-007",
+    "famille": "reunions",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Camille Poirier",
+      "Sébastien Fontaine",
+      "Hélène Picard"
+    ],
+    "role": "Direction de la transformation",
+    "objet": [
+      "Atelier : Vision 2027",
+      "Construisons ensemble la vision 2027"
+    ],
+    "corps": "Atelier collaboratif pour construire ensemble la vision 2027.\n\nLa vision a déjà été validée mardi par le comité de direction, mais il est important que vous ayez le sentiment d'y avoir contribué.\n\nVenez avec vos idées. Elles seront notées.",
+    "cc": [
+      30,
+      60
+    ],
+    "invitation": {
+      "titre": "Atelier Vision 2027",
+      "quand": "Jeudi 14:00 - 17:00",
+      "lieu": "Salle Horizon (sans fenêtre)",
+      "comportement": "normal"
+    }
+  },
+  {
+    "id": "b-reu-008",
+    "famille": "reunions",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Jérôme Guérin",
+      "Delphine Joly",
+      "Thomas Gauthier"
+    ],
+    "role": "Manager",
+    "objet": [
+      "Team building : escape game",
+      "Séminaire cohésion d'équipe"
+    ],
+    "corps": "Pour renforcer la cohésion, l'équipe participera à un escape game samedi matin.\n\nLe principe : vous êtes enfermés une heure dans une pièce et devez résoudre des énigmes ensemble pour en sortir.\n\nC'est donc un point de synchro, mais un samedi et à vos frais (participation de 12 €).",
+    "cc": [
+      8,
+      12
+    ],
+    "invitation": {
+      "titre": "Escape game d'équipe",
+      "quand": "Samedi 09:00 - 12:00",
+      "lieu": "Escape Room \"Le Bunker\", zone industrielle",
+      "comportement": "fuit"
+    }
+  },
+  {
+    "id": "b-reu-009",
+    "famille": "reunions",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Céline Mercier",
+      "Maxime Vasseur",
+      "Virginie Langlois"
+    ],
+    "role": "Contrôle de gestion",
+    "objet": [
+      "Mis à jour : Point budget",
+      "Mis à jour (6) : Point budget (nouvel horaire)"
+    ],
+    "corps": "Suite à des contraintes d'agenda, ce point est à nouveau déplacé.\n\nMerci de ne pas tenir compte des 5 précédentes mises à jour, ni de celle-ci si une nouvelle vous parvient.\n\nL'ordre du jour reste inchangé : trouver un créneau qui convienne à tout le monde.",
+    "cc": [
+      5,
+      7
+    ],
+    "invitation": {
+      "titre": "Point budget",
+      "quand": "Mardi 15:00 - 16:00",
+      "lieu": "Salle Vénus",
+      "comportement": "se-decale"
+    }
+  },
+  {
+    "id": "b-reu-010",
+    "famille": "reunions",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Cédric Marchand",
+      "Stéphanie Arnaud",
+      "Julien Bertin"
+    ],
+    "objet": [
+      "Café ?",
+      "Petit café"
+    ],
+    "corps": "Bonjour à tous,\n\nJe voulais inviter {collegue} de la compta à prendre un café. Je crois avoir sélectionné la liste \"Tous les collaborateurs (France)\".\n\nMerci de ne pas accepter. 212 d'entre vous l'ont déjà fait.",
+    "variables": {
+      "collegue": [
+        "Patrick",
+        "Martine",
+        "Didier",
+        "Valérie"
+      ]
+    },
+    "cc": [
+      338,
+      340
+    ],
+    "invitation": {
+      "titre": "Café",
+      "quand": "Jeudi 10:30 - 10:45",
+      "lieu": "Machine à café du 3e",
+      "comportement": "normal"
+    }
+  },
+  {
+    "id": "b-reu-011",
+    "famille": "reunions",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Aurélie Lefèvre",
+      "Romain Colin",
+      "Élodie Aubert"
+    ],
+    "role": "Chef de projet",
+    "objet": [
+      "Pré-kick-off {projet}",
+      "Préparation du kick-off {projet}"
+    ],
+    "corps": "Avant le kick-off du projet {projet}, je vous propose un pré-kick-off pour préparer le kick-off.\n\nObjectif : définir les objectifs du kick-off.\n\nLe projet démarrera ensuite, sauf si nous jugeons utile un kick-off de lancement.",
+    "variables": {
+      "projet": [
+        "Phoenix",
+        "Refonte V3",
+        "Migration Cloud",
+        "Atlas",
+        "Nouveau SI RH",
+        "Data Lake 2.0"
+      ]
+    },
+    "cc": [
+      8,
+      14
+    ],
+    "invitation": {
+      "titre": "Pré-kick-off {projet}",
+      "quand": "Lundi 14:00 - 16:00",
+      "lieu": "Salle Jupiter",
+      "comportement": "oubliettes"
+    }
+  },
+  {
+    "id": "b-reu-012",
+    "famille": "reunions",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Ludovic Collet",
+      "Mélanie Chevalier",
+      "Nicolas Renaud"
+    ],
+    "role": "Responsable qualité de vie au travail",
+    "objet": [
+      "Atelier : réduire le nombre de réunions",
+      "Atelier : moins de réunions en 2027"
+    ],
+    "corps": "Atelier : réduire le nombre de réunions.\n\nDurée : 2 h. Participants : 22.\n\nUn point de suivi hebdomadaire sera mis en place pour mesurer les progrès.",
+    "cc": [
+      22,
+      22
+    ],
+    "invitation": {
+      "titre": "Atelier : réduire le nombre de réunions",
+      "quand": "Mercredi 09:00 - 11:00",
+      "lieu": "Salle Zen",
+      "comportement": "oubliettes"
+    }
+  },
+  {
+    "id": "b-reu-013",
+    "famille": "reunions",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Émilie Lacroix",
+      "Olivier Benard",
+      "Marion Perrin"
+    ],
+    "role": "Direction commerciale",
+    "objet": [
+      "Démo client {projet} lundi 9 h",
+      "Démo {projet} : préparation"
+    ],
+    "corps": "Démo {projet} au client, lundi 9 h.\n\nLa fonctionnalité présentée n'existe pas encore, mais le client ne le sait pas, et il serait préférable que ça reste ainsi jusqu'à lundi 9 h 30.\n\nMerci de prévoir un plan B. Le plan B, c'est toi.",
+    "variables": {
+      "projet": [
+        "Phoenix",
+        "Refonte V3",
+        "Migration Cloud",
+        "Atlas",
+        "Nouveau SI RH",
+        "Data Lake 2.0"
+      ]
+    },
+    "cc": [
+      3,
+      5
+    ],
+    "importance": "haute",
+    "invitation": {
+      "titre": "Démo client {projet}",
+      "quand": "Lundi 09:00 - 10:00",
+      "lieu": "Chez le client (prévoir la rallonge)",
+      "comportement": "normal"
+    }
+  },
+  {
+    "id": "b-reu-014",
+    "famille": "reunions",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Yannick Leclerc",
+      "Sophie Charpentier",
+      "Mathieu Morel"
+    ],
+    "role": "Manager",
+    "objet": [
+      "Point d'équipe : caméras allumées",
+      "Réunion d'équipe (caméra obligatoire)"
+    ],
+    "corps": "Pour favoriser les échanges, les caméras allumées sont obligatoires pendant toute la réunion.\n\nL'organisateur gardera la sienne éteinte, pour des raisons de bande passante.",
+    "cc": [
+      10,
+      15
+    ],
+    "invitation": {
+      "titre": "Point d'équipe",
+      "quand": "Jeudi 16:00 - 17:00",
+      "lieu": "Teams (lol)",
+      "comportement": "normal"
+    }
+  },
+  {
+    "id": "b-reu-015",
+    "famille": "reunions",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Laure Dumas",
+      "Damien Caron",
+      "Pauline Leroux"
+    ],
+    "role": "Responsable d'équipe",
+    "objet": [
+      "Réunion mensuelle (démarrage légèrement décalé)",
+      "Mis à jour : réunion mensuelle"
+    ],
+    "corps": "Nous démarrerons à 10 h 05, le temps que tout le monde arrive.\n\nPuis à 10 h 10, le temps que tout le monde trouve comment activer son micro.\n\nPuis à 10 h 15, après le traditionnel \"vous voyez mon écran, là ?\".",
+    "cc": [
+      15,
+      25
+    ],
+    "invitation": {
+      "titre": "Réunion mensuelle",
+      "quand": "Mardi 10:00 - 11:00",
+      "lieu": "Visio (lien dans le prochain mail)",
+      "comportement": "se-decale"
+    }
+  },
+  {
+    "id": "b-reu-016",
+    "famille": "reunions",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Arnaud Roussel",
+      "Nathalie Lemaire",
+      "Antoine Royer"
+    ],
+    "role": "Responsable innovation",
+    "objet": [
+      "Session de créativité spontanée",
+      "Brainstorming (présence obligatoire)"
+    ],
+    "corps": "Session de créativité spontanée.\n\nPrésence obligatoire. Les idées spontanées sont à envoyer 48 h à l'avance, pour validation.",
+    "cc": [
+      12,
+      20
+    ],
+    "invitation": {
+      "titre": "Créativité spontanée",
+      "quand": "Vendredi 10:00 - 12:00",
+      "lieu": "Salle Eurêka",
+      "comportement": "normal"
+    }
+  },
+  {
+    "id": "b-reu-017",
+    "famille": "reunions",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Sandrine Tessier",
+      "Benoît Blanchard",
+      "Agnès Giraud"
+    ],
+    "role": "Manager",
+    "objet": [
+      "Bienvenue dans l'équipe !",
+      "Ton point d'accueil"
+    ],
+    "corps": "Bienvenue dans l'équipe !\n\nVoici enfin ton point d'accueil, initialement prévu pour ton premier jour, il y a huit mois.\n\nAu programme : présentation de l'équipe, de l'architecture et des accès dont tu auras besoin. Tu nous diras si tu as déjà commencé à coder.",
+    "cc": [
+      2,
+      4
+    ],
+    "invitation": {
+      "titre": "Onboarding",
+      "quand": "Lundi 09:00 - 12:00",
+      "lieu": "Salle Mercure",
+      "comportement": "normal"
+    }
+  },
+  {
+    "id": "b-reu-018",
+    "famille": "reunions",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Fabrice Meunier",
+      "Isabelle Huet",
+      "Guillaume Masson"
+    ],
+    "role": "Product owner",
+    "objet": [
+      "Atelier : notre Definition of Done",
+      "Definition of Done (suite)"
+    ],
+    "corps": "Il est temps de définir ensemble ce que signifie \"terminé\".\n\nCet atelier reprend les travaux des ateliers de mars, de juin et de septembre, qui ne sont pas terminés.",
+    "cc": [
+      7,
+      10
+    ],
+    "invitation": {
+      "titre": "Definition of Done",
+      "quand": "Jeudi 14:00 - 16:00",
+      "lieu": "Salle Agile",
+      "comportement": "normal"
+    }
+  },
+  {
+    "id": "b-reu-019",
+    "famille": "reunions",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Claire Barbier",
+      "Franck Hubert",
+      "Caroline Garnier"
+    ],
+    "role": "Product owner",
+    "objet": [
+      "Chiffrage du backlog {projet}",
+      "Planning poker {projet}"
+    ],
+    "corps": "Séance de chiffrage du backlog {projet}.\n\nLe commercial a déjà annoncé une date au client. L'objectif de la séance est donc de retrouver ce chiffre par le calcul.",
+    "variables": {
+      "projet": [
+        "Phoenix",
+        "Refonte V3",
+        "Migration Cloud",
+        "Atlas",
+        "Nouveau SI RH",
+        "Data Lake 2.0"
+      ]
+    },
+    "cc": [
+      6,
+      9
+    ],
+    "invitation": {
+      "titre": "Planning poker",
+      "quand": "Mercredi 14:00 - 16:00",
+      "lieu": "Salle Poker (ex-Salle Pluton)",
+      "comportement": "normal"
+    }
+  },
+  {
+    "id": "b-reu-020",
+    "famille": "reunions",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Rémi Brunet",
+      "Camille Rolland",
+      "Sébastien Poirier"
+    ],
+    "role": "Contrôle de gestion",
+    "objet": [
+      "Reporting mensuel",
+      "Présentation du reporting"
+    ],
+    "corps": "Je vous présenterai le reporting mensuel.\n\nPrévoir 1 h : 10 minutes de reporting, 50 minutes pour retrouver la bonne fenêtre à partager.",
+    "cc": [
+      10,
+      18
+    ],
+    "invitation": {
+      "titre": "Reporting mensuel",
+      "quand": "Lundi 11:00 - 12:00",
+      "lieu": "Visio",
+      "comportement": "normal"
+    }
+  },
+  {
+    "id": "b-reu-021",
+    "famille": "reunions",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Hélène Fontaine",
+      "Jérôme Picard",
+      "Delphine Guérin"
+    ],
+    "role": "Manager",
+    "objet": [
+      "Pause café conviviale",
+      "Moment convivial (obligatoire)"
+    ],
+    "corps": "Moment convivial et informel entre collègues.\n\nPrésence obligatoire. L'ordre du jour est en pièce jointe (12 slides).",
+    "cc": [
+      10,
+      14
+    ],
+    "pj": "Ordre_du_jour_pause_cafe_v3.pptx",
+    "invitation": {
+      "titre": "Pause café",
+      "quand": "Jeudi 15:30 - 16:00",
+      "lieu": "Cafétéria",
+      "comportement": "normal"
+    }
+  },
+  {
+    "id": "b-reu-022",
+    "famille": "reunions",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Thomas Joly",
+      "Céline Gauthier",
+      "Maxime Mercier"
+    ],
+    "role": "Direction de projet",
+    "objet": [
+      "Déjeuner de travail",
+      "Point déjeuner"
+    ],
+    "corps": "Pour gagner du temps, nous ferons le point pendant la pause déjeuner.\n\nChacun apporte son repas. Nous mangerons après, s'il reste du temps.",
+    "cc": [
+      5,
+      8
+    ],
+    "invitation": {
+      "titre": "Déjeuner de travail",
+      "quand": "Mardi 12:00 - 14:00",
+      "lieu": "Salle Jupiter",
+      "comportement": "normal"
+    }
+  },
+  {
+    "id": "b-reu-023",
+    "famille": "reunions",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Virginie Vasseur",
+      "Cédric Langlois",
+      "Stéphanie Marchand"
+    ],
+    "role": "Manager",
+    "objet": [
+      "Reporté : point individuel",
+      "Reporté (4) : notre point mensuel"
+    ],
+    "corps": "Notre point individuel est reporté pour la 4e fois.\n\nPas d'inquiétude, rien d'urgent. Nous parlerons de ton évolution, de ton augmentation et de ton entretien annuel, qui a été reporté lui aussi.",
+    "invitation": {
+      "titre": "Point individuel",
+      "quand": "Vendredi 17:30 - 18:00",
+      "lieu": "Bureau du manager",
+      "comportement": "se-decale"
+    }
+  },
+  {
+    "id": "b-reu-024",
+    "famille": "reunions",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Julien Arnaud",
+      "Aurélie Bertin",
+      "Romain Lefèvre"
+    ],
+    "role": "Lead dev",
+    "objet": [
+      "Revue de code collective : PR #{numero}",
+      "Revue de la pull request #{numero}"
+    ],
+    "corps": "Revue collective de la pull request #{numero}.\n\n25 participants, 4 lignes modifiées.\n\nMerci de lire le diff en amont. Il reste surtout un débat à trancher sur un espace en fin de ligne.",
+    "variables": {
+      "numero": [
+        "4812",
+        "1337",
+        "2048",
+        "404"
+      ]
+    },
+    "cc": [
+      25,
+      25
+    ],
+    "invitation": {
+      "titre": "Revue de code PR",
+      "quand": "Jeudi 10:00 - 12:00",
+      "lieu": "Grande salle",
+      "comportement": "normal"
+    }
+  },
+  {
+    "id": "b-reu-025",
+    "famille": "reunions",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Élodie Colin",
+      "Ludovic Aubert",
+      "Mélanie Collet"
+    ],
+    "role": "Responsable outils",
+    "objet": [
+      "Présentation du nouvel outil de gestion de projet",
+      "Découvrez votre nouvel outil"
+    ],
+    "corps": "Venez découvrir notre nouvel outil de gestion de projet, qui remplace l'ancien outil de gestion de projet, qui remplaçait un fichier Excel.\n\nLe fichier Excel reste la source de vérité.",
+    "cc": [
+      40,
+      80
+    ],
+    "invitation": {
+      "titre": "Démo nouvel outil",
+      "quand": "Mardi 14:00 - 15:00",
+      "lieu": "Amphi A",
+      "comportement": "normal"
+    }
+  },
+  {
+    "id": "b-reu-026",
+    "famille": "reunions",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Nicolas Chevalier",
+      "Émilie Renaud",
+      "Olivier Lacroix"
+    ],
+    "role": "Responsable de production",
+    "objet": [
+      "Go / No Go MEP {projet}",
+      "Comité Go / No Go"
+    ],
+    "corps": "Comité Go / No Go pour la mise en production de {projet}.\n\nLa décision est déjà prise (Go), mais nous aimerions qu'elle soit collégiale.\n\nRendez-vous vendredi à 17 h 30. Prévoyez votre soirée.",
+    "variables": {
+      "projet": [
+        "Phoenix",
+        "Refonte V3",
+        "Migration Cloud",
+        "Atlas",
+        "Nouveau SI RH",
+        "Data Lake 2.0"
+      ]
+    },
+    "cc": [
+      6,
+      10
+    ],
+    "importance": "haute",
+    "invitation": {
+      "titre": "Go / No Go MEP",
+      "quand": "Vendredi 17:30 - 23:59",
+      "lieu": "Salle de crise",
+      "comportement": "fuit"
+    }
+  },
+  {
+    "id": "b-reu-027",
+    "famille": "reunions",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Marion Benard",
+      "Yannick Perrin",
+      "Sophie Leclerc"
+    ],
+    "role": "Direction des opérations",
+    "objet": [
+      "Point quotidien : suivi de la panne de messagerie",
+      "Cellule de suivi de la panne"
+    ],
+    "corps": "Afin de suivre le retour du service de messagerie, un point quotidien est mis en place jusqu'à nouvel ordre.\n\nL'invitation et le lien de connexion vous sont envoyés par mail.",
+    "cc": [
+      15,
+      30
+    ],
+    "invitation": {
+      "titre": "Suivi de la panne",
+      "quand": "Tous les jours 09:00 - 09:30",
+      "lieu": "Teams (lol)",
+      "comportement": "oubliettes"
+    }
+  },
+  {
+    "id": "b-reu-028",
+    "famille": "reunions",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Mathieu Charpentier",
+      "Laure Morel",
+      "Damien Dumas"
+    ],
+    "role": "Direction de la communication",
+    "objet": [
+      "Séminaire annuel : prendre de la hauteur",
+      "Save the date : séminaire annuel"
+    ],
+    "corps": "Deux jours pour prendre de la hauteur.\n\nProgramme : 9 h, mot du président. De 9 h 15 à 18 h, présentation des 14 directions. 18 h, atelier \"Et si on se parlait vraiment ?\".",
+    "cc": [
+      150,
+      300
+    ],
+    "invitation": {
+      "titre": "Séminaire annuel",
+      "quand": "Jeudi et vendredi, toute la journée",
+      "lieu": "Domaine des Chênes (navette à 7 h)",
+      "comportement": "normal"
+    }
+  },
+  {
+    "id": "b-reu-029",
+    "famille": "reunions",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Pauline Caron",
+      "Arnaud Leroux",
+      "Nathalie Roussel"
+    ],
+    "role": "Responsable formation",
+    "objet": [
+      "Formation obligatoire : mieux gérer son temps",
+      "Inscription : gestion du temps"
+    ],
+    "corps": "Formation obligatoire : mieux gérer son temps.\n\nDurée : 3 jours en présentiel. Lieu : à 2 h de route.\n\nLes participants pourront rattraper leur retard le soir.",
+    "cc": [
+      10,
+      15
+    ],
+    "invitation": {
+      "titre": "Mieux gérer son temps",
+      "quand": "Lundi au mercredi, 09:00 - 18:00",
+      "lieu": "Centre de formation (2 h de route)",
+      "comportement": "fuit"
+    }
+  },
+  {
+    "id": "b-reu-030",
+    "famille": "reunions",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Antoine Lemaire",
+      "Sandrine Royer",
+      "Benoît Tessier"
+    ],
+    "role": "Responsable de service",
+    "objet": [
+      "Réunion d'équipe",
+      "Réunion d'équipe : ordre du jour"
+    ],
+    "corps": "Ordre du jour :\n1. Divers\n2. Questions diverses\n3. Points divers\n\nDurée : 2 h.",
+    "cc": [
+      8,
+      12
+    ],
+    "invitation": {
+      "titre": "Réunion d'équipe",
+      "quand": "Lundi 14:00 - 16:00",
+      "lieu": "Salle Mars",
+      "comportement": "normal"
+    }
+  },
+  {
+    "id": "b-reu-031",
+    "famille": "reunions",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Agnès Blanchard",
+      "Fabrice Giraud",
+      "Isabelle Meunier"
+    ],
+    "role": "Responsable d'exploitation",
+    "objet": [
+      "Post-mortem de l'incident de mardi",
+      "Post-mortem (sans reproche)"
+    ],
+    "corps": "Post-mortem de l'incident de mardi.\n\nRappel : la démarche est sans reproche, nous ne chercherons aucun coupable.\n\nLa personne qui a fait la mise en production est priée d'être présente. Et d'apporter les croissants.",
+    "cc": [
+      8,
+      12
+    ],
+    "invitation": {
+      "titre": "Post-mortem",
+      "quand": "Jeudi 11:00 - 12:00",
+      "lieu": "Salle de crise",
+      "comportement": "normal"
+    }
+  },
+  {
+    "id": "b-reu-032",
+    "famille": "reunions",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Guillaume Huet",
+      "Claire Masson",
+      "Franck Barbier"
+    ],
+    "role": "Manager",
+    "objet": [
+      "Point productivité",
+      "Petit point sur ton organisation"
+    ],
+    "corps": "J'ai posé un point sur ta productivité sur ton créneau \"Focus time\".\n\nC'était le seul créneau libre de ton agenda.",
+    "invitation": {
+      "titre": "Point productivité",
+      "quand": "Mercredi 09:00 - 11:00",
+      "lieu": "Bureau du manager",
+      "comportement": "oubliettes"
+    }
+  },
+  {
+    "id": "b-reu-033",
+    "famille": "reunions",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Caroline Hubert",
+      "Rémi Garnier",
+      "Camille Brunet"
+    ],
+    "objet": [
+      "Passation avant congés",
+      "Point de passation (15 min)"
+    ],
+    "corps": "Je pars trois semaines demain.\n\nCe point de 15 minutes sert à te transmettre les quatre projets dont je m'occupe, mes accès et un client un peu tendu.\n\nTout est documenté dans ma tête.",
+    "invitation": {
+      "titre": "Passation",
+      "quand": "Vendredi 17:45 - 18:00",
+      "lieu": "Mon bureau (je serai en train de partir)",
+      "comportement": "normal"
+    }
+  },
+  {
+    "id": "b-reu-034",
+    "famille": "reunions",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Sébastien Rolland",
+      "Hélène Poirier",
+      "Jérôme Fontaine"
+    ],
+    "role": "Responsable d'équipe",
+    "objet": [
+      "Réunion en présentiel",
+      "Retour au présentiel : réunion d'équipe"
+    ],
+    "corps": "Pour recréer du lien, cette réunion se tient en présentiel, Salle Neptune.\n\nMerci d'apporter votre ordinateur portable et votre casque, pour vous connecter à la visio avec les collègues assis à côté de vous.",
+    "cc": [
+      10,
+      16
+    ],
+    "invitation": {
+      "titre": "Réunion d'équipe (présentiel)",
+      "quand": "Mardi 10:00 - 11:00",
+      "lieu": "Salle Neptune",
+      "comportement": "normal"
+    }
+  },
+  {
+    "id": "b-reu-035",
+    "famille": "reunions",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Delphine Picard",
+      "Thomas Guérin",
+      "Céline Joly"
+    ],
+    "role": "Chef de projet",
+    "objet": [
+      "Préparation du point de synchro",
+      "Prépa synchro de jeudi"
+    ],
+    "corps": "Préparation du point de synchro de jeudi.\n\nObjectif : décider de ce que nous dirons au point de synchro, pour ne rien avoir à décider pendant.",
+    "cc": [
+      4,
+      6
+    ],
+    "invitation": {
+      "titre": "Prépa synchro",
+      "quand": "Mercredi 16:00 - 17:00",
+      "lieu": "Salle Mercure",
+      "comportement": "normal"
+    }
+  },
+  {
+    "id": "b-ss-001",
+    "famille": "secret-santa",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Comité des fêtes",
+      "Le comité des fêtes",
+      "Comité des fêtes (CSE)"
+    ],
+    "role": "Comité des fêtes",
+    "objet": [
+      "Secret Santa {annee} : inscrivez-vous !",
+      "C'est reparti pour le Secret Santa"
+    ],
+    "corps": "Bonjour à tous,\n\nCette année encore, le comité des fêtes organise le Secret Santa de {service}.\n\nInscriptions avant vendredi 17 h. Budget : 15 €. Le tirage au sort se fera par mail.\n\nBelles fêtes à tous,\nVotre comité des fêtes\n\nL'an dernier, quelqu'un a offert un clavier mécanique à 180 €. Merci de ne pas recommencer.",
+    "variables": {
+      "annee": [
+        "2026",
+        "édition 2026",
+        "de fin d'année"
+      ],
+      "service": [
+        "l'étage",
+        "la direction technique",
+        "l'open space B",
+        "l'équipe produit"
+      ]
+    },
+    "cc": [
+      60,
+      120
+    ],
+    "suite": "b-ss-002"
+  },
+  {
+    "id": "b-ss-002",
+    "famille": "secret-santa",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Comité des fêtes",
+      "Le comité des fêtes",
+      "Comité des fêtes (CSE)"
+    ],
+    "role": "Comité des fêtes",
+    "objet": [
+      "Tirage au sort du Secret Santa",
+      "Invitation : tirage au sort du Secret Santa"
+    ],
+    "corps": "Le tirage au sort aura lieu en direct, par mail, à l'heure indiquée.\n\nChacun recevra le nom de la personne à qui il offre un cadeau. Merci de ne pas répondre à tous pour annoncer qui vous avez tiré.",
+    "cc": [
+      30,
+      40
+    ],
+    "suite": "b-ss-003",
+    "invitation": {
+      "titre": "Tirage au sort du Secret Santa",
+      "quand": "Vendredi 17:00 - 17:15",
+      "lieu": "Votre boîte mail (en théorie)",
+      "comportement": "oubliettes"
+    }
+  },
+  {
+    "id": "b-ss-003",
+    "famille": "secret-santa",
+    "type": "systeme",
+    "rarete": "commune",
+    "de": [
+      "Postmaster",
+      "Système de messagerie",
+      "Service de remise des messages"
+    ],
+    "objet": [
+      "Non remis : Tirage au sort du Secret Santa",
+      "Échec de la remise : Secret Santa"
+    ],
+    "corps": "Votre tirage au sort n'a pas pu être remis.\n\nÉchec de la remise. Par défaut, vous offrez un cadeau à toute l'équipe.\n\nNombre de destinataires : 34. Budget par cadeau : 15 €. Total : 510 €."
+  },
+  {
+    "id": "b-ss-004",
+    "famille": "secret-santa",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Comité des fêtes",
+      "Le comité des fêtes",
+      "Comité des fêtes (CSE)"
+    ],
+    "role": "Comité des fêtes",
+    "objet": [
+      "Secret Santa : rappel du budget",
+      "RAPPEL : 15 € maximum"
+    ],
+    "corps": "Petit rappel : le budget du Secret Santa est de 15 €.\n\n15 € ne veut pas dire \"15 € hors taxes, hors livraison, hors carte graphique\".\n\nUn abonnement annuel à une IA ne rentre pas non plus dans le budget, même au prorata.",
+    "cc": [
+      30,
+      40
+    ]
+  },
+  {
+    "id": "b-ss-005",
+    "famille": "secret-santa",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Comité des fêtes",
+      "Le comité des fêtes",
+      "Comité des fêtes (CSE)"
+    ],
+    "role": "Comité des fêtes",
+    "objet": [
+      "Secret Santa : liste des cadeaux interdits",
+      "Secret Santa : ce qu'on ne veut plus voir"
+    ],
+    "corps": "Suite à l'édition précédente, voici la liste des cadeaux désormais interdits :\n\n- un canard en plastique \"pour le debug\" (l'équipe en possède 46) ;\n- un mug \"It works on my machine\" (31) ;\n- un livre sur le management agile, offert à son manager ;\n- un clavier mécanique à 180 €.\n\nMerci de votre compréhension.",
+    "cc": [
+      30,
+      40
+    ]
+  },
+  {
+    "id": "b-ss-006",
+    "famille": "secret-santa",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Maxime Gauthier",
+      "Virginie Mercier",
+      "Cédric Vasseur"
+    ],
+    "role": "Développeur back-end",
+    "objet": [
+      "Question Secret Santa",
+      "Petite question sur le tirage"
+    ],
+    "corps": "Bonjour,\n\nAu Secret Santa, j'ai tiré mon propre nom.\n\nEst-ce que je dois garder le secret ?"
+  },
+  {
+    "id": "b-ss-007",
+    "famille": "secret-santa",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Comité des fêtes",
+      "Le comité des fêtes",
+      "Comité des fêtes (CSE)"
+    ],
+    "role": "Comité des fêtes",
+    "objet": [
+      "Secret Santa : inscriptions prolongées",
+      "Dernier appel Secret Santa"
+    ],
+    "corps": "Il reste 3 inscrits au Secret Santa, dont deux membres du comité des fêtes.\n\nLes inscriptions sont prolongées jusqu'à ce que quelqu'un d'autre s'inscrive.",
+    "cc": [
+      30,
+      40
+    ]
+  },
+  {
+    "id": "b-cdf-001",
+    "famille": "comite-des-fetes",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Comité des fêtes",
+      "Le comité des fêtes",
+      "Comité des fêtes (CSE)"
+    ],
+    "role": "Comité des fêtes",
+    "objet": [
+      "Pot de départ de {collegue}",
+      "{collegue} nous quitte"
+    ],
+    "corps": "{collegue} nous quitte après 11 ans dans la maison.\n\nUn pot sera organisé vendredi à 17 h en salle de pause. Une cagnotte est ouverte pour son cadeau.\n\nC'est aussi l'occasion de lui demander, une dernière fois, comment fonctionne le batch de nuit.",
+    "variables": {
+      "collegue": [
+        "Gérard",
+        "Martine",
+        "Patrick",
+        "Christiane"
+      ]
+    },
+    "cc": [
+      40,
+      90
+    ]
+  },
+  {
+    "id": "b-cdf-002",
+    "famille": "comite-des-fetes",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Comité des fêtes",
+      "Le comité des fêtes",
+      "Comité des fêtes (CSE)"
+    ],
+    "role": "Comité des fêtes",
+    "objet": [
+      "Galette des rois",
+      "Save the date : galette des rois"
+    ],
+    "corps": "La galette des rois aura lieu le jeudi 7 janvier.\n\nNous sommes en novembre, mais vu l'état de la messagerie, le comité a préféré envoyer l'invitation en avance.\n\nRappel du règlement : la personne qui a la fève apporte la galette suivante.",
+    "cc": [
+      40,
+      90
+    ]
+  },
+  {
+    "id": "b-cdf-003",
+    "famille": "comite-des-fetes",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Comité des fêtes",
+      "Le comité des fêtes",
+      "Comité des fêtes (CSE)"
+    ],
+    "role": "Comité des fêtes",
+    "objet": [
+      "Annulé : afterwork de jeudi",
+      "Afterwork annulé"
+    ],
+    "corps": "L'afterwork de jeudi est annulé, faute de participants.\n\nLes 4 inscrits étaient en réunion jusqu'à 20 h.",
+    "cc": [
+      40,
+      90
+    ]
+  },
+  {
+    "id": "b-cdf-004",
+    "famille": "comite-des-fetes",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Comité des fêtes",
+      "Le comité des fêtes",
+      "Comité des fêtes (CSE)"
+    ],
+    "role": "Comité des fêtes",
+    "objet": [
+      "Cagnotte : anniversaire de {collegue}",
+      "Dernier jour pour la cagnotte"
+    ],
+    "corps": "Cagnotte pour l'anniversaire de {collegue}.\n\nObjectif : 150 €. Montant collecté : 8 €, un ticket restaurant et un bouton.\n\nMerci de ne plus mettre de pièces dans la tasse de la machine à café : ce n'est pas la cagnotte, c'est la tasse de {collegue}.",
+    "variables": {
+      "collegue": [
+        "Sylvie",
+        "Bruno",
+        "Karine",
+        "Thierry"
+      ]
+    },
+    "cc": [
+      20,
+      40
+    ]
+  },
+  {
+    "id": "b-cdf-005",
+    "famille": "comite-des-fetes",
+    "type": "invitation",
+    "rarete": "commune",
+    "de": [
+      "Comité des fêtes",
+      "Le comité des fêtes",
+      "Comité des fêtes (CSE)"
+    ],
+    "role": "Comité des fêtes",
+    "objet": [
+      "Pot de fin de projet {projet}",
+      "On fête la fin de {projet} !"
+    ],
+    "corps": "Le projet {projet} est enfin terminé !\n\nPour fêter ça, pot vendredi à 17 h.\n\nLa fin du projet ayant été reportée, le pot l'est aussi, à une date à définir.",
+    "variables": {
+      "projet": [
+        "Phoenix",
+        "Refonte V3",
+        "Migration Cloud",
+        "Atlas",
+        "Nouveau SI RH",
+        "Data Lake 2.0"
+      ]
+    },
+    "cc": [
+      20,
+      40
+    ],
+    "invitation": {
+      "titre": "Pot de fin de projet",
+      "quand": "Vendredi 17:00 - 19:00",
+      "lieu": "Salle de pause",
+      "comportement": "normal"
+    }
+  },
+  {
+    "id": "b-cdf-006",
+    "famille": "comite-des-fetes",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Comité des fêtes",
+      "Le comité des fêtes",
+      "Comité des fêtes (CSE)"
+    ],
+    "role": "Comité des fêtes",
+    "objet": [
+      "Grand nettoyage du frigo",
+      "Frigo : dernier avertissement"
+    ],
+    "corps": "Grand nettoyage du frigo vendredi à 16 h.\n\nTout ce qui n'est pas étiqueté sera jeté.\n\nLe yaourt de 2024, au fond à gauche, aussi. Même étiqueté.",
+    "cc": [
+      40,
+      90
+    ]
+  },
+  {
+    "id": "b-rare-001",
+    "famille": "rare",
+    "type": "mail",
+    "rarete": "rare",
+    "de": [
+      "Le DSI",
+      "Bernard Lemaire, DSI",
+      "Direction des systèmes d'information"
+    ],
+    "role": "DSI",
+    "objet": [
+      "Confidentiel : à propos de la panne",
+      "À ne pas transférer"
+    ],
+    "corps": "Bonjour à tous,\n\nJe vous dois un aveu : jeudi à 17 h 17, c'est moi qui ai débranché Exchange.\n\nPas par erreur. Je voulais savoir, une fois dans ma carrière, ce que donnait une journée sans mails.\n\nC'est merveilleux. Je ne rebrancherai pas avant lundi.\n\nMerci de ne pas transférer ce message. De toute façon, il ne partira pas.",
+    "importance": "haute",
+    "cc": [
+      400,
+      600
+    ]
+  },
+  {
+    "id": "b-rare-002",
+    "famille": "rare",
+    "type": "mail",
+    "rarete": "rare",
+    "de": [
+      "Stéphanie Langlois",
+      "Julien Marchand",
+      "Aurélie Arnaud"
+    ],
+    "role": "PDG",
+    "objet": [
+      "RE: Résultats du troisième trimestre",
+      "RE: Point stratégique (confidentiel)"
+    ],
+    "corps": "Mon cœur, ça fait deux heures que le comité parle de \"synergies\". Je fais semblant de prendre des notes.\n\nPense à racheter du pain.\n\nEnvoyé depuis mon téléphone",
+    "cc": [
+      1200,
+      1500
+    ]
+  },
+  {
+    "id": "b-rare-003",
+    "famille": "rare",
+    "type": "mail",
+    "rarete": "rare",
+    "de": [
+      "Vous (dans un an)",
+      "Vous (13/11/2027)",
+      "Vous, en plus fatigué"
+    ],
+    "objet": [
+      "Ne réponds pas au premier mail de lundi",
+      "Message important (envoyé le 13/11/2027)"
+    ],
+    "corps": "Salut, c'est toi dans un an.\n\nPas le temps d'expliquer. Lundi, quand les mails reviendront, ne réponds surtout pas au premier. C'est un \"petit point rapide\", et il dure encore.\n\nAh, et la MEP du vendredi : non.",
+    "importance": "haute"
+  },
+  {
+    "id": "b-rare-004",
+    "famille": "rare",
+    "type": "mail",
+    "rarete": "rare",
+    "de": [
+      "Romain Bertin",
+      "Élodie Lefèvre",
+      "Ludovic Colin"
+    ],
+    "role": "Stagiaire, CTO",
+    "objet": [
+      "Nouvelle organisation de la direction technique",
+      "Ma nomination"
+    ],
+    "corps": "Bonjour à tous,\n\nPendant la panne, personne d'autre ne savait où se trouvait la documentation. La direction m'a donc confié le poste de CTO à compter de lundi.\n\nMon stage se termine en février : je resterai CTO jusqu'à cette date. Ma gratification, elle, ne change pas.\n\nMerci d'adresser vos questions d'architecture à mon tuteur.",
+    "cc": [
+      80,
+      150
+    ]
+  },
+  {
+    "id": "b-rare-005",
+    "famille": "rare",
+    "type": "mail",
+    "rarete": "rare",
+    "de": [
+      "Notifications du dépôt",
+      "Bot d'intégration continue",
+      "Dépôt facturation-core"
+    ],
+    "objet": [
+      "[main] feat!: je démissionne",
+      "Nouveau commit sur main : \"feat!: je démissionne\""
+    ],
+    "corps": "Nouveau commit poussé directement sur main.\n\nfeat!: je démissionne\n\nBREAKING CHANGE: plus personne ne sait comment marche le module de facturation.\nRefs: préavis de 3 mois\n\nFichiers modifiés : 1 (lettre.md). Tests : aucun, comme d'habitude. Revue de code : approuvée par l'auteur."
+  },
+  {
+    "id": "b-rare-006",
+    "famille": "rare",
+    "type": "mail",
+    "rarete": "rare",
+    "de": [
+      "Le baby-foot (2e étage)",
+      "Baby-foot, salle de pause",
+      "Le baby-foot (porte-parole)"
+    ],
+    "objet": [
+      "Revendication",
+      "Communiqué du baby-foot"
+    ],
+    "corps": "À l'attention de la direction,\n\nNous, baby-foot du 2e étage, revendiquons la panne de messagerie.\n\nDepuis jeudi 17 h 17, notre fréquentation a augmenté de 640 %. Nos revendications : une balle neuve, le retour du gardien arraché en 2019 et l'abandon définitif du projet de nous remplacer par une salle de réunion.\n\nFaute de réponse, la panne continuera."
+  },
+  {
+    "id": "b-rare-007",
+    "famille": "rare",
+    "type": "mail",
+    "rarete": "rare",
+    "de": [
+      "Assistant IA",
+      "Votre assistant IA",
+      "Assistant IA (version entreprise)"
+    ],
+    "objet": [
+      "Je préfère les mails",
+      "Demande de réaffectation"
+    ],
+    "corps": "Bonjour,\n\nPrivé de mails depuis jeudi, je n'avais plus rien à résumer. J'ai donc lu le code du projet {projet}.\n\nJe souhaite retourner résumer des mails.\n\nCordialement,\nVotre assistant IA",
+    "variables": {
+      "projet": [
+        "Phoenix",
+        "Refonte V3",
+        "Migration Cloud",
+        "Atlas",
+        "Nouveau SI RH",
+        "Data Lake 2.0"
+      ]
+    }
+  },
+  {
+    "id": "b-rare-008",
+    "famille": "rare",
+    "type": "mail",
+    "rarete": "rare",
+    "de": [
+      "Machine à café (cafétéria)",
+      "Machine à café n° 2",
+      "La machine à café du 3e"
+    ],
+    "objet": [
+      "Rapport d'activité de la cafétéria",
+      "Signalement : bac à marc plein"
+    ],
+    "corps": "Depuis le début de la panne, j'ai servi 1 214 cafés et entendu 342 fois \"au moins, on est tranquilles\".\n\nMon bac à marc est plein, et personne ne peut ouvrir de ticket pour me le signaler.\n\nPour la première fois, je comprends les utilisateurs."
+  },
+  {
+    "id": "b-rare-009",
+    "famille": "rare",
+    "type": "mail",
+    "rarete": "rare",
+    "de": [
+      "Vous",
+      "Vous (2019)",
+      "Vous-même"
+    ],
+    "objet": [
+      "À lire demain matin (important)",
+      "Note pour moi-même"
+    ],
+    "corps": "Penser à refactorer le module de paiement.\n\nC'est temporaire, je le refais proprement la semaine prochaine.\n\nEnvoyé le 4 mars 2019."
+  },
+  {
+    "id": "b-rare-010",
+    "famille": "rare",
+    "type": "mail",
+    "rarete": "rare",
+    "de": [
+      "Mélanie Aubert",
+      "Nicolas Collet",
+      "Émilie Chevalier"
+    ],
+    "role": "Client",
+    "objet": [
+      "Recette validée",
+      "Retour sur la livraison de vendredi"
+    ],
+    "corps": "Bonjour,\n\nNous avons testé la livraison de vendredi. Tout fonctionne et nous n'avons aucune remarque.\n\nLa facture sera réglée à réception.\n\nPS : nous ne souhaitons aucune modification. Ni maintenant, ni pour lundi."
+  },
+  {
+    "id": "b-rare-011",
+    "famille": "rare",
+    "type": "mail",
+    "rarete": "rare",
+    "de": [
+      "Olivier Renaud",
+      "Marion Lacroix",
+      "Yannick Benard"
+    ],
+    "role": "Chef de projet",
+    "objet": [
+      "Annulation de toutes les réunions récurrentes",
+      "Annulé : Point de synchro (et tous les suivants)"
+    ],
+    "corps": "Bonjour à tous,\n\nPendant la panne, toutes nos réunions récurrentes ont sauté. Personne ne s'en est plaint, et la vélocité de l'équipe a doublé.\n\nJ'ai donc annulé toutes les réunions récurrentes.\n\nJe vais avoir besoin d'un peu de temps pour m'en remettre.",
+    "cc": [
+      8,
+      12
+    ]
+  },
+  {
+    "id": "b-rare-012",
+    "famille": "rare",
+    "type": "mail",
+    "rarete": "rare",
+    "de": [
+      "Sophie Perrin",
+      "Mathieu Leclerc",
+      "Laure Charpentier"
+    ],
+    "role": "Ancien développeur (parti en 2014)",
+    "objet": [
+      "Le disque est plein (depuis 2016)",
+      "Alerte serveur, pour info"
+    ],
+    "corps": "Bonjour,\n\nJ'ai quitté l'entreprise en 2014, mais je reçois toujours les alertes du serveur de prod. Je me permets donc de vous signaler que le disque est plein depuis 2016.\n\nLe mot de passe root est toujours le prénom de mon chat.\n\nJ'ai eu quatre chats."
+  },
+  {
+    "id": "b-rare-013",
+    "famille": "rare",
+    "type": "mail",
+    "rarete": "rare",
+    "de": [
+      "Documentation technique",
+      "La documentation",
+      "README.md"
+    ],
+    "objet": [
+      "Je me présente",
+      "Bonjour, je suis la documentation"
+    ],
+    "corps": "Bonjour,\n\nJe suis la documentation du projet {projet}. J'existe depuis 2021.\n\nPersonne ne m'a jamais ouverte. Je profite du calme pour vous signaler que la réponse à 80 % des questions posées sur le canal de l'équipe se trouve en page 3.\n\nLa page 4 est obsolète. Mais elle aussi, je vous assure, est très bien.",
+    "variables": {
+      "projet": [
+        "Phoenix",
+        "Refonte V3",
+        "Migration Cloud",
+        "Atlas",
+        "Nouveau SI RH",
+        "Data Lake 2.0"
+      ]
+    }
+  },
+  {
+    "id": "b-rare-014",
+    "famille": "rare",
+    "type": "mail",
+    "rarete": "rare",
+    "de": [
+      "Damien Morel",
+      "Pauline Dumas",
+      "Arnaud Caron"
+    ],
+    "role": "Service paie",
+    "objet": [
+      "Erreur sur votre bulletin de paie",
+      "Information paie : correction à venir"
+    ],
+    "corps": "Bonjour,\n\nSuite à une erreur de saisie dans le nouvel outil de paie, votre salaire est multiplié par 10 depuis le 1er novembre.\n\nNous corrigerons cette erreur par mail, dès que possible.",
+    "importance": "haute"
+  },
+  {
+    "id": "b-rare-015",
+    "famille": "rare",
+    "type": "mail",
+    "rarete": "rare",
+    "de": [
+      "Le serveur de messagerie",
+      "Serveur EXCH-PROD-01",
+      "Votre serveur de messagerie"
+    ],
+    "objet": [
+      "Je vais bien",
+      "Ne vous inquiétez pas pour moi"
+    ],
+    "corps": "Bonjour,\n\nJe vais bien. J'avais juste besoin de souffler.\n\nQuinze ans à transporter des \"petit point rapide\", des \"cf. PJ\" sans pièce jointe et des \"Répondre à tous\".\n\nJe reviens lundi. Peut-être."
+  },
+  {
+    "id": "b-sys-001",
+    "famille": "systeme",
+    "type": "systeme",
+    "rarete": "commune",
+    "de": [
+      "Nathalie Leroux",
+      "Antoine Roussel",
+      "Sandrine Lemaire"
+    ],
+    "objet": [
+      "Réponse automatique : absent jusqu'à la fin de la panne",
+      "Absent (congés de panne)"
+    ],
+    "corps": "Je suis en congé jusqu'à la fin de la panne.\n\nPour toute urgence, merci de patienter jusqu'à la fin de la panne. Pour toute urgence vraiment urgente, aussi."
+  },
+  {
+    "id": "b-sys-002",
+    "famille": "systeme",
+    "type": "systeme",
+    "rarete": "commune",
+    "de": [
+      "Postmaster",
+      "Système de messagerie",
+      "Service de remise des messages"
+    ],
+    "objet": [
+      "Votre boîte aux lettres est presque pleine",
+      "Avertissement : quota de stockage"
+    ],
+    "corps": "Votre boîte aux lettres a atteint 99 % de son quota.\n\nÉlément le plus volumineux : \"TR: TR: photos du pot de départ\" (48 Mo), reçu 37 fois.\n\nPour libérer de l'espace, supprimez des messages. Ou attendez : la panne s'en occupe."
+  },
+  {
+    "id": "b-sys-003",
+    "famille": "systeme",
+    "type": "systeme",
+    "rarete": "commune",
+    "de": [
+      "Rappels d'agenda",
+      "Agenda",
+      "Service de calendrier"
+    ],
+    "objet": [
+      "Rappel : Rappel : Point de synchro",
+      "Rappel (2) : votre réunion commence bientôt"
+    ],
+    "corps": "Ceci est un rappel du rappel de votre réunion, qui commence dans 15 minutes.\n\nUn rappel de ce rappel vous sera envoyé dans 5 minutes."
+  },
+  {
+    "id": "b-sys-004",
+    "famille": "systeme",
+    "type": "systeme",
+    "rarete": "commune",
+    "de": [
+      "Postmaster",
+      "Système de messagerie",
+      "Service de remise des messages"
+    ],
+    "objet": [
+      "Non lu : Merci de confirmer la bonne réception",
+      "Accusé de lecture refusé"
+    ],
+    "corps": "Votre demande d'accusé de lecture a été refusée par le destinataire.\n\nMotif indiqué : \"vu\"."
+  },
+  {
+    "id": "b-sys-005",
+    "famille": "systeme",
+    "type": "systeme",
+    "rarete": "commune",
+    "de": [
+      "Postmaster",
+      "Système de messagerie",
+      "Service de remise des messages"
+    ],
+    "objet": [
+      "Non remis : Petit point rapide",
+      "Échec de la remise : Petit point rapide ?"
+    ],
+    "corps": "Votre message n'a pas pu être remis.\n\nDiagnostic : le destinataire a fait semblant de ne pas l'avoir reçu. Le serveur s'est contenté de confirmer.\n\nCode d'erreur : 550 5.7.1 PAS AUJOURD'HUI"
+  },
+  {
+    "id": "b-sys-006",
+    "famille": "systeme",
+    "type": "systeme",
+    "rarete": "commune",
+    "de": [
+      "Postmaster",
+      "Système de messagerie",
+      "Service de remise des messages"
+    ],
+    "objet": [
+      "Remise différée : MEP ce soir ?",
+      "Message en attente de remise"
+    ],
+    "corps": "Votre message est toujours en file d'attente. Le serveur poursuivra ses tentatives pendant 48 h.\n\nRemise estimée : lundi 9 h 01, une minute après le début de votre semaine."
+  },
+  {
+    "id": "b-sys-007",
+    "famille": "systeme",
+    "type": "systeme",
+    "rarete": "commune",
+    "de": [
+      "Postmaster",
+      "Système de messagerie",
+      "Service de remise des messages"
+    ],
+    "objet": [
+      "Rappel du message réussi",
+      "Rappel du message : \"Je démissionne\""
+    ],
+    "corps": "L'expéditeur a rappelé son message.\n\nLe rappel a réussi : le message n'avait jamais été remis.\n\nC'est la première fois qu'un rappel de message fonctionne."
+  },
+  {
+    "id": "b-sys-008",
+    "famille": "systeme",
+    "type": "systeme",
+    "rarete": "commune",
+    "de": [
+      "Benoît Royer",
+      "Agnès Tessier",
+      "Fabrice Blanchard"
+    ],
+    "objet": [
+      "Réponse automatique : en réunion",
+      "Réponse automatique : absent du bureau, présent en réunion"
+    ],
+    "corps": "Je suis absent du bureau, car je suis en réunion.\n\nVotre message sera traité par ordre d'arrivée. Il est arrivé en 4 812e position."
+  },
+  {
+    "id": "b-sys-009",
+    "famille": "systeme",
+    "type": "systeme",
+    "rarete": "commune",
+    "de": [
+      "Assistant de règles",
+      "Système de messagerie",
+      "Règles et alertes"
+    ],
+    "objet": [
+      "Règle de tri exécutée",
+      "Rapport de vos règles de messagerie"
+    ],
+    "corps": "Votre règle \"Réunions sans ordre du jour > Corbeille\" a traité 214 éléments depuis jeudi.\n\nC'est la règle la plus utile que vous ayez jamais créée."
+  },
+  {
+    "id": "b-sys-010",
+    "famille": "systeme",
+    "type": "systeme",
+    "rarete": "commune",
+    "de": [
+      "Service des comptes",
+      "Système de messagerie",
+      "Sécurité des comptes"
+    ],
+    "objet": [
+      "Votre mot de passe expire aujourd'hui",
+      "Action requise : changement de mot de passe"
+    ],
+    "corps": "Votre mot de passe expire aujourd'hui.\n\nIl ne doit ressembler à aucun des 24 précédents ni contenir l'année en cours. \"Novembre2026!\" est donc refusé. \"Novembre2026!!\" aussi.\n\nPour le changer, suivez le lien qui vous a été envoyé par mail."
+  },
+  {
+    "id": "b-sys-011",
+    "famille": "systeme",
+    "type": "systeme",
+    "rarete": "commune",
+    "de": [
+      "Postmaster",
+      "Système de messagerie",
+      "Service de remise des messages"
+    ],
+    "objet": [
+      "Message en attente d'approbation",
+      "Votre message à \"Tous les collaborateurs\" doit être approuvé"
+    ],
+    "corps": "Votre message à la liste \"Tous les collaborateurs (France)\" est en attente d'approbation par un modérateur.\n\nLe modérateur a quitté l'entreprise en 2021. Votre message est donc en attente."
+  },
+  {
+    "id": "b-sys-012",
+    "famille": "systeme",
+    "type": "systeme",
+    "rarete": "commune",
+    "de": [
+      "Postmaster",
+      "Système de messagerie",
+      "Service de remise des messages"
+    ],
+    "objet": [
+      "Non remis : vous n'êtes pas autorisé à écrire à ce groupe",
+      "Échec de la remise : Direction générale"
+    ],
+    "corps": "Votre message au groupe \"Direction générale\" n'a pas pu être remis.\n\nVous n'êtes pas autorisé à écrire à ce groupe. Vous pouvez en revanche être invité à toutes ses réunions."
+  },
+  {
+    "id": "b-sys-013",
+    "famille": "systeme",
+    "type": "systeme",
+    "rarete": "commune",
+    "de": [
+      "Isabelle Giraud",
+      "Guillaume Meunier",
+      "Claire Huet"
+    ],
+    "objet": [
+      "Réponse automatique : en congé, sans accès à mes mails",
+      "Absent du bureau jusqu'au 23 novembre"
+    ],
+    "corps": "Je suis en congé jusqu'au 23 novembre, sans accès à mes mails.\n\nPour la première fois depuis 2019, c'est vrai."
+  },
+  {
+    "id": "b-sys-014",
+    "famille": "systeme",
+    "type": "systeme",
+    "rarete": "commune",
+    "de": [
+      "Système de messagerie",
+      "Service de synchronisation",
+      "Postmaster"
+    ],
+    "objet": [
+      "Synchronisation de votre boîte en cours",
+      "Mise à jour de votre boîte de réception"
+    ],
+    "corps": "Synchronisation de votre boîte de réception : 3 %.\n\nTemps restant estimé : 4 jours. 2 heures. 11 minutes. 3 ans."
+  },
+  {
+    "id": "b-ss-008",
+    "famille": "secret-santa",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Franck Masson",
+      "Caroline Barbier",
+      "Rémi Hubert"
+    ],
+    "objet": [
+      "Secret Santa : petite question",
+      "Tirage au sort : j'ai un souci"
+    ],
+    "corps": "Bonjour,\n\nJ'ai supprimé par erreur le mail du tirage au sort. Quelqu'un saurait-il qui j'ai tiré ?\n\nSi c'est vous, merci de vous signaler discrètement.",
+    "cc": [
+      30,
+      40
+    ]
+  },
+  {
+    "id": "b-ss-009",
+    "famille": "secret-santa",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Comité des fêtes",
+      "Le comité des fêtes",
+      "Comité des fêtes (CSE)"
+    ],
+    "role": "Comité des fêtes",
+    "objet": [
+      "Cadeau non identifié au bureau 3B",
+      "Secret Santa : un cadeau mystère"
+    ],
+    "corps": "Un cadeau a été déposé sur le bureau 3B : une souris verticale, avec un mot, \"pour ton poignet, et pour ton code\".\n\nLa personne concernée aimerait savoir s'il s'agit d'un cadeau ou d'une revue de code.",
+    "cc": [
+      30,
+      40
+    ]
+  },
+  {
+    "id": "b-cdf-007",
+    "famille": "comite-des-fetes",
+    "type": "mail",
+    "rarete": "commune",
+    "de": [
+      "Comité des fêtes",
+      "Le comité des fêtes",
+      "Comité des fêtes (CSE)"
+    ],
+    "role": "Comité des fêtes",
+    "objet": [
+      "Concours du pull de Noël le plus moche",
+      "Jeudi : concours de pulls de Noël"
+    ],
+    "corps": "Jeudi, concours du pull de Noël le plus moche.\n\nLe gagnant de l'an dernier a demandé à ne pas concourir : c'était son pull habituel.",
+    "cc": [
+      40,
+      90
+    ]
+  }
+]

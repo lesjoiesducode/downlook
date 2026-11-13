@@ -1,0 +1,36 @@
+name: robot
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: robot
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fin de panne
+        run: python3 bin/check_status.py
+      - name: Offres et memes (une fois par heure, ou lancement manuel)
+        run: |
+          M=$(date -u +%M)
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$M" -lt 10 ] || [ "$M" -ge 30 -a "$M" -lt 40 ]; then
+            python3 bin/update_jobs.py || true
+            python3 bin/update_memes.py || true
+          else
+            echo "pas cette fois"
+          fi
+      - name: Commit
+        run: |
+          if git diff --quiet; then echo "rien à publier"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add status.json jobs.json memes.json
+          git commit -m "Refresh data"
+          git pull --rebase
+          git push
