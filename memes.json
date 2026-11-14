@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-13T11:24:07Z",
+ "updated": "2026-11-14T13:34:04Z",
  "memes": [
+  {
+   "title": "Jamais tranquille",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/11/meme-bug-cache-week-end-cerveau-tu-dors.jpg",
+   "url": "https://lesjoiesducode.fr/meme-bug-cache-week-end-cerveau-developpeur",
+   "alt": "Meme du cerveau qui réveille un dev le week-end pour lui demander si le bug de jeudi venait juste du cache.",
+   "boss": false
+  },
   {
    "title": "Je rigole plus",
    "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/11/meme-outlook-claude-down-zero-soucis-thousand-yard.jpg",
@@ -691,13 +698,6 @@
    "title": "La tentation est forte mais on va essayer de garder un salaire",
    "image": "https://lesjoiesducode.fr/content/052/raf-reste-a-faire-developpeurs.jpg",
    "url": "https://lesjoiesducode.fr/raf-reste-a-faire-developpeurs-meme",
-   "alt": "",
-   "boss": false
-  },
-  {
-   "title": "On sait jamais en vrai",
-   "image": "https://lesjoiesducode.fr/content/052/clique-build-6eme-fois-peut-etre.jpg",
-   "url": "https://lesjoiesducode.fr/clique-build-6eme-fois-peut-etre",
    "alt": "",
    "boss": false
   },
