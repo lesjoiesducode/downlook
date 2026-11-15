@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-14T13:34:04Z",
+ "updated": "2026-11-15T21:39:26Z",
  "memes": [
+  {
+   "title": "La larme à l'oeil carrément",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/11/meme-hacker-serie-vraie-commande-dicaprio.jpg",
+   "url": "https://lesjoiesducode.fr/meme-hacker-serie-vraie-commande-dicaprio-developpeur",
+   "alt": "Meme de DiCaprio qui pointe l'écran du doigt, ému de voir un hacker de série taper une vraie commande au lieu de n'importe quoi.",
+   "boss": false
+  },
   {
    "title": "Jamais tranquille",
    "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/11/meme-bug-cache-week-end-cerveau-tu-dors.jpg",
@@ -691,13 +698,6 @@
    "title": "Coïcidence ? Je ne crois pas.",
    "image": "https://lesjoiesducode.fr/content/052/planetes-morts-javascript.jpg",
    "url": "https://lesjoiesducode.fr/planetes-morts-javascript-meme",
-   "alt": "",
-   "boss": false
-  },
-  {
-   "title": "La tentation est forte mais on va essayer de garder un salaire",
-   "image": "https://lesjoiesducode.fr/content/052/raf-reste-a-faire-developpeurs.jpg",
-   "url": "https://lesjoiesducode.fr/raf-reste-a-faire-developpeurs-meme",
    "alt": "",
    "boss": false
   },
