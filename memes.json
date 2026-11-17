@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-15T21:39:26Z",
+ "updated": "2026-11-17T11:02:50Z",
  "memes": [
+  {
+   "title": "Sans le man",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/11/meme-commande-memoire-premier-coup-gigachad-cerveau.jpg",
+   "url": "https://lesjoiesducode.fr/meme-commande-memoire-premier-coup-gigachad-cerveau-developpeur",
+   "alt": "Meme du Gigachad au cerveau géant, fier d'avoir tapé de mémoire une commande complexe qui marche du premier coup.",
+   "boss": false
+  },
   {
    "title": "La larme à l'oeil carrément",
    "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/11/meme-hacker-serie-vraie-commande-dicaprio.jpg",
@@ -691,13 +698,6 @@
    "title": "Je l'dis ou je l'dis pas ?",
    "image": "https://lesjoiesducode.fr/content/052/users-prod-robuste-bugs.jpg",
    "url": "https://lesjoiesducode.fr/users-prod-robuste-bugs-meme-developpeur",
-   "alt": "",
-   "boss": false
-  },
-  {
-   "title": "Coïcidence ? Je ne crois pas.",
-   "image": "https://lesjoiesducode.fr/content/052/planetes-morts-javascript.jpg",
-   "url": "https://lesjoiesducode.fr/planetes-morts-javascript-meme",
    "alt": "",
    "boss": false
   },
