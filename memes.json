@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-19T08:37:30Z",
+ "updated": "2026-11-19T17:40:29Z",
  "memes": [
+  {
+   "title": "Très clair, merci",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/11/meme-something-went-wrong-keep-your-secrets.jpg",
+   "url": "https://lesjoiesducode.fr/meme-something-went-wrong-keep-your-secrets-developpeur",
+   "alt": "Meme de Frodon qui dit Keep your secrets : l'appli plante en prod et le seul log est Something went wrong.",
+   "boss": false
+  },
   {
    "title": "Le timing est parfait",
    "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/11/meme-java-gta-6-jvm-crying-kid.jpg",
@@ -695,13 +702,6 @@
    "boss": false
   },
   {
-   "title": "Quelle surprise (non)",
-   "image": "https://lesjoiesducode.fr/content/052/modif-css-mineure-pikachu.jpg",
-   "url": "https://lesjoiesducode.fr/modif-css-mineure-pikachu-meme",
-   "alt": "",
-   "boss": false
-  },
-  {
    "title": "Ça va pas se corriger tout seul chef",
    "image": "https://lesjoiesducode.fr/content/052/dev-senior-chatgpt-cod-ghost.jpg",
    "url": "https://lesjoiesducode.fr/dev-senior-chatgpt-cod-ghost",
@@ -796,13 +796,6 @@
    "title": "Non, pas ça !",
    "image": "https://lesjoiesducode.fr/content/047/chef-deadline-federer-nadal.jpg",
    "url": "https://lesjoiesducode.fr/chef-deadline-federer-nadal-meme-developpeur",
-   "alt": "",
-   "boss": true
-  },
-  {
-   "title": "\"Ça devrait juste te prendre 5 minutes\"",
-   "image": "https://lesjoiesducode.fr/content/046/chef-de-projet-vendredi-16h-elon-musk.jpg",
-   "url": "https://lesjoiesducode.fr/chef-de-projet-vendredi-16h-elon-musk",
    "alt": "",
    "boss": true
   }
