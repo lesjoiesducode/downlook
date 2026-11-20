@@ -1,6 +1,20 @@
 {
- "updated": "2026-11-19T17:40:29Z",
+ "updated": "2026-11-20T16:02:13Z",
  "memes": [
+  {
+   "title": "Ça peut toujours servir",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/11/meme-fonction-commentee-au-cas-ou-mickey.jpg",
+   "url": "https://lesjoiesducode.fr/meme-fonction-commentee-au-cas-ou-mickey-developpeur",
+   "alt": "Meme de Mickey qui dit It's a surprise tool that will help us later : le dev garde en commentaire une fonction de 200 lignes au cas où.",
+   "boss": false
+  },
+  {
+   "title": "J'arrive plus à suivre",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/11/meme-gta-6-failles-ia-buzz-woody.jpg",
+   "url": "https://lesjoiesducode.fr/meme-gta-6-failles-ia-buzz-woody-developpeur",
+   "alt": "Meme de Buzz qui montre l'horizon à Woody : l'IA trouve des failles partout (PHP2Shell, Java4Shell, Nginx2Shell...) et les devs paniquent.",
+   "boss": false
+  },
   {
    "title": "Très clair, merci",
    "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/11/meme-something-went-wrong-keep-your-secrets.jpg",
@@ -684,20 +698,6 @@
    "title": "Ça pique un peu",
    "image": "https://lesjoiesducode.fr/content/052/code-review-sylvain-lyve.jpg",
    "url": "https://lesjoiesducode.fr/code-review-sylvain-lyve",
-   "alt": "",
-   "boss": false
-  },
-  {
-   "title": "Allez c'est reparti pour un an",
-   "image": "https://lesjoiesducode.fr/content/052/copyright-2025-harold.jpg",
-   "url": "https://lesjoiesducode.fr/changer-copyright-2025-harold-meme-developpeur",
-   "alt": "",
-   "boss": false
-  },
-  {
-   "title": "Et de bonnes fêtes surtout",
-   "image": "https://lesjoiesducode.fr/content/052/repas-famille-developpeur-homelander.jpg",
-   "url": "https://lesjoiesducode.fr/repas-famille-developpeur-homelander-meme",
    "alt": "",
    "boss": false
   },

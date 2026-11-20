@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T08:36:54Z",
+ "updated": "2026-11-20T16:01:43Z",
  "source": "https://lesjoiesducode.fr/job_offer-sitemap.xml",
  "jobs": [
   {
@@ -49,14 +49,6 @@
    "city": "Paris",
    "url": "https://lesjoiesducode.fr/emploi/senior-software-engineer-ai-project-skello-paris-1035",
    "validThrough": "2026-12-17T23:59:59+00:00",
-   "tier": 2
-  },
-  {
-   "title": "Junior FullStack Developer",
-   "company": "Skello",
-   "city": "Paris",
-   "url": "https://lesjoiesducode.fr/emploi/junior-fullstack-developer-skello-paris-1277",
-   "validThrough": null,
    "tier": 2
   },
   {
@@ -132,23 +124,15 @@
    "tier": 4
   },
   {
-   "title": "Ingénieur logiciel",
+   "title": "Lead développeur django",
    "company": "Commissariat au Numérique de Défense - CND",
    "city": "Le Kremlin-Bicêtre",
-   "url": "https://lesjoiesducode.fr/emploi/ingenieur-logiciel-commissariat-au-numerique-de-defense-cnd-le-kremlin-1294",
+   "url": "https://lesjoiesducode.fr/emploi/lead-developpeur-django-commissariat-au-numerique-de-defense-cnd-le-1073",
    "validThrough": null,
    "tier": 5
   },
   {
-   "title": "Lead developpeur typescript",
-   "company": "Commissariat au Numérique de Défense - CND",
-   "city": "Le Kremlin-Bicêtre",
-   "url": "https://lesjoiesducode.fr/emploi/lead-developpeur-typescript-commissariat-au-numerique-de-defense-cnd-1080",
-   "validThrough": null,
-   "tier": 5
-  },
-  {
-   "title": "Developpeur typescript",
+   "title": "Développeur typescript",
    "company": "Commissariat au Numérique de Défense - CND",
    "city": "Le Kremlin-Bicêtre",
    "url": "https://lesjoiesducode.fr/emploi/developpeur-typescript-commissariat-au-numerique-de-defense-cnd-le-1076",
@@ -156,7 +140,15 @@
    "tier": 5
   },
   {
-   "title": "Developpeur django",
+   "title": "Lead développeur typescript",
+   "company": "Commissariat au Numérique de Défense - CND",
+   "city": "Le Kremlin-Bicêtre",
+   "url": "https://lesjoiesducode.fr/emploi/lead-developpeur-typescript-commissariat-au-numerique-de-defense-cnd-1080",
+   "validThrough": null,
+   "tier": 5
+  },
+  {
+   "title": "Développeur django",
    "company": "Commissariat au Numérique de Défense - CND",
    "city": "Le Kremlin-Bicêtre",
    "url": "https://lesjoiesducode.fr/emploi/developpeur-django-commissariat-au-numerique-de-defense-cnd-le-kremlin-1074",
@@ -164,10 +156,10 @@
    "tier": 5
   },
   {
-   "title": "Lead developpeur django",
+   "title": "Ingénieur logiciel",
    "company": "Commissariat au Numérique de Défense - CND",
    "city": "Le Kremlin-Bicêtre",
-   "url": "https://lesjoiesducode.fr/emploi/lead-developpeur-django-commissariat-au-numerique-de-defense-cnd-le-1073",
+   "url": "https://lesjoiesducode.fr/emploi/ingenieur-logiciel-commissariat-au-numerique-de-defense-cnd-le-kremlin-1294",
    "validThrough": null,
    "tier": 5
   }
