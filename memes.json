@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-20T16:02:13Z",
+ "updated": "2026-11-23T08:06:34Z",
  "memes": [
+  {
+   "title": "tant qu’à faire, on va attendre la prochaine",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/11/meme-faille-critique-techno-oh-no-anyway.jpg",
+   "url": "https://lesjoiesducode.fr/meme-faille-critique-techno-oh-no-anyway-developpeur",
+   "alt": "Meme de Jeremy Clarkson qui dit Oh no puis Anyway : le dev découvre une nouvelle faille critique dans la techno qu'il utilise.",
+   "boss": false
+  },
   {
    "title": "Ça peut toujours servir",
    "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/11/meme-fonction-commentee-au-cas-ou-mickey.jpg",
@@ -691,13 +698,6 @@
    "title": "Bon vendredi 🫶",
    "image": "https://lesjoiesducode.fr/content/052/mep-vendredi-squid-game-2.jpg",
    "url": "https://lesjoiesducode.fr/mep-vendredi-squid-game-2",
-   "alt": "",
-   "boss": false
-  },
-  {
-   "title": "Ça pique un peu",
-   "image": "https://lesjoiesducode.fr/content/052/code-review-sylvain-lyve.jpg",
-   "url": "https://lesjoiesducode.fr/code-review-sylvain-lyve",
    "alt": "",
    "boss": false
   },
