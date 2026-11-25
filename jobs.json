@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T08:06:03Z",
+ "updated": "2026-11-25T19:06:26Z",
  "source": "https://lesjoiesducode.fr/job_offer-sitemap.xml",
  "jobs": [
   {
@@ -10,6 +10,14 @@
    "validThrough": "2026-12-03T23:59:59+00:00",
    "tier": 1,
    "featured": true
+  },
+  {
+   "title": "STAGE Fullstack - Time-Travel debugger pour architecture événementielle",
+   "company": "Winamax",
+   "city": "France",
+   "url": "https://lesjoiesducode.fr/emploi/stage-fullstack-time-travel-debugger-pour-architecture-evenementielle-909",
+   "validThrough": null,
+   "tier": 1
   },
   {
    "title": "Senior Développeur Front-End - Team Poker",
@@ -28,14 +36,6 @@
    "tier": 1
   },
   {
-   "title": "STAGE Fullstack - Time-Travel debugger pour architecture événementielle",
-   "company": "Winamax",
-   "city": "Paris",
-   "url": "https://lesjoiesducode.fr/emploi/stage-fullstack-time-travel-debugger-pour-architecture-evenementielle-909",
-   "validThrough": null,
-   "tier": 1
-  },
-  {
    "title": "Développeur Back-End - Team Poker",
    "company": "Winamax",
    "city": "Paris",
@@ -44,11 +44,11 @@
    "tier": 1
   },
   {
-   "title": "Senior Software Engineer (AI Project)",
+   "title": "Engineering Manager Cloud (Infra)",
    "company": "Skello",
    "city": "Paris",
-   "url": "https://lesjoiesducode.fr/emploi/senior-software-engineer-ai-project-skello-paris-1035",
-   "validThrough": "2026-12-17T23:59:59+00:00",
+   "url": "https://lesjoiesducode.fr/emploi/engineering-manager-cloud-infra-skello-paris-1347",
+   "validThrough": null,
    "tier": 2
   },
   {
@@ -57,6 +57,14 @@
    "city": "Télétravail",
    "url": "https://lesjoiesducode.fr/emploi/senior-software-engineer-ai-project-full-remote-skello-paris-1036",
    "validThrough": null,
+   "tier": 2
+  },
+  {
+   "title": "Senior Software Engineer (AI Project)",
+   "company": "Skello",
+   "city": "Paris",
+   "url": "https://lesjoiesducode.fr/emploi/senior-software-engineer-ai-project-skello-paris-1035",
+   "validThrough": "2026-12-17T23:59:59+00:00",
    "tier": 2
   },
   {
@@ -116,6 +124,14 @@
    "tier": 4
   },
   {
+   "title": "Ingénieur Logiciel",
+   "company": "Commissariat au Numérique de Défense - CND",
+   "city": "Le Kremlin-Bicêtre",
+   "url": "https://lesjoiesducode.fr/emploi/ingenieur-logiciel-commissariat-au-numerique-de-defense-cnd-le-kremlin-1328",
+   "validThrough": null,
+   "tier": 5
+  },
+  {
    "title": "Lead développeur django",
    "company": "Commissariat au Numérique de Défense - CND",
    "city": "Le Kremlin-Bicêtre",
@@ -154,6 +170,134 @@
    "url": "https://lesjoiesducode.fr/emploi/ingenieur-logiciel-commissariat-au-numerique-de-defense-cnd-le-kremlin-1294",
    "validThrough": null,
    "tier": 5
+  },
+  {
+   "title": "Staff Software Engineer",
+   "company": "Betclic Group",
+   "city": "Bordeaux",
+   "url": "https://lesjoiesducode.fr/emploi/staff-software-engineer-betclic-group-bordeaux-1325",
+   "validThrough": null,
+   "tier": 6
+  },
+  {
+   "title": "Stage - Software Engineer Flutter",
+   "company": "Betclic Group",
+   "city": "Bordeaux",
+   "url": "https://lesjoiesducode.fr/emploi/stage-software-engineer-flutter-betclic-group-bordeaux-1272",
+   "validThrough": null,
+   "tier": 6
+  },
+  {
+   "title": "Stage - Software Engineer Backend",
+   "company": "Betclic Group",
+   "city": "Bordeaux",
+   "url": "https://lesjoiesducode.fr/emploi/stage-software-engineer-backend-betclic-group-bordeaux-1271",
+   "validThrough": null,
+   "tier": 6
+  },
+  {
+   "title": "Stage - Data Engineer F/M",
+   "company": "Betclic Group",
+   "city": "Bordeaux",
+   "url": "https://lesjoiesducode.fr/emploi/stage-data-engineer-betclic-group-bordeaux-1268",
+   "validThrough": null,
+   "tier": 6
+  },
+  {
+   "title": "Software Architect F/M",
+   "company": "Betclic Group",
+   "city": "Bordeaux",
+   "url": "https://lesjoiesducode.fr/emploi/software-architect-betclic-group-bordeaux-1265",
+   "validThrough": null,
+   "tier": 6
+  },
+  {
+   "title": "Senior Software Engineer Developer Experience F/M",
+   "company": "Betclic Group",
+   "city": "Bordeaux",
+   "url": "https://lesjoiesducode.fr/emploi/senior-software-engineer-developer-experience-betclic-group-bordeaux-1263",
+   "validThrough": null,
+   "tier": 6
+  },
+  {
+   "title": "Senior Software Engineer F/M",
+   "company": "Betclic Group",
+   "city": "Bordeaux",
+   "url": "https://lesjoiesducode.fr/emploi/senior-software-engineer-betclic-group-bordeaux-1264",
+   "validThrough": null,
+   "tier": 6
+  },
+  {
+   "title": "Senior GenAI Cloud Engineer F/M",
+   "company": "Betclic Group",
+   "city": "Bordeaux",
+   "url": "https://lesjoiesducode.fr/emploi/senior-genai-cloud-engineer-betclic-group-bordeaux-1262",
+   "validThrough": null,
+   "tier": 6
+  },
+  {
+   "title": "Modern Workplace Engineer F/M",
+   "company": "Betclic Group",
+   "city": "Bordeaux",
+   "url": "https://lesjoiesducode.fr/emploi/modern-workplace-engineer-betclic-group-bordeaux-1254",
+   "validThrough": null,
+   "tier": 6
+  },
+  {
+   "title": "Head of Engineering F/M",
+   "company": "Betclic Group",
+   "city": "Bordeaux",
+   "url": "https://lesjoiesducode.fr/emploi/head-of-engineering-betclic-group-bordeaux-1252",
+   "validThrough": null,
+   "tier": 6
+  },
+  {
+   "title": "Head of Quality Engineering Strategy F/M",
+   "company": "Betclic Group",
+   "city": "Bordeaux",
+   "url": "https://lesjoiesducode.fr/emploi/head-of-quality-engineering-strategy-betclic-group-bordeaux-1253",
+   "validThrough": null,
+   "tier": 6
+  },
+  {
+   "title": "Engineering Manager F/M",
+   "company": "Betclic Group",
+   "city": "Bordeaux",
+   "url": "https://lesjoiesducode.fr/emploi/engineering-manager-betclic-group-bordeaux-1250",
+   "validThrough": null,
+   "tier": 6
+  },
+  {
+   "title": "Cybersecurity Engineer – Data & Betting Platforms F/M",
+   "company": "Betclic Group",
+   "city": "Bordeaux",
+   "url": "https://lesjoiesducode.fr/emploi/cybersecurity-engineer-data-betting-platforms-betclic-group-bordeaux-1248",
+   "validThrough": null,
+   "tier": 6
+  },
+  {
+   "title": "Cybersecurity Engineer - Authentication, Identity & Payments F/M",
+   "company": "Betclic Group",
+   "city": "Bordeaux",
+   "url": "https://lesjoiesducode.fr/emploi/cybersecurity-engineer-authentication-identity-payments-betclic-group-1247",
+   "validThrough": null,
+   "tier": 6
+  },
+  {
+   "title": "AI-Augmented Data Engineer F/M",
+   "company": "Betclic Group",
+   "city": "Bordeaux",
+   "url": "https://lesjoiesducode.fr/emploi/ai-augmented-data-engineer-betclic-group-bordeaux-1245",
+   "validThrough": null,
+   "tier": 6
+  },
+  {
+   "title": "SRE DevOps & Cloud F/M",
+   "company": "Betclic Group",
+   "city": "Bordeaux",
+   "url": "https://lesjoiesducode.fr/emploi/sre-devops-cloud-betclic-group-bordeaux-1304",
+   "validThrough": null,
+   "tier": 6
   }
  ]
 }

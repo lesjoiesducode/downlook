@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-23T08:06:34Z",
+ "updated": "2026-11-25T19:07:24Z",
  "memes": [
+  {
+   "title": "L'instinct de survie, ça",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/11/meme-monitoring-collegue-oulah-kalm-panik.jpg",
+   "url": "https://lesjoiesducode.fr/meme-monitoring-collegue-oulah-kalm-panik-developpeur",
+   "alt": "Meme Kalm Panik : le dev reste calme face aux 300 alertes du monitoring en prod, mais panique quand un collègue dit oulah.",
+   "boss": false
+  },
   {
    "title": "tant qu’à faire, on va attendre la prochaine",
    "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/11/meme-faille-critique-techno-oh-no-anyway.jpg",
@@ -691,13 +698,6 @@
    "title": "Oh la douleur",
    "image": "https://lesjoiesducode.fr/content/052/devs-js-naan-joel-tlou.jpg",
    "url": "https://lesjoiesducode.fr/devs-js-naan-joel-tlou-heart-attack",
-   "alt": "",
-   "boss": false
-  },
-  {
-   "title": "Bon vendredi 🫶",
-   "image": "https://lesjoiesducode.fr/content/052/mep-vendredi-squid-game-2.jpg",
-   "url": "https://lesjoiesducode.fr/mep-vendredi-squid-game-2",
    "alt": "",
    "boss": false
   },
