@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-25T19:07:24Z",
+ "updated": "2026-11-27T12:01:19Z",
  "memes": [
+  {
+   "title": "Très clair",
+   "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/11/meme-ticket-urgent-description-vide-kung-fu-panda.jpg",
+   "url": "https://lesjoiesducode.fr/meme-ticket-urgent-description-vide-kung-fu-panda-developpeur",
+   "alt": "Meme Kung Fu Panda : Po ouvre le ticket URGENT qu'on vient de lui assigner et découvre qu'il n'y a rien de marqué.",
+   "boss": true
+  },
   {
    "title": "L'instinct de survie, ça",
    "image": "https://lesjoiesducode.fr/wp-content/uploads/2026/11/meme-monitoring-collegue-oulah-kalm-panik.jpg",
@@ -691,13 +698,6 @@
    "title": "C'est rien il s'est juste un peu emballé",
    "image": "https://lesjoiesducode.fr/content/052/ligne-code-ide-wtf-ok-tweet.png",
    "url": "https://lesjoiesducode.fr/ligne-code-ide-wtf-ok-tweet",
-   "alt": "",
-   "boss": false
-  },
-  {
-   "title": "Oh la douleur",
-   "image": "https://lesjoiesducode.fr/content/052/devs-js-naan-joel-tlou.jpg",
-   "url": "https://lesjoiesducode.fr/devs-js-naan-joel-tlou-heart-attack",
    "alt": "",
    "boss": false
   },

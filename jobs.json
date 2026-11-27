@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T11:07:30Z",
+ "updated": "2026-11-27T12:00:26Z",
  "source": "https://lesjoiesducode.fr/job_offer-sitemap.xml",
  "jobs": [
   {
@@ -16,14 +16,6 @@
    "company": "Winamax",
    "city": "France",
    "url": "https://lesjoiesducode.fr/emploi/stage-fullstack-time-travel-debugger-pour-architecture-evenementielle-909",
-   "validThrough": null,
-   "tier": 1
-  },
-  {
-   "title": "Senior Développeur Front-End - Team Poker",
-   "company": "Winamax",
-   "city": "Paris",
-   "url": "https://lesjoiesducode.fr/emploi/senior-developpeur-front-end-team-poker-winamax-paris-378",
    "validThrough": null,
    "tier": 1
   },
@@ -84,14 +76,6 @@
    "tier": 3
   },
   {
-   "title": "Senior Software Architect — Spec-Driven & Agentic Systems",
-   "company": "Michelin",
-   "city": "Paris",
-   "url": "https://lesjoiesducode.fr/emploi/senior-software-architect-spec-driven-agentic-systems-michelin-paris-1278",
-   "validThrough": "2026-11-29T23:59:59+00:00",
-   "tier": 3
-  },
-  {
    "title": "SRE HPC AI Infrastructure",
    "company": "OVHcloud",
    "city": "Toulouse",
@@ -113,14 +97,6 @@
    "city": "Bordeaux",
    "url": "https://lesjoiesducode.fr/emploi/software-engineer-waf-ovhcloud-bordeaux-897",
    "validThrough": "2026-12-12T23:59:59+00:00",
-   "tier": 4
-  },
-  {
-   "title": "Software Engineer C++ High Performance",
-   "company": "OVHcloud",
-   "city": "Bordeaux",
-   "url": "https://lesjoiesducode.fr/emploi/software-engineer-c-high-performance-ovhcloud-bordeaux-895",
-   "validThrough": "2026-11-26T23:59:59+00:00",
    "tier": 4
   },
   {
@@ -160,14 +136,6 @@
    "company": "Commissariat au Numérique de Défense - CND",
    "city": "Le Kremlin-Bicêtre",
    "url": "https://lesjoiesducode.fr/emploi/developpeur-django-commissariat-au-numerique-de-defense-cnd-le-kremlin-1074",
-   "validThrough": null,
-   "tier": 5
-  },
-  {
-   "title": "Ingénieur logiciel",
-   "company": "Commissariat au Numérique de Défense - CND",
-   "city": "Le Kremlin-Bicêtre",
-   "url": "https://lesjoiesducode.fr/emploi/ingenieur-logiciel-commissariat-au-numerique-de-defense-cnd-le-kremlin-1294",
    "validThrough": null,
    "tier": 5
   },
